@@ -13,7 +13,7 @@
 ######六级标题
 
 普通文本<br>
-多行文本
+多行文本*倾斜* **加粗**
 <br>
 
 `高亮`
@@ -22,7 +22,7 @@
 * listitem
 * listitem
 * listitem
-    * childitem 
+    * childitem
         * childitem
 <br>加图片
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
