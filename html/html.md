@@ -1,7 +1,7 @@
 
 #全称 Hyper Text Markup Language -- 超文本标记语言
 
-
+## html 发展史
 1991 html 
 
 1995 html2
@@ -16,8 +16,8 @@
 2005 xhtml2.0
 
 2008 Html5  * 开始
---
-2014 HTML5 * 正式发布
+
+**2014 HTML5 * 正式发布 ** 
 
 
 ##标签语义化(用正确的标签描述页面)
