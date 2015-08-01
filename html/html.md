@@ -27,5 +27,8 @@
 
 -----
 主流浏览器都兼容HTML5的新标签，对于 IE8 及以下版本不认识 HTML5的新元素，可以使用 JavaScript 创建一个没用的元素来解决，例如：
-<script>document.createElement("header");</script>，也可以使用shiv来解决兼容性问题。
+```html
+<script>document.createElement("header");</script>
+```
+，也可以使用shiv来解决兼容性问题。
 
