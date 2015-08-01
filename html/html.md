@@ -19,7 +19,23 @@
 
 **2014 HTML5 * 正式发布 ** 
 
-
+##HTML 文档结构
+* 文档声明 (html5 声明的简化) 
+```html 
+<!DOCTYPE html> 
+```
+* 文档头部
+```html
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+</head>
+```
+* 文档主体
+```html
+<body>主体内容</body>
+```
+* 根节点 html 可以设置语言属性
 ##标签语义化(用正确的标签描述页面)
 * SEO(Seach Engine Optimization) 搜索引擎优化, 对搜索引擎友好
 * 可访问性    良好的结构和语义你的网页内容自然容易被搜索引擎抓取
