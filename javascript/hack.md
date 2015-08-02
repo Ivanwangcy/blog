@@ -50,3 +50,45 @@ if(!Object.create || typeof Object.create !== "function"){
   var a = Object.create({x: 1, y: 2});
     alert(a.x);
 ```
+#兼容低版本浏览器的bind方法的代码实现
+```javascript
+    Function.prototype.bind = null;
+      /**
+       * [if 如果没有bind方法,创建一个bind方法]
+       * @param  {[type]} !Function.prototype.bind [description]
+       * @return {[type]}                          [description]
+       */
+    if(!Function.prototype.bind){
+      Function.prototype.bind = function(obj){
+        if(typeof this !== "function"){
+          // bind 函数的调用者必须是一个函数
+          throw new TypeError( typeof this + " is not a function!");
+        }
+        var self = this,// 保存调用bind的函数
+            
+        //保存调用时的参数 且 需要给self传递的参数, arguments[0] == obj 绑定的新函数
+        selfParams = Array.prototype.slice.call(arguments, 1),        
+            
+        bridge = function(){}, // 如果用new来调用bind的返回函数,需要继承self原型,转接到bindFn
+        bindFn = function(){//创建新函数
+        return self.apply(this instanceof bridge && obj ? this : obj || window,
+            selfParams.concat(Array.prototype.slice.call(arguments)));
+        };
+
+        bridge.prototype = this.prototype;
+        bindFn.prototype = new bridge();
+        return bindFn;
+      }
+    }
+    
+      function move(x, y) {
+          this.x += x;
+          this.y += y;
+      }
+      var point = {x:1, y:2};
+      var pointmove = move.bind(point, 2, 2);
+      pointmove(); // {x:3, y:4}
+      console.info(point);
+      pointmove(); // {x:3, y:4}
+      console.info(point);
+  ```
