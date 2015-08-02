@@ -47,14 +47,14 @@
       function dataset(user){
         var attributes = user.attributes;
         var datasetObj = {};
-        for(var i = 0, attribute; attribute = attributes[i]; i++){
+        for(var i = 0, attribute; attribute = attributes[i]; i++) {
           if(attribute.name.indexOf("data-") === 0){
             var attributeName = attribute.name.split("data-")[1];
-            var humpName =attributeName.indexOf("-") === -1
-                          ? attributeName
-                          : attributeName.replace(/\-([a-z])/g,function($,$1){
-                              return $1.toUpperCase();
-                            });
+            var humpName =attributeName.indexOf("-") === -1 ? attributeName : 
+                              attributeName.replace(/\-([a-z])/g,
+                                  function($,$1){
+                                      return $1.toUpperCase();
+                                  });
             datasetObj[humpName] = attribute.value;
           }
         }
