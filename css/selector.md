@@ -50,16 +50,16 @@
     * ::after{content:"after";}  把content属性值插入到之后
     * ::selection 应用于被用户选中的内容;
 3. 组合选择器
-     * 后代选择器  .main h2{} 类main 下面的所有后代 h2 标签 包含 子代的子代等
-    *  子选择器 .main>h2{} 类main 下属子代的 h2 标签
-    *  兄弟选择器 
+    * 后代选择器  .main h2{} 类main 下面的所有后代 h2 标签 包含 子代的子代等
+    * 子选择器 .main>h2{} 类main 下属子代的 h2 标签
+    * 兄弟选择器 
     * h2+p{color:red;} 选择直接前面(相邻的)是h2标签的  p  标签
     * h2~p{color:red;} 选择前面同级别标签有h2的 p 标签 (不需要是紧邻的)
     * 选择器分组
-     * h1,h2,h3{color:gray;} 选择列出的标签,统一样式
-     * 继承
-     * body{font-family:"Microsoft Yahei";} 所有子元素使用微软雅黑, 所有子元素继承这个样式
-     * 可继承属性 color, font, text-align, list-style
-     * 非继承属性 background, border, position
-     * 在API文档中查看是否可继承: inherited  yes|no
+      * h1,h2,h3{color:gray;} 选择列出的标签,统一样式
+    * 继承
+      * body{font-family:"Microsoft Yahei";} 所有子元素使用微软雅黑, 所有子元素继承这个样式
+      * 可继承属性 color, font, text-align, list-style
+      * 非继承属性 background, border, position
+      * 在API文档中查看是否可继承: inherited  yes|no
 
