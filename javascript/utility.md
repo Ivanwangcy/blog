@@ -7,3 +7,19 @@ String.prototype.trim= function(){
     return this.replace(/(^\s*)|(\s*$)/g, "");  
 }
 ```
+#对象深拷贝
+```javascript
+/*对象深拷贝*/
+function clone(object){
+    var key, newObject = object, isArray = object instanceof Array;
+    if(object && (object instanceof Object || isArray)) {
+        newObject = isArray ? [] : {};
+        for(key in object){
+            if(object.hasOwnProperty(key)){ // 是否为对象本身的属性, 过滤掉原型链上的属性
+                newObject[key] = clone(object[key]);
+            }
+        }
+    }
+    return newObject;
+}
+```
