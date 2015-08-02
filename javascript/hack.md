@@ -20,6 +20,18 @@
     });
   }
 ```
+#window.getComputedStyle IE兼容实现
+```javascript
+    // if(!window.getComputedStyle) IE兼容实现
+    function currentStyle(element){
+      return element.currentStyle || window.getComputedStyle(element);
+    }
+
+    // 获取指定样式属性值
+    function getStyle(element, cssPropertyName){
+      return (element.currentStyle || window.getComputedStyle(element))[cssPropertyName];
+    }
+```
 #事件监听兼容性实现
 ```javascript 
   var addEvent = document.addEventListener ?
@@ -66,11 +78,11 @@ if(!Object.create || typeof Object.create !== "function"){
         }
         var self = this,// 保存调用bind的函数
             
-        //保存调用时的参数 且 需要给self传递的参数, arguments[0] == obj 绑定的新函数
+        // 保存调用时的参数 且 需要给self传递的参数, arguments[0] == obj 绑定的新函数
         selfParams = Array.prototype.slice.call(arguments, 1),        
             
         bridge = function(){}, // 如果用new来调用bind的返回函数,需要继承self原型,转接到bindFn
-        bindFn = function(){//创建新函数
+        bindFn = function(){// 创建新函数
         return self.apply(this instanceof bridge && obj ? this : obj || window,
             selfParams.concat(Array.prototype.slice.call(arguments)));
         };
