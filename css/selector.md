@@ -17,11 +17,9 @@
       * a:visited 访问过的链接元素 只能用在 a标签
       * a:hover 鼠标经过, 可以应用到其它标签上
       * a:active 鼠标点击的 可以用到其它标签上
-
       * :enabled  可用状态
       * :disabled  不可用状态
       * :checked  选中状态
-
       * li:first-child 第一个li标签
       * li:lash-child 最后一个li标签
       * li:nth-child(even) 偶数项的li标签
