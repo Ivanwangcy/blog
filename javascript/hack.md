@@ -42,6 +42,25 @@
               elem.attachEvent('on' + type, listener);
             };
 ```
+#dataset 自定义属性, 兼容实现
+```javascript
+      function dataset(user){
+        var attributes = user.attributes;
+        var datasetObj = {};
+        for(var i = 0, attribute; attribute = attributes[i]; i++){
+          if(attribute.name.indexOf("data-") === 0){
+            var attributeName = attribute.name.split("data-")[1];
+            var humpName =attributeName.indexOf("-") === -1
+                          ? attributeName
+                          : attributeName.replace(/\-([a-z])/g,function($,$1){
+                              return $1.toUpperCase();
+                            });
+            datasetObj[humpName] = attribute.value;
+          }
+        }
+        return datasetObj;
+      }
+```
 #Object.create的兼容实现
 ```javascript
 // Object.create的兼容实现 :
