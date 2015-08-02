@@ -32,6 +32,45 @@
       return (element.currentStyle || window.getComputedStyle(element))[cssPropertyName];
     }
 ```
+#getElementsByClassName浏览器兼容实现
+```javascript
+      /**
+      * 实现getElementsByClassName方法，浏览器兼容
+      */
+      function getElementsByClassName(element, names){
+        if(element.getElementsByClassName){
+          return element.getElementsByClassName(names);
+        }else{
+          var elements = element.getElementsByTagName("*");
+          var result = [],
+              tempElement,
+              nameArr = names.replace(/(^\s*)|(\s*$)/g, "").split(" "),
+              flag,
+              elementClassName;
+          for(var i = 0; tempElement = elements[i]; i++){
+            elementClassName = " " + tempElement.className + " ";
+            flag = true;
+            for(var j = 0; j < nameArr.length; j++){
+              if(nameArr[j] && elementClassName.indexOf(" " + nameArr[j] + " ") === -1){
+                flag = false;
+                break;
+              }
+            }
+            if(flag){
+              result.push(tempElement);
+            }
+          }
+          return result;
+        }
+      }
+      var example = document.getElementById("example");
+      console.info(getElementsByClassName(example, "aaa")); // 运行结果为包含id为p1, id为p2的元素列表
+      console.info(getElementsByClassName(example, " aaa ")); // 运行结果为包含id为p1, id为p2的元素列表
+      console.info(getElementsByClassName(example, "aa")); //[]
+      console.info(getElementsByClassName(example, "aaabbb")); //[]
+      console.info(getElementsByClassName(example, "bbb ccc"));// 运行结果为包含id为p3的元素列表
+      console.log(getElementsByClassName(example, "ccc bbb"));// 运行结果为包含id为p3的元素列表
+```
 #事件监听兼容性实现
 ```javascript 
   var addEvent = document.addEventListener ?
