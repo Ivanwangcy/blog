@@ -63,3 +63,10 @@
       * 非继承属性 background, border, position
       * 在API文档中查看是否可继承: inherited  yes|no
 
+##**注意: 超链接(a标签) 样式顺序: L-V-H-A **
+```css
+a:link{}
+a:visited{}
+a:hover{}
+a:active{}
+```
