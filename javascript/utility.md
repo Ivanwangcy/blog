@@ -23,3 +23,12 @@ function clone(object){
     return newObject;
 }
 ```
+#识别标准类型和内置对象类型
+```javascript
+function type(object){
+      //不能直接使用 object.toString() 方法, 要调用Object原型方法
+      //toString 之后得到的结果是这样 [object number] ,需要截取第9位开始和后2位结束
+      //小写输出
+    return Object.prototype.toString.call(object).slice(8,-1).toLowerCase();
+  }
+```
