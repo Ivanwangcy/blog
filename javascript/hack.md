@@ -1,7 +1,8 @@
 #element.children实现浏览器兼容版
 ```javascript
 /**
- * 自定义 Element 元素的方法 (Element和HTMLDocument等, 它们不是构造函数, 它们有原型对象, 可以使用自定义对象来扩展它)
+ * 自定义 Element 元素的方法 (Element和HTMLDocument等, 它们不是构造函数, 
+ * 它们有原型对象, 可以使用自定义对象来扩展它)
  * [if 在不包含此属性的浏览器中模拟Element.children属性
  * 由于是Element子节点是类动态数组, 实时更新不能用传统的for循环,
  * 如: for (var i = 0; i < element.childNodes.length; i++)//不建议使用]
