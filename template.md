@@ -18,12 +18,19 @@
 
 `高亮`
 [文字链接](https://github.com/Ivanwangcy "悬停显示")
-<br>列表:
+<br>
+###无序列表:
 * listitem
 * listitem
 * listitem
     * childitem
         * childitem
+
+<br>
+###有序列表:
+1. 封装
+2. 继承
+3. 多态
 <br>加图片
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
 
