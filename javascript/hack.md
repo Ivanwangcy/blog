@@ -29,3 +29,23 @@
               elem.attachEvent('on' + type, listener);
             };
 ```
+#Object.create的兼容实现
+```javascript
+//Object.create的兼容实现 :
+ 
+Object.create = null; // 置空create方法, 来测试下面的兼容实现
+if(!Object.create || typeof Object.create !== "function"){
+  Object.create = function(obj){
+    // console.info(obj);
+    if(!obj) return {}; //如果无参数, 或者参数为null和undefined直接返回一个 Object 对象;
+    if(typeof obj !== "object"){
+      throw new TypeError("Object prototype may only be an Object or null: " + obj);
+    }
+    function Fn(){}
+    Fn.prototype = obj;
+    return new Fn();
+  }
+}
+  var a = Object.create({x: 1, y: 2});
+    alert(a.x);
+```
