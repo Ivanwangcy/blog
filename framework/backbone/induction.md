@@ -36,3 +36,17 @@
       console.log(team1.get("name")); // setname
       console.log(team1.get("age")); // 19
 ```      
+## 模型的事件处理程序
+```javascript
+    var Team = Backbone.Model.extend({
+      initialize: function(){
+        this.bind("change", this.changeHandler);
+      },
+      changeHandler:function(){
+        alert("changed name value to: " + this.get("name"));
+      }
+    });
+
+    var team1 = new Team();
+    team1.set({name: "Hello"}); // 只有 set 函数才会触发 change 事件
+```
