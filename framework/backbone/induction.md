@@ -36,7 +36,7 @@
       console.log(team1.get("name")); // setname
       console.log(team1.get("age")); // 19
 ```      
-## 模型的事件处理程序
+## 模型的事件处理程序, set() 触发change事件, -- 使用 set() 提升封装原则
 ```javascript
     var Team = Backbone.Model.extend({
       initialize: function(){
@@ -48,5 +48,5 @@
     });
 
     var team1 = new Team();
-    team1.set({name: "Hello"}); // 只有 set 函数才会触发 change 事件
+    team1.set({name: "Hello"}); // 只有 set 函数才会触发 change 事件 成功 alert
 ```
