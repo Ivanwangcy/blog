@@ -1,4 +1,13 @@
-# Backbone Model 模型创建
+#Backbone 简单介绍
+## Backbone 引用及依赖库
+```html
+    <script src="lib/underscore.js" charset="utf-8"></script>
+    <script src="lib/zepto.js" charset="utf-8"></script>
+    <script src="lib/backbone.js" charset="utf-8"></script>
+```
+## Backbone 与 requireJS
+...
+## Backbone Model 模型创建
 
 ```javascript
       // 模型的3种赋值方法
