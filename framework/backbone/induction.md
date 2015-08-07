@@ -16,6 +16,8 @@
           name: "aaa" // 设置默认值
         }
       });
+      
+      // 模型实例化和 get/set 方法
       var team0 = new Team();
       console.log(team0.get("name")); // aaa
 
