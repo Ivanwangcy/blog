@@ -17,3 +17,27 @@ foreach($fruit as $val){
 $arr = array('0'=>'苹果');
 $arr = array();$arr[0]='苹果';
 ```
+###索引数组:
+```php
+$fruit = array(
+
+    '0'=>"苹果",
+
+    '1'=>"香蕉",
+
+    '2'=>"菠萝"
+
+); 
+```
+###关联数组: 
+```php
+$fruit = array(
+
+    'apple'=>"苹果",
+
+    'banana'=>"香蕉",
+
+    'pineapple'=>"菠萝"
+
+); 
+```
