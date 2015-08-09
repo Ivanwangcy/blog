@@ -12,3 +12,8 @@ foreach($fruit as $val){
 }
 ?>
 ```
+###数组赋值:
+```php
+$arr = array('0'=>'苹果');
+$arr = array();$arr[0]='苹果';
+```
