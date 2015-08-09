@@ -41,3 +41,20 @@ $fruit = array(
 
 ); 
 ```
+##函数:
+```php
+function say()
+{
+    echo 'hello world';
+}
+
+say();//在这里调用函数
+```
+###函数的参数:
+```php
+function sum($a, $b) {
+    echo $a + $b;
+}
+
+sum(1,2);//在这里调用函数计算1+2的值
+```
