@@ -82,3 +82,15 @@ $str = '苹果很好吃。';
 $str = str_replace('苹果', '香蕉', $str);//请将变量$str中的苹果替换成香蕉
 echo $str;
 ```
+###判断函数是否存在
+
+当我们创建了自定义函数，并且了解了可变函数的用法，为了确保程序调用的函数是存在的，经常会先使用function_exists判断一下函数是否存在。同样的method_exists可以用来检测类的方法是否存在。
+```php
+function func() {
+    echo 'exists';
+}
+$name = 'func';
+if (function_exists('func') ) { //判断函数是否存在
+    $name();
+}
+```
