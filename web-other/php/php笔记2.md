@@ -58,3 +58,27 @@ function sum($a, $b) {
 
 sum(1,2);//在这里调用函数计算1+2的值
 ```
+###函数返回值: 
+```php
+function sum($a, $b) {
+    return $a+$b;
+}
+$c = sum(1, 2);//在这里调用函数取得返回值
+```
+###可变函数
+```php
+function func() {
+    echo 'my function called.';
+}
+$name = 'func';
+
+$name();//调用可变函数
+```
+###内置函数
+
+内置函数指的是PHP默认支持的函数，PHP内置了很多标准的常用的处理函数，包括字符串处理、数组函数、文件处理、session与cookie处理等。
+```php
+$str = '苹果很好吃。';
+$str = str_replace('苹果', '香蕉', $str);//请将变量$str中的苹果替换成香蕉
+echo $str;
+```
