@@ -1,4 +1,4 @@
-## [http://www.php.net/](官网)
+## [PHP官网下载](http://www.php.net/)
 
 ##下载压缩包, 解压到指定位置,如: 
 D:\server\php
