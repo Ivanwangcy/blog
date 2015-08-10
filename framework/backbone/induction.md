@@ -1,5 +1,13 @@
-#Backbone 简单介绍
+#Backbone 简单介绍 -- Backbone 入门
 ##基本使用
+* 直接创建对象
+* 给构造函数添加实例方法和静态方法
+* 继承操作
+* 自定义事件
+* 数据与服务器
+* 路由与历史管理
+* 事件委托
+* 前端模板
 ## Backbone 引用及依赖库
 ```html
     <script src="lib/underscore.js" charset="utf-8"></script>
