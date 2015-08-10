@@ -80,6 +80,73 @@ unset($car); //销毁时会调用析构函数
 
 静态属性与方法可以在不实例化类的情况下调用，直接使用类名::方法名的方式进行调用。静态属性不允许对象使用->操作符调用。
 
+##对象继承
+
+继承是面向对象程序设计中常用的一个特性，汽车是一个比较大的类，我们也可以称之为基类，除此之外，汽车还分为卡车、轿车、东风、宝马等，因为这些子类具有很多相同的属性和方法，可以采用继承汽车类来共享这些属性与方法，实现代码的复用。
+
+```php
+class Car {
+    public $speed = 0; //汽车的起始速度是0
+    
+    public function speedUp() {
+        $this->speed += 10;
+        return $this->speed;
+    }
+}
+//定义继承于Car的Truck类
+class Truck {
+    public function speedUp() {
+        $this->speed += 60;
+        return $this->speed;
+    }
+}
+
+$car = new Truck();
+$car->speedUp();
+echo $car->speed;
+```
+##重载
+
+PHP中的重载指的是动态的创建属性与方法，是通过魔术方法来实现的。属性的重载通过__set，__get，__isset，__unset来分别实现对不存在属性的赋值、读取、判断属性是否设置、销毁属性。
+```php
+class Car {
+    public $speed = 10;
+
+    //在这里使用重载实现speedDown方法
+    public function __call($name, $args) {
+        if($name == 'speedDown') {
+            $this->speed -= 10;
+        }
+    }
+}
+$car = new Car();
+$car->speedDown(); //调用不存在的speedDown方法
+echo $car->speed;
+```
+##对象的高级特性
+
+对象比较，当同一个类的两个实例的所有属性都相等时，可以使用比较运算符==进行判断，当需要判断两个变量是否为同一个对象的引用时，可以使用全等运算符===进行判断。
+```php
+class Car {
+    public $name = 'car';
+    
+    public function __clone() {
+        $obj = new Car();
+        $obj->name = $this->name;
+    }
+}
+$a = new Car();
+$a->name = 'new car';
+$b = clone $a;
+if ($a == $b) echo '==';   //true
+if ($a === $b) echo '==='; //false
+
+$str = serialize($a); //对象序列化成字符串
+echo $str.'<br>';
+$c = unserialize($str); //反序列化为对象
+var_dump($c);
+```
+
 
 
 
