@@ -1,4 +1,5 @@
 #Backbone 简单介绍
+##基本使用
 ## Backbone 引用及依赖库
 ```html
     <script src="lib/underscore.js" charset="utf-8"></script>
