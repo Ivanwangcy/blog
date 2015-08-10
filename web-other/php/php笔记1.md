@@ -47,8 +47,9 @@
 ```php
 var_dump($n); // 输出变量类型
 memory_get_usage(); //内存使用情况
-unset($var); // 注销定义,变量值为NULL;
+unset($var); // 注销定义,变量值为NULL;销毁对象, 调用析构函数
 date_default_timezone_set('asia/shanghai'); // 设置时区
+$num = rand(1,50);//获取1至50的随机数
 ```
 ##双引号支持标量类型输出: (单引号会普通输出)
 ```php
