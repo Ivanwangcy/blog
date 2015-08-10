@@ -8,6 +8,7 @@
 * 路由与历史管理
 * 事件委托
 * 前端模板
+
 ## Backbone 引用及依赖库
 ```html
     <script src="lib/underscore.js" charset="utf-8"></script>
