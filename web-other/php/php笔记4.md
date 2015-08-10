@@ -87,5 +87,34 @@ echo $result;//结果显示99.90
 4. 在 %01 后面的 .2 （点2） 就很好理解了，它的意思是，小数点后的数字必须占2位。 如果这时候，$str 的值为9.234,则 $result的值将为9.23.
     为什么4 不见了呢？ 因为在小数点后面，按照上面的规定，必须且仅能占2位。 可是 $str 的值中，小数点后面占了3位，所以，尾数4被去掉了，只剩下 23。
 5. 最后，以 f "转换字符" 结尾。
+##字符串的合并与分割
 
+###1、php字符串合并函数implode()
+函数说明：implode(分隔符[可选], 数组)
+返回值：把数组元素组合为一个字符串
+例子：
+```php
+$arr = array('Hello', 'World!');
+$result = implode('', $arr);
+print_r($result);//结果显示Hello World!
+```
+###2、php字符串分隔函数explode()
+函数说明：explode(分隔符[可选], 字符串)
+返回值：函数返回由字符串组成的数组
+例子：
+```php
+$str = 'apple,banana';
+$result = explode(',', $str);
+print_r($result);//结果显示array('apple','banana')
+```
+##字符串的转义
+
+###php字符串转义函数addslashes()
+函数说明：用于对特殊字符加上转义字符，返回一个字符串
+返回值：一个经过转义后的字符串
+例子：
+```php
+$str = "what's your name?";
+echo addslashes($str);//输出：what\'s your name?
+```
 
