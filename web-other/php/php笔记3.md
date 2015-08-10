@@ -37,14 +37,16 @@ echo Car::getName(); //结果为“汽车”
 ##构造函数和析构函数
 
 ###PHP5可以在类中使用*__construct()*定义一个构造函数，具有构造函数的类，会在每次对象创建的时候调用该函数，因此常用来在对象创建的时候进行一些初始化工作。
-
+```php
 class Car {
    function __construct() {
        print "构造函数被调用\n";
    }
 }
 $car = new Car(); //实例化的时候 会自动调用构造函数__construct，这里会输出一个字符串
+```
 在子类中如果定义了__construct则不会调用父类的__construct，如果需要同时调用父类的构造函数，需要使用parent::__construct()显式的调用。
+```php
 class Car {
    function __construct() {
        print "父类构造函数被调用\n";
@@ -57,7 +59,9 @@ class Truck extends Car {
    }
 }
 $car = new Truck();
+```
 ###同样，PHP5支持析构函数，使用*__destruct()*进行定义，析构函数指的是当某个对象的所有引用被删除，或者对象被显式的销毁时会执行的函数。
+```php
 class Car {
    function __construct() {
        print "构造函数被调用 \n";
@@ -69,6 +73,7 @@ class Car {
 $car = new Car(); //实例化时会调用构造函数
 echo '使用后，准备销毁car对象 \n';
 unset($car); //销毁时会调用析构函数
+```
 当PHP代码执行完毕以后，会自动回收与销毁对象，因此一般情况下不需要显式的去销毁对象。
 
 
