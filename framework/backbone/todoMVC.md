@@ -47,7 +47,7 @@
       <br>
     </div>
 ```
-#JavaScript脚本
+###JavaScript脚本
 ```html
   <!-- Scripts -->
     <script src="lib/underscore.js" charset="utf-8"></script>
