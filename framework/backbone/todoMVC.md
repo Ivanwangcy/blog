@@ -23,7 +23,7 @@
 ```
 ### 应用程序HTML代码
 ```html
-    <div class="todoapp">
+    <div id="todoapp">
       <header>
         <h1>Todos</h1>
         <input id="new-todo" type="text" name="name" placeholder="What needs to be done?">
@@ -39,9 +39,20 @@
       </footer>
 
     </div>
+    <div id="instructions">
+      Double-click to edit a todo.
+    </div>
     <div id="credits">
       Created by Ivan
       <br>
     </div>
 ```
 #JavaScript脚本
+```html
+  <!-- Scripts -->
+    <script src="lib/underscore.js" charset="utf-8"></script>
+    <script src="lib/zepto.js" charset="utf-8"></script>
+    <script src="lib/backbone.js" charset="utf-8"></script>
+    <script src="lib/backbone.localStorage.js" charset="utf-8"></script>
+    <script src="js/todos.js" charset="utf-8"></script>
+```
