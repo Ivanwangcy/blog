@@ -10,7 +10,18 @@
 * 过滤所有已完成（或未完成）todo 列表；
 
 ## 静态HTML
-### HTML头部和JavaScript脚本
+### HTML头部
+```html
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Backbone.js Todos</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/todos.css" media="screen" title="no title" charset="utf-8">
+  </head>
+```
+### 应用程序HTML代码
 ```html
     <div class="todoapp">
       <header>
@@ -33,3 +44,4 @@
       <br>
     </div>
 ```
+#JavaScript脚本
