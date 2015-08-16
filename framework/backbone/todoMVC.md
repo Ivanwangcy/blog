@@ -56,3 +56,24 @@
     <script src="lib/backbone.localStorage.js" charset="utf-8"></script>
     <script src="js/todos.js" charset="utf-8"></script>
 ```
+###Template 模板
+···html
+<!-- item-template -->
+    <script type="text/template" id="item-template">
+      <div class="view">
+        <input id="checkItem" class="toggle" type="checkbox" name="name" <%= done ? "checked" : "" %> />
+        <label><%- title %></label>
+        <a class="destroy"></a>
+      </div>
+      <input class="edit" type="text" name="name" value="<%- title %>">
+    </script>
+
+    <!-- stats-template -->
+    <script type="text/template" id="stats-template">
+      <% if (done) { %>
+        <a id="clear-completed">Clear <%= done %> completed <%= done == 1 ? 'item' : 'items'%></a>
+      <% } %>
+      <div class="todo-count"><strong><%= remaining %> <%= remaining == 1 ? 'item' : 'items' %></strong>
+      </div>
+    </script>
+    ```
