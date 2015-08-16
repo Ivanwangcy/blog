@@ -1,4 +1,13 @@
 #todoMVC演示
+##Todos应用程序的架构, 需如下功能：
+* 描述单 todo 项的 Todo 模型；
+* 存储和持久化 todo 项的 TodoList 集合；
+* 创建 todo 项；
+* 展示 todo 列表；
+* 编辑现有 todo 项；
+* 标记一个 todo 项完状态（completed）；
+* 删除一个 todo 项；
+* 过滤所有已完成（或未完成）todo 列表；
 ```html
     <div class="todoapp">
       <header>
