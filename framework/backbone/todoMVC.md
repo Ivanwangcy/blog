@@ -57,7 +57,7 @@
     <script src="js/todos.js" charset="utf-8"></script>
 ```
 ###Template 模板
-···html
+```html
 <!-- item-template -->
     <script type="text/template" id="item-template">
       <div class="view">
