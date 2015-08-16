@@ -8,6 +8,7 @@
 * 标记一个 todo 项完状态（completed）；
 * 删除一个 todo 项；
 * 过滤所有已完成（或未完成）todo 列表；
+
 ## 静态HTML
 ### HTML头部和JavaScript脚本
 ```html
