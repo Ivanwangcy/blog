@@ -6,3 +6,4 @@ D:\server\php
 ##修改 php.ini文件
 
 ##windows下配置nginx+php环境
+#3配置start.bat文件
