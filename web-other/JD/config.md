@@ -1,5 +1,7 @@
 
 #环境配置：
+		
+##Nginx + PHP 配置：
 ```shell
 		location / {
             root   D:/workspace/m-html/v1.1;
@@ -17,8 +19,8 @@
 			fastcgi_param	SCRIPT_FILENAME $document_root$fastcgi_script_name;
 			include			fastcgi_params;
 		}
-```		
-##Nginx + PHP 配置：
+```
+##服务器启动：
 ```shell
 start_nginx.bat:
 @echo off
