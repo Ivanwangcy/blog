@@ -30,5 +30,5 @@ echo Starting nginx...
 D:\server\nginx\RunHiddenConsole.exe D:/server/nginx/nginx.exe -p D:/server/nginx/
 ```
 ##项目启动：
-
+url:http://localhost/html/new/index.php
 在本地登录时 先刷一下这个链接：localhost/client?functionId=login/testLogin&body={"pin":"18611909774_p"}
