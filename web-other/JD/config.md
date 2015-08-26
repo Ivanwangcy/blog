@@ -2,7 +2,7 @@
 #环境配置：
 		
 ##Nginx + PHP 配置：
-```shell
+```perl
 		location / {
             root   D:/workspace/m-html/v1.1;
             index  index.html index.htm index.php;
