@@ -6,4 +6,7 @@ $ git svn rebase 会在获取之后在本地进行更新，它会拉取服务器
 
 $ git commit -am 'Adding git-svn instructions to the README'  提交代码到暂存区
 $ git svn dcommit 提交到服务器
+
+$ git show-ref 查看所有引用的全名
+$ git svn branch opera 创建一个分支
 ```
