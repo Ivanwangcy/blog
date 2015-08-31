@@ -11,7 +11,7 @@ $ git show-ref 查看所有引用的全名
 $ git svn branch opera 创建一个分支
 $ git branch -d test  删除一个分支
 
-$ git rebase 
+$ git rebase  用于把一个分支的修改合并到当前分支。
 
 $ git checkout -f  强制还原工作区
 ```
