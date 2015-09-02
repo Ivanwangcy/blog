@@ -8,7 +8,7 @@ $ git commit -am 'Adding git-svn instructions to the README'  提交代码到暂
 $ git svn dcommit 提交到服务器
 
 $ git show-ref 查看所有引用的全名
-$ git branch opera 创建一个分支
+$ git branch -b opera 创建一个新分支
 $ git checkout opera 切换分支
 $ git branch -d test  删除一个分支
 
