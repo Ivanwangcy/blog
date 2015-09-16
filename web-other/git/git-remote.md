@@ -11,3 +11,8 @@ git push   //修改之后可以进行推送到服务器
 ```shell
 git pull
 ```
+```shell
+git add  // 暂存
+git commit -am "注释"
+git commit -m "注释"
+```
