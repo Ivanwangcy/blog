@@ -23,3 +23,7 @@ Merge made by the 'recursive' strategy.
 ```
 ##遇到冲突时的分支合并
 ##删除分支
+```shell
+$ git rebase
+$ git mergin
+```
