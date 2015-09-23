@@ -70,3 +70,4 @@ $ git reset HEAD benchmarks.rb  取消暂存 benchmarks.rb 文件, 变回已修�
 ```shell
 $ git checkout -- benchmarks.rb  抛弃文件的修改命令, 还原回最后提交的(或修改前的)版本(已添加到缓存区的改动，以及新文件，都不受影响。)
 ```
+###别名
