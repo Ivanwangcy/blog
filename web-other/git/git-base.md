@@ -4,6 +4,8 @@
 $ git config --global user.name "John Doe"    //配置用户名
 
 $ git config --global user.email johndoe@example.com    //配置邮箱
+
+$ git config --global credential.helper winstore  //保存密码
 ```
 ##查看配置信息
 ```shell
