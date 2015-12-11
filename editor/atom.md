@@ -78,6 +78,9 @@
 * `Ctrl+Alt+↑` 向上选中多行同时编辑
 * `Ctrl+Alt+↓` 向下选中多行同时编辑
 * `Ctrl+Alt+M` 选中标签内部整块内容或者代码块内容
+* 
+* `Ctrl+Shift+M` 编辑markdown文件时，打开markdown预览文件
+* `F11` 全屏编辑
 
 * `ctrl-shift-t, alt-shift-t`  命令窗口  安装 atom-terminal 插件
 * `CTRL-ALT-C` to open it.  打开颜色选择器
