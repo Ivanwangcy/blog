@@ -41,6 +41,10 @@ $ git config --global credential.helper store  //保存密码
 ```shell
 $ git status
 ```
+### 配置信息
+```shell
+$ git config --global --list  //查看配置信息
+```
 ### 删除文件
 ```shell
 $ git rm grit.gemspec  删除文件
