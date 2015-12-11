@@ -11,6 +11,6 @@ if (input_blessing && !reg.test(input_blessing)) {
 ##中文匹配
 ```javascript
 /^[\u4e00-\u9fa5]+$/
-/^[\u4e00-\u9fa5]+$/.test("我是中文")
+/^[\u4e00-\u9fa5]+$/.test("我是中文") // 不包含中文标点符号
 -> true
 ```
