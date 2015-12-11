@@ -36,21 +36,21 @@
 <br>加图片
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
 
----------------------------------------------------------------------------------
+---
 > 块引用
 >> 子区块
 >>> 子区块
 >>>> 子区块
 >>>>> 子区块
 
-###代码
----------------------------------------------------------
+### 代码
+---
 ```java
 public static void main(String[] args){
   System.out.println("Hello world!");//Java
 }
 ```
---------------------------------------------------------
+---
 ```javascript
 (function(){
   console.info("Hello world!");//javascript
