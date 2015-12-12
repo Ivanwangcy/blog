@@ -1,6 +1,6 @@
-#字符串操作
+# 字符串操作
 
-##去除字符串首尾的空格
+## 去除字符串首尾的空格
 
 PHP中有三个函数可以去掉字符串的空格
 trim去除一个字符串两端空格。
@@ -12,7 +12,7 @@ echo trim(" 空格 ")."<br>";
 echo rtrim(" 空格 ")."<br>";
 echo ltrim(" 空格 ")."<br>";
 ```
-##获取字符串的长度
+## 获取字符串的长度
 
 php中有一个神奇的函数，可以直接获取字符串的长度，这个函数就是strlen()。
 ```php
@@ -21,10 +21,10 @@ $love='I love you雨';
 echo strlen($love); // 13
 echo mb_strlen($love, "UTF8");//结果：11，此处的UTF8表示中文编码是UTF8格式，中文一般采用UTF8编码
 ```
-##字符串的截取
+## 字符串的截取
 
 php中有非常多的字符串处理函数，其中就有字符串截取函数。
-###1、英文字符串的截取函数substr()
+### 1、英文字符串的截取函数substr()
 函数说明：substr(字符串变量,开始截取的位置，截取个数）
 例如：
 ```php
@@ -32,7 +32,7 @@ $str='i love you';
 //截取love这几个字母
 echo substr($str, 2, 4);//为什么开始位置是2呢，因为substr函数计算字符串位置是从0开始的，也就是0的位置是i,1的位置是空格，l的位置是2。从位置2开始取4个字符，就是love。
 ```
-###2、中文字符串的截取函数mb_substr()
+### 2、中文字符串的截取函数mb_substr()
 函数说明：mb_substr(字符串变量,开始截取的位置，截取个数, 网页编码）
 ```php
 $str='我爱你，中国';
@@ -41,7 +41,7 @@ $str='我爱你，中国';
 
 echo mb_substr($str, 4, 2, 'utf8');//为什么开始位置是4呢，和上一个例子一样，因为mb_substr函数计算汉字位置是从0开始的，也就是0的位置是我,1的位置是爱，4的位置是中。从位置4开始取2个汉字，就是中国。中文编码一般是utf8格式
 ```
-##查找字符串
+## 查找字符串
 
 如果有一个字符串`$str = 'I want to study at imooc';`，怎么样找到其中的imooc在哪个位置呢？
 查找字符串，我们需要用到PHP的查找字符串函数strpos();
@@ -52,7 +52,7 @@ $str = 'I want to study at imooc';
 $pos = strpos($str, 'imooc');
 echo $pos;//结果显示19，表示从位置0开始，imooc在第19个位置开始出现
 ```
-##替换字符串
+## 替换字符串
 
 如果有一个字符串`$str = 'I want to learn js';`，怎么样将js字符替换成你想学的php字符呢？
 替换字符串，我们需要用到PHP的替换函数`str_replace()`
@@ -63,7 +63,7 @@ $str = 'I want to learn js';
 $replace = str_replace('js', 'php', $str);
 echo $replace;//结果显示I want to learn php
 ```
-##格式化字符串
+## 格式化字符串
 
 如果有一个字符串`$str = '99.9';`，怎么样使这个字符串变成99.90呢？
 我们需要用到PHP的格式化字符串函数sprintf()
@@ -87,9 +87,9 @@ echo $result;//结果显示99.90
 4. 在 %01 后面的 .2 （点2） 就很好理解了，它的意思是，小数点后的数字必须占2位。 如果这时候，$str 的值为9.234,则 $result的值将为9.23.
     为什么4 不见了呢？ 因为在小数点后面，按照上面的规定，必须且仅能占2位。 可是 $str 的值中，小数点后面占了3位，所以，尾数4被去掉了，只剩下 23。
 5. 最后，以 f "转换字符" 结尾。
-##字符串的合并与分割
+## 字符串的合并与分割
 
-###1、php字符串合并函数implode()
+### 1、php字符串合并函数implode()
 函数说明：implode(分隔符[可选], 数组)
 返回值：把数组元素组合为一个字符串
 例子：
@@ -98,7 +98,7 @@ $arr = array('Hello', 'World!');
 $result = implode('', $arr);
 print_r($result);//结果显示Hello World!
 ```
-###2、php字符串分隔函数explode()
+### 2、php字符串分隔函数explode()
 函数说明：explode(分隔符[可选], 字符串)
 返回值：函数返回由字符串组成的数组
 例子：
@@ -107,9 +107,9 @@ $str = 'apple,banana';
 $result = explode(',', $str);
 print_r($result);//结果显示array('apple','banana')
 ```
-##字符串的转义
+## 字符串的转义
 
-###php字符串转义函数addslashes()
+### php字符串转义函数addslashes()
 函数说明：用于对特殊字符加上转义字符，返回一个字符串
 返回值：一个经过转义后的字符串
 例子：
@@ -117,4 +117,3 @@ print_r($result);//结果显示array('apple','banana')
 $str = "what's your name?";
 echo addslashes($str);//输出：what\'s your name?
 ```
-
