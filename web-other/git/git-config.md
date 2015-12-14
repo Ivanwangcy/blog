@@ -4,7 +4,7 @@ git config [–-local|–-global|–-system] -l
 ```
 
 --local 仓库级的<br>
---global 全局级的
+--global 全局级的<br>
 --system 系统级的
 
 ```shell
