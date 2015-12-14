@@ -1,9 +1,11 @@
 #git配置
-git config [–local|–global|–system] -l
+```shell
+git config [–-local|–-global|–-system] -l
+```
 
---local 仓库级别的
---global 全局的
---system 系统级别的
+--local 仓库级的<br>
+--global 全局级的
+--system 系统级的
 
 ```shell
 $ git config --global user.name "John Doe"    //配置用户名
