@@ -1,5 +1,5 @@
-#Backbone 简单介绍 -- Backbone 入门
-##基本使用
+# Backbone 简单介绍 -- Backbone 入门
+## 基本使用
 * 直接创建对象
 * 给构造函数添加实例方法和静态方法
 * 继承操作
@@ -26,7 +26,7 @@
           name: "aaa" // 设置默认值
         }
       });
-      
+
       // 模型实例化和 get/set 方法
       var team0 = new Team();
       console.log(team0.get("name")); // aaa
