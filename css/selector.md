@@ -1,4 +1,4 @@
-#CSS  选择器分类
+# CSS  选择器分类
 1. 简单选择器
   * 标签选择器
   * 类选择器
@@ -24,8 +24,8 @@
       * li:lash-child 最后一个li标签
       * li:nth-child(even) 偶数项的li标签
       * li:nth-child(odd) 奇数项
-      * li:nth-child(3n+1) 1 4 7 10 ... 
-      * li:nth-last-child(3n+1) 从后往前算 
+      * li:nth-child(3n+1) 1 4 7 10 ...
+      * li:nth-last-child(3n+1) 从后往前算
       * only-child 选择只有一个子元素的标签
       * dd:first-of-type 第一个这种类型的标签
       * dt:last-of-type 最后一个dt
@@ -50,7 +50,7 @@
 3. 组合选择器
     * 后代选择器  .main h2{} 类main 下面的所有后代 h2 标签 包含 子代的子代等
     * 子选择器 .main>h2{} 类main 下属子代的 h2 标签
-    * 兄弟选择器 
+    * 兄弟选择器
     * h2+p{color:red;} 选择直接前面(相邻的)是h2标签的  p  标签
     * h2~p{color:red;} 选择前面同级别标签有h2的 p 标签 (不需要是紧邻的)
     * 选择器分组
@@ -61,14 +61,14 @@
       * 非继承属性 background, border, position
       * 在API文档中查看是否可继承: inherited  yes|no
 
-##**注意: 超链接(a标签) 样式顺序: L-V-H-A **
+## **注意: 超链接(a标签) 样式顺序: L-V-H-A **
 ```css
 a:link{}
 a:visited{}
 a:hover{}
 a:active{}
 ```
-#CSS 优先级
+# CSS 优先级
 * a = 行内元素                       1000
 * b = ID选择器的数量                 100
 * c = 类, 伪类和属性选择器的数量     10
