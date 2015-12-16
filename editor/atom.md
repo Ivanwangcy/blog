@@ -67,8 +67,8 @@
 * `Ctrl+Shift+D` 复制光标所在整行，插入在该行之后
 * `ctrl+shift+F` 在文件夹内查找，与普通编辑器不同的地方是sublime允许添加多个文件夹进行查找
 * `Ctrl+Shift+K` 删除整行, 同Ctrl+X
-* `Ctrl+Shift+L` 鼠标选中多行（按下快捷键），即可同时编辑这些行
-* `Ctrl+Shift+M` 选择括号内的内容（按住-继续选择父括号） , Atom 合并行, 当前整个代码块合并
+* `Ctrl+Shift+L` 切换当前文件使用的编程语言
+
 * `Ctrl+Shift+P` 打开命令面板
 * `Ctrl+Shift+/` 注释已选择内容
 * `Ctrl+PageDown 、Ctrl+PageUp` 文件按开启的前后顺序切换
@@ -81,6 +81,7 @@
 *
 * `Ctrl+Alt+B` Atom 标准代码格式化
 * `Ctrl+Shift+M` 编辑markdown文件时，打开markdown预览文件
+* `Ctrl+Shift+M` 选择括号内的内容（按住-继续选择父括号） , Atom 合并行, 当前整个代码块合并
 * `F11` 全屏编辑
 
 * `ctrl-shift-t, alt-shift-t`  命令窗口  安装 atom-terminal 插件
