@@ -11,7 +11,7 @@ $ git branch
   testing
   ```
 注意看 master 分支前的` * `字符：它表示当前所在的分支。
-##合并分支
+## 合并分支
 ```shell
 $ git checkout master
 $ git merge iss53
@@ -21,8 +21,8 @@ Merge made by the 'recursive' strategy.
  README | 1 +
  1 file changed, 1 insertion(+)
 ```
-##遇到冲突时的分支合并
-##删除分支
+## 遇到冲突时的分支合并
+## 删除分支
 ```shell
 $ git rebase
 $ git mergin
