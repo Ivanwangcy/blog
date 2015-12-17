@@ -1,9 +1,9 @@
-#git 分支
+# git 分支
 ##创建分支
 ```shell
 $ git branch testing 新建一个 testing 分支
 ```
-##查看分支
+## 查看分支
 ```shell
 $ git branch
   iss53
