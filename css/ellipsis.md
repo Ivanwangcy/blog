@@ -17,3 +17,4 @@
   -webkit-box-orient: vertical; /*垂直方向*/
   text-overflow: ellipsis; }
 ```
+## 盒模式
