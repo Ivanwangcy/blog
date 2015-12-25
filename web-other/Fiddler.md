@@ -13,3 +13,13 @@
 2. 抓包需要在同一个域中，建议安装360WiFi：
   * 手机代理设置：（点击 连接的 WiFi 名称 高级设置）
   * 手动设置选项：主机名->台式机IP地址 ， 端口：8888
+## Fiddler URL 过滤 (抓包过滤)
+1. 切换 Filters 面板
+2. Use Filters
+3. Request Headers
+4. Show only if URL contains (勾选)
+5. 需要过滤的关键字
+## 搜索和过滤当前的 Sessions (Search and Filter Sessions)
+1. Edit -> Find Sessions
+2. Find 关键字
+3. 勾选 Select matches
