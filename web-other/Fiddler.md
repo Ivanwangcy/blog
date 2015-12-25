@@ -4,6 +4,10 @@
 ## Chrome 抓包 代理设置
 1. 安装代理插件`SwitchyOmega`
 2. 新建情景模式，例如：`fiddler`
+3. 代理服务器设置：
+  * 代理协议 -> HTTP
+  * 代理服务器 -> 127.0.0.1
+  * 代理端口 -> 8888
 ## Fiddler 远程代理设置
 1. Tools -> Fiddler Options -> Connections 勾选 （Allow remote computers connect）
 2. 抓包需要在同一个域中，建议安装360WiFi：
