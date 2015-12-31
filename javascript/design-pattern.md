@@ -1,9 +1,9 @@
-#JavaScript 设计模式
-##模块模式(Module)
-##原型模式(prototype)
-##构造器模式(constructor)
-##外观模式(Facade)
-##单例模式(singleton)
+# JavaScript 设计模式
+## 模块模式(Module)
+## 原型模式(prototype)
+## 构造器模式(constructor)
+## 外观模式(Facade)
+## 单例模式(singleton)
 ##代理模式(proxy)
 ##工厂模式(factory)
 ##适配器模式(adaptor)
