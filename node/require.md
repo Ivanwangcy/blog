@@ -1,14 +1,11 @@
-# NodeJS
+# require函数详解
 
-## require 函数使用
-## require函数详解
-
-### 路径
+## 路径
 
 相对路径之当前目录：./xxx/xxx.js 或 ./xxx/xxx。
 相对路径之上级目录：../xxx/xxx.js 或 ../xxx/xxx。
 绝对路径：F:/xxx/xxx.js 或 /xxx/xxx.js 或 /xxx/xxx。
-require函数语法
+## require函数语法
 
 require(路径.扩展名)：
 如果 路径.扩展名 存在
@@ -41,7 +38,7 @@ require(模块名字)：
 
 文件结果
 
-require_study.js中的代码
+## require_study.js中的代码
 复制代码
  1 require('module_1_1.js');
  2 require('module_1_2');
