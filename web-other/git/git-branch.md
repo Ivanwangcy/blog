@@ -25,7 +25,6 @@ Merge made by the 'recursive' strategy.
 ## 删除分支
 ```shell
 $ git branch -d testing // 删除分支
-$ git mergin
 ```
 ## 其它
 ```shell
