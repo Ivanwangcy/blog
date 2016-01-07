@@ -42,3 +42,4 @@
 * Press C.
 
 ## 使用本地文件调试代码
+AutoResponses 面板
