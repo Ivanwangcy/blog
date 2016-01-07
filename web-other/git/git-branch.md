@@ -13,8 +13,8 @@ $ git branch
 注意看 master 分支前的` * `字符：它表示当前所在的分支。
 ## 合并分支
 ```shell
-$ git checkout master
-$ git merge iss53
+$ git checkout master // 切到 master
+$ git merge iss53  // 合并 iss53 分支
 /////////
 Auto-merging README
 Merge made by the 'recursive' strategy.
@@ -23,6 +23,11 @@ Merge made by the 'recursive' strategy.
 ```
 ## 遇到冲突时的分支合并
 ## 删除分支
+```shell
+$ git branch -d testing // 删除分支
+$ git mergin
+```
+## 其它
 ```shell
 $ git rebase
 $ git mergin
