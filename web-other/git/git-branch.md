@@ -24,7 +24,7 @@ Merge made by the 'recursive' strategy.
 ## 遇到冲突时的分支合并
 ## 删除分支
 ```shell
-$ git branch -d testing // 删除分支
+$ git branch -d testing // 删除分支 testing 
 ```
 ## 其它
 ```shell
