@@ -18,3 +18,5 @@
   text-overflow: ellipsis; }
 ```
 ## 盒模式
+display: box; 旧
+display: flex; 新
