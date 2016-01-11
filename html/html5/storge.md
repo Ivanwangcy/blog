@@ -3,4 +3,4 @@
 
 ## localStorge
 
-* 如果不支持storge setItem 会报异常
+* 如果不支持storge setItem 会报异常，例如无痕模式
