@@ -1,6 +1,6 @@
 # 本地存储
-## sessionStorge
+## sessionStorage
 
-## localStorge
+## localStorage
 
 * 如果不支持storge setItem 会报异常，例如无痕模式
