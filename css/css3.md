@@ -5,3 +5,7 @@
 /**/ 元素等比例缩放的解决方案
 width: 8.75rem;
 ```
+
+## Retina 视网膜屏（）高清
+2X Retina
+3X Retina
