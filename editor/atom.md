@@ -1,4 +1,4 @@
-#Atom Web前端开发编辑器(神器)
+# Atom Web前端开发编辑器(神器)
 [Atom](https://atom.io/)它是一款开源的文本编辑器
 
 安装简单, windows 版直接下载安装即可.其它平台可以使用源码安装.
@@ -7,7 +7,7 @@
 `Ctrl+Shift+P`打开命令面板可以查找所有命令.
 `Setting` 进入设置界面, 可以设置项目根目录;
 设置主题, 可以选择已有的主题;
-##包管理:
+## 包管理:
 * 常用的包
     * atom-terminal
     * color-picker
@@ -16,7 +16,7 @@
     * Docblockr package
     * Emmet plugin Atom editor
 
-##快捷键汇总:
+## 快捷键汇总:
 * `Ctrl+A` 全选
 * `Ctrl+B` 查找当前打开的文件
 * `Ctrl+C` 粘贴
@@ -86,3 +86,5 @@
 
 * `ctrl-shift-t, alt-shift-t`  命令窗口  安装 atom-terminal 插件
 * `CTRL-ALT-C` to open it.  打开颜色选择器
+
+## 块儿注释 安装 Docblockr Package
