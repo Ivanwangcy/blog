@@ -20,4 +20,4 @@ $(".scroller").scrollTop() // 同 scrollTop 可以赋值操作（定位）
 $(".artist-hide").height();
 ```
 ## 根据元素高度判断是否显示更多按钮
-需创建两个
+需创建两个相同的元素
