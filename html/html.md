@@ -1,8 +1,8 @@
 
-#全称 Hyper Text Markup Language -- 超文本标记语言
+# 全称 Hyper Text Markup Language -- 超文本标记语言
 
 ## html 发展史
-1991 html 
+1991 html
 
 1995 html2
 
@@ -17,12 +17,12 @@
 
 2008 Html5  * 开始
 
-**2014 HTML5 * 正式发布 ** 
+** 2014 HTML5 * 正式发布 ** 
 
-##HTML 文档结构
-* 文档声明 (html5 声明的简化) 
-```html 
-<!DOCTYPE html> 
+## HTML 文档结构
+* 文档声明 (html5 声明的简化)
+```html
+<!DOCTYPE html>
 ```
 * 文档头部
 ```html
@@ -49,4 +49,3 @@
 <script>document.createElement("header");</script>
 ```
 ，也可以使用shiv来解决兼容性问题。
-
