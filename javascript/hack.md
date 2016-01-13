@@ -20,7 +20,7 @@
     });
   }
 ```
-#window.getComputedStyle IE兼容实现
+# window.getComputedStyle IE兼容实现
 ```javascript
     // if(!window.getComputedStyle) IE兼容实现
     function currentStyle(element){
