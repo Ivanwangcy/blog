@@ -1,4 +1,4 @@
-#String.trim函数
+# String.trim函数
 ```javascript
 String.prototype.trim= function(){  
     // 用正则表达式将前后空格  
@@ -7,7 +7,7 @@ String.prototype.trim= function(){
     return this.replace(/(^\s*)|(\s*$)/g, "");  
 }
 ```
-#对象深拷贝
+# 对象深拷贝
 ```javascript
 /*对象深拷贝*/
 function clone(object){
@@ -23,7 +23,7 @@ function clone(object){
     return newObject;
 }
 ```
-#识别标准类型和内置对象类型
+# 识别标准类型和内置对象类型
 ```javascript
 function type(object){
       //不能直接使用 object.toString() 方法, 要调用Object原型方法
