@@ -1,6 +1,6 @@
-#代码规范(code convention)或者叫编程风格(style guideline)
-##格式化规则
-###缩进层级
+# 代码规范(code convention)或者叫编程风格(style guideline)
+## 格式化规则
+### 缩进层级
 推荐使用4个空格进行一个缩进层级;
 语句结尾加分号;
 行的长度规定在80个字符;
