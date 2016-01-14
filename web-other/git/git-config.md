@@ -1,4 +1,4 @@
-#git配置
+# git配置
 ```shell
 git config [–-local|–-global|–-system] -l
 ```
