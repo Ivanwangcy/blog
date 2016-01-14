@@ -1,4 +1,4 @@
-#使用 Git 操作SVN项目：
+# 使用 Git 操作SVN项目：
 ```shell
 $ git svn clone http://svn.360buy-develop.com/repos1/O2O/m-html/branches/webapp/v1.1/html  --克隆项目到本地
 $ git svn fetch  获取最新的数据
