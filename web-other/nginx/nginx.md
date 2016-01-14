@@ -1,4 +1,4 @@
-nginx 配置PHP
+# nginx 配置PHP
 ```perl
 # pass the PHP scripts to FastCGI server listening on127.0.0.1:9000
 #
