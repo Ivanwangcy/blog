@@ -1,5 +1,5 @@
-#Web SQL
-##创建表
+# Web SQL
+## 创建表
 ```javascript
   var db = openDatabase('wroxdb', '1.0', 'Test DB', '2*1024*1024');
 
@@ -19,7 +19,7 @@
               );
             });
 ```
-##查询
+## 查询
 ```javascript
 var db = openDatabase('wroxdb', '1.0', 'Test DB', 2*1024*1024);
       $(document).ready(function(){
