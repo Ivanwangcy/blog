@@ -1,9 +1,9 @@
-#IDE 
-##WebStorm
-##Eclipse
-##Android Studio
+# IDE
+## WebStorm
+## Eclipse
+## Android Studio
 
-#Text Editor
-##Atom
-##Sublime
-##Notepad Plus
+# Text Editor
+## Atom
+## Sublime Text
+## Notepad Plus
