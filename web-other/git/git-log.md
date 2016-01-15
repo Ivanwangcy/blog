@@ -44,4 +44,5 @@ git lg 108de63 --stat
 ```git
 git log --reverse --stat --since=2015-11-20 --abbrev-commit  从2015-11-19以后的所有记录倒序排列并缩写ID
 git lg --stat --since=2015-11-19 --until=2015-11-20  // 从2015-11-19 到 2015-11-20的提交记录
+git lgone --stat --after=2015-11-19 --before=2015-11-20  // 从2015-11-19 到 2015-11-20的提交记录 同上
 ```
