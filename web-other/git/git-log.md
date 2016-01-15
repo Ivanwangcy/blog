@@ -14,3 +14,10 @@ $ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Cre
 $ git lg  // 使用上面的别名
 $ git lg -5 // 只显示5条提交记录
 ```
+
+### git log 指定日期
+```git
+<!-- 在指定日期以前的提交记录 -->
+$ git log --until=2015-11-20 -30  
+$ git log --before=2015-11-20 -30  
+```
