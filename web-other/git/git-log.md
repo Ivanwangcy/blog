@@ -31,7 +31,7 @@ $ git log --after=2015-11-20 -30
 
 <!-- 日期倒序排列 从2015-11-20开始显示，前30条记录 -->
 $ git log --reverse --since=2015-11-20 -30
-$ git log --pretty=oneline --reverse --since=2015-11-20 -30 // 单行并倒序显示
+$ git log --pretty=oneline --reverse --since=2015-11-20  // 单行并倒序显示
 
 ```
 ### 指定ID号查看日志
@@ -42,5 +42,5 @@ git lg 108de63 --stat
 
 ### 综合应用
 ```git
-git lgone --reverse --stat --since=2015-11-20 -30
+git lgone --reverse --stat --since=2015-11-20 
 ```
