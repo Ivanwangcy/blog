@@ -39,7 +39,10 @@ $ git log --pretty=oneline --reverse --since=2015-11-20  // 单行并倒序显�
 $ git lgone 108de63 --stat
 $ git lg 108de63 --stat
 ```
-
+### 查看指定文件的log
+```git
+$ git log -- branches/webapp/v1.1/html/new/app/view/goodsDetails.js
+```
 ### 综合应用
 ```git
 $ git log --reverse --stat --since=2015-11-20 --abbrev-commit  从2015-11-19以后的所有记录倒序排列并缩写ID
