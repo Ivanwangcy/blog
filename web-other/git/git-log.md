@@ -5,7 +5,7 @@
 $ git log --pretty=oneline // 单行显示日志
 $ git log --oneline // 单行显示日志(简写id)
 $ git config --global alias.lgone "log --oneline"
-
+$ git log --abbrev-commit //简写ID
 $ git log --stat // 列出各个版本间的改动及行数
 $ git log --stat -n (-n,-1,-2 需要显示的条目数量) // 显示简要的增改行数统计
 
@@ -42,5 +42,5 @@ git lg 108de63 --stat
 
 ### 综合应用
 ```git
-git lgone --reverse --stat --since=2015-11-20 
+git lgone --reverse --stat --since=2015-11-20 --abbrev-commit
 ```
