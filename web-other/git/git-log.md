@@ -34,7 +34,13 @@ $ git log --reverse --since=2015-11-20 -30
 $ git log --pretty=oneline --reverse --since=2015-11-20 -30 // 单行并倒序显示
 
 ```
+### 指定ID号查看日志
+```git
+git lgone 108de63 --stat
+git lg 108de63 --stat
+```
+
 ### 综合应用
 ```git
-
+git lgone --reverse --stat --since=2015-11-20 -30
 ```
