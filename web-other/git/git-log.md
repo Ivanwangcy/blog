@@ -22,7 +22,12 @@ $ git log --until=2015-11-20 -30
 $ git log --before=2015-11-20 -30  
 ```
 ```git
-<!-- 在指定日期以后的提交记录 -->
+<!-- 在指定日期以后的提交记录 从今天开始显示  -->
 $ git log --since=2015-11-20 -30  
-$ git log --after=2015-11-20 -30  
+$ git log --after=2015-11-20 -30
+
+<!-- 日期倒序排列 从2015-11-20开始显示 -->
+$ git log --reverse --since=2015-11-20 -30
+$ git log --pretty=oneline --reverse --since=2015-11-20 -30 // 单行并倒序显示
+
 ```
