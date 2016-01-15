@@ -4,3 +4,4 @@
 ## localStorage
 本地存储，不清除缓存一直存在。
 * 如果不支持storge setItem 会报异常，例如无痕模式
+## ApplacationCache
