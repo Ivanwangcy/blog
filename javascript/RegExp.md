@@ -28,3 +28,7 @@ var myPattern:RegExp = /(\w+)\'(\w+)*/gi;  //单词匹配 (带'单词)
 
 var reg = /^[^\uD800-\uDBFF]+$/; // 过滤表情符号，表情符号是以 D800 开头 -  DBFF 结尾的4字节字符
 ```
+## app 端特殊字符过滤(Android)：
+```JavaScript
+var reg = "^[A-Za-z\\d\\u4E00-\\u9FA5\\p{P}‘’“”\\s]+$"; \p{P}标点符号等特殊字符， JavaScript中无效（不支持？）
+```
