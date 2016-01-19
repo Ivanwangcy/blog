@@ -27,6 +27,14 @@ myPattern =new RegExp( "\\b" + str +"\\b", "gi"); //匹配单词
 var myPattern:RegExp = /(\w+)\'(\w+)*/gi;  //单词匹配 (带'单词)
 
 var reg = /^[^\uD800-\uDBFF]+$/; // 过滤表情符号，表情符号是以 D800 开头 -  DBFF 结尾的4字节字符
+
+/**
+ * [regEmoji 非表情符号验证正则表达式 表情符号为4字节字符，长度为2，从D800-DBFF开头的]
+ * @type {RegExp}
+ * 😘😁😜😆😍 (这些特殊字符为表情符号)返回 false
+ * 其它文字都返回 true
+ */
+var regEmoji = /^[^\uD800-\uDBFF]+$/; //
 ```
 ## app 端特殊字符过滤(Android)：
 ```JavaScript
