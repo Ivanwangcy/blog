@@ -1,13 +1,13 @@
 # nginx 配置
-# nginx 启动
+## nginx 启动
 ```shell
 
-修改配置文件重新启动
+修改配置文件需重新启动
 $ nginx.exe -s reload
 或者
 $ nginx -s reload
 ```
-# nginx 加 PHP 启动 批处理
+## nginx 加 PHP 启动 批处理
 ```shell
 @echo off
 echo Starting PHP FastCGI...
