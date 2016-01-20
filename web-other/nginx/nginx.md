@@ -17,7 +17,13 @@ server {
 
     location / {
         # root   D:/workspace/pdj_static_cdn/; # 到家 CDN
-        root   D:/workspace/o2o-trade-static-activity-cdn/; # 活动页 CDN
+        root   D:/workspace; # 活动页 CDN
+        autoindex on;
+        autoindex_localtime on;
+    }
+    location /client {
+        proxy_pass   http://XXX.XX.com/client;
+        # proxy_pass   http://XXX.XX.com/client;
     }
 }
 
@@ -31,7 +37,7 @@ server {
         root   D:/workspace/pdj_h5_static/;
         index  index.php index.htm index.html;
     }
-    
+
     error_page   500 502 503 504  /50x.html;
     location = /50x.html {
         root   html;
@@ -53,4 +59,79 @@ server {
         include        fastcgi_params;
     }
 }
+
+server {
+  listen       8002;
+  server_name  localhost;
+
+  location / {
+    root   D:/workspace/o2o-trade-static-activity-html/;
+    index  index.php index.htm index.html;
+    autoindex on;
+          autoindex_localtime on;
+  }
+}
+
+server {
+       listen       8007;
+       server_name  localhost;
+
+       #charset koi8-r;
+
+       #access_log  logs/host.access.log  main;
+
+       location / {
+           #root   D:/workspace/m-html/branches/webapp/v1.1;
+     root   D:/workspace/m-html/branches/webapp/v1.1/;
+           index  index.html index.htm index.php;
+       }
+
+       #error_page  404              /404.html;
+
+       # redirect server error pages to the static page /50x.html
+       #
+       error_page   500 502 503 504  /50x.html;
+       location = /50x.html {
+           root   html;
+       }
+
+       # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+       #
+       #location ~ \.php$ {
+       #    proxy_pass   http://127.0.0.1;
+       #}
+
+   location /client {
+     # proxy_pass http://prepdjm.jd.com/client;
+     proxy_pass http://testpdjm.jd.com/client; # 第二套预发布
+
+     # proxy_pass http://pdj.jd.com/client;
+   }
+
+   location ~ \.php$ {
+     #root			D:/workspace/m-html/branches/webapp/v1.1;
+     root			D:/workspace/m-html/branches/webapp/v1.1/;
+     fastcgi_pass 	127.0.0.1:90;
+     fastcgi_index	index.php;
+     fastcgi_param	SCRIPT_FILENAME $document_root$fastcgi_script_name;
+     include			fastcgi_params;
+   }
+
+       # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+       #
+       #location ~ \.php$ {
+       #    root           html;
+       #    fastcgi_pass   127.0.0.1:9000;
+       #    fastcgi_index  index.php;
+       #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+       #    include        fastcgi_params;
+       #}
+
+       # deny access to .htaccess files, if Apache's document root
+       # concurs with nginx's one
+       #
+       #location ~ /\.ht {
+       #    deny  all;
+       #}
+   }
 ```
