@@ -1,10 +1,23 @@
 # nginx 配置
 # nginx 启动
 ```shell
-$ nginx.exe -s reload
 
+修改配置文件重新启动
+$ nginx.exe -s reload
 或者
 $ nginx -s reload
+```
+# nginx 加 PHP 启动 批处理
+```shell
+@echo off
+echo Starting PHP FastCGI...
+D:\server\nginx\RunHiddenConsole.exe D:/server/php5/php-cgi.exe -b 127.0.0.1:90 -c D:/server/php5/php.ini
+echo Starting PHP FastCGI...
+D:\server\nginx\RunHiddenConsole.exe D:/server/php5/php-cgi.exe -b 127.0.0.1:9000 -c D:/server/php5/php.ini
+echo Starting PHP FastCGI...
+D:\server\nginx\RunHiddenConsole.exe D:/server/php5/php-cgi.exe -b 127.0.0.1:9001 -c D:/server/php5/php.ini
+echo Starting nginx...
+D:\server\nginx\RunHiddenConsole.exe D:/server/nginx/nginx.exe -p D:/server/nginx/
 ```
 ## nginx 配置PHP 本地代理
 ```perl
