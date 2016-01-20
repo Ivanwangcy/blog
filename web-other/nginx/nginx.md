@@ -73,39 +73,28 @@ server {
 }
 
 server {
-       listen       8007;
-       server_name  localhost;
+     listen       8007;
+     server_name  localhost;
 
-       #charset koi8-r;
+     location / {
+         #root   D:/workspace/m-html/branches/webapp/v1.1;
+         root   D:/workspace/m-html/branches/webapp/v1.1/;
+         index  index.html index.htm index.php;
+     }
 
-       #access_log  logs/host.access.log  main;
+     # redirect server error pages to the static page /50x.html
+     #
+     error_page   500 502 503 504  /50x.html;
+     location = /50x.html {
+         root   html;
+     }
 
-       location / {
-           #root   D:/workspace/m-html/branches/webapp/v1.1;
-     root   D:/workspace/m-html/branches/webapp/v1.1/;
-           index  index.html index.htm index.php;
-       }
-
-       #error_page  404              /404.html;
-
-       # redirect server error pages to the static page /50x.html
-       #
-       error_page   500 502 503 504  /50x.html;
-       location = /50x.html {
-           root   html;
-       }
-
-       # proxy the PHP scripts to Apache listening on 127.0.0.1:80
-       #
-       #location ~ \.php$ {
-       #    proxy_pass   http://127.0.0.1;
-       #}
 
    location /client {
-     # proxy_pass http://prepdjm.jd.com/client;
-     proxy_pass http://testpdjm.jd.com/client; # 第二套预发布
+     # proxy_pass http://XXX.XX.com/client;
+     proxy_pass http://XXX.XX.com/client; # 第二套预发布
 
-     # proxy_pass http://pdj.jd.com/client;
+     # proxy_pass http://XXX.XX.com/client;
    }
 
    location ~ \.php$ {
@@ -117,21 +106,5 @@ server {
      include			fastcgi_params;
    }
 
-       # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-       #
-       #location ~ \.php$ {
-       #    root           html;
-       #    fastcgi_pass   127.0.0.1:9000;
-       #    fastcgi_index  index.php;
-       #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
-       #    include        fastcgi_params;
-       #}
-
-       # deny access to .htaccess files, if Apache's document root
-       # concurs with nginx's one
-       #
-       #location ~ /\.ht {
-       #    deny  all;
-       #}
-   }
+ }
 ```
