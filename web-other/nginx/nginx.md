@@ -72,38 +72,38 @@ server {
   }
 
   server {
-       listen       8007;
-       server_name  localhost;
+    listen       8007;
+    server_name  localhost;
 
-       location / {
-           #root   D:/workspace/m-html/branches/webapp/v1.1;
-           root   D:/workspace/m-html/branches/webapp/v1.1/;
-           index  index.html index.htm index.php;
-       }
+    location / {
+       #root   D:/workspace/m-html/branches/webapp/v1.1;
+       root   D:/workspace/m-html/branches/webapp/v1.1/;
+       index  index.html index.htm index.php;
+    }
 
-       # redirect server error pages to the static page /50x.html
-       #
-       error_page   500 502 503 504  /50x.html;
-       location = /50x.html {
-           root   html;
-       }
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+       root   html;
+    }
 
 
-     location /client {
-       # proxy_pass http://XXX.XX.com/client;
-       proxy_pass http://XXX.XX.com/client; # 第二套预发布
+   location /client {
+     # proxy_pass http://XXX.XX.com/client;
+     proxy_pass http://XXX.XX.com/client; # 第二套预发布
 
-       # proxy_pass http://XXX.XX.com/client;
-     }
-
-     location ~ \.php$ {
-       #root			D:/workspace/m-html/branches/webapp/v1.1;
-       root			D:/workspace/m-html/branches/webapp/v1.1/;
-       fastcgi_pass 	127.0.0.1:90;
-       fastcgi_index	index.php;
-       fastcgi_param	SCRIPT_FILENAME $document_root$fastcgi_script_name;
-       include			fastcgi_params;
-     }
-
+     # proxy_pass http://XXX.XX.com/client;
    }
+
+   location ~ \.php$ {
+     #root			D:/workspace/m-html/branches/webapp/v1.1;
+     root			D:/workspace/m-html/branches/webapp/v1.1/;
+     fastcgi_pass 	127.0.0.1:90;
+     fastcgi_index	index.php;
+     fastcgi_param	SCRIPT_FILENAME $document_root$fastcgi_script_name;
+     include			fastcgi_params;
+   }
+
+ }
 ```
