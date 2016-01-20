@@ -1,6 +1,11 @@
 # nginx 配置
 # nginx 启动
+```shell
+$ nginx.exe -s reload
 
+或者
+$ nginx -s reload
+```
 ## nginx 配置PHP 本地代理
 ```perl
 # pass the PHP scripts to FastCGI server listening on127.0.0.1:9000
