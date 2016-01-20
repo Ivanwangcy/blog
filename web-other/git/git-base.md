@@ -29,6 +29,7 @@ $ git add *.c        //(git add .)  当前所有文件加入暂存区
 $ git add README        //
 $ git commit -m 'initial project version'        //提交文件
 $ git commit -a -m 'initial project version'        //提交文件, 跳过暂存直接提交(-a)
+git commit --amend -m "Add an author/email comment" // 修改前一次提交
 克隆仓库
 $ git clone git://github.com/schacon/grit.git        // 如果想要用其它名称, 在最后可以定义新建的目录名, 如下:
 $ git clone git://github.com/schacon/grit.git mygrit
