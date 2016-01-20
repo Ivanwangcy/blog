@@ -5,3 +5,4 @@
 ```git
 git --version  // 查看git版本
 ```
+这个终端比 `github客户端` 自带的好用；当然也可以直接使用github客户端
