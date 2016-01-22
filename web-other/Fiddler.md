@@ -41,10 +41,10 @@
 
 * Press C.
 
-## 使用本地文件调试代码
+## 使用本地文件调试代码（改变响应参数）
 AutoResponses 面板
-1. 勾选上面3个选项：√ Enable rules √ Unmatched requests passthrough √ Enable Latency
-2. 将右侧需要
+1. 勾选上面3个选项：√ Enable rules √ Unmatched requests passthrough √ Enable Latency；
+2. 将左侧需要需要拦截的URL拖入右侧列表；
 ## 筛选
 在下边命令行直接筛选抓包数据。
 ```shell
