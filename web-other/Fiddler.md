@@ -43,6 +43,8 @@
 
 ## 使用本地文件调试代码
 AutoResponses 面板
+1. 勾选上面3个选项：√ Enable rules √ Unmatched requests passthrough √ Enable Latency
+2. 将右侧需要
 ## 筛选
 在下边命令行直接筛选抓包数据。
 ```shell
