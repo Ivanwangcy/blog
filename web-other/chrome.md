@@ -22,3 +22,5 @@
 1. No throttling 下拉选框->选择网络或者自定义网络
 ## Sources 查看源文件
 ## Resources 资源 查看本地存储，包括：Cookies, Storage, Cache
+## Console 控制台
+* 强大的JS脚步调试工具，可执行各种JS脚步；
