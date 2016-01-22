@@ -14,4 +14,7 @@
 <!-- 苹果手机，移动端Webapp设置 -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- 定义每5秒刷新一次页面 -->
+<meta http-equiv="refresh" content="5" />
 ```
