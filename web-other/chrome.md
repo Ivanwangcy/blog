@@ -21,4 +21,4 @@
 ### 网络慢速模拟
 1. No throttling 下拉选框->选择网络或者自定义网络
 ## Sources 查看源文件
-## Resources 资源
+## Resources 资源 查看本地存储，包括：Cookies, Storage, Cache
