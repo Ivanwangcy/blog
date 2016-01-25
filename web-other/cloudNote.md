@@ -20,12 +20,12 @@
 * 联网时指定缓存文件夹，随时随地翻阅查看（可以离线查看）；
 * 看到有用的都可以分享到有道云笔记；  
 ## 使用 MarkDown 写作
-就像写代码一样写博客，markdown语法很少很简单，只需考虑内容，无需考虑排版；[markdown语法](http://wowubuntu.com/markdown/index.html)
+就像写代码一样写博客，markdown语法很少很简单，只需考虑内容，无需考虑排版；[markdown语法](http://wowubuntu.com/markdown/index.html)  
 ## GitHub 开源的知识宝库  
 * 收藏好代码好项目；
 * 支持markdown（适合开发人员的写作语法）；
 * 为开源做贡献；
-* 个人 github 是最好的简历；
+* 个人 github 是最好的简历；  
 ## 网络资源共享-云存储
 云存储软件推荐，360云盘，百度云，微盘等，各种学习资源应有尽有；  
 * 海量空间，想存多少存多少；
