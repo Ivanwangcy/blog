@@ -46,6 +46,7 @@ AutoResponses 面板
 1. 勾选上面3个选项：`√` Enable rules `√` Unmatched requests passthrough `√` Enable Latency；
 2. 将左侧需要需要拦截的URL拖入右侧列表；
 3. 在 Rule Editor 栏修改指向；
+4. 编辑后保存；
 ## 筛选
 在下边命令行直接筛选抓包数据。
 ```shell
