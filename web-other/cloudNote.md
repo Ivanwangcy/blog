@@ -29,4 +29,7 @@
 * 个人 github 是最好的简历；
 ## 网络资源共享-云存储
 云存储软件推荐，360云盘，百度云，微盘等，各种学习资源应有尽有；  
-[云资源搜索](http://www.56pan.com/s.php?q=JavaScript&wp=2)
+* 海量空间，想存多少存多少；
+* [云资源搜索](http://www.56pan.com/s.php?q=JavaScript&wp=2);
+## 其它网络资源
+* http://www.imooc.com/course/list?c=fe [慕课网]( http://www.imooc.com/course/list?c=fe);
