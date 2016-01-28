@@ -14,3 +14,11 @@ try{
 ```javascript
 location.protocol + '//' + location.host + location.pathname + location.hash
 ```
+## 相同view之间的跳转无效
+```
+#storeList/storetypeId:1,2
+#storeList/storetypeId:6,13
+```
+解决方法：添加onhashchange方法，侦听hash值的变化。
+## 页面计时器清零  
+每一个含有计时器的页面，在页面离开的时候添加leave方法，清除计时器。
