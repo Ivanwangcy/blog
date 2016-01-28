@@ -32,3 +32,8 @@ location.protocol + '//' + location.host + location.pathname + location.hash
  */
 var regEmoji = /^[^\uD800-\uDBFF]+$/; //
 ```
+## 手机默认将数字检测为电话号码
+在 `head` 中增加如下标签，不识别电话号码
+```
+<meta name="format-detection" content="telephone=no" />
+```
