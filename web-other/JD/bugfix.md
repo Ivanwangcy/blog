@@ -1,6 +1,6 @@
 # 工作中常见问题
 ## 无痕浏览
-不支持sessionStorage 和 localStorage
+无痕模式下不支持sessionStorage 和 localStorage, 需要异常检测。
 ```javascript
 var sessionStorageEnabled = false;
 try{
