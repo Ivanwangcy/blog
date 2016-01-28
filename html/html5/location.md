@@ -4,4 +4,8 @@
 navigator.geolocation.getCurrentPosition(function(position){
   console.log(position)
 });
+//监听地址变化
+navigator.geolocation.watchPosition(function(position){
+  console.log(position)
+});
 ```
