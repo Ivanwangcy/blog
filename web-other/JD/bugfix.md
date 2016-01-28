@@ -59,6 +59,7 @@ if ($(".order-addresslist").height() <= $(".address-pop-cont").height()) {
     });
 }
 ```
+* 关闭弹窗后允许页面滚动
 ```javascript
 $(window).unbind('touchmove');
 ```
