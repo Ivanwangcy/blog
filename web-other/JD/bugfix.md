@@ -37,3 +37,28 @@ var regEmoji = /^[^\uD800-\uDBFF]+$/; //
 ```
 <meta name="format-detection" content="telephone=no" />
 ```
+## 弹窗后禁止底部页面滚动
+* 普通弹窗禁止底部页面滚动
+```javascript
+$(window).bind('touchmove', function (e) {
+    e.preventDefault();
+});
+```
+* 复购弹窗内部滚动，禁止底部页面滚动
+```javascript
+if ($(".order-addresslist").height() <= $(".address-pop-cont").height()) {
+    $(window).bind('touchmove', function (e) {
+        e.preventDefault();
+    });
+} else {
+    $(window).bind('touchmove', function (e) {
+        var $element = $(e.target);
+        if ($element.parents('.address-pop-cont').length <= 0) {
+            e.preventDefault();
+        }
+    });
+}
+```
+```javascript
+$(window).unbind('touchmove');
+```
