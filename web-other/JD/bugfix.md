@@ -22,3 +22,13 @@ location.protocol + '//' + location.host + location.pathname + location.hash
 解决方法：添加onhashchange方法，侦听hash值的变化。
 ## 页面计时器清零  
 每一个含有计时器的页面，在页面离开的时候添加leave方法，清除计时器。
+## 过滤表情符号（数据库不支持表情符号，前端处理）
+```javascript
+/**
+ * [regEmoji 非表情符号验证正则表达式 表情符号为4字节字符，长度为2，从D800-DBFF开头的]
+ * @type {RegExp}
+ * (这些特殊字符为表情符号)返回 false
+ * 其它文字都返回 true
+ */
+var regEmoji = /^[^\uD800-\uDBFF]+$/; //
+```
