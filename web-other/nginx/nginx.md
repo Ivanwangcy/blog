@@ -128,3 +128,4 @@ server {
 
  }
 ```
+## 修改`C:\Windows\System32\drivers\etc\hosts`
