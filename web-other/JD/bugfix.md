@@ -44,7 +44,7 @@ $(window).bind('touchmove', function (e) {
     e.preventDefault();
 });
 ```
-* 复购弹窗内部滚动，禁止底部页面滚动
+* 复购弹窗内部有滚动，禁止底部页面滚动
 ```javascript
 if ($(".order-addresslist").height() <= $(".address-pop-cont").height()) {
     $(window).bind('touchmove', function (e) {
