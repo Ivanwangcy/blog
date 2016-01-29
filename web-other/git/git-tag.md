@@ -2,4 +2,10 @@
 # 增加标签
 ```git
 $ git tag -a V1.0 -m "Version 1.0"  // 新建标签并增加标签说明
+$ git tag -a V2.2 8645692 -m "add tag" // 给指定版本增加标签
+```
+# 查看标签
+```git
+$ git tag  // 查看所有标签
+$ git show V2.2   // 查看标签详情
 ```
