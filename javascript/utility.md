@@ -32,3 +32,14 @@ function type(object){
     return Object.prototype.toString.call(object).slice(8,-1).toLowerCase();
   }
 ```
+# 字符串驼峰替换(两种方式)
+```javascript
+var name = "account-name-name";
+// 第一种方法
+// name.replace(/([a-z]+)(\-)([a-z])/g,);
+name.replace(/\-([a-z])/g,function($,$1){
+  return $1.toUpperCase();
+});
+// 第二种方法
+name.replace(/\-([a-z])/g,RegExp.$1.toUpperCase());
+```
