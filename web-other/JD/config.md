@@ -21,7 +21,7 @@
 		}
 ```
 ## 服务器启动：
-```shell
+```bash
 start_nginx.bat:
 @echo off
 echo Starting PHP FastCGI...

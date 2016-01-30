@@ -1,5 +1,5 @@
 # git配置
-```shell
+```bash
 git config [–-local|–-global|–-system] -l
 ```
 
@@ -7,7 +7,7 @@ git config [–-local|–-global|–-system] -l
 --global 全局级的<br>
 --system 系统级的
 
-```shell
+```bash
 $ git config --global user.name "John Doe"    //配置用户名
 $ git config --global user.email johndoe@example.com    //配置邮箱
 $ git config --global credential.helper store   //保存密码

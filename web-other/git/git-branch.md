@@ -1,10 +1,10 @@
 # git 分支
 ## 创建分支
-```shell
+```bash
 $ git branch testing 新建一个 testing 分支
 ```
 ## 查看分支
-```shell
+```bash
 $ git branch
   iss53
 * master
@@ -12,7 +12,7 @@ $ git branch
   ```
 注意看 master 分支前的` * `字符：它表示当前所在的分支。
 ## 合并分支
-```shell
+```bash
 $ git checkout master // 切到 master
 $ git merge iss53  // 合并 iss53 分支
 /////////
@@ -23,11 +23,11 @@ Merge made by the 'recursive' strategy.
 ```
 ## 遇到冲突时的分支合并
 ## 删除分支
-```shell
+```bash
 $ git branch -d testing // 删除分支 testing
 ```
 ## 其它
-```shell
+```bash
 $ git rebase
 $ git mergin
 ```

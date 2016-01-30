@@ -1,5 +1,5 @@
 # 使用 Git 操作SVN项目：
-```shell
+```bash
 $ git svn clone http://svn.360buy-develop.com/repos1/O2O/m-html/branches/webapp/v1.1/html  --克隆项目到本地
 $ git svn fetch  获取最新的数据
 $ git svn rebase 会在获取之后在本地进行更新，它会拉取服务器上所有最新的改变，再次基础上衍合你的修改

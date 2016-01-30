@@ -1,6 +1,6 @@
 ## git checkout
 ## git discard change
-```git
+```bash
 // 撤销 某个文件的修改
 $ git checkout  -- branches/webapp/v1.1/html/new/lib/common/utility.js
 
