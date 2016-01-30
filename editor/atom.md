@@ -87,4 +87,6 @@
 * `ctrl-shift-t, alt-shift-t`  命令窗口  安装 atom-terminal 插件
 * `CTRL-ALT-C` to open it.  打开颜色选择器
 
+* `Ctrl+Alt+←` 像左选中整个单词
+* `Ctrl+Alt+→` 像右选中整个单词
 ## 块儿注释 安装 Docblockr Package

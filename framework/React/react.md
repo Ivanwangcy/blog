@@ -30,4 +30,6 @@ var HelloMessage = React.createClass({
     return <h1>Hello {this.props.name}</h1>
   }
 })
+// 使用
+<HelloMessage name="John"/>
 ```
