@@ -25,6 +25,7 @@ var listItem = <div>
 ```
 ## 自定义 Dom 元素
 ```javascript
+// 自定义属性
 var HelloMessage = React.createClass({
   render: function() {
     return <h1>Hello {this.props.name}</h1>
@@ -32,4 +33,27 @@ var HelloMessage = React.createClass({
 })
 // 使用
 <HelloMessage name="John"/>
+
+// 自定义结构
+var NotesList = React.createClass({
+  render: function() {
+    return (
+      <ol>
+      {
+        this.props.children.map( function(child){
+            return <li>{child}</li>;
+          } )
+      }
+      </ol>
+    );
+  }
+})
+// 渲染
+React.render(
+  <NotesList>
+    <span>Hello</span>
+    <span>world</span>
+  </NotesList>,
+  document.body
+)
 ```
