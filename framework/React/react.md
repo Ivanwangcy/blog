@@ -1,5 +1,5 @@
-# React.js
-## 虚拟DOM
+# React.js 入门
+## 虚拟DOM jsx/babel
 ```javascript
 // 创建
 var title = <h1>Hello World!</h1>;
