@@ -1,4 +1,5 @@
 # React.js 入门
+引入
 ## 虚拟DOM jsx/babel
 ```javascript
 // 创建
@@ -14,7 +15,7 @@ var listItem = <div>
   }
 </div>;
 ```
-## Hello World!
+## Hello World! 使用 `type="text/babel"` jsx语法糖
 ```html
 <script type="text/babel">
   React.render(
