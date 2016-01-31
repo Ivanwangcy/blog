@@ -1,5 +1,4 @@
 # React.js 入门
-引入
 ## 虚拟DOM jsx/babel
 ```javascript
 // 创建
