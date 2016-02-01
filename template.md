@@ -1,11 +1,11 @@
 大标题
-=============
+==
 中标题
--------------
+---
 补空行, 下面增加一条线
 
 ---
-
+图标:ok:
 
 # 一级标题
 ## 二级标题
@@ -22,7 +22,7 @@
 `高亮`
 [文字链接](https://github.com/Ivanwangcy "悬停显示")
 <br>
-### 无序列表:
+## 无序列表:
 * listitem
 * listitem
 * listitem
@@ -30,7 +30,7 @@
         * childitem
 
 <br>
-### 有序列表:
+## 有序列表:
 1. 封装
 2. 继承
 3. 多态
@@ -44,7 +44,7 @@
 >>>> 子区块
 >>>>> 子区块
 
-### 代码
+## 代码
 ---
 ```java
 public static void main(String[] args){
@@ -57,3 +57,14 @@ public static void main(String[] args){
   console.info("Hello world!");//javascript
 }());
 ```
+---
+```bash
+$ npm install jquery --save # 安装jQuery
+```
+## 绘制表格
+| Tables | Are | Cool |
+| ------ |:---:| ----:|
+| col 3 is | right-aligned | $1600 |
+| col 2 is | centered | $12 |
+| zebra stripes | are neat | $1 |
+## 绘制流程图
