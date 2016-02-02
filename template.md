@@ -36,6 +36,10 @@
 3. 多态
 <br>加图片
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
+## 链接
+<http://www.baidu.com>
+## 邮箱
+<wcy5211678@163.com>
 
 ---
 > 块引用
@@ -68,3 +72,4 @@ $ npm install jquery --save # 安装jQuery
 | col 2 is | centered | $12 |
 | zebra stripes | are neat | $1 |
 ## 绘制流程图
+### 序列表
