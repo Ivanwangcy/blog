@@ -16,5 +16,9 @@ var names = {0:'Alice', 1:'Emily', 2:'Kate', length: 3};
 var newArray5 = [].slice.call(names); // ES5 写法
 var newArray6 = Array.from(names); // ES6 写法
 console.log("%s and %s", newArray5, newArray6);
+
+// 字符串也可以使用Array.from
+Array.from('hello')
+// ['h', 'e', 'l', 'l', 'o']
 ```
-## 
+##
