@@ -9,7 +9,7 @@ var newNames = names.map(function(name){
 });
 ```
 ## Array.from() 用法 ES6
-将对象转换成数组，包括类数组（arguments对象）。
+将对象转换成数组，包括类数组（arguments对象, DOM操作返回的NodeList集合）。
 ```javascript
 var names = {'0':'Alice', '1':'Emily', '2':'Kate', length: 3};
 var names = {0:'Alice', 1:'Emily', 2:'Kate', length: 3};
