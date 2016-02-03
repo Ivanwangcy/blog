@@ -17,3 +17,4 @@ var newArray5 = [].slice.call(names); // ES5 写法
 var newArray6 = Array.from(names); // ES6 写法
 console.log("%s and %s", newArray5, newArray6);
 ```
+## 
