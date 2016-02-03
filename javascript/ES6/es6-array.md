@@ -21,4 +21,7 @@ console.log("%s and %s", newArray5, newArray6);
 Array.from('hello')
 // ['h', 'e', 'l', 'l', 'o']
 ```
-##
+## Array.of()
+```javascript
+Array.of(3, 11, 8) // [3,11,8]
+```
