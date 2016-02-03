@@ -25,3 +25,4 @@ Array.from('hello')
 ```javascript
 Array.of(3, 11, 8) // [3,11,8]
 ```
+## Array.find()
