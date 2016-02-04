@@ -14,3 +14,15 @@ let add = x => x+x;
 console.log(...[1,2,3]);
 // 1 2 3
 ```
+### 替代数组的apply方法
+由于扩展运算符可以展开数组，所以不再需要apply方法，将数组转为函数的参数了。
+```javascript
+// ES5的写法
+Math.max.apply(null, [14, 3, 77])
+
+// ES6的写法
+Math.max(...[14, 3, 77])
+
+// 等同于
+Math.max(14, 3, 77);
+```
