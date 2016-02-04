@@ -1,3 +1,4 @@
+## ES6 新增语法
 ## let 关键字
 ```javascript
 let param = 123;
