@@ -10,3 +10,4 @@ log('Hello') // Hello World
 log('Hello', 'China') // Hello China
 log('Hello', '') // Hello
 ```
+    
