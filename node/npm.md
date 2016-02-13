@@ -13,7 +13,7 @@ $ npm ls # 列出当前安装的了所有包
 * -save和save-dev可以省掉你手动修改package.json文件的步骤。
 ```bash
 npm install module-name -save # 自动把模块和版本号添加到dependencies部分
-npm install module-name -save-dve # 自动把模块和版本号添加到devdependencies部分
+npm install module-name -save-dev # 自动把模块和版本号添加到devdependencies部分
 
 # 简写 全局安装（同时安装多个包 空格隔开）
 npm i -g webpack webpack-dev-server
