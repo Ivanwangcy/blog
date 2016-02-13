@@ -19,3 +19,20 @@ npm install module-name -save-dev # 自动把模块和版本号添加到devdepen
 npm i -g webpack webpack-dev-server
 ```
 至于配置文件区分这俩部分，是用于区别开发依赖模块和产品依赖模块，devDepandencies主要是配置测试框架， 例如jshint、mocha。
+
+## npm package.json 配置
+### scripts 配置运行 命令
+```javascript
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --devtool eval --progress --colors",
+    "deploy": "NODE_ENV=production webpack -p"
+  }
+```
+执行配置的命令
+```bash
+$ npm test # 执行测试命令
+
+$ npm run dev # 使用 npm run 执行自定义命令
+$ npm run deploy
+```
