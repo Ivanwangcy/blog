@@ -20,4 +20,7 @@ $ git push origin --tags
 ## 删除标签
 ```bash
 $ git tag -d V1.0.1  # 删除标签的命令
+
+$ git push origin :refs/tags/V1.0.1  # 删除远程服务器的标签
+
 ```
