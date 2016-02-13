@@ -54,12 +54,12 @@ $ git config --global --list  //查看配置信息
 ```
 ### 删除文件
 ```bash
-$ git rm grit.gemspec  删除文件
-$ git rm --cached readme.txt 删除文件版本记录, 仅保留本地文件
+$ git rm grit.gemspec  # 删除文件
+$ git rm --cached readme.txt # 删除文件版本记录, 仅保留本地文件
 ```
 ### 移动文件
 ```bash
-$ git mv file_from file_to  文件改名
+$ git mv file_from file_to  #文件改名
 ```
 
 ### 查看提交历史
@@ -70,7 +70,7 @@ $ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Cre
 ### 撤销操作
 #### 修改最后一次提交
 ```bash
-$git commit --amend    提交时忘了暂存某些修改, 可以先补上暂存操作，然后再运行--amend 提交：
+$ git commit --amend    提交时忘了暂存某些修改, 可以先补上暂存操作，然后再运行--amend 提交：
 
 $ git commit -m 'initial commit'
 $ git add forgotten_file
