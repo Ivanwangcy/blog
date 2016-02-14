@@ -34,6 +34,7 @@
 * `Ctrl+P`   同Ctrl+T快速搜索项目中的文件
 * `Ctrl+/` 注释整行（如已选择内容，同“Ctrl+Shift+/”效果）
 * `Ctrl+Shift+C` 转换为 utf8
+
 * `Ctrl+R` 搜索指定文件的函数标签，函数名称搜索，跳转至函数所在行
 * `Ctrl+G` 跳转到指定行
 * `Ctrl+KT` 折叠属性
@@ -89,4 +90,5 @@
 
 * `Ctrl+Alt+←` 像左选中整个单词
 * `Ctrl+Alt+→` 像右选中整个单词
+* `Ctrl+,`  打开设置面板
 ## 块儿注释 安装 Docblockr Package
