@@ -6,19 +6,23 @@
 3. 快捷键 `F12`；
 ## 选择元素
 1. 点亮第一个箭头图标，或者按快捷键 `Ctrl+Shift+C` 进行切换
-## 手机模式
+## Device 手机模式
 1. 点亮手机图标 或者按快捷键 `Ctrl+Shift+M` 进行切换
 2. 选择设备（Device）
-
-## Elements
+## Emulation 模拟经纬度和重力传感器
+1. 下方点击 Emulation 模拟器面板
+2. 勾选 Emulate geolocation coordinates (模拟地理位置坐标)
+3. 填写需要模拟的经纬度 -> Lat (latitude 维度) ，Lon(longitude 经度)
+4. 加速度设置 -> 分别设置α，β，γ
+## Elements 元素
 * 选择页面元素，定位当前元素并且可编辑；
 * 右侧可编辑CSS样式；
-## Network
+## Network 网络
 * 查看请求状态；
 * 查看资源类型, 默认`XHR`请求；
 * 选中其中一项可以查看请求入参与出参；
 * 5项tab功能，不同方式查看请求；
-### 网络慢速模拟
+## Throttling 网络慢速模拟(限制流量)
 1. No throttling 下拉选框->选择网络或者自定义网络
 ## Sources 查看源文件
 * 可以在JS脚本文件中加入断点；
