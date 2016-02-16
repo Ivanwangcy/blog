@@ -29,7 +29,7 @@
 ## Resources 资源 查看本地存储，包括：Cookies, Storage, Cache
 ## Console 控制台
 * 强大的JS脚步调试工具，可执行各种JS脚步；
-* 控制台调试代码输出，console.log(), console.info(), console.error(), console.time(), console.timeEnd()等；
+* 控制台调试代码输出，console.log(), console.info(), console.error(), console.dir(), console.time(), console.timeEnd()等；
 
 ### log()
 支持格式化输出。
