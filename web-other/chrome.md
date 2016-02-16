@@ -31,8 +31,11 @@
 * 强大的JS脚步调试工具，可执行各种JS脚步；
 * 控制台调试代码输出，console.log(), console.debug(), console.info(), console.warn(), console.error(), console.dir(), console.table(), console.time(), console.timeEnd()等；
 
-### log()
-支持格式化输出。
+### log(), debug(), info(), warn(), error() 区别
+用法相同，都支持格式化输出。
+* info() 有 蓝色i图标 :information_source:；
+* warn() 有 黄色叹号图标 :heavy_exclamation_mark:；
+* error() 有 红色错误图标 :x:；
 ### time()，timeEnd()
 这两个方法用于计时，可以算出一个操作所花费的准确时间。
 ```javascript
