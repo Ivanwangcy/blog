@@ -64,8 +64,13 @@ console.timeEnd("Array initialize");
 ```
 time方法表示计时开始，timeEnd方法表示计时结束。它们的参数是计时器的名称。调用timeEnd方法之后，console窗口会显示“计时器名称: 所耗费的时间”。
 ## Emulation 模拟器 -> 模拟经纬度和重力感应
-1. 下方点击 Emulation 模拟器面板
+### Device 设备选项
+1. 下方点击 Emulation 模拟器面板；
 2. 勾选 Emulate geolocation coordinates (模拟地理位置坐标)
 3. 填写需要模拟的经纬度 -> Lat (latitude 维度) ，Lon(longitude 经度)
 4. 加速度设置 -> 分别设置α，β，γ
 ## Rendering 监控渲染过程
+1. Enable paint flashing 高亮显示渲染与重绘过程；
+2. Show layer border 显示页面层级边框；
+3. Show FPS meter 显示每秒帧数；
+4. Show scroling perf issues 显示
