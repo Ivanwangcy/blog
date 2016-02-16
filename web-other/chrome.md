@@ -25,11 +25,7 @@
 ## 切换手机模式 Device
 1. 点亮手机图标 或者按快捷键 `Ctrl+Shift+M` 进行切换
 2. 选择设备（Device）
-## Emulation 模拟经纬度和重力传感器
-1. 下方点击 Emulation 模拟器面板
-2. 勾选 Emulate geolocation coordinates (模拟地理位置坐标)
-3. 填写需要模拟的经纬度 -> Lat (latitude 维度) ，Lon(longitude 经度)
-4. 加速度设置 -> 分别设置α，β，γ
+
 ## Elements 元素
 * 选择页面元素，定位当前元素并且可编辑；
 * 右侧可编辑CSS样式；
@@ -67,3 +63,9 @@ console.timeEnd("Array initialize");
 // Array initialize: 1914.481ms
 ```
 time方法表示计时开始，timeEnd方法表示计时结束。它们的参数是计时器的名称。调用timeEnd方法之后，console窗口会显示“计时器名称: 所耗费的时间”。
+## Emulation 模拟器 -> 模拟经纬度和重力感应
+1. 下方点击 Emulation 模拟器面板
+2. 勾选 Emulate geolocation coordinates (模拟地理位置坐标)
+3. 填写需要模拟的经纬度 -> Lat (latitude 维度) ，Lon(longitude 经度)
+4. 加速度设置 -> 分别设置α，β，γ
+## Rendering 监控渲染过程
