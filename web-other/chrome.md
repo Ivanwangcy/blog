@@ -31,6 +31,8 @@
 * 强大的JS脚步调试工具，可执行各种JS脚步；
 * 控制台调试代码输出，console.log(), console.info(), console.error(), console.time(), console.timeEnd()等；
 
+### log()
+支持格式化输出。
 ### time()，timeEnd()
 这两个方法用于计时，可以算出一个操作所花费的准确时间。
 ```javascript
