@@ -6,6 +6,21 @@ var arr = [1, 2];
 ```
 # Array 的实例方法
 Array实例对象的方法，都是数组实例才能使用。如果不想创建实例，只是想单纯调用这些方法，可以写成[].method.call(调用对象，参数) 的形式，或者Array.prototype.method.call(调用对象，参数)的形式。
+## valueOf方法，toString方法
+
+valueOf方法返回数组本身。
+```javascript
+var a = [1, 2, 3];
+a.valueOf() // [1, 2, 3]
+```
+toString 方法返回数组的字符串形式。
+```javascript
+var a = [1, 2, 3];
+a.toString() // "1,2,3"
+
+var a = [1, 2, 3, [4, 5, 6]];
+a.toString() // "1,2,3,4,5,6"
+```
 ## push方法，pop方法
 ## join
 ## reverse
