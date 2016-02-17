@@ -1,5 +1,10 @@
-# 数组操作
-## split
+# Array 数组操作方法
+Array 是JavaScript最常用的内置对象之一。Array 可以作为一个构造函数，生成新的数组。
+*通常使用对象字面量来生成一个数组对象，不推荐使用构造函数。*
+```javascript
+var arr = [1, 2];
+```
+## push方法，pop方法
 ## join
 ## reverse
 # 示例
