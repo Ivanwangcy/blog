@@ -23,7 +23,11 @@ npm install module-name -save-dev # 自动把模块和版本号添加到devdepen
 npm i -g webpack webpack-dev-server
 ```
 至于配置文件区分这俩部分，是用于区别开发依赖模块和产品依赖模块，devDepandencies主要是配置测试框架， 例如jshint、mocha。
-
+## npm 自身升级
+```sh
+$ npm --version # 查看NPM版本
+$ npm install -g npm@3.7.2 # 安装指定版本的 NPM
+```
 ## npm package.json 配置
 ### scripts 配置运行 命令
 ```javascript
