@@ -1,9 +1,11 @@
-# Array 数组操作方法
+# Array 数组对象
 Array 是JavaScript最常用的内置对象之一。Array 可以作为一个构造函数，生成新的数组。
 *通常使用对象字面量来生成一个数组对象，不推荐使用构造函数。*
 ```javascript
 var arr = [1, 2];
 ```
+# Array 的实例方法
+Array实例对象的方法，都是数组实例才能使用。如果不想创建实例，只是想单纯调用这些方法，可以写成[].method.call(调用对象，参数) 的形式，或者Array.prototype.method.call(调用对象，参数)的形式。
 ## push方法，pop方法
 ## join
 ## reverse
