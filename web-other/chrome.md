@@ -76,4 +76,4 @@ time方法表示计时开始，timeEnd方法表示计时结束。它们的参数
 1. Enable paint flashing 高亮显示渲染与重绘过程；
 2. Show layer border 显示页面层级边框；
 3. Show FPS meter 显示每秒帧数；
-4. Show scroling perf issues 显示
+4. Show scroling perf issues 显示滚动性能问题
