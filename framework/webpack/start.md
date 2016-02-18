@@ -26,6 +26,10 @@ $ webpack # 读取配置文件打包
 $ webpack --progress --colors # 美化打包输出
 
 $ webpack --progress --colors --watch # 自动编译，无需每次修改文件手动编译
+
+$ webpack -p # 压缩产品级别
+
+$ webpack -d # 输出SourceMap
 ```
 
 ## webpack-dev-server 开发环境服务器
