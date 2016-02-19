@@ -34,6 +34,7 @@ var a = [1, 2, 3, [4, 5, 6]];
 a.toString() // "1,2,3,4,5,6"
 ```
 ## push方法，pop方法
+## splice方法，slice方法
 ## join
 ## reverse
 # 示例
