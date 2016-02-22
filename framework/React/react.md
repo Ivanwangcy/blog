@@ -57,3 +57,5 @@ React.render(
   document.body
 )
 ```
+# 常见错误
+1. Invariant Violation: \_registerComponent(...): Target container is not a DOM element. 父元素没找到，确保执行代码前页面中存在此元素；初始化时，注意js文件的加载顺序。
