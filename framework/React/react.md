@@ -1,5 +1,5 @@
 # React.js 入门
-## 虚拟DOM jsx/babel
+## 虚拟DOM jsx/babel 使用ReactDOM.render()渲染
 ```javascript
 // 创建
 var title = <h1>Hello World!</h1>;
@@ -17,7 +17,7 @@ var listItem = <div>
 ## Hello World! 使用 `type="text/babel"` jsx语法糖
 ```html
 <script type="text/babel">
-  React.render(
+  ReactDOM.render(
     <h1>Hello, world!</h1>,
     document.getElementById('example')
   );
@@ -49,7 +49,7 @@ var NotesList = React.createClass({
   }
 })
 // 渲染
-React.render(
+ReactDOM.render(
   <NotesList>
     <span>Hello</span>
     <span>world</span>
