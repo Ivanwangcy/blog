@@ -1,7 +1,7 @@
 # React.js 入门
 ## 虚拟DOM jsx/babel 使用ReactDOM.render()渲染
 ```javascript
-// 创建
+// 创建 JSX 组件
 var title = <h1>Hello World!</h1>;
 
 var names = ['Alice', 'Emily', 'Kate'];
@@ -25,7 +25,7 @@ var listItem = <div>
 ```
 ## 自定义 Dom 元素
 ```javascript
-// 自定义属性
+// 自定义组件，获取自定义属性
 var HelloMessage = React.createClass({
   render: function() {
     return <h1>Hello {this.props.name}</h1>
