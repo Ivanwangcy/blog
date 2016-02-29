@@ -8,5 +8,6 @@ Android 平台默认浏览器（Chrome），从25及以后版本不再支持通�
 ## 解决方案：
 Android提供了更智能的Intent协议，使用这种协议可以解决上述问题。如果手机能匹配到相应的APP，则会直接打开，如没有安装，则会跳到手机默认的应用商店。intent比scheme相对完善的一点是，提供一个打开失败去向的URL选项。
 参考链接： https://developer.chrome.com/multidevice/android/intents
+chrome 25以上版本使用：intent:开头的协议可以解决。
 
 **希望提供一个intent协议与H5进行联调，评估一下会有哪些问题：是否影响埋点统计，有多大工作量，对以前版本有没有影响。。。**
