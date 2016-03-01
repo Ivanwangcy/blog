@@ -63,3 +63,5 @@ if ($(".order-addresslist").height() <= $(".address-pop-cont").height()) {
 ```javascript
 $(window).unbind('touchmove');
 ```
+# 唤起App
+#[参考](https://github.com/Ivanwangcy/blog/web-other/browser/openapp.md "intent协议参考")
