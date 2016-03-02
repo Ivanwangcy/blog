@@ -76,15 +76,15 @@ $ git commit --amend
 
 ### 取消已经暂存的文件
 ```bash
-$ git reset HEAD benchmarks.rb  取消暂存 benchmarks.rb 文件, 变回已修改未暂存的状态;
+$ git reset HEAD benchmarks.rb  # 取消暂存 benchmarks.rb 文件, 变回已修改未暂存的状态;
 ```
 ### 取消对文件的修改
 ```bash
-$ git checkout -- benchmarks.rb  抛弃文件的修改命令, 还原回最后提交的(或修改前的)版本(已添加到缓存区的改动，以及新文件，都不受影响。)
+$ git checkout -- benchmarks.rb  # 抛弃文件的修改命令, 还原回最后提交的(或修改前的)版本(已添加到缓存区的改动，以及新文件，都不受影响。)
 ```
 ### 别名
 ### 撤销与回滚
 ```bash
-$ git reset --hard 可以回退到某个提交
-$ git revert 可以撤销某个提交，撤销会产生一个新的提交
+$ git reset --hard # 可以回退到某个提交
+$ git revert # 可以撤销某个提交，撤销会产生一个新的提交
 ```
