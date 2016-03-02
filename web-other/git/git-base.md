@@ -1,15 +1,15 @@
 # git笔记 常用命令总结
 ## 配置信息
 ```bash
-$ git config --global user.name "John Doe"    //配置用户名
+$ git config --global user.name "John Doe"    # 配置用户名
 
-$ git config --global user.email johndoe@example.com    //配置邮箱
-$ git config --global credential.helper store   //保存密码
+$ git config --global user.email johndoe@example.com    # 配置邮箱
+$ git config --global credential.helper store   # 保存密码
 ```
 
 ## 获取帮助
 ```bash
-$ git help <verb>         //比如要学习 config -> git help config
+$ git help <verb>         # 比如要学习 config -> git help config
 ```
 
 ## Git 仓库
@@ -19,25 +19,25 @@ $ git help <verb>         //比如要学习 config -> git help config
 $ git init
 ```
 ### 文件跟踪和提交
-```bash
+```Bash
 # 加入暂存区
-$ git add *.c        //(git add .)  当前所有文件加入暂存区
-$ git add README        //
+$ git add *.c        # (git add .)  当前所有文件加入暂存区
+$ git add README        #
 
 # 提交
-$ git commit -m 'initial project version'        //提交文件
-$ git commit -a -m 'initial project version'        //提交文件, 跳过暂存直接提交(-a)
+$ git commit -m 'initial project version'        # 提交文件
+$ git commit -a -m 'initial project version'        # 提交文件, 跳过暂存直接提交(-a)
 
 Change the previous commit
-$ git commit --amend -m "Add an author/email comment" // 修改前一次提交
+$ git commit --amend -m "Add an author/email comment" #  修改前一次提交
 
 # 克隆仓库
-$ git clone git://github.com/schacon/grit.git        // 如果想要用其它名称, 在最后可以定义新建的目录名, 如下:
-$ git clone git://github.com/schacon/grit.git mygrit
+$ git clone git:# github.com/schacon/grit.git        #  如果想要用其它名称, 在最后可以定义新建的目录名, 如下:
+$ git clone git:# github.com/schacon/grit.git mygrit
 ```
 ### 保存密码
 ```bash
-$ git config --global credential.helper store  //保存密码
+$ git config --global credential.helper store  # 保存密码
 ```
 ### 检查文件状态
 ```bash
@@ -45,7 +45,7 @@ $ git status
 ```
 ### 配置信息
 ```bash
-$ git config --global --list  //查看配置信息
+$ git config --global --list  # 查看配置信息
 ```
 ### 删除文件
 ```bash
