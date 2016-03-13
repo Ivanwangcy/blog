@@ -1,4 +1,20 @@
 # React.js 入门
+## basic 创建 React 对象
+```javascript
+var ExampleApplication = React.createClass({
+  render: function() {
+    var message = "React has bean successfully running:" + this.props.name;
+    return React.DOM.p(null, message);
+  }
+});
+
+var ExampleApplicationFactory = React.createFactory(ExampleApplication);
+
+ReactDOM.render(
+  ExampleApplicationFactory({name: "哈哈"}),
+  document.getElementById('container')
+)
+```
 ## 虚拟DOM jsx/babel 使用ReactDOM.render()渲染
 ```javascript
 // 创建 JSX 组件
