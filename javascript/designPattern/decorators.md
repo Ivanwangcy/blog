@@ -1,5 +1,5 @@
 # Decorators 装饰器模式
-
+装饰器用于包装一个函数。
 ```javascript
 function caculate(times){
   let num = 0;
