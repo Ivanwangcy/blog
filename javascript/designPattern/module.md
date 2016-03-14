@@ -7,7 +7,7 @@
 如果改变一个成员的可见性, 我们必须修改每一个曾经使用过该成员的地方. 暴露在外部的接口尽量不要频繁修改;
 无法为私有成员创建自动化单元测试;
 示例代码如下:
-https://github.com/Ivanwangcy/ISourcePlayer/blob/master/design-pattern/module.js
+https://github.com/Ivanwangcy/webTutorial/blob/master/design-pattern/module.js
 
 
 Revealing Module (揭示模块) 模式
