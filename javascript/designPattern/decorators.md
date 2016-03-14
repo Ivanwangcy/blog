@@ -4,7 +4,7 @@
 function caculate(times){
   let num = 0;
   while(num < times) num++;
-  console.log(num);
+  // console.log(num);
 }
 
 function log(fn){
