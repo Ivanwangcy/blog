@@ -11,3 +11,89 @@ Android提供了更智能的Intent协议，使用这种协议可以解决上述�
 chrome 25以上版本使用：intent:开头的协议可以解决。
 ## 注意：
 **希望提供一个intent协议与H5进行联调，评估一下会有哪些问题：是否影响埋点统计，有多大工作量，对以前版本有没有影响。。。**
+
+## 开心消消乐打开app的示例(它不支持在微信中打开)
+```javascript
+var mobileAppInstall = (function () {
+    var ua = navigator.userAgent;
+    var redirectTimeout;
+
+    function getChromeIntent(url, fallback_url) {
+        return "intent://xxl.happyelements.com#Intent" +
+            ";scheme=" + url +
+            ";package=com.happyelements.AndroidAnimal" +
+            ";S.browser_fallback_url=" + encodeURIComponent(fallback_url) +
+            ";end";
+    }
+
+    var appInstall = {
+        isChrome: ua.match(/Chrome\/([\d.]+)/) || ua.match(/CriOS\/([\d.]+)/),
+        isAndroid: ua.match(/(Android);?[\s\/]+([\d.]+)?/),
+        timeoutDuration: 500,
+        iosVersion: iOSversion(),
+        chromeVersion: chromeVersion(),
+        /**
+         * 尝试跳转appurl,如果跳转失败，进入h5url
+         * @param {Object} appurl 应用地址
+         * @param {Object} h5url  http地址
+         */
+        open: function (appurl, h5url) {
+            try {
+                appInstall.addTimeout(h5url);
+                appInstall.openApp(appurl);
+                redirectHelp = false;
+                $("help").onclick = function () {
+                    appInstall.openApp(appurl, h5url);
+                };
+            } catch (e) {
+            };
+        },
+        openApp: function (appurl) {
+            setTimeout(function () {
+                appInstall.openAppByFrame(appurl);
+                if (appInstall.iosVersion && appInstall.iosVersion[0] >= 9) {
+                    window.location = appurl;
+                }
+                if (appInstall.isChrome && appInstall.isAndroid && appInstall.chromeVersion && appInstall.chromeVersion > 18) {
+                    window.location = appurl;
+                }
+            }, appInstall.timeoutDuration);
+        },
+        openH5: function (h5url) {
+            dc.redirect(h5url, true);
+        },
+        openAppByFrame: function(appurl) {
+            var iframe = document.createElement("iframe");
+            iframe.style.display = "none";
+            iframe.style.border = "none";
+            iframe.style.width = "1px";
+            iframe.style.height = "1px";
+            iframe.src = appurl;
+            document.body.appendChild(iframe);
+        },
+        openInChrome: function(appurl, h5url) {
+            location.replace(getChromeIntent(appurl, h5url));
+        },
+        addTimeout: function(h5url) {
+            var begin = Date.now();
+            var redirectTimeoutDuration = appInstall.timeoutDuration + 500;
+            redirectTimeout = setTimeout(function() {
+                if (appInstall.iosVersion && appInstall.iosVersion[0] >= 9) {
+                    if (Date.now() - begin < redirectTimeoutDuration + 100) {
+                        return;
+                    }
+                }
+                h5url && appInstall.openH5(h5url);
+            }, redirectTimeoutDuration);
+            window.addEventListener("pagehide", function () {
+                clearTimeout(redirectTimeout);
+            }, false);
+            window.addEventListener("blur", function () {
+                clearTimeout(redirectTimeout);
+            }, false);
+        }
+    }
+    return appInstall;
+})();
+
+```
