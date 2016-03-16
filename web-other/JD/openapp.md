@@ -6,4 +6,10 @@
 分享链接无法打开app，一般从微信中分享的链接都会带有`from=singlemessage&isappinstalled=0`这样的参数，关键在于from=singlemessage这个参数阻止了唤起app，把它去掉就可以打开app了。isappinstalled参数是用来区分是否为app应用中分享。`0`为微信内部分享，`1`为其它app应用程序中分享出来的链接。
 链接格式如下：  
 http://xxxxx.xx.com/xxx/xxx.html?from=singlemessage&isappinstalled=0  
-http://xxxxx.xx.com/xxx/xxx.html?isappinstalled=0
+http://xxxxx.xx.com/xxx/xxx.html?isappinstalled=0  
+
+微信微信分享会根据分享的不同,为原始链接拼接如下参数:
+
+朋友圈   from=timeline&isappinstalled=0
+微信微信群   from=groupmessage&isappinstalled=0
+好友分享 from=singlemessage&isappinstalled=0
