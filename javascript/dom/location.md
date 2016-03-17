@@ -1,4 +1,5 @@
-window.location 对象所包含的属性
+# window.location 属性详解
+## window.location 对象所包含的属性
 
 属性	 描述
 hash	 从井号 (#) 开始的 URL（锚）
