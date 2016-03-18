@@ -12,4 +12,8 @@ Mozilla/5.0 (Linux; Android 4.4.2; zh-cn; SAMSUNG-SM-G9008W_TD/1.0 Android/4.4.2
 Mozilla/5.0 (Linux; U; Android 5.0; zh-CN; SM-G9008W Build/LRX21T) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.8.0.654 U3/0.8.0 Mobile Safari/534.30  
 
 3. 小米4C
-Mozilla/5.0 (Linux; U; Android 5.1.1; zh-cn; Mi-4c Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.0.0 Mobile Safari/537.36 XiaoMi/MiuiBrowser/2.1.1
+Mozilla/5.0 (Linux; U; Android 5.1.1; zh-cn; Mi-4c Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.0.0 Mobile Safari/537.36 XiaoMi/MiuiBrowser/2.1.1  
+
+4 苹果手机
+  * iPhone 6P
+Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X; zh-CN) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/13C75 UCBrowser/10.9.8.757 Mobile
