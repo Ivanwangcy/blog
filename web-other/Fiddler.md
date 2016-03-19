@@ -29,7 +29,20 @@
 17. MSDN Search ：MSDN搜索；
 ## Fiddler 状态栏
 1. 控制台 输入 `help` 打开帮助；
-2. Capture: 控制Fiddler是否工作；
+2. Capturing: 控制Fiddler是否工作；
+3. All Process: 过滤请求（会话）来源；
+4. 数字: 当前会话数量和选择的数量；
+5. 选择一个会话，显示会话信息；
+## 监控面板的使用
+监控面板是Fiddler最核心的功能之一  
+1. 记录来自服务器端请求的会话（文件请求和静态资源请求），并展示会话列表；
+2. HTTP状态码；
+3. 协议Protocol；
+4. Host 主机域名；
+5. ServerIP 服务器IP；
+6. 会话URL;
+## 控制面板
+1. Statistics 数据统计，性能指标；
 ## Fiddler 远程代理设置
 1. Tools -> Fiddler Options -> Connections 勾选 ->（Allow remote computers connect）
 2. 抓包需要在同一个域中，建议安装360WiFi：
