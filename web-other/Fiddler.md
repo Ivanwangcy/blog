@@ -29,6 +29,7 @@
 17. MSDN Search ：MSDN搜索；
 ## Fiddler 状态栏
 1. 控制台 输入 `help` 打开帮助；
+2. Capture: 控制Fiddler是否工作；
 ## Fiddler 远程代理设置
 1. Tools -> Fiddler Options -> Connections 勾选 ->（Allow remote computers connect）
 2. 抓包需要在同一个域中，建议安装360WiFi：
