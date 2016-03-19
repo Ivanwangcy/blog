@@ -1,7 +1,7 @@
 # Fiddler
 简介：
 ## 本地项目抓包，启动fiddler，默认代理端口为8888
-* 最简单的方式是使用IP地址访问；
+* 使用localhost无法抓包，最简单的方式是使用IP地址访问；cmd->ipconfig 查看本机IP地址
 ## Chrome 抓包 代理设置
 1. 安装代理插件`SwitchyOmega`
 2. 新建情景模式，例如：`fiddler`
@@ -9,7 +9,26 @@
   * 代理协议 -> HTTP
   * 代理服务器 -> 127.0.0.1
   * 代理端口 -> 8888
-
+## Fiddler 工具栏
+1. 气泡按钮：给请求增加注释；
+2. Replay: 重新发送当前请求，回放请求；
+3. × 叉子图标：清空监控面板，删除当前请求，Ctrl+X删除全部，清空请求列表，还可以进行过滤；
+4. Go按钮：调试Debug，请求前后增加断点调试；
+5. Stream模式切换；
+6. Decode 解压请求；
+7. Keep All Session 保存会话数量选择；
+8. Any Process: 过滤请求；
+9. Find: 查找请求；
+10. Save：保存会话；
+11. 相机图标：保存截图；
+12. 时钟图标：计时器；
+13. Browser: 快速启动浏览器；
+14. Clear Cache: 清除浏览器缓存；
+15. Text Wizard: 编码/解码，帮助我们编码和解码一些文本内容；；
+16. Tearoff: 展开面板，关闭会话列表；
+17. MSDN Search ：MSDN搜索；
+## Fiddler 状态栏
+1. 控制台 输入 `help` 打开帮助；
 ## Fiddler 远程代理设置
 1. Tools -> Fiddler Options -> Connections 勾选 ->（Allow remote computers connect）
 2. 抓包需要在同一个域中，建议安装360WiFi：
@@ -48,7 +67,7 @@ AutoResponses 面板
 2. 将左侧需要需要拦截的URL拖入右侧列表；
 3. 在 Rule Editor 栏修改指向，可以指定其他链接也可以指向本地文件；
 4. 编辑后保存，重新进入当前页面或者重新请求；
-## 筛选
+## 利用控制台筛选
 在下边命令行直接筛选抓包数据。
 ```bash
 >200 Body大于200的请求
