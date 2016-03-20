@@ -25,7 +25,7 @@
 13. Browser: 快速启动浏览器；
 14. Clear Cache: 清除浏览器缓存；
 15. Text Wizard: 编码/解码，帮助我们编码和解码一些文本内容；；
-16. Tearoff: 展开面板，关闭会话列表；
+16. Tearoff: 在新窗口展开控制面板；
 17. MSDN Search ：MSDN搜索；
 ## Fiddler 状态栏
 1. 控制台 输入 `help` 打开帮助；
@@ -42,11 +42,17 @@
 5. ServerIP 服务器IP；
 6. 会话URL;
 ## 控制面板
+上半部分是所有请求信息，下面是所有响应信息；
 1. Statistics 数据统计，性能指标；
   * 重要的数据指标->RTT数据往返时间，请求到响应的时间；
   * show chart 展示图表；以饼图的形式更直观的查看；
 2. Inspectors 对请求进行解包；
-  * 点开后可以查看请求的详细内容；
+  * 点开后可以查看请求和响应的详细内容；
+  * User-Agent: 用户请求浏览器信息；
+  * 当前浏览器请求所携带的cookies；
+  * 发送请求所在域 Referers，和来源Origin；
+3. AutoResponses **文件代理非常实用的功能**；
+4. Composer **前后端接口联调功能**；
 ## Fiddler 远程代理设置
 1. Tools -> Fiddler Options -> Connections 勾选 ->（Allow remote computers connect）
 2. 抓包需要在同一个域中，建议安装360WiFi：
@@ -79,8 +85,8 @@
 
 * Press C.
 
-## 使用本地文件调试代码（改变响应参数）
-AutoResponses 面板
+## 使用本地文件调试线上代码（改变响应参数）
+打开 `AutoResponses` 面板
 1. 勾选上面3个选项：`√` Enable rules `√` Unmatched requests passthrough `√` Enable Latency；
 2. 将左侧需要需要拦截的URL拖入右侧列表；
 3. 在 Rule Editor 栏修改指向，可以指定其他链接也可以指向本地文件；
@@ -91,3 +97,5 @@ AutoResponses 面板
 >200 Body大于200的请求
 <200 Body小于200的请求
 ```
+## HTTPS 抓包
+Tools -> Fiddler Options -> 选项中勾选 Decrypt HTTPS traffic 安装证书即可；
