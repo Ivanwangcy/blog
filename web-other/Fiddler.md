@@ -57,18 +57,37 @@
 6. Timeline 网站性能分析，网站性能优化的重要依据之一；
 ## 文件、文件夹代理和HOST配置
 ### HOST 配置
-### 使用本地文件调试线上代码（改变响应参数）
+1. Tools 选择HOSTS.. 打开HOST配置面板；
+2. 勾选Enable remapping of requests；
+3. import Windows HostsFile；
+4. 跟操作本地文件一样修改即可，点击Save配置完成；
+### 文件替换，使用本地文件调试线上代码（改变响应参数）
 打开 `AutoResponses` 面板
-1. 勾选上面3个选项：`√` Enable rules `√` Unmatched requests passthrough `√` Enable Latency；
+1. 勾选上面3个选项：`√` Enable rules `√` Unmatched requests passthrough `√` Enable Latency（可以延迟）；
 2. 将左侧需要需要拦截的URL拖入右侧列表；
 3. 在 Rule Editor 栏修改指向，可以指定其他链接也可以指向本地文件；
+  * EXACT: 精准匹配(常用)；
+  * regex: 正则表达式匹配，使用正则表达式进行模糊匹配；
+  * 下面的下拉选框，选择最后一项Find a file...，选择本地文件点击Save即可；
 4. 编辑后保存，重新进入当前页面或者重新请求；
-## Fiddler 移动端远程代理设置
+
+## 请求模拟、前后端接口联调
+在前端开发中通常都会遇到与后端接口调试的工作，大部分使用Ajax方式，由于后端也是同时开发接口调不通或者不稳定会影响前端开发进度，有了这个功能可以弥补这个缺点，接口文档一出我们就可以开发了，不用考虑服务端进度。
+1. 展开 Composer 拖入一个会话，进行编辑；
+2. GET 请求参数放入URL中；
+3. POST 请求参数写到Request body面板中；
+
+## 模拟网络限速
+在 Fiddler 官网下载 `Fiddler Script` 插件，修改c#代码；
+
+## Fiddler 移动端远程代理设置(手机抓包)
 1. Tools -> Fiddler Options -> Connections 勾选 ->（Allow remote computers connect）
 2. 抓包需要在同一个域中，建议安装360WiFi：
   * 手机代理设置：（点击 连接的 WiFi 名称 高级设置）
   * 手动设置选项：主机名->台式机IP地址 ， 端口：8888
 
+## HTTPS 抓包
+  Tools -> Fiddler Options -> 选项中勾选 Decrypt HTTPS traffic 安装证书即可；
 ## Fiddler URL 过滤 (抓包过滤)
 1. 切换 Filters 面板
 2. Use Filters
@@ -102,5 +121,6 @@
 >200 Body大于200的请求
 <200 Body小于200的请求
 ```
-## HTTPS 抓包
-Tools -> Fiddler Options -> 选项中勾选 Decrypt HTTPS traffic 安装证书即可；
+## Fiddler Add-ons Fiddler插件
+1. Javascript Formatter 格式化javascript代码
+2. Traffic Differ 对比两个会话的不同
