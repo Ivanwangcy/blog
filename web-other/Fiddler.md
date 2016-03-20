@@ -121,6 +121,8 @@
 >200 Body大于200的请求
 <200 Body小于200的请求
 ```
-## Fiddler Add-ons Fiddler插件
+## Fiddler Add-ons Fiddler官方插件
 1. Javascript Formatter 格式化javascript代码
 2. Traffic Differ 对比两个会话的不同
+## Fiddler 第三方插件
+1. Willow HTTP代理插件，完全可视化的管理host列表，可视化限速；
