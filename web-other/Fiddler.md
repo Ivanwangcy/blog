@@ -52,7 +52,7 @@
   * 当前浏览器请求所携带的cookies；
   * 发送请求所在域 Referers，和来源Origin；
 3. AutoResponses **文件代理非常实用的功能**；
-4. Composer **前后端接口联调功能**；
+4. Composer **前后端接口联调功能**，修改请求参数来伪装请求；
 ## Fiddler 远程代理设置
 1. Tools -> Fiddler Options -> Connections 勾选 ->（Allow remote computers connect）
 2. 抓包需要在同一个域中，建议安装360WiFi：
