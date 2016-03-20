@@ -43,6 +43,10 @@
 6. 会话URL;
 ## 控制面板
 1. Statistics 数据统计，性能指标；
+  * 重要的数据指标->RTT数据往返时间，请求到响应的时间；
+  * show chart 展示图表；以饼图的形式更直观的查看；
+2. Inspectors 对请求进行解包；
+  * 点开后可以查看请求的详细内容；
 ## Fiddler 远程代理设置
 1. Tools -> Fiddler Options -> Connections 勾选 ->（Allow remote computers connect）
 2. 抓包需要在同一个域中，建议安装360WiFi：
