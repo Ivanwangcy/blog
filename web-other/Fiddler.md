@@ -53,7 +53,17 @@
   * 发送请求所在域 Referers，和来源Origin；
 3. AutoResponses **文件代理非常实用的功能**；
 4. Composer **前后端接口联调功能**，修改请求参数来伪装请求；
-## Fiddler 远程代理设置
+5. Log 面板 记录使用Fiddler的日志；
+6. Timeline 网站性能分析，网站性能优化的重要依据之一；
+## 文件、文件夹代理和HOST配置
+### HOST 配置
+### 使用本地文件调试线上代码（改变响应参数）
+打开 `AutoResponses` 面板
+1. 勾选上面3个选项：`√` Enable rules `√` Unmatched requests passthrough `√` Enable Latency；
+2. 将左侧需要需要拦截的URL拖入右侧列表；
+3. 在 Rule Editor 栏修改指向，可以指定其他链接也可以指向本地文件；
+4. 编辑后保存，重新进入当前页面或者重新请求；
+## Fiddler 移动端远程代理设置
 1. Tools -> Fiddler Options -> Connections 勾选 ->（Allow remote computers connect）
 2. 抓包需要在同一个域中，建议安装360WiFi：
   * 手机代理设置：（点击 连接的 WiFi 名称 高级设置）
@@ -85,12 +95,7 @@
 
 * Press C.
 
-## 使用本地文件调试线上代码（改变响应参数）
-打开 `AutoResponses` 面板
-1. 勾选上面3个选项：`√` Enable rules `√` Unmatched requests passthrough `√` Enable Latency；
-2. 将左侧需要需要拦截的URL拖入右侧列表；
-3. 在 Rule Editor 栏修改指向，可以指定其他链接也可以指向本地文件；
-4. 编辑后保存，重新进入当前页面或者重新请求；
+
 ## 利用控制台筛选
 在下边命令行直接筛选抓包数据。
 ```bash
