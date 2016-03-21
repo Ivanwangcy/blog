@@ -1,7 +1,7 @@
 # Atom Web前端开发编辑器(神器)
 [Atom](https://atom.io/)它是一款开源的文本编辑器
 
-安装简单, windows 版直接下载安装即可.其它平台可以使用源码安装.
+安装简单, windows 版直接下载安装即可.其它平台可以使用源码安装.  
 
 
 `Ctrl+Shift+P`打开命令面板可以查找所有命令.
@@ -14,24 +14,28 @@
     * Git-Plus git git命令 辅助操作插件 `Ctrl + Shift + H` 打开;
     * color-picker 取色器插件 `CTRL-ALT-C` 打开;
     * Minimap package 代码缩略图插件;
+    * pigments 高亮显示文件, 样式颜色值显示;
     * jshint 代码检查工具;
     * Snippets package
     * Docblockr package
     * Emmet plugin Atom editor
 
-## 快捷键汇总:
+## Windows下快捷键汇总:
+### 视图操作
+* Ctrl+k left 在左半视图中打开文件
+* Ctrl+k down在下半视图中打开文件
+* Ctrl+k up 在上半视图中打开文件
+* Ctrl+k right 在右半视图中打开文件
+### 基本操作
 * `Ctrl+A` 全选
 * `Ctrl+B` 查找当前打开的文件
 * `Ctrl+C` 粘贴
-* `Ctrl+D` 选择字符串 （按住Ctrl-继续选择下个相同的字符串）
+* `Ctrl+D` 选择字符串 （按住Ctrl 再 +D 继续选择下个相同的字符串）
 * `Ctrl+E/Ctrl+F` 当前文件查找/替换
 * `Ctrl+G` 跳转至第几行, 输入数字,回车跳至指定行
 * `Ctrl+J` 合并行（已选择需要合并的多行时）
 * `Ctrl+L` 选择整行（按住Ctrl-继续选择下行）
-* `Ctrl+KK` 从光标处删除至行尾
 * `Ctrl+K` Backspace 从光标处删除至行首
-* `Ctrl+KU` 改为大写
-* `Ctrl+KL` 改为小写
 * `Ctrl+M` 光标移动至括号内开始或结束的位置
 * `Ctrl+N` 新建窗口
 * `Ctrl+P`   同Ctrl+T快速搜索项目中的文件
@@ -39,11 +43,6 @@
 * `Ctrl+Shift+C` 转换为 utf8
 
 * `Ctrl+R` 搜索指定文件的函数标签，函数名称搜索，跳转至函数所在行
-* `Ctrl+G` 跳转到指定行
-* `Ctrl+KT` 折叠属性
-* `Ctrl+K0` 展开所有
-* `Ctrl+T` 词互换
-* `* Ctrl+U` 软撤销
 * `Ctrl+W` 关闭当前编辑窗口
 * `Ctrl+X` 删除当前行
 * `Ctrl+Delete` 向后删除一个单词或一组文字
