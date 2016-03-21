@@ -10,12 +10,14 @@
 ## 包管理:
 * 常用的包
     * atom-terminal
-    * color-picker
-    * Minimap package
+    * terminal-plus git 命令控制台插件(推荐使用);
+    * Git-Plus git git命令 辅助操作插件 `Ctrl + Shift + H` 打开;
+    * color-picker 取色器插件 `CTRL-ALT-C` 打开;
+    * Minimap package 代码缩略图插件;
+    * jshint 代码检查工具;
     * Snippets package
     * Docblockr package
     * Emmet plugin Atom editor
-    * terminal-plus
 
 ## 快捷键汇总:
 * `Ctrl+A` 全选
