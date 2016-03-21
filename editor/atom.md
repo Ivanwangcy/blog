@@ -15,6 +15,7 @@
     * Snippets package
     * Docblockr package
     * Emmet plugin Atom editor
+    * terminal-plus
 
 ## 快捷键汇总:
 * `Ctrl+A` 全选
