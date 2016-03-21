@@ -9,7 +9,7 @@
         }
 
 		location /client {
-			proxy_pass http://prepdjm.jd.com/client;
+			proxy_pass http://xxxx.xxx.com/client;
 		}
 
 		location ~ \.php$ {
@@ -31,4 +31,4 @@ D:\server\nginx\RunHiddenConsole.exe D:/server/nginx/nginx.exe -p D:/server/ngin
 ```
 ## 项目启动：
 url:http://localhost/html/new/index.php <br>
-在本地登录时 先刷一下这个链接：localhost/client?functionId=login/testLogin&body={"pin":"18611909774_p"}
+在本地登录时 先刷一下这个链接：localhost/client?functionId=login/testLogin&body={"pin":"xxxxxxxx"}
