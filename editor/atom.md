@@ -10,7 +10,7 @@
   atom-material-syntax 爆款搭配
 ## package 包管理, 常用的包
     * atom-terminal
-    * terminal-plus git 命令控制台插件(推荐使用);
+    * terminal-plus -- git 命令控制台插件(推荐使用);
     * Git-Plus git git命令 辅助操作插件 `Ctrl + Shift + H` 打开;
     * color-picker 取色器插件 `CTRL-ALT-C` 打开;
     * Minimap package 代码缩略图插件;
@@ -18,6 +18,7 @@
     * atom-ternjs js代码提示很强大，高度定制化。
     * jshint 代码检查工具;
     * atomatigit 可视化git操作 -- 不喜欢用命令行的可以安装;
+    * file-icons 给文件加上好看的图标。
     * Snippets package
     * Docblockr package
     * Emmet plugin Atom editor
