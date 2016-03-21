@@ -4,9 +4,10 @@
 安装简单, windows 版直接下载安装即可.其它平台可以使用源码安装.  
 
 
-`Ctrl+Shift+P`打开命令面板可以查找所有命令.
-`Setting` 进入设置界面, 可以设置项目根目录;
-设置主题, 可以选择已有的主题;
+`Ctrl+Shift+P`打开命令面板可以查找所有命令.`Setting` 进入设置界面, 可以设置项目根目录. 或者直接使用快捷键`Ctrl+,`打开设置面板;  
+## 设置主题, 可以选择已有的主题;
+  atom-material-ui 爆款主题UI  
+  atom-material-syntax 爆款
 ## 包管理:
 * 常用的包
     * atom-terminal
@@ -14,8 +15,10 @@
     * Git-Plus git git命令 辅助操作插件 `Ctrl + Shift + H` 打开;
     * color-picker 取色器插件 `CTRL-ALT-C` 打开;
     * Minimap package 代码缩略图插件;
-    * pigments 高亮显示文件, 样式颜色值显示;
+    * pigments 颜色显示插件 （必装）高亮显示文件, 样式颜色值显示;
+    * atom-ternjs js代码提示很强大，高度定制化。
     * jshint 代码检查工具;
+    * atomatigit 可视化git操作 -- 不喜欢用命令行的可以安装;
     * Snippets package
     * Docblockr package
     * Emmet plugin Atom editor
