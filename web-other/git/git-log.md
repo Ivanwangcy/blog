@@ -10,7 +10,10 @@ $ git log --stat # 列出各个版本间的改动及行数
 $ git log --stat -n #(-n,-1,-2 需要显示的条目数量) // 显示简要的增改行数统计
 $ git log -p -n # 展开显示每次提交的内容差异
 $ git log  --author=Ivan  # 查找指定作者的日志
+
 ```
+查看 git log 后退出 -> 直接输入: `q`
+
 ### 查看提交历史，设置样式并增加别名
 ```bash
 $ git log
