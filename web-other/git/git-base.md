@@ -60,7 +60,7 @@ $ git mv file_from file_to  #文件改名
 ### 查看提交历史
 ```bash
 $ git log
-$ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"  定义历史记录格式的别名, 以后只需 git lg 即可
+
 ```
 ### 撤销操作
 #### 修改最后一次提交
@@ -82,9 +82,20 @@ $ git reset HEAD benchmarks.rb  # 取消暂存 benchmarks.rb 文件, 变回已�
 ```bash
 $ git checkout -- benchmarks.rb  # 抛弃文件的修改命令, 还原回最后提交的(或修改前的)版本(已添加到缓存区的改动，以及新文件，都不受影响。)
 ```
-### 别名
+
 ### 撤销与回滚
 ```bash
 $ git reset --hard # 可以回退到某个提交
 $ git revert # 可以撤销某个提交，撤销会产生一个新的提交
+```
+## 别名
+```bash
+$ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"  # 定义历史记录格式的别名, 以后只需 git lg 即可
+```
+## 清除 git cache  -- how to clear git cache
+```bash
+$ git rm -r --cached .
+$ git add .
+$ git commit -am 'git cache cleared'
+$ git push
 ```
