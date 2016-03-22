@@ -17,7 +17,7 @@ $ git log  --author=Ivan  # 查找指定作者的日志
 ### 查看提交历史，设置样式并增加别名
 ```bash
 $ git log
-$ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"   // 定义历史记录格式的别名, 以后只需 git lg 即可
+$ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --stat -n"   // 定义历史记录格式的别名, 以后只需 git lg 即可
 $ git lg  // 使用上面的别名
 $ git lg -5 // 只显示5条提交记录
 ```
@@ -39,17 +39,21 @@ $ git log --pretty=oneline --reverse --since=2015-11-20  // 单行并倒序显�
 
 ```
 ### 指定ID号查看日志
-```git
+```bash
 $ git lgone 108de63 --stat
 $ git lg 108de63 --stat
 ```
 ### 查看指定文件的log
-```git
+```bash
 $ git log -- branches/webapp/v1.1/html/new/app/view/goodsDetails.js
 ```
 ### 综合应用
-```git
-$ git log --reverse --stat --since=2015-11-20 --abbrev-commit  从2015-11-19以后的所有记录倒序排列并缩写ID
-$ git lg --stat --since=2015-11-19 --until=2015-11-20  // 从2015-11-19 到 2015-11-20的提交记录
-$ git lgone --stat --after=2015-11-19 --before=2015-11-20  // 从2015-11-19 到 2015-11-20的提交记录 同上
+```bash
+$ git log --reverse --stat --since=2015-11-20 --abbrev-commit  # 从2015-11-19以后的所有记录倒序排列并缩写ID
+$ git lg --stat --since=2015-11-19 --until=2015-11-20  # 从2015-11-19 到 2015-11-20的提交记录
+$ git lgone --stat --after=2015-11-19 --before=2015-11-20  # 从2015-11-19 到 2015-11-20的提交记录 同上
+```
+### 重定向输出内容
+```bash
+git log >> log.txt
 ```
