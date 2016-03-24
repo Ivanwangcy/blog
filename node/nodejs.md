@@ -3,6 +3,7 @@
 ## 安装包
 ```bash
 $ npm install -g ***
+$ npm install npm@latest -g  # NPM 更新到 最新版本
 $ node # 进入 repl 模式
 ```
 **快捷键是ctrl+d, ctrl+c 按两次 或者输入.exit 退出**

@@ -27,6 +27,7 @@ npm i -g webpack webpack-dev-server
 ```sh
 $ npm --version # 查看NPM版本
 $ npm install -g npm@3.7.2 # 安装指定版本的 NPM
+$ npm install npm@latest -g # 更新到最新版本
 ```
 ## npm package.json 配置
 ### scripts 配置运行 命令
