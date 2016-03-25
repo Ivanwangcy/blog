@@ -20,3 +20,7 @@ $ git config --list        //查看全部配置信息, 重复的变量名采用�
 
 $ git config user.name        //查看指定的配置信息, 直接输入变量名
 ```
+## 删除配置项
+```bash
+$ git config --global --unset configname
+```
