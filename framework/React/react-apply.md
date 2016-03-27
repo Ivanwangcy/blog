@@ -25,7 +25,9 @@ var names = ['Alice', 'Emily', 'Kate'];
 var listItem = <div>
   {
     names.map(function(name){
-      return <div>Hello, {name}!</div>;
+      //raw format of JSX -- React.createElement('div', {className: 'title'}, 'Hello world!');
+      return <div className="title">Hello, {name}!</div>;
+
     })
   }
 </div>;
@@ -34,9 +36,8 @@ var listItem = <div>
 ```html
 <script type="text/babel">
   ReactDOM.render(
-    //raw format of JSX -- React.createElement('h1', {className: 'title'}, 'Hello world!');
     <h1 className="title">Hello, world!</h1>,
-    document.getElementById('example')
+    document.getElementById('example') // a raw DOM element
   );
 </script>
 ```

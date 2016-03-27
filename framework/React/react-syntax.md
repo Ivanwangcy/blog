@@ -7,8 +7,8 @@
 ```javascript
 class=>className, font-size=>fontSize
 ```
-3. 组合自定义组件，需要外层包装；
+3. 组合自定义组件，需要外层包装；composing components
 ```javascript
 <div><Comment /><CommentList /></div>
 ```
-4. 
+4.
