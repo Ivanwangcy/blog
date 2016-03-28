@@ -19,10 +19,11 @@
     * jshint 代码检查工具;
     * atomatigit 可视化git操作 -- 不喜欢用命令行的可以安装;
     * file-icons 给文件加上好看的图标。
+    * activate-power-mode 动感十足的编辑模式 -- 动感编辑特效
     * Snippets package
     * Docblockr package
     * Emmet plugin Atom editor
-
+    
 ## Windows下快捷键汇总:
 ### 编辑器全局操作
 * `Ctrl+Shift+P` 打开命令面板

@@ -25,7 +25,9 @@ var names = ['Alice', 'Emily', 'Kate'];
 var listItem = <div>
   {
     names.map(function(name){
-      return <div>Hello, {name}!</div>;
+      //raw format of JSX -- React.createElement('div', {className: 'title'}, 'Hello world!');
+      return <div className="title">Hello, {name}!</div>;
+
     })
   }
 </div>;
@@ -34,14 +36,21 @@ var listItem = <div>
 ```html
 <script type="text/babel">
   ReactDOM.render(
-    <h1>Hello, world!</h1>,
-    document.getElementById('example')
+    <h1 className="title">Hello, world!</h1>,
+    document.getElementById('example') // a raw DOM element
   );
 </script>
 ```
 ## 自定义 Dom 元素
 ```javascript
-// 自定义组件，获取自定义属性
+/************************************************************************************
+ * 自定义组件，获取自定义属性
+ *  React 实例化组件不是真实的DOM节点
+ *  自定义组件以大写字母开头
+ *  	-- while custom React component names begin with an uppercase letter.
+ ************************************************************************************/
+
+
 var HelloMessage = React.createClass({
   render: function() {
     return <h1>Hello {this.props.name}</h1>
@@ -64,12 +73,12 @@ var NotesList = React.createClass({
     );
   }
 })
-// 渲染
+// 渲染 React component 组件到DOM中
 ReactDOM.render(
   <NotesList>
     <span>Hello</span>
     <span>world</span>
-  </NotesList>,
+  </NotesList>, // of raw React.createElement(NotesList, null);
   document.body
 )
 ```
