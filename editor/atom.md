@@ -23,13 +23,15 @@
     * Snippets package
     * Docblockr package
     * Emmet plugin Atom editor
-    
+
 ## Windows下快捷键汇总:
-### 编辑器全局操作
+### 编辑器全局 Window 操作
 * `Ctrl+Shift+P` 打开命令面板
-* `Ctrl+,`  打开设置面板
-* `Ctrl + \` 切换树形导航面板 显示/隐藏  Toggle Tree View 
-* `ctrl + Alt + R` Reload Atom  重新载入编辑器
+* `Ctrl+,`  打开设置面板  Ctrl + comma Settings
+* `Ctrl + \` 切换树形导航面板 显示/隐藏  Toggle Tree View
+* `Ctrl + Alt + R` 重新载入编辑器 Reload Atom Editor
+* `Ctrl + W` 关闭 当前窗口 close Tab
+* `Ctrl + Shift + W` 关闭编辑器 等同于 `Alt + F4`
 ### 视图操作
 * Ctrl+k left 在左半视图中打开文件
 * Ctrl+k down在下半视图中打开文件
