@@ -4,3 +4,5 @@
 ## 首先, 打开要编辑的文件
 ---
 按`Ctrl+Shift+M`, 打开MD文件预览界面. 如果无法呼出, 可以使用`Ctrl+Shilt+P`,搜索 markdown Preview 窗口. 写完别忘了,提交到GitHub上. :ok::ok_hand:!
+
+## end
