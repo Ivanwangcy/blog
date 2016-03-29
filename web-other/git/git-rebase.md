@@ -7,4 +7,6 @@ $ git rebase master  # 将当前分支变基到 master 分支
 ```bash
 $ git rebase --abort  # 完全取消这次变基
 $ git rebase --skip  # 完全忽略该提交
+
+$ rm -fr "D:/workspace/blog/.git/rebase-apply" # 删除这次 变基 rebase
 ```
