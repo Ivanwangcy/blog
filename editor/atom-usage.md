@@ -26,12 +26,14 @@
 
 ## Windows下快捷键汇总:
 ### 编辑器全局 Window 操作
-* `Ctrl+Shift+P` 打开命令面板
-* `Ctrl+,`  打开设置面板  Ctrl + comma Settings
+* `Ctrl + ,`  打开设置面板  Ctrl + comma Settings
 * `Ctrl + \` 切换树形导航面板 显示/隐藏  Toggle Tree View
-* `Ctrl + Alt + R` 重新载入编辑器 Reload Atom Editor
 * `Ctrl + W` 关闭 当前窗口 close Tab
+* `Alt + F4` 关闭编辑器
+* `Ctrl + Alt + R` 重新载入编辑器 Reload Atom Editor
+* `Ctrl + Shift + P` 打开命令面板
 * `Ctrl + Shift + W` 关闭编辑器 等同于 `Alt + F4`
+* `Ctrl + Shift + M` 编辑markdown文件时，打开markdown预览文件
 ### 视图操作
 * Ctrl+k left 在左半视图中打开文件
 * Ctrl+k down在下半视图中打开文件
@@ -96,7 +98,7 @@
 * `Ctrl+Alt+M` 选中标签内部整块内容或者代码块内容
 *
 * `Ctrl+Alt+B` Atom 标准代码格式化
-* `Ctrl+Shift+M` 编辑markdown文件时，打开markdown预览文件
+
 * `Ctrl+Shift+M` 选择括号内的内容（按住-继续选择父括号） , Atom 合并行, 当前整个代码块合并
 * `F11` 全屏编辑
 
