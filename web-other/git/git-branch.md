@@ -26,8 +26,8 @@ Merge made by the 'recursive' strategy.
 ```bash
 $ git branch -d testing // 删除分支 testing
 ```
-## 其它
+## 其它 相关参考
 ```bash
-$ git rebase
+$ git rebase # 变基
 $ git mergin
 ```
