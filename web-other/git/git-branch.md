@@ -29,5 +29,5 @@ $ git branch -d testing // 删除分支 testing
 ## 其它 相关参考
 ```bash
 $ git rebase # 变基
-$ git mergin
+$ git merge # 合并
 ```
