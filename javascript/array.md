@@ -34,7 +34,24 @@ var a = [1, 2, 3, [4, 5, 6]];
 a.toString() // "1,2,3,4,5,6"
 ```
 ## push方法，pop方法
-## splice方法，slice方法
+## slice方法
+Array.slice 截取数组在JavaScript中，Array对象的slice(start[,end])方法返回数组从下标[start,end)的部分（不包含下标为end的元素）如果没有指定end参数，则从start开始到数组结尾的部分，slice()方法不改变原数组，如果要删除数组的一部分，可以使用splice()方法。  
+参数：
+  1. start:开始截取的数组下标，如果start是负数，表明从数组尾部开始计算。
+  2. end:结束截取的数组下标，如果end是负数，表明从数组尾部开始计算。
+##  splice方法
+Array.splice(start,delete_count,value,...) 插入、删除、替换数组.  
+参数：
+1. start:开始插入和（或）删除的数组元素的下标。
+2. delete_count:结束截取的数组下标，如果end是负数，表明从数组尾部开始计算。
+3. value,...：要插入数组的元素。
+4. 返回：如果从数组中删除了元素，则返回的是被删除的元素的数组
+```javascript
+// 删除指定位置数组元素
+var arr = [1, 2, 3, 4, 5, 6, 7];
+arr.splice(3, 1); // remove 4, 并 return
+console.log(arr); // [1, 2, 3, 5, 6, 7]
+```
 ## join
 ## reverse
 # 示例
