@@ -23,13 +23,24 @@
     * Snippets package
     * Docblockr package
     * Emmet plugin Atom editor
-    
+
 ## Windows下快捷键汇总:
+### 编辑器全局 Window 操作
+* `Ctrl + ,`  打开设置面板  Ctrl + comma Settings
+* `Ctrl + \` 切换树形导航面板 显示/隐藏  Toggle Tree View
+* `Ctrl + W` 关闭 当前窗口 close Tab
+* `Alt + F4` 关闭编辑器
+* `Ctrl + Alt + R` 重新载入编辑器 Reload Atom Editor
+* `Ctrl + Shift + P` 打开命令面板
+* `Ctrl + Shift + W` 关闭编辑器 等同于 `Alt + F4`
+* `Ctrl + Shift + M` 编辑markdown文件时，打开markdown预览文件
 ### 视图操作
 * Ctrl+k left 在左半视图中打开文件
 * Ctrl+k down在下半视图中打开文件
 * Ctrl+k up 在上半视图中打开文件
 * Ctrl+k right 在右半视图中打开文件
+* `F11` 全屏模式
+
 ### 基本操作
 * `Ctrl+A` 全选
 * `Ctrl+B` 查找当前打开的文件
@@ -64,7 +75,7 @@
 * `Alt+.` 闭合当前标签
 * `F6` 检测语法错误
 * `F9` 行排序(按a-z)
-`F11` 全屏模式
+
 * `Ctrl+Shift+Enter` 光标前插入行 Ctrl+Shift+Enter 光标前插入行, 当前行之上插入行
 * `Ctrl+Shift+[` 折叠代码      atom 中: Ctrl+Alt+[ 折叠代码
 * `Ctrl+Shift+]` 展开代码      atom 中: Ctrl+Alt+] 展开代码
@@ -76,7 +87,7 @@
 * `Ctrl+Shift+K` 删除整行, 同Ctrl+X
 * `Ctrl+Shift+L` 切换当前文件使用的编程语言
 
-* `Ctrl+Shift+P` 打开命令面板
+
 * `Ctrl+Shift+/` 注释已选择内容
 * `Ctrl+PageDown 、Ctrl+PageUp` 文件按开启的前后顺序切换
 * `Ctrl+鼠标左键` 可以同时选择要编辑的多处文本
@@ -87,7 +98,7 @@
 * `Ctrl+Alt+M` 选中标签内部整块内容或者代码块内容
 *
 * `Ctrl+Alt+B` Atom 标准代码格式化
-* `Ctrl+Shift+M` 编辑markdown文件时，打开markdown预览文件
+
 * `Ctrl+Shift+M` 选择括号内的内容（按住-继续选择父括号） , Atom 合并行, 当前整个代码块合并
 * `F11` 全屏编辑
 
@@ -96,5 +107,5 @@
 
 * `Ctrl+Alt+←` 像左选中整个单词
 * `Ctrl+Alt+→` 像右选中整个单词
-* `Ctrl+,`  打开设置面板
+
 ## 块儿注释 安装 Docblockr Package

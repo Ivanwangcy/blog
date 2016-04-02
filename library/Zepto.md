@@ -12,3 +12,10 @@ $("p").append("<b>Hello</b>");
 // 将选择的元素替换成指定的元素
 $("p").replaceWith("<b>Paragraph. </b>");
 ```
+## 跳出 $.each 循环
+```javascript
+$.each(arr, function(index, value){
+  if (!value)
+    return false;
+});
+```

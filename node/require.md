@@ -7,7 +7,7 @@
 绝对路径：F:/xxx/xxx.js 或 /xxx/xxx.js 或 /xxx/xxx。
 ## require函数语法
 
-require(路径.扩展名)：
+## require(路径.扩展名)：
 如果 路径.扩展名 存在
 执行加载 并 返回
 否则
@@ -24,7 +24,7 @@ require(路径)：
 如果 路径/index.node 存在
 执行加载 并 返回
 抛出异常
-require(模块名字)：
+## require(模块名字)：
 如果 模块名字是系统模块
 执行加载 并 返回
 如果 require(./node_modules/模块名字) 能加载到模块  //参考require(路径)的介绍

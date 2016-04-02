@@ -65,7 +65,7 @@ $ git log
 ### 撤销操作
 #### 修改最后一次提交
 ```bash
-$ git commit --amend    提交时忘了暂存某些修改, 可以先补上暂存操作，然后再运行--amend 提交：
+$ git commit --amend    # 提交时忘了暂存某些修改, 可以先补上暂存操作，然后再运行--amend 提交：
 
 $ git commit -m 'initial commit'
 $ git add forgotten_file

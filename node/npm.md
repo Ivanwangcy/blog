@@ -1,5 +1,6 @@
 # npm 命令
 ```bash
+$ npm -h # 帮助 命令行学习工具
 $ npm init # 初始化package.json
 
 $ npm install jquery --save # 安装 jquery 并保存到 package.json npm install == npm i
@@ -38,7 +39,12 @@ $ npm install npm@latest -g # 更新到最新版本
     "deploy": "NODE_ENV=production webpack -p"
   }
 ```
-执行配置的命令
+## npm dedupe 去重, 重新计算依赖关系
+```bash
+$ npm dedupe
+```
+
+## 执行配置的命令
 ```bash
 $ npm test # 执行测试命令
 
