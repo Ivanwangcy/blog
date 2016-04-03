@@ -44,7 +44,7 @@ var person = {
 * 资深开发者与新手的最大区别在于解决问题的能力.
 * 架构师和开发者一样, 也经常写代码, 简单的说, 开发者和架构师之间最大的区别就是技术领导力.
 ## 开发书籍
-* Scaling Isomorphic Javascript Code》
+* 《Scaling Isomorphic Javascript Code》
 * 《程序员必读之软件架构》
 * 《海量运维运营规划》
 * 《构建高性能web站点》
