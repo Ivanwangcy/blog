@@ -13,6 +13,9 @@ $ git rebase other  # 将 other 分支 变基到 master 主干分支中
   * 如果用 merge 合并的主干分支，那么只能给master增加一条合并记录，你所有的提交明细都没有了。  
   * 相反使用 rebase 变基到master主干分支，你的所有提交记录都转给了master，提交的每条记录都清晰可见。
 * 如果master为最新修改，那就先合并的自己的分支，再rebase到主干分支。
+* 如果你想让"master"主干分支历史看起来像没有经过任何合并一样，可以使用 git rebase;
+* 使用git rebase 操作自己的分支就像操作主干分支一样;
+* 使用 git merge 操作分支，结果会产生一个新的"合并的提交"(merge commit);
 ## 在执行 `git rebase` 后解决合并冲突
 ```bash
 $ git rebase --abort  # 完全取消这次变基
