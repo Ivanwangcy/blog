@@ -2,5 +2,6 @@
 1. initial file , create first; -> master
 2. modified file second; -> other
 3. modified file third; -> other
-4. git rebase other -> add history 2 and 3 ; -> master
-5. modified file fourthly -> other
+  - git rebase other -> add history 2 and 3 ; -> master
+4. modified file fourth -> other
+5. modified file fifth -> other
