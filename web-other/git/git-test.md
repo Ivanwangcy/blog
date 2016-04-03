@@ -3,3 +3,4 @@
 2. modified file second; -> other
 3. modified file third; -> other
 4. git rebase other -> add history 2 and 3 ; -> master
+5. modified file fourthly -> other
