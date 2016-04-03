@@ -16,9 +16,13 @@ $ git rebase other  # 将 other 分支 变基到 master 主干分支中
 * 如果你想让"master"主干分支历史看起来像没有经过任何合并一样，可以使用 git rebase;
 * 使用git rebase 操作自己的分支就像操作主干分支一样;
 * 使用 git merge 操作分支，结果会产生一个新的"合并的提交"(merge commit);
+* 在rebase的过程中，也许会出现冲突(conflict). 在这种情况，Git会停止rebase并会让你去解决 冲突；在解决完冲突后，用"git-add"命令去更新这些内容的索引(index), 然后，你无需执行 git-commit,只要执行:
+```bash
+$ git rebase --continue
+```
 ## 在执行 `git rebase` 后解决合并冲突
 ```bash
-$ git rebase --abort  # 完全取消这次变基
+$ git rebase --abort  # 完全取消这次变基, 终止后会回到rebase开始之前的状态
 $ git rebase --skip  # 完全忽略该提交
 
 $ rm -fr "D:/workspace/blog/.git/rebase-apply" # 删除这次 变基 rebase
