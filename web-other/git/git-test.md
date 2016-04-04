@@ -6,3 +6,5 @@
 4. modified file fourth -> other
 5. modified file fifth -> other
 6. modified file sixth -> master
+7. modified file seventh -> other
+  - git merge other -> merge 6 and 7; -> master
