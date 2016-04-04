@@ -5,3 +5,4 @@
   - git rebase other -> add history 2 and 3 ; -> master
 4. modified file fourth -> other
 5. modified file fifth -> other
+7. modified file seventh -> other
