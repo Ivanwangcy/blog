@@ -18,8 +18,9 @@ $ git rebase other  # 将 other 分支 变基到 master 主干分支中
 * 使用 git merge 操作分支，结果会产生一个新的"合并的提交"(merge commit);
 * 在rebase的过程中，也许会出现冲突(conflict). 在这种情况，Git会停止rebase并会让你去解决 冲突；在解决完冲突后，用"git-add"命令去更新这些内容的索引(index), 然后，你无需执行 git-commit,只要执行:
 ```bash
-$ git rebase --continue
+$ git rebase --continue # git add 后 继续 rebase
 ```
+* 冲突标记<<<<<<< （7个<）与=======之间的内容是当前分支或者我的修改，=======与>>>>>>>之间的内容是其它分支或别人的修改。
 ## 在执行 `git rebase` 后解决合并冲突
 ```bash
 $ git rebase --abort  # 完全取消这次变基, 终止后会回到rebase开始之前的状态
