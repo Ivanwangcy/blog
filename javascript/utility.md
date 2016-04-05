@@ -15,7 +15,7 @@ function clone(object){
     if(object && (object instanceof Object || isArray)) {
         newObject = isArray ? [] : {};
         for(key in object){
-            if(object.hasOwnProperty(key)){ // 是否为对象本身的属性, 过滤掉原型链上的属性
+            if(object.hasOwnProperty(key)){ // 是否为对象本身的属性, 过滤掉原型链上的属性(继承的属性)
                 newObject[key] = clone(object[key]);
             }
         }
