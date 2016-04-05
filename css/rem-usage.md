@@ -92,3 +92,4 @@ document.getElementsByTagName('html')[0].style.fontSize=window.innerWidth / 75 +
 
 ($px/10) + "rem";
 ```
+这种方式为最佳方案, 可以完美解决设计稿1px边框的问题. 实际做出来的页面看上去就是比设计稿的边框粗, 为什么呢? 比如: 设计稿是750的, 边框是1px, 那么到了 375的iPhone 6 上面应该的 0.5px才对, 但是html 无法设置0.5px的边框, 只能是1px, 那么就会出现上面的视觉问题, 使用以上方法就解决了这个问题. 
