@@ -49,3 +49,7 @@ var person = {
 * 《海量运维运营规划》
 * 《构建高性能web站点》
 * 《大型网站技术架构》
+
+## 教程参考：
+>- [廖雪峰的 JavaScript全栈教程](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000)  
+>- [阮一峰的 JavaScript 标准参考教程](http://javascript.ruanyifeng.com/#introduction)

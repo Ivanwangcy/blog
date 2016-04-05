@@ -1,4 +1,4 @@
-# ES6
+# ES6 Array 数组新增方法
 2015年2月20日ECMAScript 第六版正式推出。
 
 ## Array.map() 用法 ES5
