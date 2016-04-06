@@ -4,6 +4,7 @@
 * 代码规范 code convention，编程风格 styly guideline
 * 检查编程风格的工具，JSInt ,JSHint
 * 格式化规则 formatting rule
+* 变量提升: 在函数内部首先声明所有变量
 * 缩进层级
   * 推荐使用4个空格进行一个缩进层级
   * 语句结尾加分号
