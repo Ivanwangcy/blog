@@ -2,7 +2,7 @@
 # touchmove 事件滑动位置计算
 touchstart 计算起始位置
 pageX(相对于窗口的水平坐标像素,包括任何滚动偏移量)；
-pageY(相对于窗口的水平坐标像素,包括任何滚动偏移量)
+pageY(相对于窗口的水平坐标像素,包括任何滚动偏移量);
 
 ```javascript
 (function () {
