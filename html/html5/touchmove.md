@@ -51,3 +51,14 @@ pageY(相对于窗口的水平坐标像素,包括任何滚动偏移量);
 console.log出来的moveLength就是你要得到的距离。  
 
 可以参考Zepto的：[touch源码](https://github.com/madrobby/zepto/blob/master/src%2Ftouch.js)
+
+## scrollEnd
+```javascript
+$(window).scroll(_.debounce(function(){
+    $('#scrollMsg').html('SCROLLING!');
+}, 150, { 'leading': true, 'trailing': false }));
+
+$(window).scroll(_.debounce(function(){
+    $('#scrollMsg').html('STOPPED!');
+}, 150));
+```
