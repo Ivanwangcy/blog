@@ -5,3 +5,8 @@
 var regexp = new RegExp('xxx', 'i');
 var regexp = new RegExp(/abc/, 'i');
 ```
+# 过滤表情符号, 表情符号都是UTF-16中的4字节符号 例如:  `𠮷`
+```javascript
+var emojiReg = /^[^\uD800-\uDBFF]+$/; // 非表情符号, 过滤以D800开头-DBFF结尾的4字节字符
+var emojiReg = /[\uD800-\uDBFF]+/gi; // 包含表情符号 -- 以D800开头-DBFF结尾的4字节字符
+```
