@@ -26,5 +26,15 @@ module: {
   ]
 }
 ```
+## babel 配置文件 .babelrc
+```JavaScript
+{
+  "presets": [
+    "es2015",
+    "react"
+  ]
+}
+```
+
 # 测试
 引入browser.js
