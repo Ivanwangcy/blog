@@ -9,6 +9,8 @@ $ npm unistall --global bower #卸载
 
 $ npm update jquery # 更新到最新版本的 jquery 库
 
+$ npm update --save # 更新所有本地仓库 并 更新 package.json
+
 $ npm remove jquery --save # 删除jquery库，并更新 package.json npm remove == npm r
 
 $ npm ls # 列出当前安装的了所有包
@@ -20,6 +22,8 @@ $ npm ls # 列出当前安装的了所有包
 $ npm install module-name -save # 自动把模块和版本号添加到dependencies部分
 $ npm install module-name -save-dev # 自动把模块和版本号添加到devdependencies部分
 
+# 安装多个包用空格隔开
+$ npm install babel-loader babel-core babel-preset-es2015 babel-preset-react --save-dev
 # 安装 package.json 依赖包
 $ npm install  # 安装 package.json 里面的 dependencies 依赖包
 
