@@ -19,8 +19,12 @@ $ npm ls # 列出当前安装的了所有包
 当你为你的模块安装一个依赖模块时，正常情况下你得先安装他们（在模块根目录下npm install module-name），然后连同版本号手动将他们添加到模块配置文件package.json中的依赖里（dependencies）。  
 * -save和save-dev可以省掉你手动修改package.json文件的步骤。
 ```bash
-$ npm install module-name -save # 自动把模块和版本号添加到dependencies部分
-$ npm install module-name -save-dev # 自动把模块和版本号添加到devdependencies部分
+$ npm install module-name --save # 自动把模块和版本号添加到dependencies部分
+$ npm install module-name --save-dev # 自动把模块和版本号添加到devdependencies部分
+
+# 简单的写法：安装 webpack 的缩写形式，如下
+$ npm i webpack -S   # –save：模块名将被添加到dependencies，可以简化为参数-S。
+$ npm i webpack -D   # –save-dev: 模块名将被添加到devDependencies，可以简化为参数-D。
 
 # 安装多个包用空格隔开
 $ npm install babel-loader babel-core babel-preset-es2015 babel-preset-react --save-dev
