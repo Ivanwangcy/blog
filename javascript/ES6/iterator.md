@@ -36,3 +36,13 @@ for(var value of myArray){
   console.log(value);
 }
 ```
+## 使用 for-of 遍历jQuery对象：
+```javascript
+// 因为jQuery对象与数组相似
+// 可以为其添加与数组一致的迭代器方法
+jQuery.prototype[Symbol.iterator]= Array.prototype[Symbol.iterator];
+var contentList = $(".content");
+for(var element of contentList){
+  console.log(element);
+}
+```
