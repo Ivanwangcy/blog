@@ -10,10 +10,12 @@ $ node # 进入 repl 模式
 ## require 函数使用
 ## 创建服务器
 ```javascript
+
 var http = require("http");
 
 http.createServer(function (request, response) {
-  response.write("Hello World");
+  response.write("Hello World!");
   response.end();
-}).listen(8888, "localhost");
+}).listen(8888);
+
 ```
