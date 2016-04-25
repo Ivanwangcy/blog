@@ -8,7 +8,7 @@ var arr = [1, 2];
 
 ## isArray方法
 
-Array.isArray方法用来判断一个值是否为数组。它可以弥补typeof运算符的不足。
+Array.isArray()方法用来判断一个值是否为数组。它可以弥补typeof运算符的不足。
 ```javascript
 var a = [1, 2, 3];
 
