@@ -33,6 +33,12 @@ a.toString() // "1,2,3"
 var a = [1, 2, 3, [4, 5, 6]];
 a.toString() // "1,2,3,4,5,6"
 ```
+## 数组遍历
+```javascript
+[].forEach(function(value, index){
+  console.log(value, index);
+});
+```
 ## push方法，pop方法
 ## slice方法
 Array.slice 截取数组在JavaScript中，Array对象的slice(start[,end])方法返回数组从下标[start,end)的部分（不包含下标为end的元素）如果没有指定end参数，则从start开始到数组结尾的部分，slice()方法不改变原数组，如果要删除数组的一部分，可以使用splice()方法。  
