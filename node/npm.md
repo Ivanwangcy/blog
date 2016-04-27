@@ -12,7 +12,6 @@ $ npm -l
 ## npm init 初始化
 ```bash
 
-
 $ npm init # 初始化package.json 根据提示回车即可
 
 $
@@ -21,7 +20,9 @@ $
 ```sh
 $ npm install jquery --save # 安装 jquery 并保存到 package.json npm install == npm i
 
-$ npm unistall --global bower #卸载
+$ npm install jquery backbone underscore --save # 安装包并保存到 package.json npm install == npm i
+
+$ npm unistall --global jquery #卸载
 
 $ npm update jquery # 更新到最新版本的 jquery 库
 
