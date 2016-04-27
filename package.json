@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "第一个 package.json",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivanwangcy/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivanwangcy/blog/issues"
+  },
+  "homepage": "https://github.com/Ivanwangcy/blog#readme",
+  "dependencies": {
+    "react": "^0.14.8"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.0"
+  }
+}
