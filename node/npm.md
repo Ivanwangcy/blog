@@ -1,7 +1,24 @@
 # npm 命令
+## npm 帮助
+```sh
+$ npm help # 帮助  npm命令列表
+$ npm help <command> # 帮助  打开网页版帮助
+
+$ npm <command> -h # 帮助 命令行学习工具
+
+# 各个命令的简单用法
+$ npm -l
+```
+## npm init 初始化
 ```bash
-$ npm -h # 帮助 命令行学习工具
-$ npm init # 初始化package.json
+
+$ npm init # 初始化package.json 根据提示回车即可
+
+$
+```
+## 安装与更新包,模块
+```sh
+$ npm install jquery --save # 安装 jquery 并保存到 package.json npm install == npm i
 
 $ npm install jquery backbone underscore --save # 安装包并保存到 package.json npm install == npm i
 
