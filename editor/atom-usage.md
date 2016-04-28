@@ -20,7 +20,7 @@
     * atomatigit 可视化git操作 -- 不喜欢用命令行的可以安装;
     * file-icons 给文件加上好看的图标。
     * activate-power-mode 动感十足的编辑模式 -- 动感编辑特效
-    * Highlight Selected 高亮选中部分
+    * Highlight-selected 高亮选中部分
     * emmet Emmet plugin Atom editor
     * Snippets package
     * Docblockr package
