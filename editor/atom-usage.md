@@ -19,12 +19,14 @@
     * jshint 代码检查工具;
     * atomatigit 可视化git操作 -- 不喜欢用命令行的可以安装;
     * file-icons 给文件加上好看的图标。
-    * activate-power-mode 动感十足的编辑模式 -- 动感编辑特效
+    * activate-power-mode 动感十足的编辑模式 -- 动感编辑特效 'ctrl + alt + o' MacBook 通用
     * Highlight Selected 高亮选中部分
     * emmet Emmet plugin Atom editor
     * Snippets package
     * Docblockr package
-
+## MacBook 快捷键汇总：
+* "command + \" 切换导航 显示／隐藏
+* ""
 ## Windows下快捷键汇总:
 ### 编辑器全局 Window 操作
 * `Ctrl + ,`  打开设置面板  Ctrl + comma Settings
