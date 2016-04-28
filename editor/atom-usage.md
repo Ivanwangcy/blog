@@ -25,8 +25,9 @@
     * Snippets package
     * Docblockr package
 ## MacBook 快捷键汇总：
-* "command + \" 切换导航 显示／隐藏
-* ""
+* ｀command + \\｀ 切换导航 显示／隐藏
+* `command + shift + D` 复制当前行；
+
 ## Windows下快捷键汇总:
 ### 编辑器全局 Window 操作
 * `Ctrl + ,`  打开设置面板  Ctrl + comma Settings
