@@ -9,7 +9,10 @@
 - `cmd+x` 剪切
 - `cmd+z` 撤销
 - `cmd+f` 查找
+- `cmd+tab` 程序切换
 
+- `cmd+shift+3` 全屏幕快照。
+- `cmd+shift+4` 截取屏幕快照。
 
 
 - `command + shift + D` 复制当前行；
