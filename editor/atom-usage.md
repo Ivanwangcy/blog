@@ -21,6 +21,7 @@
     * file-icons 给文件加上好看的图标。
     * activate-power-mode 动感十足的编辑模式 -- 动感编辑特效 'ctrl + alt + o' MacBook 通用
     * Highlight-selected 高亮选中部分
+    * Docblockr 注释功能
     * emmet Emmet plugin Atom editor
     * Snippets package
     * Docblockr package
