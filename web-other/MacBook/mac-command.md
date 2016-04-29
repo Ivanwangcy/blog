@@ -18,3 +18,4 @@
 - `command + shift + D` 复制当前行；
 
 #＃ 常用命令
+- `$ ifconfig` 查看 IP 地址
