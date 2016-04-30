@@ -14,8 +14,14 @@
 - `cmd+shift+3` 全屏幕快照。
 - `cmd+shift+4` 截取屏幕快照。
 
+## 浏览器操作
+- `cmd+tab` 程序切换
+- `cmd+［／］` 历史记录，前进／后退
+－
 
+##  编辑功能快捷键
 - `command + shift + D` 复制当前行；
+- `command + ctrl + ⬆️／⬇️` 向上／向下移动当前行；
 
 #＃ 常用命令
 - `$ ifconfig` 查看 IP 地址
