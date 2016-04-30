@@ -14,7 +14,19 @@ $ npm -l
 
 $ npm init # 初始化package.json 根据提示回车即可
 
-$
+```
+## NPM 常用命令：
+```sh
+$ npm –v  查看npm版本；
+$ npm –l  查看各个命令的简单用法；
+$ npm init -y  创建一个package.json包结构, 直接生成默认包；
+$ npm install <package name> 本地安装模块；
+	–save：模块名将被添加到dependencies，可以简化为参数-S。
+	–save-dev: 模块名将被添加到devDependencies，可以简化为参数-D。
+$ npm run 可以运行package.json 里面的脚本scripts；（很重要）
+$ npm info jquery 查看指定包名的模块具体信息；
+$ npm search <key> 使用关键字搜索一个包；
+$ npm list 列出当前项目所有模块和依赖模块；
 ```
 ## 安装与更新包,模块
 ```sh
