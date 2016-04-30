@@ -13,3 +13,5 @@ define(["jquery"], function ($) {
 });
 ```
 ## shime
+```javascript
+```
