@@ -39,7 +39,33 @@ a.toString() // "1,2,3,4,5,6"
   console.log(value, index);
 });
 ```
-## push方法，pop方法
+## push()方法，pop()方法
+`push()`向`Array`的末尾添加若干元素，`pop()`则把`Array`的最后一个元素删除掉：
+```javascript
+var arr = [1, 2];
+arr.push('A', 'B'); // 返回Array新的长度: 4
+arr; // [1, 2, 'A', 'B']
+arr.pop(); // pop()返回'B'
+arr; // [1, 2, 'A']
+arr.pop(); arr.pop(); arr.pop(); // 连续pop 3次
+arr; // []
+arr.pop(); // 空数组继续pop不会报错，而是返回undefined
+arr; // []
+```
+## unshift()和shift()方法
+
+使用`unshift()`方法，往`Array`的头部添加若干元素，`shift()`方法则把`Array`的第一个元素删掉：
+```javascript
+var arr = [1, 2];
+arr.unshift('A', 'B'); // 返回Array新的长度: 4
+arr; // ['A', 'B', 1, 2]
+arr.shift(); // 'A'
+arr; // ['B', 1, 2]
+arr.shift(); arr.shift(); arr.shift(); // 连续shift 3次
+arr; // []
+arr.shift(); // 空数组继续shift不会报错，而是返回undefined
+arr; // []
+```
 ## slice方法
 Array.slice 截取数组在JavaScript中，Array对象的slice(start[,end])方法返回数组从下标[start,end)的部分（不包含下标为end的元素）如果没有指定end参数，则从start开始到数组结尾的部分，slice()方法不改变原数组，如果要删除数组的一部分，可以使用splice()方法。  
 参数：

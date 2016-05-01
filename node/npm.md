@@ -34,7 +34,11 @@ $ npm install jquery --save # 安装 jquery 并保存到 package.json npm instal
 
 $ npm install jquery backbone underscore --save # 安装包并保存到 package.json npm install == npm i
 
-$ npm unistall --global jquery #卸载
+$ npm uninstall --global jquery #卸载
+
+$ npm update # 更新当前项目中的模块
+
+$ npm update -g # 更新全局的模块
 
 $ npm update jquery # 更新到最新版本的 jquery 库
 
@@ -43,6 +47,10 @@ $ npm update --save # 更新所有本地仓库 并 更新 package.json
 $ npm remove jquery --save # 删除jquery库，并更新 package.json npm remove == npm r
 
 $ npm ls # 列出当前安装的了所有包
+$ npm ls -gl  # 同上
+
+$ npm ls -g  # 列出全局安装的所有模块
+
 ```
 ## npm install 详解
 当你为你的模块安装一个依赖模块时，正常情况下你得先安装他们（在模块根目录下npm install module-name），然后连同版本号手动将他们添加到模块配置文件package.json中的依赖里（dependencies）。  
