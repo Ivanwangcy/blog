@@ -1,4 +1,4 @@
-# 在MacBook上运行到家项目（公司内部）
+# 在MacBook上运行到家项目（公司项目）
 
 ## Node 环境变量配置
 ## MacBook OS X and Linux
