@@ -34,9 +34,10 @@ $ source ~/.zshrc
     - 安装 `extract-text-webpack-plugin` 插件，`html-loader` loader工具;
 ```sh
 $ npm i -g webpack webpack-dev-server
-$ npm install --local webpack webpack-dev-server extract-text-webpack-plugin html-loader --save-dev
+$ npm i webpack webpack-dev-server extract-text-webpack-plugin html-loader
 ```
 6. 直接运行脚本
 ```sh
 $ npm run dev
 ```
+7. 浏览器中输入：[http://localhost:8080](http://localhost:8080)
