@@ -1,7 +1,6 @@
 # 在MacBook上运行到家项目（公司项目）
 
-## Node 环境变量配置
-## MacBook OS X and Linux
+## Node 环境变量配置 MacBook OS X and Linux (Windows 可跳过)
 1. 创建一个全局包的目录
 ```sh
 $ mkdir "${HOME}/.npm-packages"
@@ -29,6 +28,7 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 ```sh
 $ source ~/.zshrc
 ```
+## 安装服务器依赖库与启动服务器
 5. 安装 工具和依赖库文件
     - 安装 webpack 和 webpack-dev-server;
     - 安装 `extract-text-webpack-plugin` 插件，`html-loader` loader工具;
