@@ -34,7 +34,8 @@ $ source ~/.zshrc
     - 安装 `extract-text-webpack-plugin` 插件，`html-loader` loader工具;
 ```sh
 $ npm i -g webpack webpack-dev-server
-$ npm i webpack webpack-dev-server extract-text-webpack-plugin html-loader
+# 进入 m-html 根目录
+$ npm install
 ```
 6. 直接运行脚本
 ```sh
