@@ -97,7 +97,7 @@ $ npm dedupe
 ## 执行配置的命令
 ```bash
 $ npm test # 执行测试命令
-
+$ npm start # 启动一个项目
 $ npm run dev # 使用 npm run 执行自定义命令
 $ npm run deploy
 ```
