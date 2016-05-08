@@ -38,7 +38,7 @@ userdel -r 用户名    【删除一个用户，并且删除连同该用户在ho
 上面例子又出现了一个新的命令 ls ，所以现在又得来介绍一些常用命令了：
 ```bash
 ls 【列出文件和目录】 如：ls /home (列出home下面的所有文件和目录)
-ls -l 【列出的文件和目录以长列表显示】 如：ls -l /home
+ls -l 【列出的文件和目录以长列表显示】 如：ls -l /home 等同命令 ：ll
 ls -a 【列出隐藏的文件和目录】 如：ls -a /home
 mkdir 【建立目录】 如：mkdir xiaoluo
 rmdir 【删除空目录】 如：rmdir xiaoluo(只能删除空目录，如果该目录下还有其它文件则该命令无效)
