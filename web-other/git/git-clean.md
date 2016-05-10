@@ -8,3 +8,7 @@ $ git clean -df # 清除文件和目录
 # 与 git checkout -f 结合使用
 $ git checkout -f # 还原已经修改的文件（未加入暂存区，未提交的）
 ```
+## Oh-my-zsh alias
+```sh
+$ gclean  # 等于 git clean -fd
+```
