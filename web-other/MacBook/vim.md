@@ -7,7 +7,7 @@
 - ⑤敲入   wq【保存并退出】， q！【不保存并退出】  
 ## 切换模式
 - `esc` normal-mode 退出插入模式，进入正常模式可以输入命令
-- `ctrl-c` normal-mode 同上 **不在是复制功能了**
+- `ctrl-c` normal-mode 同上 **不是复制功能了**
 - 插入模块
   - `i`   insert-mode:`before`  进入插入模式，在光标之前插入
   - `a`   insert-mode:`after`  进入插入模式，在光标之后插入
