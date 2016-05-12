@@ -96,8 +96,17 @@ $ npm dedupe
 
 ## 执行配置的命令
 ```bash
+
+"scripts" : {"test" : "node testfile.js"}
 $ npm test # 执行测试命令
+
+
 $ npm start # 启动一个项目
 $ npm run dev # 使用 npm run 执行自定义命令
 $ npm run deploy
+```
+## 其它命令
+```sh
+$ npm shrinkwrap  # 锁定依赖版本
+$ npm outdated # 查看 package.json 中依赖的包结构
 ```
