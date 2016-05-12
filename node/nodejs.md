@@ -29,8 +29,7 @@ http.createServer(function (request, response) {
 }).listen(8888);
 
 ```
-## 内置对象
-### process
+## 内置对象 process Node 全局对象，进程
 ```javascript
 process.argv // 查看运行脚本的参数, (一个数组包含命令行参数)
 
