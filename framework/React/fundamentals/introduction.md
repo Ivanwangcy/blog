@@ -5,6 +5,11 @@
 ## 课程目标
 创建一个基于[天气预报API](http://openweathermap.org/api)的天气APP。
 ## 预备知识
+- Declarative 声明式编程
+－ Unidirectional Dateflow 单向数据流
+－ Composition 组合
+－ Explicit Mutations 显性变化
+－ "It's just javascript" 它只是 javascript
 ### React 使用声明式函数编程 (declarative)
 - 特点：
   1. 减少副作用；(Reduce Side Effects)
@@ -104,5 +109,12 @@ Babel 配置文件 `.babelrc`
     'es2015',
     'react'
   ]
+}
+```
+### Axios
+HTTP Requests API 类似于 jQuery.Ajax
+```javascript
+function getRepos(username){
+  return axios.get('https://api.github.com/users/' + username + '/repos' + param + '&per_page=100');
 }
 ```
