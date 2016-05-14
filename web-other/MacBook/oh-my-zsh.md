@@ -1,4 +1,6 @@
 # Oh-My-zsh 命令行操作
+# 配置 profile
+
 ## Oh-My-zsh git
 ```sh
 #### 常用
