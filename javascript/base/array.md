@@ -84,6 +84,20 @@ var arr = [1, 2, 3, 4, 5, 6, 7];
 arr.splice(3, 1); // remove 4, 并 return
 console.log(arr); // [1, 2, 3, 5, 6, 7]
 ```
+## reduce() 函数, 数组分解融合
+```javascript
+var numbers = [5,4,7,3,1];
+var total = numbers.reduce(function(previous, current){
+  return previous + current;
+});
+
+console.log(total);
+```
+reduce() 声明式函数，特点：
+1. 减少副作用；(Reduce Side Effects)
+2. 减少可变性；(Minimize Mutability)
+3. 代码更具可读性；(More Readable Code)
+4. 更少的Bug; (Less Bugs)
 ## join
 ## reverse
 # 示例
