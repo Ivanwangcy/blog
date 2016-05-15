@@ -32,7 +32,7 @@ var total = numbers.reduce(function(previous, current){
   return previous + current;
 });
 ```
-###  回调函数使用 `bind(this)`
+###  回调函数使用和事件绑定需要加 `bind(this)`
 ```javascript
 var listItems = this.props.items.map(function(item, index){
   return (
@@ -45,7 +45,12 @@ var listItems = this.props.items.map(function(item, index){
       </span>
     </li>
   )
-}.bind(this)); // 改变 this 指向，指定上下文为当前对象
+}.bind(this)); // 改变 this 指向，保持上下文为当前对象
+
+// JSX 事件需要加 bind(this)
+<span onClick={this.changeURL.bind(this)} style={{color: 'blue', cursor: 'pointer'}}>
+  {this.props.children}
+</span>
 ```
 ## `React` 开发环境集成
 * React
