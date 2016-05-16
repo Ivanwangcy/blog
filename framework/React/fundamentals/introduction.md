@@ -32,7 +32,7 @@ var total = numbers.reduce(function(previous, current){
   return previous + current;
 });
 ```
-###  回调函数使用和事件绑定需要加 `bind(this)`
+###  回调函数使用和事件绑定需要加 `bind(this)` or arrow functions =>
 ```javascript
 var listItems = this.props.items.map(function(item, index){
   return (
@@ -49,6 +49,11 @@ var listItems = this.props.items.map(function(item, index){
 
 // JSX 事件需要加 bind(this)
 <span onClick={this.changeURL.bind(this)} style={{color: 'blue', cursor: 'pointer'}}>
+  {this.props.children}
+</span>
+
+// 或者箭头函数 ＝>
+<span onClick={ () => this.changeURL() } style={{color: 'blue', cursor: 'pointer'}}>
   {this.props.children}
 </span>
 ```
