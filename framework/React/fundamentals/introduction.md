@@ -4,7 +4,7 @@
 - 课程源码地址：https://github.com/ReactjsProgram/react-fundamentals-curriculum
 ## 课程目标
 创建一个基于[天气预报API](http://openweathermap.org/api)的天气APP。
-## 预备知识
+## 知识点
 - Declarative 声明式编程
 － Unidirectional Dateflow 单向数据流
 － Composition 组合
@@ -58,6 +58,7 @@ var listItems = this.props.items.map(function(item, index){
 </span>
 ```
 ## `React` 开发环境集成
+* nodejs/npm
 * React
 * React Router
 * Webpack
