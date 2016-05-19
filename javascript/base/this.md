@@ -16,3 +16,5 @@ xxx: function(){
   }.bind(this);
 }
 ```
+# Implicit Binding 隐式绑定
+# 
