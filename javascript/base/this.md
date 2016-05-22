@@ -17,4 +17,15 @@ xxx: function(){
 }
 ```
 # Implicit Binding 隐式绑定
-# 
+```javascript
+
+```
+# Explicit Binding 显示绑定
+```javascript
+call()
+apply()
+bind()
+```
+
+# new Binding
+# window Binding
