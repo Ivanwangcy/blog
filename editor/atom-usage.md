@@ -9,6 +9,9 @@
   atom-material-ui 爆款主题UI  
   atom-material-syntax 爆款搭配
 ## package 包管理, 常用的包
+    * react React 开发必备
+    * Nuclide React Native 开发工具
+    * language-babel ES6，jsx 语法 支持
     * atom-terminal
     * terminal-plus -- git 命令控制台插件(推荐使用);
     * Git-Plus git git命令 辅助操作插件 `Ctrl + Shift + H` 打开;
