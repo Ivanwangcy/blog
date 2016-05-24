@@ -28,4 +28,7 @@ bind()
 ```
 
 # new Binding
+使用 `new` 关键字创建的对象
+```javascript
+```
 # window Binding
