@@ -6,13 +6,20 @@
 - ④敲入     : 【这样就可以输入命令了。】  
 - ⑤敲入   wq【保存并退出】， q！【不保存并退出】  
 ## 切换模式
-- `esc` normal-mode 退出插入模式，进入正常模式可以输入命令
-- `ctrl-c` normal-mode 同上 **不是复制功能了**
-- 插入模块
+- Normal 模式
+  - `esc` normal-mode 退出插入模式，进入正常模式可以输入命令
+  - `ctrl-c` normal-mode 同上 **不是复制功能**
+- Insert 模式 进入插入模式 插入文本
   - `i`   insert-mode:`before`  进入插入模式，在光标之前插入
+  - `I`   insert-mode:`before`  进入插入模式，在光标所在行开始处插入
+
   - `a`   insert-mode:`after`  进入插入模式，在光标之后插入
+  - `A`   insert-mode:`after`  进入插入模式，在光标所在行尾部插入
+
   - `o` 在当前行后面插入新行 小写 o
-  - `O` 在当前行前面插入新行 大写 O === shift-o
+  - `O` 在当前行前面插入新行 大写 O === shift + o
+- Visual 模式
+  `v` 进入视图模式
 ## 移动光标
 - `h`/`⬅️` 向左移动光标 ←
 - `j`/`⬇️` 向上移动光标 ↓
