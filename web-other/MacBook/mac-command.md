@@ -4,7 +4,8 @@
 - `command + T` 打开新标签；
 - `command + N` 新建标签；
 - `command + M` 最小化窗口；
-- `command + ctrl + F` 全屏／还原切换；
+- `command + ctrl + F` 全屏／还原切换；(可以使用3个手指切换屏幕，非常方便)
+
 
 - `cmd+c` 复制
 - `cmd+v` 粘贴
