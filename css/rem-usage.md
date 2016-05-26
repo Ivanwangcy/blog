@@ -92,4 +92,26 @@ document.getElementsByTagName('html')[0].style.fontSize=window.innerWidth / 75 +
 
 ($px/10) + "rem";
 ```
-这种方式为最佳方案, 可以完美解决设计稿1px边框的问题. 实际做出来的页面看上去就是比设计稿的边框粗, 为什么呢? 比如: 设计稿是750的, 边框是1px, 那么到了 375的iPhone 6 上面应该的 0.5px才对, 但是html 无法设置0.5px的边框, 只能是1px, 那么就会出现上面的视觉问题, 使用以上方法就解决了这个问题. 
+这种方式为最佳方案, 可以完美解决设计稿1px边框的问题. 实际做出来的页面看上去就是比设计稿的边框粗, 为什么呢? 比如: 设计稿是750的, 边框是1px, 那么到了 375的iPhone 6 上面应该的 0.5px才对, 但是html 无法设置0.5px的边框, 只能是1px, 那么就会出现上面的视觉问题, 使用以上方法就解决了这个问题.
+## 到家项目实现
+
+### 自适应像素比、根元素 fontSize 大小
+```javascript
+var meta = document.createElement("meta");
+meta.setAttribute("name", "viewport");
+var dpr = window.devicePixelRatio;
+meta.setAttribute('content', 'initial-scale=' + 1/dpr + ', maximum-scale=' + 1/dpr + ', minimum-scale=' + 1/dpr + ', user-scalable=no');
+window.document.head.appendChild(meta);
+document.addEventListener('DOMContentLoaded', function(e) {
+    // 如果 750px 设计稿
+    document.getElementsByTagName('html')[0].style.fontSize=window.innerWidth / 37.5 + 'px';
+
+    // 如果 640px 设计稿
+		document.getElementsByTagName('html')[0].style.fontSize=window.innerWidth / 32 + 'px';
+
+    // 上述做法 最终根元素为 20px
+},false);
+```
+### px 像素值改成 REM
+- 原始px值都是`除以2`的，在这里只需要`除以10`即可；如：10px => 1rem 同设计稿 20px
+- 设计稿1px 需要改成 0.05rem , 解决了 0.5px像素值的问题；
