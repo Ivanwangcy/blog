@@ -22,5 +22,5 @@ $ mv -f # 移动一个文件
 ## 添加profiles 启动 `XX－Net` 代理软件
 1. `cmd + O` 打开Profiles pane , click to Edit Profiles
 2. create a profile : command -> /Applications/XX-Net-2.9.6/start.command
-3. add shortcut
+3. add shortcut key;
 4. use shortcut key start command;
