@@ -71,6 +71,14 @@ Array.slice 截取数组在JavaScript中，Array对象的slice(start[,end])方�
 参数：
   1. start:开始截取的数组下标，如果start是负数，表明从数组尾部开始计算。
   2. end:结束截取的数组下标，如果end是负数，表明从数组尾部开始计算。
+```javascript
+// 不改变原数组
+var friends = ['Spencer', 'Rowan', 'Mikenzi', 'Alex'];
+friends.slice(0,3); // 返回新数组
+friends.slice(0,3);
+friends.slice(0,3);
+
+```
 ##  splice方法
 Array.splice(start,delete_count,value,...) 插入、删除、替换数组.  
 参数：
@@ -81,9 +89,23 @@ Array.splice(start,delete_count,value,...) 插入、删除、替换数组.
 ```javascript
 // 删除指定位置数组元素
 var arr = [1, 2, 3, 4, 5, 6, 7];
-arr.splice(3, 1); // remove 4, 并 return
+arr.splice(3, 1); // remove 4, 并 return 修改后的数组
 console.log(arr); // [1, 2, 3, 5, 6, 7]
 ```
+## reduce() 函数, 数组分解融合
+```javascript
+var numbers = [5,4,7,3,1];
+var total = numbers.reduce(function(previous, current){
+  return previous + current;
+});
+
+console.log(total);
+```
+reduce() 声明式函数，特点：
+1. 减少副作用；(Reduce Side Effects)
+2. 减少可变性；(Minimize Mutability)
+3. 代码更具可读性；(More Readable Code)
+4. 更少的Bug; (Less Bugs)
 ## join
 ## reverse
 # 示例

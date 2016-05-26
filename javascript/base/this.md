@@ -16,3 +16,19 @@ xxx: function(){
   }.bind(this);
 }
 ```
+# Implicit Binding 隐式绑定
+```javascript
+
+```
+# Explicit Binding 显示绑定
+```javascript
+call()
+apply()
+bind()
+```
+
+# new Binding
+使用 `new` 关键字创建的对象
+```javascript
+```
+# window Binding

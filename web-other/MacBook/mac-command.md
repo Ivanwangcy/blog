@@ -4,7 +4,8 @@
 - `command + T` 打开新标签；
 - `command + N` 新建标签；
 - `command + M` 最小化窗口；
-- `command + ctrl + F` 全屏／还原切换；
+- `command + ctrl + F` 全屏／还原切换；(可以使用3个手指切换屏幕，非常方便)
+
 
 - `cmd+c` 复制
 - `cmd+v` 粘贴
@@ -21,7 +22,7 @@
 ## 浏览器操作
 - `cmd + tab` 程序切换
 - `cmd +［／］` 历史记录，前进／后退
-- `cmd + ctrl + I` 打开调试工具
+- `cmd + alt + I/J` 打开调试工具
 
 ##  编辑功能快捷键
 - `command + shift + D` 复制当前行；
@@ -29,3 +30,5 @@
 
 #＃ 常用命令
 - `$ ifconfig` 查看 IP 地址
+- `$ pwd` 查看当前目录结构
+- `$ cat file` 查看文件内容
