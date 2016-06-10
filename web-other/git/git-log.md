@@ -17,7 +17,7 @@ $ git log  --author=Ivan  # 查找指定作者的日志
 ### 查看提交历史，设置样式并增加别名
 ```bash
 $ git log
-$ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --stat -n"   // 定义历史记录格式的别名, 以后只需 git lg 即可
+$ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --stat"   // 定义历史记录格式的别名, 以后只需 git lg 即可
 $ git lg  // 使用上面的别名
 $ git lg -5 // 只显示5条提交记录
 ```
