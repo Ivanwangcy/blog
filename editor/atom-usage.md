@@ -29,19 +29,7 @@
     * emmet Emmet plugin Atom editor
     * Snippets package
     * Docblockr package
-## MacBook 快捷键汇总：
-* `command + \` 切换导航 显示／隐藏;
-* `command + ,`  打开 Settings 面板;
 
-
-* `command + shift + D` 复制当前行, 并插入到下面一行；
-* `command + ctrl + ⬆️／⬇️` 向上／向下移动当前行；
-
-
-* `command ＋ M` 最小化当前编辑器；
-* `command ＋ alt + ctrl + M` 缩小／放大当前编辑器；
-* `cmd + shilt + [` 上一个 tab 页
-* `cmd + shilt + ]` 下一个 tab 页
 
 ## Windows下快捷键汇总:
 ### 编辑器全局 Window 操作
@@ -65,7 +53,8 @@
 * `Ctrl+B` 查找当前打开的文件
 * `Ctrl+C` 粘贴
 * `Ctrl+D` 选择字符串 （按住Ctrl 再 +D 继续选择下个相同的字符串）
-* `Ctrl+E/Ctrl+F` 当前文件查找/替换
+* `Ctrl+F` 当前选中的文本，当前文件查找/替换
+* `Ctrl+E` 选中当前文本并查找/替换
 * `Ctrl+G` 跳转至第几行, 输入数字,回车跳至指定行
 * `Ctrl+J` 合并行（已选择需要合并的多行时）
 * `Ctrl+L` 选择整行（按住Ctrl-继续选择下行）
