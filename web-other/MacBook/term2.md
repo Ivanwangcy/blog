@@ -18,6 +18,18 @@ $ ls -a # 查看隐藏文件
 
 $ rm -r <dir>  # 删除一个文件夹
 $ mv -f # 移动一个文件
+
+$ mkdir project # 创建目录
+$ touch index.js # 创建一个空文件
+$ mkdir -p dir/{aa,bb,cc,dd} # 创建新目录以及子目录结构
+
+$ mkdir project && cd $_  # 创建目录后，再进入目录
+$ mkdir -p src/{components,containers,styles,utils,views}\  # 使用 `\` 使命令折行，继续执行下一行命令
+  && touch webpack.config.js # 创建一个目录结构
+
+# 输入内容到文件
+$ echo "body{ border: 1px solid red;}" > src/app.css
+
 ```
 ## 添加profiles 启动 `XX－Net` 代理软件
 1. `cmd + O` 打开Profiles pane , click to Edit Profiles
