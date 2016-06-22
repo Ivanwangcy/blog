@@ -13,6 +13,8 @@
     * Nuclide React Native 开发工具
     * language-babel ES6，jsx 语法 支持
     * atom-terminal
+    * vim-mode vim 模式
+    * ex-mode vim 模式扩展 增加 `:` 进入命令模式
     * terminal-plus -- git 命令控制台插件(推荐使用);
     * Git-Plus git git命令 辅助操作插件 `Ctrl + Shift + H` 打开;
     * color-picker 取色器插件 `CTRL-ALT-C` 打开;
