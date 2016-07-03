@@ -9,3 +9,18 @@ jsx 类名格式使用 className
 ```html
 <div className='container'></div>
 ```
+## json 对象格式的样式
+```javascript
+let transparentBg = {
+  background: 'transparent'
+}
+
+let space = {
+  marginTop: '25px'
+}
+
+export default {
+  transparentBg,
+  space
+} ;
+```
