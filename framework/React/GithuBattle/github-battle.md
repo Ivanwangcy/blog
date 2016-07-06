@@ -1,12 +1,58 @@
 # Github Battle
 一个简单 React 单页应用实例, 涵盖一些 React 基础用法.
-## 具备的基础知识
+## Course Description
+The modularity of the React ecosystem is extremely powerful for building applications. However, this can be a nightmare when you're first starting out. To even get a React app up and running you need the right combination of React, Webpack, and Babel. In this course we'll start from a blank folder and we'll build an application that encompasses everything you need to get started building production ready apps with React (including Routing and Ajax requests). If you're new to React, there's no better place to start than right here.
+
+## 开发所需的工具
 - NPM
 - Webpack
-- First React Component (会写Hello World!) React 基础
+- Babel
+- React
+- React Router
+- axios
+## What You'll Learn
+- JavaScript ES6
+  - Array.map
+  - Array.reduce
+  - Pure Functions
+  - .bind
+  - this
+- React
+  - Imperative vs Declarative
+  - Composition
+  - Unidirectional Dataflow
+  - JSX
+  - Virtual DOM
+  - createClass
+  - state
+  - props
+  - props.children
+  - createElement
+  - Lifecycle Hooks
+  - Container vs Presentational Components
+  - Stateless Functional Components
+  - Events
+  - Private Stateless Functional Components
+  - React Router
+  - Declarative Routing
+  - Route Configurations
+  - Route Matching
+  - Animating Route Transitions
+  - Query Parameters
+- Webpack
+  - Configuration
+  - HTMLWebpackPluginConfig
+  - CSS Loader
+- NPM
+
+
 ## getting start 开始搭建环境
 - 安装环境
 ```sh
+$ mkdir Github-Battle && cd $_
+$ mkdir -p app/{components,containers,config,utils} dist\
+ && touch webpack.config.js .gitignore .babelrc app/{index.html,index.js} dist/{index.html,index_bundle.js}
+
 $ npm init -y
 $ npm install --save react react-dom react-router && npm install --save-dev html-webpack-plugin webpack webpack-dev-server babel-{core,loader} babel-preset-{react,es2015,react-hmre, stage-0}
 
@@ -69,7 +115,6 @@ module.exports = FriendsList
 ```javascript
 this.props.children
 ```
-## 纯函数，无状态组件
 ## 路由
 ## 事件绑定bind，this 作用域
 ## Promise，axios 异步请求
