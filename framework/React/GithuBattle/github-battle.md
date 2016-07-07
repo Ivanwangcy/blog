@@ -94,7 +94,9 @@ ReactDOM.render(<HelloWorld name='Tyler' />, document.getElementById('app'))
 组件与容器，组件的最小单元，容器是多个组件组成的一大块儿。
 ## 公用组件与私有组件
 ```javascript
-var React = require('react');
+// var React = require('react');
+import React, {Comonent} from 'react';
+//
 function FriendItem (props) {
   return <li>{props.friend}</li>
 }
