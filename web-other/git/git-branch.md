@@ -31,3 +31,7 @@ $ git branch -d testing // 删除分支 testing
 $ git rebase # 变基
 $ git merge # 合并
 ```
+## 提交分支
+```bash
+$ git push origin gh-pages
+```
