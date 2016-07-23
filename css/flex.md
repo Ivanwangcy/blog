@@ -1,6 +1,6 @@
 # CSS3 伸缩盒
 
-新旧伸缩盒兼容模式
+## 新旧伸缩盒兼容模式
 ```CSS
 .parent{
   display: -webkit-box;
