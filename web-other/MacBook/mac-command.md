@@ -3,23 +3,31 @@
 - `command + W` 关闭当前标签；
 - `command + T` 打开新标签；
 - `command + N` 新建标签；
-- `command + M` 最小化窗口；
+- `command + M` 最小化当前窗口；
+
+- `command + H` 隐藏当前窗口；
+- `command ＋ alt + H` 隐藏当前窗口以外的窗口；
+
 - `command + ctrl + F` 全屏／还原切换；(可以使用3个手指切换屏幕，非常方便)
 
 - `cmd + shift + T` 恢复上一次关闭的窗口；
 - `cmd + shift + +/-` 放大/缩小当前窗口
 
-- `cmd+c` 复制
-- `cmd+v` 粘贴
-- `cmd+x` 剪切
-- `cmd+z` 撤销
+- `cmd + C` 复制
+- `cmd + V` 粘贴
+- `cmd + X` 剪切
+- `cmd + Z` 撤销
+- `cmd + shift + Z` 重做
+
 - `cmd+f` 查找
 - `cmd+tab` 程序切换;
 
 
 
-- `cmd+shift+3` 全屏幕快照。
-- `cmd+shift+4` 截取屏幕快照。
+- `cmd + shift + 3` 截取全屏幕快照到文件。
+- `cmd + shift ＋ ctrl + 3` 截取全屏幕快照到剪贴板。
+- `cmd + shift + 4` 截取所选屏幕区域快照，或者按空格(Space bar)捕捉一个窗口，到文件。
+- `cmd + shift + ctrl + 4` 截取所选屏幕区域快照，或者按空格(Space bar)捕捉一个窗口，到剪贴板。
 
 ## 浏览器操作
 - `cmd + tab` 程序切换
