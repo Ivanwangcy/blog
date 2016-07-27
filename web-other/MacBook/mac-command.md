@@ -6,6 +6,7 @@
 - `command + M` 最小化窗口；
 - `command + ctrl + F` 全屏／还原切换；(可以使用3个手指切换屏幕，非常方便)
 
+- `cmd + shift + T` 恢复上一次关闭的窗口；
 - `cmd + shift + +/-` 放大/缩小当前窗口
 
 - `cmd+c` 复制
@@ -33,6 +34,7 @@
 ##  编辑功能快捷键
 - `command + shift + D` 复制当前行；
 - `command + ctrl + ⬆️／⬇️` 向上／向下移动当前行；
+
 
 #＃ 常用命令
 - `$ ifconfig` 查看 IP 地址
