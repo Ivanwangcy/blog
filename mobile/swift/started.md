@@ -36,6 +36,12 @@ if age > 130 || age < 1 {
   print("Age is out of range")
 }
 
+let str1 = "Hello"
+// var str1 = "Hello"
+// error let 声明 是不可变的，可变的使用 var
+str1 += " World"
+
+print(str1)
 
 func doSomething(){
     print("doSomething")
@@ -43,12 +49,9 @@ func doSomething(){
 
 doSomething()
 
+func getString() -> String{
+    return "Hi"
+}
+print(getString())
 
-
-let str1 = "Hello"
-
-// error let 声明 是不可变的，可变的使用 var
-str1 += " World"
-
-print(str1)
 ```
