@@ -13,3 +13,7 @@ rem 自适应处理
 ## Retina 视网膜屏（）高清
 2X Retina
 3X Retina
+
+```css
+img-set()
+```
