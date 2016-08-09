@@ -25,3 +25,29 @@
 }
 ```
 ## 气泡框
+```css
+
+/*箭头居中*/
+.container{
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background: #fafafa;
+  position: relative;
+}
+
+.container::before, .container::after{
+  border: 10px solid transparent;
+  border-left-width: 1px;
+  border-right-color: #fafafa;
+  position: absolute;
+  content: " ";
+  left: -10px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.container::before{
+  left: -11px;
+  border-right-color: #e8e8e8;
+}
+```
