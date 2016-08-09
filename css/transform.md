@@ -15,3 +15,14 @@
   perspective: 700px;
 }
 ```
+## 变换函数
+```css
+.container{
+  /* 旋转角度 */
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  /*缩放比例*/
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+```
