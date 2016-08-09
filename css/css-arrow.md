@@ -10,7 +10,20 @@
 }
 ```
 ## 线框箭头
+```css
+.arrow::before, .arrow::after{
+  position: absolute;
+  content: " ";
+  border: 7px solid transparent;
+  border-left-color: #47b34f;
+  right: -15px;
+}
 
+.arrow::after{
+  border-left-color: #fff;
+  right: -13px;
+}
+```
 ## 气泡框
 
 ## 梯形
