@@ -24,5 +24,9 @@
   /*缩放比例*/
   -webkit-transform: scale(2);
   transform: scale(2);
+
+  /* 垂直方向，移动自身一半的距离 */
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 ```
