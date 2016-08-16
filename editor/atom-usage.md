@@ -44,10 +44,11 @@
 * `Ctrl + Shift + W` 关闭编辑器 等同于 `Alt + F4`
 * `Ctrl + Shift + M` 编辑markdown文件时，打开markdown预览文件
 ### 视图操作
-* Ctrl+k left 在左半视图中打开文件
-* Ctrl+k down在下半视图中打开文件
-* Ctrl+k up 在上半视图中打开文件
-* Ctrl+k right 在右半视图中打开文件
+* Ctrl + k left 在左半视图中打开文件
+* Ctrl + k down 在下半视图中打开文件
+* Ctrl + k up 在上半视图中打开文件
+* Ctrl + k right 在右半视图中打开文件
+* Ctrl + W 关闭当前视图
 * `F11` 全屏模式
 
 ### 基本操作
