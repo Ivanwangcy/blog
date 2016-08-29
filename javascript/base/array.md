@@ -98,6 +98,14 @@ var arr = [1, 2, 3, 4, 5, 6, 7];
 arr.splice(3, 1); // remove 4, 并 return 修改后的数组
 console.log(arr); // [1, 2, 3, 5, 6, 7]
 ```
+## filter() 函数, 数组过滤
+```javascript
+function isBigEnough(value) {
+  return value >= 10;
+}
+var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+// filtered is [12, 130, 44]
+```
 ## reduce() 函数, 数组分解融合
 ```javascript
 var numbers = [5,4,7,3,1];
