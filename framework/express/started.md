@@ -7,6 +7,21 @@ $ npm install express --save
 ## 创建 public/index.html 略
 ## 创建文件 server.js
 ```javascript
+// Hello World
+var express = require('express');
+var app = express();
+
+// 测试 express
+app.get('/', function(req, res){
+  res.send('<h1>Hello World</h1>');
+});
+
+app.listen(3000, function(){
+  console.log(('listening on localhost.3000'));
+})
+
+
+// 配置
 var fs = require('fs');
 var path = require('path');
 var express = require('express');
@@ -19,6 +34,8 @@ app.use("/", express.static(path.join(__dirname, "public"))); // 默认路由
 app.listen(app.get('port'), function() {
   console.log(('Server started: http://localhost:' + app.get('port')));
 });
+
+
 ```
 ## 启动服务
 ```bash
