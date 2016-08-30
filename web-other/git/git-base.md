@@ -5,6 +5,9 @@ $ git config --global user.name "John Doe"    # 配置用户名
 
 $ git config --global user.email johndoe@example.com    # 配置邮箱
 $ git config --global credential.helper store   # 保存密码
+
+# 删除 配置项
+$ git config [–-local|–-global|–-system] –-unset section.key # 删除指定范围内的配置项
 ```
 
 ## 获取帮助
