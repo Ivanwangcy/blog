@@ -41,6 +41,10 @@
 
 - `cmd + alt + I/J` 打开调试工具
 
+### 调试模式
+
+- 'Ctrl + L / cmd + K' 清空控制台(Console)
+
 ##  编辑功能快捷键
 - `command + shift + D` 复制当前行；
 - `command + ctrl + ⬆️／⬇️` 向上／向下移动当前行；
