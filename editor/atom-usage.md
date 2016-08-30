@@ -10,6 +10,7 @@
   atom-material-syntax 爆款搭配
 ## package 包管理, 常用的包
     * react React 开发必备
+    * git-time-machine package 当前文件修改历史记录, Alt + T 开启历史记录(时间机器)
     * Nuclide React Native 开发工具
     * language-babel ES6，jsx 语法 支持
     * atom-terminal
