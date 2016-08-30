@@ -22,7 +22,7 @@
     * pigments 颜色显示插件 （必装）高亮显示文件, 样式颜色值显示;
     * atom-ternjs js代码提示很强大，高度定制化。
     * jshint 代码检查工具;
-    * linter 实时代码检查工具;
+    * linter 实时代码检查工具, 下面状态栏标记错误位置;
     * atomatigit 可视化git操作 -- 不喜欢用命令行的可以安装;
     * file-icons 给文件加上好看的图标。
     * activate-power-mode 动感十足的编辑模式 -- 动感编辑特效 'ctrl + alt + o' MacBook 通用
