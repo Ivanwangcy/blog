@@ -44,6 +44,10 @@
 * `Ctrl + Shift + P` 打开命令面板
 * `Ctrl + Shift + W` 关闭编辑器 等同于 `Alt + F4`
 * `Ctrl + Shift + M` 编辑markdown文件时，打开markdown预览文件
+* `Alt + number` 加数字键(面板索引)切换面板
+* `Ctrl + Tab` 切换到上一个视图窗口
+* `Ctrl + Shift + Tab` 切换到下一个视图窗口
+
 ### 视图操作
 * `Ctrl + k left` 在左半视图中打开文件
 * `Ctrl + k down` 在下半视图中打开文件
@@ -122,3 +126,7 @@
 * `Ctrl+Alt+→` 像右选中整个单词
 
 ## 块儿注释 安装 Docblockr Package
+
+## 设置 Tab 类型 (Tab Type)
+设置 Tab 类型, 有些编译工具无法识别 `tab` 字符, 统一把 tab 转换成 空格 `spaces` 的设置.  
+Setting -> Editor -> Tab Type -> 选择 `soft`项;
