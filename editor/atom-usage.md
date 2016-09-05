@@ -55,35 +55,39 @@
 * `Ctrl + k right` 在右半视图中打开文件
 * `Ctrl + W` 关闭当前视图
 * `F11` 全屏模式
+* `Ctrl/CMD + =` 放大当前视图
+* `Ctrl/CMD + -` 缩小当前视图
 
 ### 基本操作
-* `Ctrl+A` 全选
-* `Ctrl+B` 查找当前打开的文件
-* `Ctrl+C` 粘贴
-* `Ctrl+D` 选择字符串 （按住Ctrl 再 +D 继续选择下个相同的字符串）
-* `Ctrl+F` 当前选中的文本，当前文件查找/替换
-* `Ctrl+E` 选中当前文本并查找/替换
-* `Ctrl+G` 跳转至第几行, 输入数字,回车跳至指定行
-* `Ctrl+J` 合并行（已选择需要合并的多行时）
-* `Ctrl+L` 选择整行（按住Ctrl-继续选择下行）
-* `Ctrl+K` Backspace 从光标处删除至行首
-* `Ctrl+M` 光标移动至括号内开始或结束的位置
-* `Ctrl+N` 新建窗口
-* `Ctrl+P`   同Ctrl+T快速搜索项目中的文件
-* `Ctrl+/` 注释整行（如已选择内容，同“Ctrl+Shift+/”效果）
-* `Ctrl+Shift+C` 转换为 utf8
+* `Ctrl + A` 全选
+* `Ctrl + B` 查找当前打开的文件
+* `Ctrl + C` 粘贴
+* `Ctrl + D` 选择字符串 （按住Ctrl 再 +D 继续选择下个相同的字符串）
+* `Ctrl + F` 当前选中的文本，当前文件查找/替换
+* `Ctrl + E` 选中当前文本并查找/替换
+* `Ctrl + G` 跳转至第几行, 输入数字,回车跳至指定行
+* `Ctrl + J` 合并行（已选择需要合并的多行时）
+* `Ctrl + L` 选择整行（按住Ctrl-继续选择下行）
+* `Ctrl + K` Backspace 从光标处删除至行首
+* `Ctrl + M` 光标移动至括号内开始或结束的位置
+* `Ctrl + N` 新建窗口
+* `Ctrl + P`   同Ctrl+T快速搜索项目中的文件
+* `Ctrl + /` 注释整行（如已选择内容，同“Ctrl+Shift+/”效果）
+* `Ctrl + Shift + C` 转换为 utf8
 
-* `Ctrl+R` 搜索指定文件的函数标签，函数名称搜索，跳转至函数所在行
+* `Ctrl + R` 搜索指定文件的函数标签，函数名称搜索，跳转至函数所在行
 
-* `Ctrl+W` 关闭当前编辑窗口
-* `Ctrl+X` 删除当前行
-* `Ctrl+Delete` 向后删除一个单词或一组文字
-* `Ctrl+Backspace` 向前删除一个单词或一组文字
-* `Ctrl+↑` 向上移动行
-* `Ctrl+↓` 向下移动行
+* `Ctrl + W ` 关闭当前编辑窗口
+* `Ctrl + X` 删除当前行
+* `Ctrl + Delete` 向后删除一个单词或一组文字
+* `Ctrl + Backspace` 向前删除一个单词或一组文字
+* `Ctrl + ↑` 向上移动行
+* `Ctrl + ↓` 向下移动行
 * `Tab 缩进` 自动完成
-* `Shift+Tab` 去除缩进
-* `Ctrl+Enter` 光标后插入行  向下插入行
+* `Shift + Tab` 去除缩进
+
+* `Ctrl/CMD + Enter` 光标后插入行  向下插入行
+
 * `Ctrl+F2` 设置书签
 * `F2` 下一个书签
 * `Shift+F2` 上一个书签
