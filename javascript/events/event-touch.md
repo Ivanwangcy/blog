@@ -1,5 +1,5 @@
 # touches 移动端触屏事件
-
+Click 事件在移动设备上有300ms的延时, 为了获取更好的用户体验, 我们需要使用touch事件. 比较有代表性的实现有 fastclick, zepto的touch模块(有点击穿透的BUG). 一些流行的框架也都封装的touch事件. 开发移动应用, 必须要了解. 
 ## touchmove 滑动的开关
 ```javascript
 $(window).bind('touchmove',function(e){
