@@ -22,8 +22,10 @@ function isArray(arr){
 ```
 
 上面代码表示，typeof运算符只能显示数组的类型是Object，而Array.isArray方法可以对数组返回true。
+
 # Array对象的 实例方法
 Array实例对象的方法，都是数组实例才能使用。如果不想创建实例，只是想单纯调用这些方法，可以写成[].method.call(调用对象，参数) 的形式，或者Array.prototype.method.call(调用对象，参数)的形式。
+
 ## valueOf方法，toString方法
 
 valueOf方法返回数组本身。
@@ -39,12 +41,7 @@ a.toString() // "1,2,3"
 var a = [1, 2, 3, [4, 5, 6]];
 a.toString() // "1,2,3,4,5,6"
 ```
-## 数组遍历
-```javascript
-[].forEach(function(value, index){
-  console.log(value, index);
-});
-```
+
 ## push()方法，pop()方法
 `push()`向`Array`的末尾添加若干元素，`pop()`则把`Array`的最后一个元素删除掉：
 ```javascript
@@ -98,6 +95,12 @@ var arr = [1, 2, 3, 4, 5, 6, 7];
 arr.splice(3, 1); // remove 4, 并 return 修改后的数组
 console.log(arr); // [1, 2, 3, 5, 6, 7]
 ```
+## 数组遍历
+```javascript
+[].forEach(function(value, index){
+  console.log(value, index);
+});
+```
 ## filter() 函数, 数组过滤
 ```javascript
 function isBigEnough(value) {
@@ -123,6 +126,7 @@ reduce() 声明式函数，特点：
 ## join
 ## reverse
 # 示例
+
 ## 合并两个数组
 如果需要合并两个数组，可以结合使用push()和apply()方法。
 ```javascript
