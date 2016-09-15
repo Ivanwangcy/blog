@@ -16,4 +16,9 @@ CMD /usr/games/fortune -a | cowsay
 ```
 ## Now build your new images:
 ```sh
+$ docker build -t docker-whale .
+```
+## Run your new docker-whale
+```sh
+$ docker run docker-whale
 ```
