@@ -74,6 +74,17 @@ $ npm install --dev # 同上，已废弃建议使用上面的
 npm i -g webpack webpack-dev-server
 ```
 至于配置文件区分这俩部分，是用于区别开发依赖模块和产品依赖模块，devDepandencies主要是配置测试框架， 例如jshint、mocha。
+## npm 安装 不同版本
+install命令总是安装模块的最新版本，如果要安装模块的特定版本，可以在模块名后面加上@和版本号。
+```sh
+$ npm install sax@latest
+$ npm install sax@0.1.1
+$ npm install sax@">=0.1.0 <0.2.0"
+
+# 例如: 安装rc版的vue,  -- Vue 2.0 候选版本（Release Candidate）
+$ npm install --save vue@">=2.0.0-rc.1"
+```
+
 ## npm 自身升级
 ```sh
 $ npm --version # 查看NPM版本
