@@ -71,7 +71,10 @@ $ npm install  # 安装 package.json 里面的 dependencies 依赖包
 $ npm install --only=dev  # 安装 package.json 里面的 devdependencies 部分的依赖包
 $ npm install --dev # 同上，已废弃建议使用上面的
 # 简写 全局安装（同时安装多个包 空格隔开）
-npm i -g webpack webpack-dev-server
+$ npm i -g webpack webpack-dev-server
+
+# 同样的前缀可以使用 大括号 简写 安装
+$ npm install --save-dev {babel,css,style,postcss,url,file}-loader # ==> babel-loader css-loader ...
 ```
 至于配置文件区分这俩部分，是用于区别开发依赖模块和产品依赖模块，devDepandencies主要是配置测试框架， 例如jshint、mocha。
 ## npm 安装 不同版本
