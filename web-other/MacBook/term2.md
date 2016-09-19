@@ -24,6 +24,8 @@ $ touch index.js # 创建一个空文件
 $ mkdir -p dir/{aa,bb,cc,dd} # 创建新目录以及子目录结构
 
 $ mkdir project && cd $_  # 创建目录后，再进入目录
+
+# 迭代创建目录及多个子目录，使用 `&&` 再执行其它命令
 $ mkdir -p src/{components,containers,styles,utils,views}\  # 使用 `\` 使命令折行，继续执行下一行命令
   && touch webpack.config.js # 创建一个目录结构
 
