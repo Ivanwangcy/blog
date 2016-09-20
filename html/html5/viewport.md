@@ -16,7 +16,8 @@ height = [pixel_value | device-height] ,
  minimum-scale = float_value ,
  maximum-scale = float_value ,
  user-scalable = [yes | no] ,
- target-densitydpi = [dpi_value | device-dpi | high-dpi | medium-dpi | low-dpi]
+ target-densitydpi = [dpi_value | device-dpi | high-dpi | medium-dpi | low-dpi],
+ minimal-ui
 ”
 />
 ```
@@ -28,16 +29,16 @@ height——和 width 相对应，指定高度
 - target-densitydpi——一个屏幕像素密度是由屏幕分辨率决定的，通常定义为每英寸点的数量（dpi）。Android支持三种屏幕像素密度：低像素密度，中像素密度，高像素密度。一个低像素密度的屏幕每英寸上的像素点更少，而一个高像素密度的屏幕每英寸上的像素点更多。Android Browser和WebView默认屏幕为中像素密度。
 
 
-- 下面是 target-densitydpi 属性的取值范围
-device-dpi: 使用设备原本的 dpi 作为目标 dp。 不会发生默认缩放。
+- 下面是 target-densitydpi 属性的取值范围  
+  - device-dpi: 使用设备原本的 dpi 作为目标 dp。 不会发生默认缩放。
 
-- high-dpi: 使用hdpi 作为目标 dpi。 中等像素密度和低像素密度设备相应缩小。
+  - high-dpi: 使用hdpi 作为目标 dpi。 中等像素密度和低像素密度设备相应缩小。
 
-- medium-dpi: 使用mdpi作为目标 dpi。 高像素密度设备相应放大， 像素密度设备相应缩小。 这是默认的target density.
+  - medium-dpi: 使用mdpi作为目标 dpi。 高像素密度设备相应放大， 像素密度设备相应缩小。 这是默认的target density.
 
-- low-dpi: 使用mdpi作为目标 dpi。中等像素密度和高像素密度设备相应放大。
+  - low-dpi: 使用mdpi作为目标 dpi。中等像素密度和高像素密度设备相应放大。
 
--  value: 指定一个具体的dpi 值作为target dpi. 这个值的范围必须在70–400之间。
+  -  value: 指定一个具体的dpi 值作为target dpi. 这个值的范围必须在70–400之间。
 ```html
 <!-- html document -->
  <meta name=”viewport” content=”target-densitydpi=device-dpi” />
@@ -63,4 +64,9 @@ device-dpi: 使用设备原本的 dpi 作为目标 dp。 不会发生默认缩�
 - 例:2.设置屏幕密度为高频，中频，低频自动缩放，禁止用户手动调整缩放
 ```html
 <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+```
+## minimal-ui
+iOS 7.1的Safari为meta标签新增minimal-ui属性，在网页加载时隐藏地址栏与导航栏
+```html
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 ```
