@@ -20,3 +20,15 @@ arr.push(
 // 清除全部定时器
 arr.map(clearInterval);
 ```
+## 自清理定时器
+```javascript
+var start = 0;
+var interval = setInterval(
+  function(){
+    start += 1;
+    if(start == 10){
+      clearInterval(interval);
+    }
+    console.log(start);
+  }, 100);
+```
