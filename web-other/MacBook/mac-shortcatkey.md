@@ -41,6 +41,9 @@
 
 - `cmd + alt + I/J` 打开调试工具
 
+- `cmd + ⬅️` 后退 🔙
+- `cmd + ➡️` 前进
+
 ### 调试模式
 
 - 'Ctrl + L / cmd + K' 清空控制台(Console)
