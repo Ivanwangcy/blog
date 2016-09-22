@@ -84,8 +84,10 @@ $ npm install sax@latest
 $ npm install sax@0.1.1
 $ npm install sax@">=0.1.0 <0.2.0"
 
-# 例如: 安装rc版的vue,  -- Vue 2.0 候选版本（Release Candidate）
 $ npm install --save vue@">=2.0.0-rc.1"
+
+# 例如: 安装rc版的vue,  -- Vue 2.0 候选版本（Release Candidate）, 也可以叫`预览版`
+$ npm install --save vue@next
 ```
 
 ## npm 自身升级
