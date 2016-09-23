@@ -13,3 +13,5 @@
 * `cmd + shilt + ]` 下一个 tab 页
 * `cmd+F` 当前选中的文本，当前文件查找/替换
 * `cmd+E` 选中当前光标处文本,并查找/替换
+
+* `cmd + ctrl + alt + L` reload 重新加载编辑器
