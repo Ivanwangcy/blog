@@ -10,4 +10,13 @@ log('Hello') // Hello World
 log('Hello', 'China') // Hello China
 log('Hello', '') // Hello
 ```
-    
+## 对象中的函数简写
+```javascript
+var obj = {
+  name: "hahah",
+  get(){ // 等同于 get: function(){}
+  return "functiong";
+}};
+
+obj.get(); // functiong
+```    
