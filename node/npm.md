@@ -26,7 +26,15 @@ $ npm install <package name> 本地安装模块；
 $ npm run 可以运行package.json 里面的脚本scripts；（很重要）
 $ npm info jquery 查看指定包名的模块具体信息；
 $ npm search <key> 使用关键字搜索一个包；
-$ npm list 列出当前项目所有模块和依赖模块；
+$ npm list  # 列出当前项目所有模块和依赖模块；
+
+# 查看 包信息
+$ npm view «package-name» versions
+$ npm view webpack versions
+$ npm view «package-name» dist-tags
+$ npm view webpack dist-tags
+# { latest: '1.12.9', beta: '2.0.1-beta' }
+
 ```
 ## 安装与更新包,模块
 ```sh
@@ -87,6 +95,9 @@ $ npm install sax@">=0.1.0 <0.2.0"
 $ npm install --save vue@">=2.0.0-rc.1"
 
 # 例如: 安装rc版的vue,  -- Vue 2.0 候选版本（Release Candidate）, 也可以叫`预览版`
+# 使用 view命令查看 tags 找到vue 2.0 对应的 tag
+$ npm view vue dist-tags
+# { latest: '1.0.27', csp: '1.0.27-csp', next: '2.0.0-rc.7' }
 $ npm install --save vue@next
 ```
 
