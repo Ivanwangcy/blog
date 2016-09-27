@@ -7,3 +7,4 @@
 ## Atom
 ## Sublime Text
 ## Notepad Plus
+## vscode
