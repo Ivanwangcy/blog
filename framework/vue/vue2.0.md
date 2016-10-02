@@ -3,15 +3,31 @@
 
 // 属性和事件
 var data = {
+  counter: 10, // 数据
   attrs: {
     id: 'hello'
   },
   on: {
-    click: function(e){
+    click: function(e){ // 事件名称与DOM事件一致
       console.log('click');
     }
+  },
+  computed: {
+    evenOrOdd (){ // 计算函数，通常用于返回新数据
+      return this.counter % 2 == 0 ? 'Even' : 'Odd';
+    }
+  },
+  methods: {
+    handleClick() { // 另一种事件处理方式，没有返回值
+      console.log(this.counter, this.props);
+      this.counter++;
+    }
+  },
+  hook: { // 钩子 ， 插入DOM时调用
+    insert: () => {
+      console.log('insert dom')
+    }
   }
-}
 
 // h = this.$createElement h 参数是必需的
 render(h) {
@@ -29,7 +45,7 @@ render(h){
   }, [this.text]);
 }
 ```
-## 支持 JSON 格式的 style
+## JSX 样式 ， 支持 JSON 格式的 styles 对象
 ```javascript
 // 样式
 var styles = {
@@ -55,4 +71,13 @@ render(h) {
     </ul>
   );
 }
+```
+## 条件判断 使用三元表达式
+```javascript
+{/* 条件使用三元操作符 */}
+{ this.footer ? <span>&copy;copyright.</span> : "" }
+```
+## jsx 注释语法
+```javascript
+{/* 注释内容 */}
 ```

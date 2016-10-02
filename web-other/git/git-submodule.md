@@ -37,3 +37,7 @@ $ git clone --recursive https://github.com/chaconinc/MainProject
 ```sh
 $ git submodule update --remote server
 ```
+## 操作 submodule
+```sh
+$ git submodule update --checkout -f # 还原本地修改
+```
