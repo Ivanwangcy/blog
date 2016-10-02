@@ -1,6 +1,5 @@
 ## Vue 2.0 jsx 用法
 ```javascript
-
 // 属性和事件
 var data = {
   counter: 10, // 数据
@@ -44,6 +43,7 @@ render(h){
     }
   }, [this.text]);
 }
+
 ```
 ## JSX 样式 ， 支持 JSON 格式的 styles 对象
 ```javascript
@@ -80,4 +80,13 @@ render(h) {
 ## jsx 注释语法
 ```javascript
 {/* 注释内容 */}
+```
+## 动态添加类名
+```javascript
+class={{ a: true, b: true , c: false}}
+
+```
+## 行内样式
+```javascript
+style={{fontSize: '15px'}}
 ```
