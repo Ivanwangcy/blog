@@ -7,6 +7,16 @@
   loader: 'url?limit=8192&name=images/[hash:6].[ext]' // a62c98.png
   loader: 'url?limit=192&name=icon/[name].[ext]' // filename.png
 }
+
+// 其他配置方式， 加载图片
+  {
+    test: /\.(png|jpg|gif|svg)$/,
+    loader: 'url',
+    query: {
+      limit: 8192,
+      name: '[name].[ext]?[hash:6]'
+    }
+  },
 ```
 ## 参数选项
 - limit 图片大小限制在 8192 字节（8KB）及以内的，直接转换成base64编码字符串。可以根据情况任意调节大小；
