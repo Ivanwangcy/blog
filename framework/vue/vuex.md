@@ -27,6 +27,17 @@ Vuex 是一个状态管理模式的框架或者叫类库。它适合中到大型
 - Actions: 组件内部用来分发 mutations 事件的函数
 - Modules: 按模块拆分多个状态树 -- 默认情况下vuex是单一的状态树(state)，如果项目足够大，一颗树显得太臃肿，可以按模块划分成多个独立的状态树(state)。每个 state 都会维护一套由(state, Getters, Mutations, Actions)组成的状态树。
 
+### 下面这张图完美地解释了一个 Vuex 应用内部的数据流动：
+
+![Vuex 数据流程](https://segmentfault.com/img/bVvcIk)  
+
+这张图的重点：
+
+- 数据流动是单向的
+- 组件可以调用 actions
+- Actions 是用来分发 mutations 的
+- 只有 mutations 可以修改状态
+- store 是反应式的，即，状态的变化会在组件内部得到反映
 ## The State Tree
 ## Actions
 ## Mutations
