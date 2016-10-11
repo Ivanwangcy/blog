@@ -37,7 +37,10 @@ Vuex 是一个状态管理模式的框架或者叫类库。它适合中到大型
 - 组件可以调用 actions
 - Actions 是用来分发 mutations 的
 - 只有 mutations 可以修改状态
-- store 是反应式的，即，状态的变化会在组件内部得到反映
+- store 是反应式的，即，状态的变化会在组件内部得到反映
+- store 里面的状态对象会包含所有应用级别的状态，也就是各个组件需要共享的状态。
+
+
 ## The State Tree
 ## Actions
 ## Mutations
