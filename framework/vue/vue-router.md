@@ -141,4 +141,22 @@ export default new Router({
 使用前端路由，当切换到新路由时，想要页面滚到顶部，或者是保持原先的滚动位置，就像重新加载页面那样。 vue-router 能做到，而且更好，它让你可以自定义路由切换时页面如何滚动。
 
 
-## 路由懒加载
+## 路由懒加载 按需加载
+当打包构建应用时，Javascript 包会变得非常大，影响页面加载。如果我们能把不同路由对应的组件分割成不同的代码块，然后当路由被访问的时候才加载对应组件，这样就更加高效了。
+
+结合 Vue 的 异步组件 和 Webpack 的 code splitting feature, 轻松实现路由组件的懒加载。
+
+我们要做的就是把路由对应的组件定义成异步组件：
+```javascript
+const Foo = resolve => {
+  // require.ensure 是 Webpack 的特殊语法，用来设置 code-split point
+  // （代码分块）
+  require.ensure(['./Foo.vue'], () => {
+    resolve(require('./Foo.vue'))
+  })
+}
+```
+这里还有另一种代码分块的语法，使用 AMD 风格的 require，于是就更简单了：
+```javascript
+const Foo = resolve => require(['./Foo.vue'], resolve)
+```
