@@ -111,3 +111,34 @@ router.push({ name: 'user', params: { userId: 123 }, query: {channel: "jd"}})
 console.log(this.$route.params);
 console.log(this.$route.query);
 ```
+## Vue Router 实例用法
+```javascript
+// 导入 vue 和 vue-router
+import Vue from 'vue'
+import Router from 'vue-router'
+
+// 使用路由
+Vue.use(Router)
+
+import HomeView from '../views/HomeView.vue'
+import AboutView from '../views/AboutView'
+import UserDetailView from '../components/UserDetailView'
+
+// 创建路由
+export default new Router({
+  model: 'history',
+  scrollBehavior: () => ({y: 0}), // 路由滚动行为
+  routes: [
+    { path: '/home', component: HomeView},
+    { path: '/user/:storeid/:orgcode', name: 'user', component: AboutView},
+    { path: '/detail', component: UserDetailView},
+    {path: '*', redirect: 'home'}
+  ]
+})
+
+```
+## scrollBehavior 滚动行为详解
+使用前端路由，当切换到新路由时，想要页面滚到顶部，或者是保持原先的滚动位置，就像重新加载页面那样。 vue-router 能做到，而且更好，它让你可以自定义路由切换时页面如何滚动。
+
+
+## 路由懒加载
