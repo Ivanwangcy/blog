@@ -9,13 +9,15 @@
   atom-material-ui 爆款主题UI  
   atom-material-syntax 爆款搭配
 ## package 包管理, 常用的包
-    * react React 开发必备
-    * git-time-machine package 当前文件修改历史记录, Alt + T 开启历史记录(时间机器)
-    * Nuclide React Native 开发工具
-    * language-babel ES6，jsx 语法 支持
-    * atom-terminal
+    * [language-vue](https://atom.io/packages/language-vue) Vue 组件开发，.vue 文件支持
+    * [atom-wx](https://atom.io/packages/atom-wx) 微信小程序语法高亮(atom-wx), 支持 wxml 文件和 wxss 文件
+    * [wxapp](https://atom.io/packages/wxapp) 微信小程序自动补全
+    * [git-time-machine](https://atom.io/packages/git-time-machine) 当前文件修改历史记录, Alt + T 开启历史记录(时间机器)
+    * [Nuclide](https://atom.io/packages/nuclide)  React Native 开发工具
+    * [language-babel](https://atom.io/packages/language-babel) ES6，jsx 语法 支持
     * vim-mode vim 模式
     * ex-mode vim 模式扩展 增加 `:` 进入命令模式
+    * atom-terminal  编辑器内嵌命令行
     * terminal-plus -- git 命令控制台插件(推荐使用);
     * Git-Plus git git命令 辅助操作插件 `Ctrl + Shift + H` 打开;
     * color-picker 取色器插件 `CTRL-ALT-C` 打开;
@@ -36,7 +38,7 @@
 
 ## Windows下快捷键汇总:
 ### 编辑器全局 Window 操作
-* `Ctrl + ,`  打开设置面板  Ctrl + comma Settings
+* `Ctrl + ,`  打开设置面板  Ctrl + command Settings
 * `Ctrl + \` 切换树形导航面板 显示/隐藏  Toggle Tree View
 * `Ctrl + W` 关闭 当前窗口 close Tab
 * `Alt + F4` 关闭编辑器
