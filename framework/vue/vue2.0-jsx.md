@@ -3,6 +3,7 @@
 // 属性和事件
 var data = {
   counter: 10, // 数据
+  currentValue: "",
   attrs: {
     id: 'hello'
   },
@@ -22,6 +23,12 @@ var data = {
       this.counter++;
     }
   },
+  watch: {
+    currentValue(value){
+      // 获取 DOM 元素
+      this.$refs.input.value = value // 双向绑定
+    }
+  },
   hook: { // 钩子 ， 插入DOM时调用
     insert: () => {
       console.log('insert dom')
@@ -32,6 +39,7 @@ var data = {
 render(h) {
   return (
     <div on-click={this.handleClick} {...data}>{this.counter}, count is { this.evenOrOdd }</div>
+    <input ref='input' value={this.currentValue}/>
   )
 }
 
