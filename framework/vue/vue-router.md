@@ -49,9 +49,27 @@ router.push({ path: 'register', query: { plan: 'private' }})
 // 复杂路由，综合使用
 router.push({ name: 'user', params: { userId: 123 }, query: {channel: "jd"}})
 
+```
+### 路由回退
+router.go(n)  
 
+这个方法的参数是一个整数，意思是在 history 记录中向前或者后退多少步，类似 window.history.go(n)。  
 
+例子:  
+```javascript
 
+// 在浏览器记录中前进一步，等同于 history.forward()
+router.go(1)
+
+// 后退一步记录，等同于 history.back()
+router.go(-1)
+
+// 前进 3 步记录
+router.go(3)
+
+// 如果 history 记录不够用，那就默默地失败呗
+router.go(-100)
+router.go(100)
 ```
 
 ### vue 模板 切换路由, 使用 router-link 跳转目标路由的链接声明
