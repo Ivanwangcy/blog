@@ -46,7 +46,8 @@ Page({
     console.log("首页加载完成");
   }
 })
-
+```
+```HTML
 // 首页页面结构
 <!-- index.wxml -->
 <view class="container">
@@ -56,7 +57,8 @@ Page({
   </view>
   <text class="content">Hello World</text>
 </view>
-
+```
+```css
 // 首页页面样式
 /* index.wxss */
 .container{
