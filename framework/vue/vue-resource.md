@@ -29,3 +29,32 @@ Vue.http.interceptors.push((request, next) => {
   })
 })
 ```
+## get 请求
+入参要写到 params 中，或者拼字符串的方式
+```javascript
+var params = {phone: this.mobile}
+this.$http.get('/uri', {params: params})
+// or
+this.$http.get('/uri?phone=' + this.mobile)
+
+.then((response) => {
+  try {
+    console.log(response.data.);
+  } catch (e) { }
+}, (error) => {
+  console.log(error);
+})
+```
+## post 请求
+参数直接放到第二位入参即可
+```javascript
+var params = {phone: this.mobile}
+this.$http.post('/uri', params)
+.then((response) => {
+  try {
+    console.log(response.data);
+  } catch (e) { }
+}, (error) => {
+  console.log(error);
+})
+```
