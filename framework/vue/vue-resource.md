@@ -34,9 +34,12 @@ Vue.http.interceptors.push((request, next) => {
 ```javascript
 var params = {phone: this.mobile}
 this.$http.get('/uri', {params: params})
-// or
+
+// or 字符串拼参数，复杂参数 需要 encodeURI
 this.$http.get('/uri?phone=' + this.mobile)
 
+// or ES6 字符串插值
+this.$http.get(`/uri?phone=${this.mobile}`)
 .then((response) => {
   try {
     console.log(response.data.);
