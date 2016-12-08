@@ -37,6 +37,24 @@ var data = {
 
 // h = this.$createElement h 参数是必需的
 render(h) {
+  const data = {
+      attrs: {
+        id: 'hehe'
+      },
+      on: {
+        click: () => {
+          console.log('click')
+        }
+      },
+      props: {
+        innerHTML: 'hihihi'
+      },
+      hook: {
+        insert: () => {
+          console.log('insert')
+        }
+      }
+    }
   return (
     <div on-click={this.handleClick} {...data}>{this.counter}, count is { this.evenOrOdd }</div>
     <input ref='input' value={this.currentValue}/>
@@ -98,4 +116,4 @@ class={{ a: true, b: true , c: false}}
 ```javascript
 style={{fontSize: '15px'}}
 ```
-## 
+##
