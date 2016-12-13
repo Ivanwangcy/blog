@@ -6,3 +6,7 @@
 ```html
 <style src="style.css"></style>
 ```
+### 非字符串属性
+使用 :props=xxx
+### 自定义指令
+v-xxx
