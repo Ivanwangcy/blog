@@ -8,5 +8,7 @@
 ```
 ### 非字符串属性
 使用 :props=xxx
+### 动画，过渡
+<transition></transition>
 ### 自定义指令
 v-xxx
