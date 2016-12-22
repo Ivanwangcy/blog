@@ -27,6 +27,8 @@ $ npm run 可以运行package.json 里面的脚本scripts；（很重要）
 $ npm info jquery 查看指定包名的模块具体信息；
 $ npm search <key> 使用关键字搜索一个包；
 $ npm list  # 列出当前项目所有模块和依赖模块；
+$ npm ls # 同上
+$ npm ls lodash  # 查看包的依赖 树
 
 # 查看 包信息
 $ npm view «package-name» versions
