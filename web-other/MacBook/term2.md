@@ -4,6 +4,7 @@
 ```sh
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
+3. term2+zsh 下 [git 操作别名](./oh-my-zsh.md)
 ## 显示和隐藏，Mac 隐藏文件
 － 显示Mac隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles -bool true
 － 隐藏Mac隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles -bool false
