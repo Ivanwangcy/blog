@@ -1,5 +1,10 @@
 # Oh-My-zsh 命令行操作
 ## 配置 profile
+```sh
+$ cd ~
+$ cat .zshrc # 查看配置信息
+$ vim .zshrc # 编辑配置文件
+```
 ## 安装 oh-my-zsh
 [install](./term2.md)
 ## Oh-My-zsh git
