@@ -15,7 +15,7 @@ $ vim ~/.npmrc
 prefix=${HOME}/.npm-packages
 ```
 3. 确保 `npm install --global` 可以安装到新建的目录。再给终端配置文件`.bashrc/.zshrc` ,如：`vim ~/.zshrc`增加如下内容：
-(oh-my-zsh)[../web-other/MacBook]
+[oh-my-zsh](../web-other/MacBook)
 ```sh
 NPM_PACKAGES="${HOME}/.npm-packages"
 
