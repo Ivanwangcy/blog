@@ -1,6 +1,7 @@
 # Oh-My-zsh 命令行操作
-# 配置 profile
-
+## 配置 profile
+## 安装 oh-my-zsh
+[install](./term2.md)
 ## Oh-My-zsh git
 ```sh
 #### 常用
