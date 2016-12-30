@@ -1,6 +1,19 @@
 # Oh-My-zsh 命令行操作
-# 配置 profile
-
+## 配置 profile
+```sh
+$ cd ~
+$ cat .zshrc # 查看配置信息
+$ vim .zshrc # 编辑配置文件
+```
+## 更换主题  
+```
+编辑 `.zshrc`   
+ZSH_THEME="robbyrussell"   ## 指定主题
+或者  随机主题
+ZSH_THEME="random" # (...please let it be pie... please be some pie..)
+```
+## 安装 oh-my-zsh
+[install](./term2.md)
 ## Oh-My-zsh git
 ```sh
 #### 常用
