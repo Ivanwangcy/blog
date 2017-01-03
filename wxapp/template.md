@@ -2,6 +2,11 @@
 ### 定义模板
 - 创建 template 文件夹
 - template.wxml
+```html
+<template name="template">
+  <view>模板内容</view>
+</template>
+```
 - template.wxss
 ### 引用模板
 ```html
