@@ -13,8 +13,9 @@
 - `cmd + shift + T` 恢复上一次关闭的窗口；
 - `cmd + shift + +/-` 放大/缩小当前窗口
 
-- `cmd + C` 复制
-- `cmd + V` 粘贴
+- `cmd + C` 复制，复制文件
+- `cmd + V` 粘贴，粘贴文件
+- `cmd + Alt + V` 移动文件到当前目录
 - `cmd + X` 剪切
 - `cmd + Z` 撤销
 - `cmd + shift + Z` 重做
@@ -22,7 +23,8 @@
 - `cmd+f` 查找
 - `cmd+tab` 程序切换;
 
-
+- 文件重命名：选中文件，按 'return/enter'
+- 文件重命名：选中文件，一秒后点击文件 
 
 - `cmd + shift + 3` 截取全屏幕快照到文件。
 - `cmd + shift + ctrl + 3` 截取全屏幕快照到剪贴板。

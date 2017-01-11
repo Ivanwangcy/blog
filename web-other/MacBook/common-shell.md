@@ -81,3 +81,8 @@ $ ls -al /etc>> aa.txt # (将etc下面的列表信息追加到aa.txt文件信息
 
 分类: Linux
 标签: linux, CentOS, OS X
+
+## Mac查看端口占用情况
+```sh
+$ lsof -i:3000
+```
