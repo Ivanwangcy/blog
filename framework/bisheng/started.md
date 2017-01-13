@@ -1,8 +1,10 @@
 ## 开始使用 bisheng
+
 Transform Markdown files into a SPA website using React.  
 转换Markdown文件成为一个 React 单页应用的站点。
 
-### 配置文件 bisheng.config.js
+### 默认配置文件 bisheng.config.js
+
 ```js
 // 默认配置文件
 //
@@ -35,7 +37,7 @@ module.exports = {
 ```
 
 #### Markdown 文件及主题约定规则 /posts/hello-world.md  
-
+定义描述信息如: 标题，发布日期，标签等
 ```md
 ---
 title: Hello world!
@@ -58,7 +60,38 @@ Hello world!
 
 ```
 #### 主题文件剖析
-1. 定义文档结构，路由，站点入口等；
+1. 定义文档结构，路由，站点入口，获取描述信息等；
+```js
+module.exports = {
+  home: '/',
+  sitename: 'One',
+  // tagline: 'The one theme for bisheng',
+  // navigation: [{
+  //   title: 'BiSheng',
+  //   link: 'https://github.com/benjycui/bisheng',
+  // }],
+  // footer: 'Copyright and so on...',
+  // hideBisheng: true,
+  github: 'https://github.com/benjycui/bisheng-theme-one',
+  routes: [{
+    path: '/',
+    component: './template/Archive',
+  }, {
+    path: '/posts/:post',
+    component: './template/Post',
+  }, {
+    path: '/tags',
+    component: './template/TagCloud',
+    dataPath: '/',
+  }],
+};
+
+```
+#### 启动测试服务器
 
 ```js
+$ bisheng start
+
+// 指定其它配置文件启动
+$ bisheng start -c ./site/bisheng.config.js
 ```
