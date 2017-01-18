@@ -109,7 +109,7 @@ Page({
 ```html
 <!-- template.wxml -->
 <template name="template">
-  <view> 模板 </view>
+  <view> 模板 {{text}} </view>
 </template>
 
 ```  
@@ -118,5 +118,6 @@ Page({
 <!-- 引用底部模板 -->
 <import src="../template/template.wxml"/>
 
-
+<!-- 使用模板 并传递数据 -->
+<template is="template" data="{{...data, text: 'hello template'}}"/>
 ```
