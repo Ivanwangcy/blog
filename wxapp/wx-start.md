@@ -121,3 +121,9 @@ Page({
 <!-- 使用模板 并传递数据 -->
 <template is="template" data="{{...data, text: 'hello template'}}"/>
 ```
+
+## 微信小程序与H5开发的区别
+- 兼容性好，JS代码可以放心使用 ES6 语法开发，wxss(css 代码) 可以放心使用CSS3特性；
+- 微信小程序的写法和H5一样，生成的页面是原生的页面，用户体验好；
+- 微信小程序无法使用浏览器特性, DOM API，如：cookie, sessionStorage, localStorage, document 等都无效；
+- 微信小程序提供很多原生API和组件，可直接用 js 调用，文档说明很全面，有web前端基础上手很容易；
