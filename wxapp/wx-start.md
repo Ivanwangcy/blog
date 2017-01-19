@@ -2,6 +2,7 @@
 ## Atom 编辑器 语法 插件 安装
 - [atom-wx](https://atom.io/packages/atom-wx "atom-wx") 微信小程序语法高亮(atom-wx), 支持 wxml 文件和 wxss 文件
 - [wxapp](https://github.com/xiadd/atom-wxapp "wxapp") 微信小程序自动补全
+
 ## 微信小程序开发工具
 
 下载地址：   [https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=20161107](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=20161107)
