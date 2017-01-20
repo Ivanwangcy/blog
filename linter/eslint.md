@@ -9,3 +9,5 @@ $ apm install linter
 $ apm install linter-eslint
 ```
 ## 配置 '.eslintrc'
+
+## eslint 插件
