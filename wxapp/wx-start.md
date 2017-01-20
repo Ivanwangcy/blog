@@ -2,6 +2,7 @@
 ## Atom 编辑器 语法 插件 安装
 - [atom-wx](https://atom.io/packages/atom-wx "atom-wx") 微信小程序语法高亮(atom-wx), 支持 wxml 文件和 wxss 文件
 - [wxapp](https://github.com/xiadd/atom-wxapp "wxapp") 微信小程序自动补全
+
 ## 微信小程序开发工具
 
 下载地址：   [https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=20161107](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=20161107)
@@ -86,9 +87,10 @@ Page({
 
 ```
 ## 创建与预览项目
-首先需要创建好项目结构，才能在微信Web开发者工具中打开查看，也可以下载微信小程序demo。
+首先需要创建好项目结构，才能在微信Web开发者工具中打开查看，也可以下载微信小程序demo。  
+
 1. 添加AppID, 没有可不填，部分功能受限;
-2. 添加项目名称英文+数字，不用用中文名；
+2. 添加项目名称英文+数字，不能用中文名；
 3. 选择项目目录，并添加项目；
 4. 调试代码与google 浏览器类似，支持log输出，不支持浏览器的alert；
 
