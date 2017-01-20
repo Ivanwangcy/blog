@@ -24,4 +24,5 @@ GitHub 开源的知识宝库
   * Shell Override: C:\Program Files\Git\bin\bash.exe
   * Shell Arguments: -l -i  
 *Use git >= 2.7.3 for windows, bash starts up much faster.*
- ### 在Atom中打开
+
+### 在Atom中打开
