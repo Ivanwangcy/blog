@@ -4,3 +4,4 @@
 - 调用Toast提示：wx.showToast(), wx.hideToast()
 - 调用 Alert 弹窗：wx.showModal({})
 - wx:for wx:for-item , wx:for-index
+- wx:if , wx:elif
