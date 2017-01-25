@@ -9,6 +9,8 @@
   }
 }
 ```
+###继承
+
 ## 定义变量
 ```css
 $themeColor: red;
