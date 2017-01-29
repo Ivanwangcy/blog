@@ -8,6 +8,5 @@ $ npm install eslint
 $ apm install linter
 $ apm install linter-eslint
 ```
-## 配置 '.eslintrc'
-
+## 配置 '.eslintrc'#  #配置生成工具
 ## eslint 插件
