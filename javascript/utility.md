@@ -43,3 +43,4 @@ name.replace(/\-([a-z])/g,function($,$1){
 // 第二种方法
 name.replace(/\-([a-z])/g,RegExp.$1.toUpperCase());
 ```
+#  参数查询
