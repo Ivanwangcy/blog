@@ -9,6 +9,6 @@
 $ mkdir webpack-demo && cd $_
 $ npm init -y
 
-
+# 本地项目安装 webpack 最新版, 默认 2.0 以上
 $ npm install --save-dev webpack
 ```
