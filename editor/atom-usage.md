@@ -4,7 +4,8 @@
 安装简单, windows 版直接下载安装即可.其它平台可以使用源码安装.  
 
 
-`Ctrl+Shift+P`打开命令面板可以查找所有命令.`Setting` 进入设置界面, 可以设置项目根目录. 或者直接使用快捷键`Ctrl+,`打开设置面板;  
+`Ctrl+Shift+P`打开命令面板可以查找所有命令.  
+`Setting` 进入设置界面, 可以设置项目根目录. 或者直接使用快捷键`Ctrl+,`打开设置面板 -> install 菜单下搜索自己需要的插件和主题。  
 ## 设置主题, 可以选择已有的主题;
   atom-material-ui 爆款主题UI  
   atom-material-syntax 爆款搭配
