@@ -26,6 +26,7 @@ $ ll
 $ ls -a # 查看隐藏文件
 
 $ rm -r <dir>  # 删除一个文件夹
+$ rm -r -f <dir>  # 强制删除一个文件夹
 $ mv -f # 移动一个文件
 
 $ mkdir project # 创建目录
