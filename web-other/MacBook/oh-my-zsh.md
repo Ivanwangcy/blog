@@ -17,9 +17,12 @@ ZSH_THEME="random" # (...please let it be pie... please be some pie..)
 ## Oh-My-zsh git
 ```sh
 #### 常用
+$ g # => git
+
 $ gst # 等于 git status 查看状态
 $ gss # 等于 git status -s 简化的 git 状态
 $ gcmsg "message" # 等于 git commit -m "说明"
+$ ga # => git add 
 $ gaa # 等于 git add --all
 $ gp # 等于 git push
 $ gl # 等于 git pull
