@@ -30,6 +30,8 @@ module: {
 - url-loader
 - file-loader
 - babel-loader
-- json-loader 
+- json-loader
+- css-loader
+- style-loader
 
 ##
