@@ -26,5 +26,10 @@ module: {
   ]
 },
 ```
-### loader
+### loader list
+- url-loader
+- file-loader
+- babel-loader
+- json-loader 
+
 ##
