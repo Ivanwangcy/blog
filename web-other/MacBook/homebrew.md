@@ -22,6 +22,6 @@ $ brew search --desc <keyword>
 ## 帮助文档
 ```sh
 $ brew help
-$ man brew 
+$ man brew
 $ brew doctor # 修复
 ```
