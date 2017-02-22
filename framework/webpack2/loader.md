@@ -34,4 +34,4 @@ module: {
 - css-loader
 - style-loader
 
-##
+## plugins
