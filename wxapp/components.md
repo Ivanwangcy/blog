@@ -3,6 +3,8 @@
 ## block
 ## image
 
+## swipe
+
 ## 全局组件
 ```javascript
 // 轻提示
