@@ -20,3 +20,4 @@ getUserInfo:function(cb){
 }
 ```
 ## 定位信息
+## WebSocket
