@@ -9,15 +9,30 @@
   }
 }
 ```
-###继承
+## 继承
 
 ## 定义变量
 ```scss
 $themeColor: red;
 
+body{
+  color: $themeColor;
+}
 ```
 
-### 导入样式
+## 导入样式
 ```scss
 @import "style.scss"
+```
+
+## 注释
+单行注释跟JavaScript语言中的注释一样，使用又斜杠（//），但单行注释不会输入到CSS中。
+
+```scss
+/*
+ 正常css注释
+ */
+
+// 双斜杆单行注释
+
 ```
