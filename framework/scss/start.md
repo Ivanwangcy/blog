@@ -12,7 +12,12 @@
 ###继承
 
 ## 定义变量
-```css
+```scss
 $themeColor: red;
+
 ```
- # ## 导入样式
+
+### 导入样式
+```scss
+@import "style.scss"
+```
