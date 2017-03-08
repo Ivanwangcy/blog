@@ -1,4 +1,5 @@
 ## eslint
+
 全局安装
 ```sh
 $ npm install eslint
@@ -8,6 +9,16 @@ $ npm install eslint
 $ apm install linter
 $ apm install linter-eslint
 ```
-## 配置 '.eslintrc'#  #配置生成工具
+## 配置 '.eslintrc'
+##配置生成工具
 ## eslint 插件
- #  #
+
+## 跳过检测的代码，可以增加如下注释
+```js
+/* eslint-disable */
+
+alert('foo'); // 不需要检测的代码
+
+/* eslint-enable */
+
+```
