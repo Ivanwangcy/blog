@@ -20,6 +20,7 @@ Atom 编辑器的 装一下这两个插件： 
   - [https://github.com/NewDadaFE/vue-impression](https://github.com/NewDadaFE/vue-impression)
   - [https://github.com/ElemeFE/mint-ui](https://github.com/ElemeFE/mint-ui)
   - [https://github.com/shinygang/Vue-cnodejs](https://github.com/shinygang/Vue-cnodejs)
+  - [https://github.com/iview/iview](https://github.com/iview/iview)
 
 ## 字体库
 [http://www.iconfont.cn/](http://www.iconfont.cn/)
