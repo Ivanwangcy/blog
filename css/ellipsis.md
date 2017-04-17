@@ -18,6 +18,3 @@
   text-overflow: ellipsis;
 }
 ```
-## 弹性盒布局
-display: -webkit-box; 旧盒模型
-display: flex; 新盒模型
