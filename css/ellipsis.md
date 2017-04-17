@@ -10,13 +10,14 @@
 ```
 ## 多行显示省略号
 ```css
-.artist-ellipsis{
+.artist-ellipsis {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3; /*最大行数为3行*/
   -webkit-box-orient: vertical; /*垂直方向*/
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+}
 ```
-## 盒模式
-display: box; 旧
-display: flex; 新
+## 弹性盒布局
+display: -webkit-box; 旧盒模型
+display: flex; 新盒模型
