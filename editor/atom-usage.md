@@ -55,11 +55,11 @@
 * `Ctrl + Shift + Tab` 切换到下一个视图窗口
 
 ### 视图操作
-* `Ctrl + k left` 在左半视图中打开文件
-* `Ctrl + k down` 在下半视图中打开文件
-* `Ctrl + k up` 在上半视图中打开文件
-* `Ctrl + k right` 在右半视图中打开文件
-* `Ctrl + W` 关闭当前视图
+* `Ctrl + k left` 在左半视图中打开文件 `mac 使用 cmd 代替 Ctrl`
+* `Ctrl + k down` 在下半视图中打开文件 `mac 同上`
+* `Ctrl + k up` 在上半视图中打开文件 `mac 同上`
+* `Ctrl + k right` 在右半视图中打开文件 `mac 同上`
+* `Ctrl + W` 关闭当前视图  `mac 同上`
 * `F11` 全屏模式
 * `Ctrl/CMD + =` 放大当前视图
 * `Ctrl/CMD + -` 缩小当前视图
