@@ -15,3 +15,5 @@ ajax处于安全考虑是有同域的限制，你是否有另外一个域的控�
 </cross-domain-policy>
 ```
 创建一个XML文件复制上面的代码即可。如果看不到代码请使用搜索引擎搜索crossdomain.xml
+ 
+ ##
