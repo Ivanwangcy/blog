@@ -17,4 +17,17 @@ $ npm install -g react-native-git-upgrade
 ```sh
 $ react-native-git-upgrade
 ```
-3. 解决冲突
+### 替代方案
+如果使用 `react-native-git-upgrade`, 自动升级不起作用，请手动升级
+1. 更新 react-native 依赖包 并保存
+```sh
+$ npm install --save react-native@X.Y # 指定的版本号
+# 更新 react
+$ npm install --save react@R
+```
+2. 升级项目模板
+```sh
+$ react-native upgrade
+```
+
+### 解决冲突
