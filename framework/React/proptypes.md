@@ -46,7 +46,7 @@ React.PropTypes.shape({                          // 是否符合指定格式的�
 
   color: React.PropTypes.string,
   fontSize: React.PropTypes.number
-});
+}); // shape 定义对象内部的格式和类型
 React.PropTypes.any.isRequired  // 可以是任何格式，且必要。
 
 
