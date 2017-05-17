@@ -35,10 +35,27 @@ export default class MyComponent extends Component {
 
     // 自定义函数
     clickHandle () {
+      // 改变状态使用 setState
+      this.setState({
+        title: 'clickHandle'
+      })
+    }
+
+    render () {
+      return (
+        <div>{text}</div>
+      )
+    }
+
+    // 渲染完成
+    componentDidMount() {
 
     }
 
-    
+    // 销毁
+    componentWillUnmount() {
+
+    }
   }
 }
 ```
