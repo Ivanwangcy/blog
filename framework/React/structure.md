@@ -44,6 +44,16 @@ export default class MyComponent extends Component {
       this.setState((prevState, props) => ({
         title: prevState.title + props.title
       }))
+
+      // 不同的状态分别设置不会被覆盖
+      this.setState({
+        state1: 'state1'
+      })
+      
+      // 不会影响 state1
+      this.setState({
+        state2: 'state2'
+      })
     }
 
     render () {
