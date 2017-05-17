@@ -39,6 +39,11 @@ export default class MyComponent extends Component {
       this.setState({
         title: 'clickHandle'
       })
+
+      // 异步更新状态，状态
+      this.setState((prevState, props) => ({
+        title: prevState.title + props.title
+      }))
     }
 
     render () {
