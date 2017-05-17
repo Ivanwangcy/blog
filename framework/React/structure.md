@@ -15,7 +15,30 @@ export default class MyComponent extends Component {
   // 定义属性
   static propTypes = {
     text: PropTypes.string.isRequired,
-    hide: PropTypes.bool,
+    hide: PropTypes.bool
+  }
+
+  // 定义默认属性
+  static defaultProps = {
+    text: "Hello World",
+    hide: true
+  }
+
+  // 初始化，构造函数
+  constructor (props) {
+    super(props) // 继承属性，赋值操作
+
+    // 默认状态
+    this.state = {
+      title: '',
+    }
+
+    // 自定义函数
+    clickHandle () {
+
+    }
+
+    
   }
 }
 ```
