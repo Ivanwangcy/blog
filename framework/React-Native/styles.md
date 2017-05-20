@@ -32,3 +32,4 @@ const styles = StyleSheet.create({
   <Text style={[styles.bigblue, styles.red]}>bigblue, then red</Text>
   <Text style={[styles.red, styles.bigblue]}>red, then bigblue</Text>
 ```
+# #
