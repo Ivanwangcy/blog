@@ -32,4 +32,17 @@ const styles = StyleSheet.create({
   <Text style={[styles.bigblue, styles.red]}>bigblue, then red</Text>
   <Text style={[styles.red, styles.bigblue]}>red, then bigblue</Text>
 ```
-# #
+## 边框
+```js
+const styles = StyleSheet.create({
+  container: {
+    borderRadius: 4,
+    borderWidth: 0.5,
+    // borderTopWidth: 0.5,
+    // borderBottomWidth: 0.5,
+    // borderRightWidth: 0.5,
+    // borderLeftWidth: 0.5,
+    broderColor: '#e8e8e8'
+  }
+}
+```
