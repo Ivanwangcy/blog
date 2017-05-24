@@ -18,4 +18,5 @@ let pic = {
 />
 ```
 ### ScrollView
+带有滚动条，可以下拉刷新。
 ### ListView
