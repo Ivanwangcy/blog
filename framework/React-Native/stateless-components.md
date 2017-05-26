@@ -7,16 +7,11 @@ import {
   StyleSheet,
 } from 'react-native'
 
-import {
-  JDDevice,
-} from 'jdreact-core-lib'
-
 
 export default function Header (props){
   return (
     <View style={styles.header}>
-      <View style={styles.headerLine}></View>
-      <Text style={styles.headerText}>{props.floorTitle}</Text>
+      <Text style={styles.headerText}>{props.title}</Text>
     </View>
   )
 }
@@ -28,14 +23,6 @@ var styles = StyleSheet.create({
     alignItems: 'stretch',
     borderColor: '#e7e9e4',
     borderBottomWidth: 0.5
-  },
-  headerLine: {
-    position: 'absolute',
-    width: JDDevice.width * 0.6,
-    left: JDDevice.width * 0.2,
-    top: 24,
-    borderTopWidth: 0.5,
-    borderColor: '#333'
   },
   headerText: {
     alignSelf: 'center',
