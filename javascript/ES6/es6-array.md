@@ -8,6 +8,10 @@ var newNames = names.map(function(name){
   return "Hello " + name;
 });
 ```
+## Array.some() 用法 ES5
+```javascript
+
+```
 ## Array.from() 用法 ES6
 将对象转换成数组，包括类数组（arguments对象, DOM操作返回的NodeList集合）。
 ```javascript
