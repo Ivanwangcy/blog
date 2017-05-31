@@ -1,6 +1,9 @@
 ## react native 中的组件
 ### View
 ### Text
+```javascript
+<Text numberOfLines={2}></Text>
+```
 ### Image
 ```javascript
 let pic = {
@@ -8,6 +11,9 @@ let pic = {
 }
 
 <Image source={pic} style={{width: 193, height: 110}}/>
+
+// require加载图片 带有宽高属性，返回数据源对象，包含 uri
+<Image source={require('xx.png')} />
 ```
 ### TextInput
 ```javascript
@@ -16,8 +22,18 @@ let pic = {
   placeholder="input your name"
   onChangeText={(text) => this.setState({text})}
 />
+
+<TextInput
+  editable={true} // 是否可编辑
+  maxLength={40}  // 最大长度
+  multiline={true/false} // 是否允许多行显示
+  numberOfLines={4} // 最大行数
+/>
+
 ```
 ### ScrollView
 带有滚动条，可以下拉刷新。
 ### ListView
 列表渲染，上拉加载，
+### Toucheable 组件
+### 
