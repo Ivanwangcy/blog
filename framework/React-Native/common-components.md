@@ -2,7 +2,15 @@
 ### View
 ### Text
 ```javascript
-<Text numberOfLines={2}></Text>
+<Text
+  numberOfLines={2}
+  // 多出部分使用省略号替代，设置省略号的位置,
+  // head 头部
+  // middle 中间
+  // tail 尾部 默认
+  ellipsizeMode={'head'/'middle'/'tail'/'clip'}
+  onPress={() => {'点击事件'}}
+></Text>
 ```
 ### Image
 ```javascript
@@ -36,4 +44,4 @@ let pic = {
 ### ListView
 列表渲染，上拉加载，
 ### Toucheable 组件
-### 
+###
