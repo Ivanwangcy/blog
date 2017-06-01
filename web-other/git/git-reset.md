@@ -19,8 +19,3 @@ $ git push -f # 强制提交回滚操作
 # 其它回滚操作
 $ git revert
 ```
-## 还原暂存区
-```sh
-$ git add . 添加暂存区
-$ git reset . 撤销上面操作
-```
