@@ -4,6 +4,7 @@
 $ cd ~
 $ cat .zshrc # 查看配置信息
 $ vim .zshrc # 编辑配置文件
+$ source .zshrc # 使配置文件生效
 ```
 ## 更换主题  
 ```
