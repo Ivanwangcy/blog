@@ -10,7 +10,7 @@
   atom-material-ui 爆款主题UI  
   atom-material-syntax 爆款搭配
 ## package 包管理, 常用的包
-    * [Js Hyperclick](https://atom.io/packages/js-hyperclick) 按 cmd + mousedown jump to declaration or jump to import file
+    * [Js Hyperclick](https://atom.io/packages/js-hyperclick) 按 cmd + mousedown jump to declaration or jump to import file, if without `hyperclick`, 需要先安装它 [hyperclick](https://atom.io/packages/hyperclick)
     * [language-vue](https://atom.io/packages/language-vue) Vue 组件开发，.vue 文件支持
     * [atom-wx](https://atom.io/packages/atom-wx) 微信小程序语法高亮(atom-wx), 支持 wxml 文件和 wxss 文件
     * [wxapp](https://atom.io/packages/wxapp) 微信小程序自动补全
