@@ -1,3 +1,15 @@
+## 还原暂存区，撤销 add 操作 -- Undo add 
+```sh
+$ git add . 添加暂存区
+$ git reset . 撤销上面操作
+```
+
+## 还原本地仓库，撤销 commit 操作 -- Undo a commit and redo
+```sh
+$ git commit -m "comment"
+git reset --soft HEAD^ 撤销上一次提交
+```
+
 ## 回滚到指定版本
 ```bash
 $ git reset --hard 78af61c # 还原远程代码 // 强制还原，无记录
