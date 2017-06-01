@@ -10,6 +10,6 @@ $ git checkout master    # 取出master版本的head。
 $ git checkout tag_name    # 在当前分支上 取出 tag_name 的版本
 $ git checkout  master -- file_name  # 放弃当前对文件file_name的修改
 $ git checkout  commit_id -- file_name  # 取文件file_name的 在commit_id是的版本。commit_id为 git commit 时的sha值。
-$ git checkout -- hello.js
+$ git checkout -- hello.js # 撤销文件修改
 # 这条命令把hello.rb从HEAD中签出.
 ```
