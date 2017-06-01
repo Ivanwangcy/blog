@@ -2,6 +2,7 @@
 ```sh
 # 设置别名
 $ git config --global alias.aa "add --all"
+$ git aa  <==> git add --all
 $ git config --global alias.cm "commit -m"
 $ git config --global alias.acm "commit -am"
 $ git config --global alias.p "push"
