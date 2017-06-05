@@ -34,4 +34,4 @@ Now that you have successfully run the app, let's modify it.
 - Hit `Command⌘ + R`in your iOS Simulator to reload the app and see your change!
 ## That's it!
 Congratulations! You've successfully run and modified your first React Native app.
-# #
+## Mac + Android
