@@ -23,6 +23,17 @@ export default class FadeInView extends React.Component {
       }
     ).start()
   }
+  
+  render () {
+    return (
+      <Animated.View
+        style={{
+          opacity: this.state.FadeAnim
+        }}>
+        {this.props.children}
+      </Animated.View>
+    )
+  }
 }
 
 ```
