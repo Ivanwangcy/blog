@@ -1,4 +1,8 @@
 ## Microsoft vscode editor
-- `ctrl + ↑/↓` 向上/下移动当前行# #
-
 ## 插件
+## vscode 使用
+### 快捷键
+- `Ctrl + K Ctrl + O` 打开项目文件夹
+- `Ctrl + K F` 关闭当前项目
+
+- `Alt + ↑/↓` 向上/下移动当前行
