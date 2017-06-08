@@ -1,6 +1,7 @@
 # alias 别名
 ```sh
 # 设置别名
+$ git config --global alias.st "status"
 $ git config --global alias.aa "add --all"
 $ git aa  <==> git add --all
 $ git config --global alias.cm "commit -m"
