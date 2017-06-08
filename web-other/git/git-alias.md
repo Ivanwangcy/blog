@@ -16,4 +16,3 @@ $ git config --global alias.count "shortlog -sn"
 # 删除别名设置
 $ git config --global --unset alias.gaa
 ```
-p
