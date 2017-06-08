@@ -10,6 +10,7 @@ $ git config --global alias.cam "commit -am"
 $ git config --global alias.cm "checkout master"
 $ git config --global alias.p "push"
 $ git config --global alias.l "pull"
+$ git config --global alias.cl "config --list"
 
 # 删除别名设置
 $ git config --global --unset alias.gaa
