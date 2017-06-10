@@ -35,3 +35,5 @@ Now that you have successfully run the app, let's modify it.
 ## That's it!
 Congratulations! You've successfully run and modified your first React Native app.
 ## Mac + Android
+# 
+ #
