@@ -13,6 +13,9 @@ var newNames = names.map(function(name){
 var arr = [1,2,3]
 arr.concat([4,5,6])
 // [1, 2, 3, 4, 5, 6]
+## Array.some() 用法 ES5
+```javascript
+
 ```
 ## Array.from() 用法 ES6
 将对象转换成数组，包括类数组（arguments对象, DOM操作返回的NodeList集合）。

@@ -1,4 +1,6 @@
-# React Native 颠覆原生, 跨平台新趋势
+## React Native 颠覆原生, 跨平台新趋势
+[官方教程](https://facebook.github.io/react-native/docs/getting-started.html)
+
 ## Dependencies for Mac + iOS
 You will need Xcode, node.js, the React Native command line tools, and Watchman.  
 We recommend installing node and watchman via `Homebrew`.
@@ -33,3 +35,5 @@ Now that you have successfully run the app, let's modify it.
 ## That's it!
 Congratulations! You've successfully run and modified your first React Native app.
 ## Mac + Android
+# 
+ #
