@@ -80,9 +80,10 @@ store.state.b // -> moduleB's state
       Counter
     },
     computed: {
-      ...mapState({ // 获取store状态
-        count: state => state.count
+      ...mapState({ // 获取store状态后再进行处理
+        count: state => state.count.count
       }),
+      ...mapState(['isLoading']), // 获取现有状态
       ...mapGetters(['doubleCount']) // 另一种方式获取状态（经过二次处理）
     },
     methods: {
