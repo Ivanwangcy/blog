@@ -13,3 +13,4 @@ $ react-native run-ios
 - `Ctrl + D` 打开开发调试菜单
 - `Shift + CMD + H` 回到主屏幕
 - `Shift + CMD + H H` 切换应用，展开开启的应用列表，选择指定的应用进行关闭
+# #
