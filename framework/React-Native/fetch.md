@@ -13,3 +13,6 @@
 ```
  
 # #axios
+```sh
+$ npm i -S axios
+```
