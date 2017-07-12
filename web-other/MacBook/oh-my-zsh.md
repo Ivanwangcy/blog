@@ -7,11 +7,11 @@ $ vim .zshrc # 编辑配置文件
 $ source .zshrc # 使配置文件生效
 ```
 ## 更换主题  
-```
-编辑 `.zshrc`   
+```sh
+# 编辑 `.zshrc`   
 ZSH_THEME="robbyrussell"   ## 指定主题
-或者  随机主题
-ZSH_THEME="random" # (...please let it be pie... please be some pie..)
+# 或者  随机主题
+ZSH_THEME="random" # (...please let it be pie... please be some pie..) 随机的主题不喜欢，可以使用 source ~/.zshrc 重新载入主题
 ```
 ## 安装 oh-my-zsh
 [install](./term2.md)
