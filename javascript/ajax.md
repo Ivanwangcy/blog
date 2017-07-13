@@ -16,4 +16,30 @@ ajax处于安全考虑是有同域的限制，你是否有另外一个域的控�
 ```
 创建一个XML文件复制上面的代码即可。如果看不到代码请使用搜索引擎搜索crossdomain.xml
  
- ##
+ ## XMLHttpRequest
+ ```js
+     // 处理JSON Data
+    var encodeFormData = function(data) {
+      if (!data) return ""; // Always return a string
+      var pairs = []; // To hold name=value pairs
+
+      for(var name in data) { // For each name
+
+        if (!data.hasOwnProperty(name)) continue; // Skip inherited
+        if (typeof data[name] === "function") continue; // Skip methods
+        var value = data[name];
+        // value==undefined同时包含了undefined和null的判断
+        value = ( (value==undefined) ?'':value).toString(); // Value as string
+        name = encodeURIComponent(name.replace(" ", "+")); // Encode name
+        value = encodeURIComponent(value.replace(" ", "+")); // Encode value
+        pairs.push(name + "=" + value); // Remember name=value pair
+      }
+
+      return pairs.join('&'); // Return joined pairs separated with &
+    }
+    
+      var request = new XMLHttpRequest();
+      request.open("POST", document.location.protocol + "//log-o2o.jd.com/v1/logging");
+      request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      request.send(encodeFormData({key: '',key2: '', key3: '',}));
+ ```
