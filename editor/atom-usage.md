@@ -10,7 +10,8 @@
   atom-material-ui 爆款主题UI  
   atom-material-syntax 爆款搭配
 ## package 包管理, 常用的包
-    * 1.[Sync Settings](https://atom.io/packages/sync-settings) 搭配github，同步你的atom插件信息，配置信息，让你轻松实现一台电脑配置，多台电脑共享。
+    * [autocomplete-emojis](https://atom.io/packages/autocomplete-emojis) 支持输入各种表情符号 🍎，🚗, 🐶
+    * [Sync Settings](https://atom.io/packages/sync-settings) 搭配github，同步你的atom插件信息，配置信息，让你轻松实现一台电脑配置，多台电脑共享。
     * [Js Hyperclick](https://atom.io/packages/js-hyperclick) 按 cmd + mousedown jump to declaration or jump to import file, if without `hyperclick`, need to install [hyperclick](https://atom.io/packages/hyperclick)
     * [language-vue](https://atom.io/packages/language-vue) Vue 组件开发，.vue 文件支持
     * [atom-wx](https://atom.io/packages/atom-wx) 微信小程序语法高亮(atom-wx), 支持 wxml 文件和 wxss 文件
