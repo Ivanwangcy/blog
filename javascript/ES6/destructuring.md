@@ -1,4 +1,5 @@
 # 变量的解构赋值
+## 数组解构
 ```javascript
 scores = [3, 8];
 // [3, 8]
@@ -8,3 +9,4 @@ winningIndex
 losingIndex
 // 0
 ```
+## 对象解构
