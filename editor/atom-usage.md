@@ -143,3 +143,6 @@
 ## 设置 Tab 类型 (Tab Type)
 设置 Tab 类型, 有些编译工具无法识别 `tab` 字符, 统一把 tab 转换成 空格 `spaces` 的设置.  
 Setting -> Editor -> Tab Type -> 选择 `soft`项;
+## sync-settings
+token:
+- 586947f656c6be6f409ffe2fbe5b012cd8b8d87b
