@@ -22,4 +22,17 @@ class MapContainer extends Component {
 function ListView() {
   return <div>列表</div>;
 }
+
+import React, { PureComponent } from 'react'
+
+// React 16 纯函数写法
+class PureComponent extends PureComponent {
+  render() {
+    return (
+      <View style={styles.container}>
+        <JDText>Hello, PureComponent</JDText>
+      </View>
+    )
+  }
+}
 ```
