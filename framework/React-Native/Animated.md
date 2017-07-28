@@ -37,3 +37,4 @@ export default class FadeInView extends React.Component {
 }
 
 ```
+## Animated.timing
