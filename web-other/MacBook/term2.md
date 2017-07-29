@@ -42,6 +42,9 @@ $ mkdir -p src/{components,containers,styles,utils,views}\  # 使用 `\` 使命�
 # 输入内容到文件
 $ echo "body{ border: 1px solid red;}" > src/app.css
 
+# 请求链接 查看链接返回结果
+$ curl http://www.baidu.com/xx
+
 ```
 ## 添加profiles 启动 `XX－Net` 代理软件
 1. `cmd + O` 打开Profiles pane , click to Edit Profiles
