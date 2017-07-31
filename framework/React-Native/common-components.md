@@ -43,5 +43,5 @@ let pic = {
 带有滚动条，可以下拉刷新。
 ### ListView
 列表渲染，上拉加载，
-### Toucheable 组件
+### Touchable 组件 TouchableHighlight,TouchableWithoutFeedback,TouchableNativeFeedBack,TouchableOpacity
 ###
