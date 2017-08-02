@@ -9,3 +9,5 @@ $ npm install react-native-vector-icons --save
 4. 添加 `item` 指定字体文件名称；
 ## iconfinder
 [https://www.iconfinder.com/iconsets/miu](https://www.iconfinder.com/iconsets/miu)
+## iconfont
+[http://www.iconfont.cn/](http://www.iconfont.cn/) 图标字体资源丰富
