@@ -6,6 +6,7 @@ navigator.geolocation.getCurrentPosition(
    console.log(position);
    this.setState({position})
  },
- (error) => console.error(error)
+ (error) => console.error(error),
+ {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000}
 );
 ```
