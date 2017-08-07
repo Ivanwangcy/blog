@@ -36,8 +36,10 @@
 3. 多态
 <br>加图片
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
+
 ## 链接
 <http://www.baidu.com>
+
 ## 邮箱
 <wcy5211678@163.com>
 
