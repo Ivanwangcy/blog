@@ -30,10 +30,12 @@
         * childitem
 
 <br>
+
 ## 有序列表:
 1. 封装
 2. 继承
 3. 多态
+
 <br>加图片
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
 
