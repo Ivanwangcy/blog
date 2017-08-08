@@ -11,3 +11,9 @@ $ npm install react-native-vector-icons --save
 [https://www.iconfinder.com/iconsets/miu](https://www.iconfinder.com/iconsets/miu)
 ## iconfont
 [http://www.iconfont.cn/](http://www.iconfont.cn/) 图标字体资源丰富
+
+```js
+import Icon from 'react-native-vector-icons/Entypo'
+
+const myIcon = (<Icon name="baidu" size={30} color="#900" />)
+```
