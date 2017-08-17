@@ -8,3 +8,11 @@
 ```css
 
 ```
+## 字体文件格式跨域问题
+
+```sh
+# Nginx 服务器配置：
+  location ~* \.(eot|ttf|woff|svg|otf)$ {
+    add_header Access-Control-Allow-Origin *;
+  }
+```
