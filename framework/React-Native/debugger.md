@@ -6,8 +6,9 @@
 - 代码增加断点  `debugger`
 - 打印日志 console.log()
 - 刷新页面, 可以输入日志，进入断点
-## show 检查元素 
+## show 检查元素
 ## 模拟器调试
-- ios `Ctrl + D` 唤起调试菜单，`Ctrl + R` 重新载入
+- iOS `cmd + D` 唤起调试菜单，`cmd + R` 重新载入
+- Android `cmd + M` 唤起调试菜单，`R + R` 点击两次 `R`
 ## 真机调试
 可以摇晃手机唤起 debugger 菜单；
