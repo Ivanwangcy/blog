@@ -35,5 +35,27 @@ Now that you have successfully run the app, let's modify it.
 ## That's it!
 Congratulations! You've successfully run and modified your first React Native app.
 ## Mac + Android
-# 
- #
+
+## Create A React Component
+```js
+import React, { Component } from 'react'
+import {
+  View,
+  Text,
+  AppRegistry
+} from 'react-native'
+
+class MyComponent extends Component {
+  render() {
+    return (
+      <View>
+        <Text>Hello React Native!!</Text>
+      </View>
+    );
+  }
+}
+```
+## Show The React Component On The Screen
+```js
+AppRegistry.registerComponent('ReactNativeApp', () => MyComponent)
+```

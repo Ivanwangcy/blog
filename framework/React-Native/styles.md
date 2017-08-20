@@ -1,6 +1,8 @@
 ## React Native 中的样式
 创建样式使用 json 对象，样式名称使用驼峰式命名，尺寸大小没有单位（px等），View 默认为flexbox布局.
 ```javascript
+import { StyleSheet } from 'react-native'
+
 // 创建样式对象
 const styles = StyleSheet.create({
   container: {
