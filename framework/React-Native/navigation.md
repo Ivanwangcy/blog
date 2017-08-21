@@ -11,11 +11,11 @@ react-navigation
   activeBackgroundColor='#ddd'
   gestureEnabled={true}
   >
-  <Scene key='首页' icon={TabIcon} iconType="home" component={Home} title='tab #1' initial hideNavBar></Scene>
-  <Scene key='福利' icon={TabIcon} iconType="discover" component={TabView} title='tab #2'></Scene>
-  <Scene key='购物车' icon={TabIcon} iconType="cart" component={TabView} title='tab #3'></Scene>
-  <Scene key='订单' icon={TabIcon} iconType="order" component={TabView} title='tab #4'></Scene>
-  <Scene key='我的' icon={TabIcon} iconType="my" component={TabView} title='tab #5'></Scene>
+  <Scene key='home' tabBarLabel='首页' icon={TabIcon} iconType="home" component={Home} title='tab #1' initial hideNavBar></Scene>
+  <Scene key='discover' tabBarLabel='福利' icon={TabIcon} iconType="discover" component={Content} title='tab #2'></Scene>
+  <Scene key='cart' tabBarLabel='购物车' icon={TabIcon} iconType="cart" component={Content} title='tab #3'></Scene>
+  <Scene key='order' tabBarLabel='订单' icon={TabIcon} iconType="order" component={Content} title='tab #4'></Scene>
+  <Scene key='my' tabBarLabel='我的' icon={TabIcon} iconType="my" component={Content} title='tab #5'></Scene>
 </Scene>
 
 const styles = StyleSheet.create({
