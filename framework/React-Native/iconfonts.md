@@ -1,4 +1,5 @@
 ## React Native 添加字体库
+### 自定义字体文件导入 ReactNative
 1. 添加 font 组件库
 ```sh
 $ npm install react-native-vector-icons --save
@@ -17,3 +18,7 @@ import Icon from 'react-native-vector-icons/Entypo'
 
 const myIcon = (<Icon name="baidu" size={30} color="#900" />)
 ```
+### 模拟字体的其它方式
+- 使用 Base64 加入代码中；
+- 使用 png 图片，设置尺寸，图片颜色 tintColor 实现图标复用；
+- 合并图片，使用View 包裹 Image， Image使用决对定位的方式，控制要显示的图标位置；
