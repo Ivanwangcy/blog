@@ -3,3 +3,4 @@
 - Text 是有背景色的，如果外层容器边框有圆角，会遮挡边框，需设置 backgroundColor: transparent;（背景透明）
 - Touchable 组件，里面只能是独立的组件，不能超过一个，一个以上需嵌套在一个 View 中。
 - Image 当容器，可以实现背景图效果。
+- Text 文本内容被状态改变时，产生页面布局错乱时，要设置等宽字体 fontFamily: 'Helvetica'，List中的 Text 如果不设置等宽字体容易发生闪退；
