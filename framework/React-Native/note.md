@@ -5,4 +5,5 @@
 - Image 当容器，可以实现背景图效果。新增ImageBackground
 - Text 文本内容被状态改变时，产生页面布局错乱时，要设置等宽字体 fontFamily: 'Helvetica'，List中的 Text 如果不设置等宽字体容易发生闪退；
 - View 作为父容器，内容较多或者包含 List —— 长列表等情况下，不设置 flex，会导致样式错乱，部分子组件高度无法撑开。
-- 
+- Animated time 动画，串行动画
+- layout 函数获取，组件的宽高
