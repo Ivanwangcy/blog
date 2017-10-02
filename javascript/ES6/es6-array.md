@@ -35,3 +35,4 @@ Array.from('hello')
 Array.of(3, 11, 8) // [3,11,8]
 ```
 ## Array.find()
+# #
