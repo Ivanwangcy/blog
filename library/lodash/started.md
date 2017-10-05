@@ -7,7 +7,7 @@ $ npm install --save lodash
 ```js
 // ES6 导入
 import _ from 'lodash'
-
+i mport margea from ''
 ```
 
 ### 常用函数
