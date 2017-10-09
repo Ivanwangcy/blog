@@ -95,7 +95,7 @@ var newArr = shuffle([1,2,3,4,5,6,7,8]);
 ```
 ## 数字加千分符(23123456.78 -> 23,123,456.78)
 ```javascript
-// 利用数组反转
+// 方法1：利用数组反转
 function operatorReverse(num){
   if(!num) return;
   num = num.toString();
@@ -110,6 +110,7 @@ function operatorReverse(num){
 }
 operatorReverse('123346346454567');
 
+// 方法2：遍历字符
 function operatorChar(num){
   if(!num) return;
   num = num.toString();
