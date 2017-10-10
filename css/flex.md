@@ -11,5 +11,28 @@
   -webkit-box-flex: 1;
   flex: 1;
 }
-``` 
-###布局方式水平 居中
+```
+## 布局方向
+```CSS
+ div {
+ 
+   /* 垂直方向布局, 从上到下依次排列布局 */
+   flex-direction: column;
+   
+   /* 水平方向布局 从左到右排列 */
+   flex-direction: row;
+ }
+```
+## 空间分配
+```css
+  div {
+    /* 两端对齐排列，相同的间隙 */
+    justify-content: space-between;
+
+    /* 居中排列 */
+    justify-content: center;
+
+    /* 纵向居中排列 */
+    align-items: center;
+  }
+```

@@ -1,13 +1,18 @@
 # ES6 Array 数组新增方法
 2015年2月20日ECMAScript 第六版正式推出。
 
-## Array.map() 用法 ES5
+## Array.map() 用法 ES5 修改原数组, 并返回更新后的数组
 ```javascript
 var names = ['Alice', 'Emily', 'Kate'];
 var newNames = names.map(function(name){
   return "Hello " + name;
 });
 ```
+## Array.concat() 合并多个数组
+```javascript
+var arr = [1,2,3]
+arr.concat([4,5,6])
+// [1, 2, 3, 4, 5, 6]
 ## Array.some() 用法 ES5
 ```javascript
 

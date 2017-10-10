@@ -1,10 +1,8 @@
 ## Microsoft vscode editor
-- `ctrl + ↑/↓` 向上/下移动当前行# #
-
+- `ctrl + ↑/↓` 向上/下移动当前行
 ## 插件
 - Atom Keymap 使用Atom 快捷键
  
-# #
 ## vscode 使用
 ### 快捷键
 

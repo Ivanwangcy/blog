@@ -6,4 +6,5 @@
 * 如果不支持storge setItem 会报异常，例如无痕模式
 
 ## ApplacationCache
-离线  缓存
+ 
+## 离线缓存
