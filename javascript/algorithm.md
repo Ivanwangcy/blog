@@ -92,6 +92,16 @@ var newArr = shuffle([1,2,3,4,5,6,7,8]);
     return num + f(num - 1);
   });
   console.log(sum(100));
+
+  // 第三种 使用数组
+  var sum3 = function(num) {
+    var arr = new Array(num + 1)
+    return arr.join(',').split(",").reduce(function(total, item, index){
+      return Number(total) + index
+    })
+  }
+
+  console.log(sum3(3))
 ```
 ## 数字加千分符(23123456.78 -> 23,123,456.78)
 ```javascript
