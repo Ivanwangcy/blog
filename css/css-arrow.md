@@ -12,3 +12,14 @@
 ## 线框箭头
 
 ## 气泡框
+
+## 梯形
+```CSS
+.trapezoid {
+  border-bottom: 100px solid red;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
+```
