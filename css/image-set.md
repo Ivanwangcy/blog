@@ -7,6 +7,7 @@
     url(img_2x.png) 2x,
     url(img_3x.png) 3x
   );
+  
   background-image: image-set(
     url(img_2x.png) 2x,
     url(img_3x.png) 3x
