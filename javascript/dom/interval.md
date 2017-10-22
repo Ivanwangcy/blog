@@ -20,3 +20,6 @@ arr.push(
 // 清除全部定时器
 arr.map(clearInterval);
 ```
+ 
+# 
+ #
