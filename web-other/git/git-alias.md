@@ -19,5 +19,5 @@ $ git config --global alias.lgm "log --graph --max-count=10"
 $ git config --global alias.lgp "log --stat --color -p"
 
 # 删除别名设置
-$ git config --global --unset alias.gaa
+$ git config --global --unset alias.aa
 ```
