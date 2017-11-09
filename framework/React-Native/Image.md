@@ -36,3 +36,10 @@ image {
   tintColor: 'aquamarine' // 为所有非透明的像素指定一个颜色
 }
 ```
+## 高清图加载
+```js
+// source images@2x.png and images@3x.png
+import images from 'images.png'
+<Image source={images}></Image>
+// 自动加载2x or 3x 图片
+```
