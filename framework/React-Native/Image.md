@@ -43,3 +43,9 @@ import images from 'images.png'
 <Image source={images}></Image>
 // 自动加载2x or 3x 图片
 ```
+## 背景图片
+使用 ImageBackground 作为背景图片。
+```js
+<ImageBackground source={require('./images.png')} style={{width: 100, height: 100}}></ImageBackground>
+
+```
