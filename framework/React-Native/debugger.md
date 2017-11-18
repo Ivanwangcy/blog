@@ -4,7 +4,7 @@
 - Source 菜单 开启 Pause On Caught Exceptions
 - `CMD + Alt + j` 打开控制台
 - 代码增加断点  `debugger`
-- 打印日志 console.log()
+- 打印日志 console.log(),可以在浏览器中打印日志，console.warn())可以在模拟器中输出信息，对象需要使用JSON.stingify转换成字符串才能输出内容;
 - 刷新页面, 可以输入日志，进入断点
 ## show 检查元素
 ## 模拟器调试
