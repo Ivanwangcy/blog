@@ -7,4 +7,9 @@ import {inject, observable} from 'mobx-react/native'
 }
 
 @observable let a = {}
+
+@computed function() {
+  return xx;
+}
+
 ```
