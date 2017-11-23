@@ -20,3 +20,9 @@ var obj = {
 
 obj.get(); // functiong
 ```    
+## reset 参数
+```js
+(...args) => {
+  console.log(args);
+}
+```
