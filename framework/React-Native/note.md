@@ -20,3 +20,4 @@ React具有声明式、异步、响应式的特性：
 - Animated time 动画，串行动画
 - layout 函数获取，组件的宽高
 - Touchable 组件包裹原生的组件View，不能是自定义组件
+- borderBottomWidth:   使用 `StyleSheet.hairlineWidth` 解决0.5像素的边框在plus上的灰色bug
