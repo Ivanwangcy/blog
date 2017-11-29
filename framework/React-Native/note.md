@@ -21,3 +21,5 @@ React具有声明式、异步、响应式的特性：
 - layout 函数获取，组件的宽高
 - Touchable 组件包裹原生的组件View，不能是自定义组件
 - borderBottomWidth:   使用 `StyleSheet.hairlineWidth` 解决0.5像素的边框在plus上的灰色bug
+- automaticallyAdjustContentInsets bool
+如果滚动视图放在一个导航条或者工具条后面的时候，iOS系统是否要自动调整内容的范围。默认值为true。（译注：如果你的ScrollView或ListView的头部出现莫名其妙的空白，尝试将此属性置为false）
