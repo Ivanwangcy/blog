@@ -8,3 +8,18 @@ Object.assign({a:1}, {b:2});
 Object.assign({a:1}, {b:2}, {c:3}, {a:11});
 // Object {a: 11, b: 2, c: 3}
 ```
+## 属性的简写
+```js
+{a, b, c}
+```
+## 方法的简写
+```js
+{
+  func1 () {
+
+  },
+  func2 () {
+
+  }
+}
+```
