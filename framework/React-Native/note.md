@@ -23,3 +23,4 @@ React具有声明式、异步、响应式的特性：
 - borderBottomWidth:   使用 `StyleSheet.hairlineWidth` 解决0.5像素的边框在plus上的灰色bug
 - automaticallyAdjustContentInsets bool
 如果滚动视图放在一个导航条或者工具条后面的时候，iOS系统是否要自动调整内容的范围。默认值为true。（译注：如果你的ScrollView或ListView的头部出现莫名其妙的空白，尝试将此属性置为false）
+- 使用 lodash/debounce 防止点击过快，延迟处理。适用于点击事件，输入事件等
