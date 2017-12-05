@@ -21,7 +21,6 @@ state = {
     this._getItemLayout :
     undefined
   }
-  horizontal={this.state.horizontal}
   key={(this.state.horizontal ? 'h' : 'v') +
     (this.state.fixedHeight ? 'f' : 'd')
   }
@@ -30,7 +29,6 @@ state = {
   onRefresh={this._onRefresh}
   onViewableItemsChanged={this._onViewableItemsChanged}
   ref={this._captureRef}
-  refreshing={false}
   renderItem={this._renderItemComponent}
   shouldItemUpdate={this._shouldItemUpdate}
   viewabilityConfig={VIEWABILITY_CONFIG}
@@ -38,5 +36,13 @@ state = {
   onEndReached={({ distanceFromEnd }) => {
     console.log('on end reached ', distanceFromEnd)
   }}
+
+  // 属性
+  horizontal={this.state.horizontal}
+  alwaysBounceVertical={false}
+  overScrollMode={'never'}
+  bounces={false} // 禁用 滚动头尾 回弹效果
+  scrollEnabled={true}
+  refreshing={false}
 />
 ```
