@@ -1,15 +1,20 @@
 ## Mobx 状态管理框架
 ```js
-import {inject, observable} from 'mobx-react/native'
+import {inject, observable, computed} from 'mobx-react/native'
 
-@action function() {
 
-}
+class Store {
+  @observable let a = {}
 
-@observable let a = {}
 
-@computed function() {
-  return xx;
+  @action function() {
+
+  }
+
+
+  @computed function() {
+    return xx;
+  }
 }
 
 ```
