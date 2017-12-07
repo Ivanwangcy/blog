@@ -36,6 +36,9 @@ state = {
   onEndReached={({ distanceFromEnd }) => {
     console.log('on end reached ', distanceFromEnd)
   }}
+  automaticallyAdjustContentInsets={false}
+  onScroll={handleScroll}
+  scrollEventThrottle={16} // 16ms 1000ms/60fps= 16ms 最佳效果，每秒钟刷新 60 次
 
   // 属性
   horizontal={this.state.horizontal}
