@@ -9,6 +9,15 @@ state = {
   logViewable: false,
   virtualized: true,
 };
+let handleScroll = Animated.event([
+  {
+    nativeEvent: {
+      contentOffset: {
+        y: this.props.settle.animatedScrollY
+      }
+    }
+  }
+])
 
 <FlatList
   HeaderComponent={HeaderComponent}
