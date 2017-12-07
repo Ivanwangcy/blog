@@ -18,9 +18,10 @@ let handleScroll = Animated.event(
     }
   }],
   {
+    useNativeDriver: true,
     listener: (event, gestureState) => {
-      event.persist()
-      console.log(event.nativeEvent.contentOffset.y)
+      event.persist() // 保留 nativeEvent 事件对象，加上这句 才可以获取到 nativeEvent
+
       if (event.nativeEvent.contentOffset.y>= 40) {
         this.props.settle.headerShow = true
       } else {
@@ -58,6 +59,7 @@ let handleScroll = Animated.event(
   }}
   automaticallyAdjustContentInsets={false}
   onScroll={handleScroll}
+  scrollEventThrottle={1} // Use 1 here to make sure no events are ever missed
   scrollEventThrottle={16} // 16ms 1000ms/60fps= 16ms 最佳效果，每秒钟刷新 60 次
 
   // 属性
