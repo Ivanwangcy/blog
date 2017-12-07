@@ -9,15 +9,26 @@ state = {
   logViewable: false,
   virtualized: true,
 };
-let handleScroll = Animated.event([
-  {
+let handleScroll = Animated.event(
+  [{
     nativeEvent: {
       contentOffset: {
         y: this.props.settle.animatedScrollY
       }
     }
+  }],
+  {
+    listener: (event, gestureState) => {
+      event.persist()
+      console.log(event.nativeEvent.contentOffset.y)
+      if (event.nativeEvent.contentOffset.y>= 40) {
+        this.props.settle.headerShow = true
+      } else {
+        this.props.settle.headerShow = false
+      }
+    }
   }
-])
+)
 
 <FlatList
   HeaderComponent={HeaderComponent}
