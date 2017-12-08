@@ -31,6 +31,6 @@ React具有声明式、异步、响应式的特性：
 <View style={{maxHeight: 300}}>
   <ScrollView>
     {列表或者长内容}
-  </ScroolView>
+  </ScrollView>
 </View>
 ```
