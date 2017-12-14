@@ -44,7 +44,7 @@ import images from 'images.png'
 // 自动加载2x or 3x 图片
 ```
 ## 背景图片
-使用 ImageBackground 作为背景图片。
+使用 ImageBackground 作为背景图片。 React Native 新版本不允许使用 Image 做背景图了，如果低版本不支持 ImageBackground 为以后升级考虑，可以使用绝对定位代替背景图。
 ```js
 <ImageBackground source={require('./images.png')} style={{width: 100, height: 100}}></ImageBackground>
 
