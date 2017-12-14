@@ -35,3 +35,13 @@ React具有声明式、异步、响应式的特性：
   </ScrollView>
 </View>
 ```
+- 图文混排，块级元素，需要用View包裹在一起，使用 `alignSelf` 控制自身的布局方式。例如：
+```js
+// 这里的mergin 不起作用，可以使用 空格代替
+<Text>
+<View><Text>特殊文字（需要背景，边框，边距，圆角等）<Text></View>其它文字
+</Text>
+<Text>
+<View><Image>特殊文字（需要背景，边框，边距，圆角等）<Image></View>其它文字
+</Text>
+```
