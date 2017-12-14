@@ -20,7 +20,7 @@ let handleScroll = Animated.event(
     }
   }],
   {
-    useNativeDriver: true,
+    useNativeDriver: true, // 如果使用 true 需要用 原生的 list, Animated.FlatList
     listener: (event, gestureState) => {
       event.persist() // 保留 nativeEvent 事件对象，加上这句 才可以获取到 nativeEvent
 
