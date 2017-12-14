@@ -19,6 +19,12 @@
 />
 ```
 ## 背景图片
+使用 ImageBackground 作为背景图片。 React Native 新版本不允许使用 Image 做背景图了，如果低版本不支持 ImageBackground 为以后升级考虑，可以使用绝对定位代替背景图。
+```js
+<ImageBackground source={require('./images.png')} style={{width: 100, height: 100}}></ImageBackground>
+
+```
+## 背景图片平铺方式
 ## Styles
 ### resizeMode enum('cover', 'contain', 'stretch', 'repeat', 'center')
 决定当组件尺寸和图片尺寸不成比例的时候如何调整图片的大小。
@@ -43,9 +49,4 @@ import images from 'images.png'
 <Image source={images}></Image>
 // 自动加载2x or 3x 图片
 ```
-## 背景图片
-使用 ImageBackground 作为背景图片。 React Native 新版本不允许使用 Image 做背景图了，如果低版本不支持 ImageBackground 为以后升级考虑，可以使用绝对定位代替背景图。
-```js
-<ImageBackground source={require('./images.png')} style={{width: 100, height: 100}}></ImageBackground>
 
-```
