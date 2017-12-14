@@ -9,6 +9,8 @@ state = {
   logViewable: false,
   virtualized: true,
 };
+
+// 滚动条动画
 let handleScroll = Animated.event(
   [{
     nativeEvent: {
