@@ -36,3 +36,25 @@
     align-items: center;
   }
 ```
+## 综合应用
+中间自适应，两端对齐，垂直居中
+```CSS
+.box {
+  /* 盒模型对象 */
+  display: -webkit-box;
+  display: flex;
+
+  /* 垂直布局样式 */
+  -webkit-box-align: center;
+  align-items: : center;
+
+  /* 水平布局样式 */
+  -webkit-box-pack: justify;
+  justify-content: : space-between;
+}
+
+.box .midChild {
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+```
