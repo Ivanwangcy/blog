@@ -6,7 +6,10 @@
 ```js
 {
   // "presets": [ "es2015" ], // 不再使用
-  "presets": [ "env" ],
+  "presets": [ "env", {
+     modules: false,
+     ...
+  }],
   ...
 }
 
@@ -26,6 +29,7 @@
   "presets": [
     ["env", {
       "targets": {
+        modules: false,
         "node": "6.10"
         // or
         "node": "current"
