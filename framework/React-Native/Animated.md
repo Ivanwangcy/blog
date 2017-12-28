@@ -1,5 +1,47 @@
 ## Animated
-### Animated.View
+
+
+## 绝对定位动画使用 `_animatedValue.getLayout()` 方法更简洁
+
+```js
+
+_animatedValue.getLayout()
+<=>
+{
+  left: this._animatedValue.x,
+    top: this._animatedValue.y
+}
+```
+## 位移使用 `_animatedValue.getTranslateTransform()` 更简洁
+```js
+transform: _animatedValue.getTranslateTransform()
+<=>
+transform: [
+    {
+        translateX: this._animatedValue.x
+    },
+    {
+        translateY: this._animatedValue.y
+    }
+]
+```
+
+## 同时设置多个值 `_animatedValue.interpolate()`
+```js
+
+// 使用插值的方式 设置更多属性
+// 例：使用 interpolate 赋予其它值，达到同一个动画其它属性联动的效果
+style={{
+  opacity: this.state.fadeAnim, // Binds directly
+  transform: [{
+    translateY: this.state.fadeAnim.interpolate({
+      inputRange: [0, 1],
+      outputRange: [150, 0]  // 0 : 150, 0.5 : 75, 1 : 0
+    }),
+  }],
+}}
+```
+### Animated.View + timing 简单示例
 ```js
 import React from 'react'
 import { Animated, Easing, StyleSheet, Text, View, } from 'react-native'
@@ -63,21 +105,7 @@ state = {
 style: {
   transform: animatedValue.getTranslateTransform()
 }
-// 可以使用 interpolate 赋予其它值，达到同一个动画其它联动的效果
-style={{
-  opacity: this.state.fadeAnim, // Binds directly
-  transform: [{
-    translateY: this.state.fadeAnim.interpolate({
-      inputRange: [0, 1],
-      outputRange: [150, 0]  // 0 : 150, 0.5 : 75, 1 : 0
-    }),
-  }],
-}}
+
 ```
 
-## Animated.timing
- 
-# 
- #
- #
- #
+##
