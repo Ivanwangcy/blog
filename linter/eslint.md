@@ -9,7 +9,13 @@ $ npm install eslint
 $ apm install linter
 $ apm install linter-eslint
 ```
-## 配置 '.eslintrc'
+## 配置 '.eslintrc' or '.eslintrc.js'
+
+## lint 配置复用 eslint-config
+- extends: "eslint:recommended"  默认的 lint 配置
+- `eslint-config-fbjs` extends: 'fbjs' facebook 配置
+- `eslint-config-standard` extends: 'standard' 标准配置
+
 ##配置生成工具
 ## eslint 插件
 
