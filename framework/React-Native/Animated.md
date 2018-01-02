@@ -110,3 +110,5 @@ style: {
 
 ## Easing 动画缓动效果
 默认 ease-in-out
+# 
+ #spring
