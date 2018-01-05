@@ -12,4 +12,5 @@ $ gcs == git commit -S
 ```
 ## git commit summary and description
 ```sh
+git commit -m "summary" -m "description"
 ```
