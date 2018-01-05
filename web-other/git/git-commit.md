@@ -11,6 +11,8 @@ $ gca! == git commit -v -a --amend # 增加并提交信息
 $ gcs == git commit -S
 ```
 ## git commit summary and description
+使用命令行 或者在 vim 编辑器中输入描述，回车代表标题结束
 ```sh
 git commit -m "summary" -m "description"
 ```
+还可以使用 github 客户端分别输入：Summary 和 Description
