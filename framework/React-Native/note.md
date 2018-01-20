@@ -49,3 +49,6 @@ React具有声明式、异步、响应式的特性：
 - Alert.alert 样式问题，待。。。。
 - ScrollView or FlatList 横向滚动时，需要明确指定高度，否则渲染时可能出现显示不全等样式问题
 - Image 平铺方式，作为背景图，拉伸撑满整个容器使用，拉伸至容器的宽高，图片会变形 resizeMode='stretch'，默认 cover 使图像保持宽高比，超出部分裁剪掉，contain 使图像保持宽高比，不会超出容器，图像都会包含在容器中，多余的空间补白，repeat 重复平铺
+ 
+- shoundupdate 合理使用减少渲染次数。
+f roceupdate
