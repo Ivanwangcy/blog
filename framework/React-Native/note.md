@@ -11,6 +11,8 @@ React具有声明式、异步、响应式的特性：
 原生代码与JavaScript代码通过桥接层进行交互，这是一个异步的批量串行处理过程。桥接层介于原生层和JavaScript代码之间，正如它的名称一样，它的作用很像桥（bridge）。
 ##
 ## 开发日志：
+- style layout : react native 组件默认都是相对定位(relative)的，flex 布局。所以不需要写 display 和 posistion，因此需要使用 absolute (绝对定位)的时候，都是相对父组件的定位。
+- Dimensions 使用Dimensions.get('window') 获取 屏幕的尺寸 {width, height};
 - 重复的组件，要给 key, key 必须保证唯一，要不会影响渲染和性能问题；
 - Text 是有背景色的，如果外层容器边框有圆角，会遮挡边框，需设置 backgroundColor: transparent;（背景透明）
 - Touchable 组件，里面只能是独立的组件，不能超过一个，一个以上需嵌套在一个 View 中。
@@ -19,7 +21,7 @@ React具有声明式、异步、响应式的特性：
 - Text 文本内容被状态改变时，产生页面布局错乱时，要设置等宽字体 fontFamily: 'Helvetica'，List中的 Text 如果不设置等宽字体容易发生闪退；
 - View 作为父容器，内容较多或者包含 List —— 长列表等情况下，不设置 flex，会导致样式错乱，部分子组件高度无法撑开。
 - Animated time 动画，串行动画
-- layout 函数获取，组件的宽高
+- onLayout 函数获取，组件的宽高，使用 onLayout 事件，获取最终渲染组件的实际尺寸。
 - Touchable 组件包裹原生的组件View，不能是自定义组件
 - borderBottomWidth:   使用 `StyleSheet.hairlineWidth` 解决0.5像素的边框在plus上的灰色bug
 - automaticallyAdjustContentInsets bool
@@ -49,6 +51,6 @@ React具有声明式、异步、响应式的特性：
 - Alert.alert 样式问题，待。。。。
 - ScrollView or FlatList 横向滚动时，需要明确指定高度，否则渲染时可能出现显示不全等样式问题
 - Image 平铺方式，作为背景图，拉伸撑满整个容器使用，拉伸至容器的宽高，图片会变形 resizeMode='stretch'，默认 cover 使图像保持宽高比，超出部分裁剪掉，contain 使图像保持宽高比，不会超出容器，图像都会包含在容器中，多余的空间补白，repeat 重复平铺
- 
-- shoundupdate 合理使用减少渲染次数。
-f roceupdate
+
+- shoundupdate 合理使用减少渲染次数。froceupdate 强制更新组件
+-
