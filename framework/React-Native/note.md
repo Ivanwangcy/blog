@@ -18,7 +18,7 @@ React具有声明式、异步、响应式的特性：
 - Touchable 组件，里面只能是独立的组件，不能超过一个，一个以上需嵌套在一个 View 中。
 - Image 当容器，可以实现背景图效果。新增ImageBackground
 - Image 纯色图标可以使用 tintColor: '#999', 改变图片背景色
-- Text 文本内容被状态改变时，产生页面布局错乱时，要设置等宽字体 fontFamily: 'Helvetica'，List中的 Text 如果不设置等宽字体容易发生闪退；
+- fontFamily 文本内容被状态改变时，产生页面布局错乱时，要设置等宽字体 fontFamily: 'Helvetica'，List中的 Text 如果不设置等宽字体容易发生闪退；(新版应该没有此问题)
 - View 作为父容器，内容较多或者包含 List —— 长列表等情况下，不设置 flex，会导致样式错乱，部分子组件高度无法撑开。
 - Animated time 动画，串行动画
 - onLayout 函数获取，组件的宽高，使用 onLayout 事件，获取最终渲染组件的实际尺寸。
