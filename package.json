@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "第一个 package.json",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "react": "^0.14.8"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.0",
+    "webpack": "^1.13.0"
+  },
   "scripts": {
     "start": "node server.js"
   },
@@ -17,11 +22,5 @@
   "bugs": {
     "url": "https://github.com/Ivanwangcy/blog/issues"
   },
-  "homepage": "https://github.com/Ivanwangcy/blog#readme",
-  "dependencies": {
-    "react": "^0.14.8"
-  },
-  "devDependencies": {
-    "webpack": "^1.13.0"
-  }
+  "homepage": "https://github.com/Ivanwangcy/blog#readme"
 }
