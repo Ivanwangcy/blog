@@ -295,8 +295,14 @@ myCar.hooks.calculateRoutes.intercept({
 	}
 })
 ```
+
 **call:** `(...args) => void` 添加到拦截器的 `call` 将触发钩子的触发器, 你可以访问钩子参数。
+
 **tap:** `(tap: Tap) => void` 当你的拦截器插入钩子时，触发器会触发。提供的是Tap对象。点击对象不能改变。
+
+**loop:** `(...args) => void` 添加 `loop` 到你的拦截器将触发每个循环的循环钩子。
+
+**register:** `(tap: Tap) => Tap | undefined` 添加 `register` 到拦截器将触发每个添加的 `Tap` 并允许修改它。
 
 
 持续更新中。。。。。。
