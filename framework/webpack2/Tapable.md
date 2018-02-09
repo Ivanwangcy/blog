@@ -281,7 +281,7 @@ Hook 将以最有效的方式运行插件来编译一个方法。它根据以下
 - 触发器执行的方式（同步 sync，异步 async，promise）
 - 参数的数量
 - 是否使用拦截器
-### 拦截器
+### Interception 拦截器
 所有钩子都提供额外的拦截 API：
 ```js
 myCar.hooks.calculateRoutes.intercept({
@@ -303,6 +303,83 @@ myCar.hooks.calculateRoutes.intercept({
 **loop:** `(...args) => void` 添加 `loop` 到你的拦截器将触发每个循环的循环钩子。
 
 **register:** `(tap: Tap) => Tap | undefined` 添加 `register` 到拦截器将触发每个添加的 `Tap` 并允许修改它。
+
+### HookMap
+所有钩子都提供额外的拦截API：
+```js
+myCar.hooks.calculateRoutes.intercept({
+	call: (source, target, routesList) => {
+		console.log("Starting to calculate routes");
+	},
+	tap: (tapInfo) => {
+		// tapInfo = { type: "promise", name: "GoogleMapsPlugin", fn: ... }
+		console.log(`${tapInfo.name} is doing it's job`);
+		return tapInfo; // may return a new tapInfo object
+	}
+})
+```
+### Hook/HookMap interface
+Public 公共的:
+```js
+interface Hook {
+	tap: (name: string | Tap, fn: (context?, ...args) => Result) => void,
+	tapAsync: (name: string | Tap, fn: (context?, ...args, callback: (err, result: Result) => void) => void) => void,
+	tapPromise: (name: string | Tap, fn: (context?, ...args) => Promise<Result>) => void,
+	intercept: (interceptor: HookInterceptor) => void
+}
+
+interface HookInterceptor {
+	call: (context?, ...args) => void,
+	loop: (context?, ...args) => void,
+	tap: (context?, tap: Tap) => void,
+	register: (tap: Tap) => Tap,
+	context: boolean
+}
+
+interface HookMap {
+	for: (key: any) => Hook,
+	tap: (key: any, name: string | Tap, fn: (context?, ...args) => Result) => void,
+	tapAsync: (key: any, name: string | Tap, fn: (context?, ...args, callback: (err, result: Result) => void) => void) => void,
+	tapPromise: (key: any, name: string | Tap, fn: (context?, ...args) => Promise<Result>) => void,
+	intercept: (interceptor: HookMapInterceptor) => void
+}
+
+interface HookMapInterceptor {
+	factory: (key: any, hook: Hook) => Hook
+}
+
+interface Tap {
+	name: string,
+	type: string
+	fn: Function,
+	stage: number,
+	context: boolean
+}
+
+```
+
+受保护（仅适用于包含 Hook 的类）：
+```js
+interface Hook {
+	isUsed: () => boolean,
+	call: (...args) => Result,
+	promise: (...args) => Promise<Result>,
+	callAsync: (...args, callback: (err, result: Result) => void) => void,
+}
+
+interface HookMap {
+	get: (key: any) => Hook | undefined,
+	for: (key: any) => Hook
+}
+```
+### MultiHook
+一个有帮助钩子类来重定向 `taps` 添加多个其他钩子：
+```js
+const { MultiHook } = require("tapable");
+
+this.hooks.allHooks = new MultiHook([this.hooks.hookA, this.hooks.hookB]);
+```
+
 
 
 持续更新中。。。。。。
