@@ -141,7 +141,7 @@ tapable.applyPluginsBailResult('options', {a: 1}) // 执行到返回非 undefine
 - apply 这个apply 和 通常使用的函数原型 apply 不是一回事，是应用一组插件类的方法。比如：webpack 的各种插件(CommonsChunkPlugin，extract-text-webpack-plugin，html-webpack-plugin，......)都提供了 apply 方法。
 - hasPlugins 判断是否为注册过的事件，有点奇怪这个函数在 Tapable 内部没有被应用，每个 applyPlugins* 都自己进行的 plugin 是否存在的判断；
 
-每个函数的用法有相关文档也说的很清楚了，主要来看看每种 applyPlugins 的差异。看源码这些函数都使用的 for 循环，觉得使用数组的 forEach 会更简洁一些。具体原因应该是考虑兼容性问题，代码写的比较早或者是书写习惯问题，不需要纠结谁好谁坏，大神也是人，哈哈。
+每个函数的用法有相关文档也说的很清楚了，主要来看看每种 applyPlugins 的差异。看源码这些函数都使用的 for 循环，觉得使用数组的 forEach 会更简洁一些。具体原因应该是考虑兼容性问题，代码写的比较早或者是书写习惯问题，总之不需要纠结谁好谁不好，适合的才是最好的。
 ### applyPlugins* 触发一个插件
 - applyPlugins 简单的插件应用触发器实现
 下面是我之前写的 trigger 对比, 缺少参数的可扩展性。Tapable 提供了，applyPlugins，applyPlugins(0-2)，我写的相当于 applyPlugins1，只支持一种参数形式。Tapable 是为外部提供的接口，需要支持各种场景。
