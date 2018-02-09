@@ -1,4 +1,4 @@
-# Webpack 插件 `Tapable V0.2` 应用与原理
+# Webpack 插件 `Tapable V0.2` 应用与原理分析
 `Tapable` 是什么？ Tapable是一个可以绑定和应用的插件库，也是是一个用于 webpack 的插件体系结构中的内部核心库。webpack 中有很多 Tapable 的实例类，它们都继承或者混合（mixin）自 Tapable，这些实例提供了各种事件钩子可以附加到自定义插件中。总之，Tapable 可以说是短小精湛。贯穿于 webpack 的每个角落。
 
 ## 首先看看 Webpack 官方的说明
@@ -54,7 +54,42 @@ CustomPlugin.prototype.apply = function(compiler) {
 ```js
 this.apply*("emit",options) // will fetch all plugins under 'emit' name and run them.
 ```
-## Tapable 的基本用法, 可以看出它采用了发布订阅模式
+## Tapable 的函数
+**plugin**
+```js
+    void plugin(names: string|string[], handler: Function)
+```
+事件绑定函数，参数说明  
+`names`: 需要监听的事件名称，可以传入事件名称集合（同时绑定多个事件），也可以传入单个事件名称  
+`handler`: 事件的处理函数
+
+**applyPlugins**
+```js
+    void applyPlugins(name: string, args: any...)
+```
+触发事件 `name` ，传入参数 `args` ，并行的调用所有注册在事件 `name` 上的处理函数
+
+**applyPluginsWaterfall**
+```js
+    any applyPluginsWaterfall(name: string, init: any, args: any...)
+```
+触发事件 `name` ，串行的调用注册在事件 `name` 上的处理函数（先入先出），最先执行的处理函数传入 `init` 和 `args` ，后续的处理函数传入前一个处理函数的返回值和 `args` ，函数最终返回最后一个处理函数的返回结果
+
+**applyPluginsAsync**
+```
+    void applyPluginsAsync(
+        name: string,
+        args: any...,
+        callback: (err?: Error) -> void
+    )
+```
+触发事件 `name` ，串行的调用注册在事件 `name` 上的处理函数（先入先出），倘若某一个处理函数报错，则执行传入的 `callback(err)` ，后续的处理函数将不被执行，否则最后一个处理函数调用 `callback `。
+
+插件注册此类事件，处理函数需要调用 `callback` ，这样才能保证监听链的正确执行
+
+> 参考 [Tapable中文文档](https://www.jianshu.com/p/c71393db6287)
+
+## Tapable 的基本用法, 可以看出它采用了发布订阅模式，并且增加了多种处理机制
 ```js
 const Tapable = require('tapable') // 导入库引用
 
@@ -98,3 +133,43 @@ tapable.applyPluginsBailResult('options', {a: 1}) // 执行到返回非 undefine
 // 1 { a: 1 }
 
 ```
+## Tapable 的源码实现
+使用最基本的发布订阅模式，一个事件列表，一个注册器，一个触发器。其中用到了很多 `apply` 和 `call`， 咋一看各种方法都大同小异, 没有多少复杂的东西。但是它能够在webpack中应用的那么广，真的是不可思议。
+- 构造函数初始化插件列表
+- mixin 混合所有原型方法到一个新类，使用了for in 循环复制属性，应该是属性较少比较单一，不需要过多的判断和优化，虽然forin性能很差，但是只有最适合的才是最好的。
+- plugin 函数，负责注册插件，插件名称可以是数组或者多维数组，递归调用。直到不为数组的情况下再添加到插件列表里。非常适合应用于 webpack 的配置文件，它包含很多层级的配置项。
+- apply 这个apply 和 通常使用的函数原型 apply 不是一回事，是应用一组插件类的方法。比如：webpack 的各种插件(CommonsChunkPlugin，extract-text-webpack-plugin，html-webpack-plugin，......)都提供了 apply 方法。
+- hasPlugins 判断是否为注册过的事件，有点奇怪这个函数在 Tapable 内部没有被应用，每个 applyPlugins* 都自己进行的 plugin 是否存在的判断；
+
+每个函数的用法有相关文档也说的很清楚了，主要来看看每种 applyPlugins 的差异。看源码这些函数都使用的 for 循环，觉得使用数组的 forEach 会更简洁一些。具体原因应该是考虑兼容性问题，代码写的比较早或者是书写习惯问题，不需要纠结谁好谁坏，大神也是人，哈哈。
+### applyPlugins* 触发一个插件
+- applyPlugins 简单的插件应用触发器实现
+下面是我之前写的 trigger 对比, 缺少参数的可扩展性。Tapable 提供了，applyPlugins，applyPlugins(0-2)，我写的相当于 applyPlugins1，只支持一种参数形式。Tapable 是为外部提供的接口，需要支持各种场景。
+```js
+this.trigger = function (name, data) {
+  if (this.events[name]) {
+    this.events[name].forEach((callback) => {
+      callback.call(this, data)
+    })
+  }
+}
+```
+- applyPluginsWaterfall 比前面的触发器多了一个返回值，调用这个函数时要传一个 init 初始化的参数（不传也是可以的会, 是 undefined），把 init 作为第一个注册函数的入参，再把函数返回值作为下一个函数的入参，以此类推，直到最后一个函数执行完的返回值，作为 applyPluginsWaterfall 的返回值。  
+关键的不同点：
+```js
+var current = init;
+	for 循环 {
+		args[0] = current;
+		current = 函数调用返回值;
+	}
+	return current;
+```
+- applyPluginsBailResult 另一种函数处理方式，执行函数时，只要返回值不为 `undefined`，就会直接返回这个返回值，剩余的函数不再执行。
+```js
+var result = plugins[i].apply(this, args);
+if(typeof result !== "undefined") {
+	return result;
+}
+```
+
+其它函数都要执行 callback 具体使用应用场景还不太清楚，之后会看看 Tapable 新版的代码，和这个差异很大，原理应该是想通的，需要好好研究研究。
