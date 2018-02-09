@@ -1,4 +1,4 @@
-# Webpack 插件 `Tapable V0.2` 应用与原理分析
+# Webpack 插件 `Tapable` 应用与原理分析
 `Tapable` 是什么？ Tapable是一个可以绑定和应用的插件库，也是是一个用于 webpack 的插件体系结构中的内部核心库。webpack 中有很多 Tapable 的实例类，它们都继承或者混合（mixin）自 Tapable，这些实例提供了各种事件钩子可以附加到自定义插件中。总之，Tapable 可以说是短小精湛。贯穿于 webpack 的每个角落。
 
 ## 首先看看 Webpack 官方的说明
@@ -172,4 +172,131 @@ if(typeof result !== "undefined") {
 }
 ```
 
-其它函数都要执行 callback 进行回调，具体应用场景比较复杂，我也没搞太清楚，看代码也不容易理解。可以看看 Tapable 新版的源码，定义了很多钩子函数，和这个差异很大，比这个还要复杂得多，原理应该是相通的，需要多去研究研究。有时间一定要看新版的源码，再来分析一下。
+其它函数都要执行 callback 进行回调，具体应用场景比较复杂，我也没搞太清楚，看代码也不容易理解。可以看看 Tapable 新版的源码，定义了很多钩子函数，和这个差异很大，比这个还要复杂得多，原理应该是相通的，需要多去研究研究。有时间一定要看新版的源码。  
+**以上 都是 针对 Tapable V0.2 版本。下面介绍一下 新版的 Tapable。**
+
+## 新版 Tapable 的介绍
+新版的 Tapable 库暴露了许多 `Hook` 类，可以用来为插件创建钩子。
+```js
+const {
+	SyncHook,
+	SyncBailHook,
+	SyncWaterfallHook,
+	SyncLoopHook,
+	AsyncParallelHook,
+	AsyncParallelBailHook,
+	AsyncSeriesHook,
+	AsyncSeriesBailHook,
+	AsyncSeriesWaterfallHook
+ } = require("tapable");
+```
+### 基本用法
+所有的Hook构造函数都有一个可选的参数，它是一个参数名字列表。
+```js
+const hook = new SyncHook(["arg1", "arg2", "arg3"]);
+```
+最好的做法是在一个 `hooks` 属性中公开一个类的所有钩子：
+```js
+class Car {
+	constructor() {
+		this.hooks = {
+			accelerate: new SyncHook(["newSpeed"]),
+			break: new SyncHook(),
+			calculateRoutes: new AsyncParallelHook(["source", "target", "routesList"])
+		};
+	}
+
+	/* ... */
+}
+```
+其他人就可以使用这些钩子：
+```js
+const myCar = new Car();
+
+// 使用 tap 方法注册一个插件/事件(EventEmitter.on) 等同于 0.2版本的 plugins
+myCar.hooks.break.tap("WarningLampPlugin", () => warningLamp.on());
+
+// 执行 call 来触发钩子函数的调用
+myCar.hooks.break.call()
+```
+它需要传递一个名字来标识这个插件/原因。  
+
+你可能会收到参数：
+```js
+myCar.hooks.accelerate.tap("LoggerPlugin", newSpeed => console.log(`Accelerating to ${newSpeed}`));
+```
+对于同步挂钩，`tap` 是添加插件的唯一有效方法。异步钩子也支持异步插件：
+```js
+myCar.hooks.calculateRoutes.tapPromise("GoogleMapsPlugin", (source, target, routesList) => {
+	// return a promise
+	return google.maps.findRoute(source, target).then(route => {
+		routesList.add(route);
+	});
+});
+
+myCar.hooks.calculateRoutes.tapAsync("BingMapsPlugin", (source, target, routesList, callback) => {
+	bing.findRoute(source, target, (err, route) => {
+		if(err) return callback(err);
+		routesList.add(route);
+		// 执行回调函数
+		callback();
+	});
+});
+
+// 你仍然可以使用同步插件
+myCar.hooks.calculateRoutes.tap("CachedRoutesPlugin", (source, target, routesList) => {
+	const cachedRoute = cache.get(source, target);
+	if(cachedRoute)
+		routesList.add(cachedRoute);
+})
+```
+这个类声明了那些钩子，现在需要调用它们：
+```js
+class Car {
+	/* ... */
+
+	setSpeed(newSpeed) {
+		this.hooks.accelerate.call(newSpeed);
+	}
+
+	useNavigationSystemPromise(source, target) {
+		const routesList = new List();
+		return this.hooks.calculateRoutes.promise(source, target, routesList).then(() => {
+			return routesList.getRoutes();
+		});
+	}
+
+	useNavigationSystemAsync(source, target, callback) {
+		const routesList = new List();
+		this.hooks.calculateRoutes.callAsync(source, target, routesList, err => {
+			if(err) return callback(err);
+			callback(null, routesList.getRoutes());
+		});
+	}
+}
+```
+Hook 将以最有效的方式运行插件来编译一个方法。它根据以下内容生成代码：
+- 注册插件的数量（无 none，一个 one，更多 more）
+- 注册插件的方式（同步 sync，异步 async，promise）
+- 触发器执行的方式（同步 sync，异步 async，promise）
+- 参数的数量
+- 是否使用拦截器
+### 拦截器
+所有钩子都提供额外的拦截 API：
+```js
+myCar.hooks.calculateRoutes.intercept({
+	call: (source, target, routesList) => {
+		console.log("Starting to calculate routes");
+	},
+	tap: (tapInfo) => {
+		// tapInfo = { type: "promise", name: "GoogleMapsPlugin", fn: ... }
+		console.log(`${tapInfo.name} is doing it's job`);
+		return tapInfo; // may return a new tapInfo object -- 可能会返回一个新的tapInfo对象
+	}
+})
+```
+**call:** `(...args) => void` 添加到拦截器的 `call` 将触发钩子的触发器, 你可以访问钩子参数。
+**tap:** `(tap: Tap) => void` 当你的拦截器插入钩子时，触发器会触发。提供的是Tap对象。点击对象不能改变。
+
+
+持续更新中。。。。。。
