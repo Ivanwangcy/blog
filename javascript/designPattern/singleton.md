@@ -16,3 +16,10 @@ https://github.com/Ivanwangcy/ISourcePlayer/blob/master/design-pattern/singleton
 Singleton 很有使用价值, 通常当发现现在 JavaScript 中需要它的时候, 则表示我们可能需要重新评估我们的设计.
 
 Singleton 的存在往往表明系统中的模块要么是系统紧密耦合, 要么是其逻辑过于分散在代码库的多个部分. 由于一系列的问题: 从隐藏的依赖到创建多个实例的难度, 底层依赖的难度等等, Singleton 的测试会更加困难.
+## ES6 单例模式
+```js
+class Singleton { }
+
+export default new Singleton
+
+```
