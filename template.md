@@ -83,8 +83,7 @@ $ npm install jquery --save # 安装jQuery
         John-->Alice: Great!
     end
 ```
-```
-sequenceDiagram
+```sequenceDiagram
 Note left of 购物车: 购物车去结算进入商城结算
 购物车-->结算页: 商超结算
 Note right of 秒杀详情页: 立即下单进入秒杀结算
