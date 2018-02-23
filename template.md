@@ -5,7 +5,7 @@
 补空行, 下面增加一条线
 
 ---
-图标:ok: /play secret
+图标:ok: :/play secret:
 
 [emoji 图标 参考](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
 
