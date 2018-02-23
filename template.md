@@ -77,6 +77,12 @@ $ npm install jquery --save # 安装jQuery
 | zebra stripes | are neat | $1 |
 ## 绘制流程图
 ### 序列表
+```sequence
+    Alice->John: Hello John, how are you?
+    loop every minute
+        John-->Alice: Great!
+    end
+```
 ```
 sequenceDiagram
 Note left of 购物车: 购物车去结算进入商城结算
