@@ -7,6 +7,8 @@
 ---
 图标:ok:
 
+[emoji 图标 参考](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
+
 # 一级标题
 ## 二级标题
 ### 三级标题
