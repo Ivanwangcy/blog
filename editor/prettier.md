@@ -60,11 +60,27 @@ prettier [opts] [filename ...]
 * --single-quote JS 代码使用单引号，jsx 属性保留双引号
 * --trailing-comma <none|es5|all> 添加尾随逗号，有3个选项 (默认 none 不添加)
 * --no-bracket-spacing 是否在对象大括号开头结尾增加空格
-* --jsx-bracket-same-line jsx的 `>` 是否放在最后，
+* --jsx-bracket-same-line jsx的 `>` 是否放在语句最后面，而不是单独一行
+* --require-pragma 是否只格式化 注释带有 `@prettier @format` 标记的文件
+* --insert-pragma	格式化文件后是否添加一个 `@format` 注释标记
+
 ### 应用示例：
+方便快捷，只需要一条命令即可处理所有文件：
 ```sh
 $ prettier --write --print-width 100 --tab-width 2 --no-semi '**/*.js' '**/*.jsx'
 ```
+可以添加到 `package.json` 的 "scripts" 中，使用 npm run 执行：
+```js
+"scripts": {
+  "prettier": "prettier --write --print-width 100 --tab-width 2 --no-semi '**/*.js'",
+  ...
+}
+```
+其它团队成员使用时直接执行 prettier 命令
+```sh
+$ npm run prettier
+```
+
 ## 添加 prettier 徽章：
 在自己代码库中添加 `prettier` 徽章，代表遵循规范的象征，既然用了，就要留一个记号，可以告诉别人我使用了 prettier。别人进入你项目主页时就很清晰的知道你用了什么工具。  
 在自己的代码库 README.md 中增加如下代码：  
