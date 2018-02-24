@@ -41,6 +41,7 @@ $ touch #【建立空文件】 如：touch Test.java
 ```bash
 $ cp #【复制命令】 如：cp /home/Test.java / (将home路径下的Test.java文件复制到根目录下)
 $ cp -r dir1 dir2 #【-r表示递归，将dir1代表的文件夹及里面的文件复制到dir2路径那里】
+$ cp -r dir/dir* ../../dir2/ # 将dir 目录下所有 已dir开头的文件或文件夹，复制到 dir2 下面
 ```
 如：cp -r /home/xiaoluo /(将home下的xiaoluo文件夹复制到根目录下)
 ```bash

@@ -1,6 +1,79 @@
-## 使用 Prettier
+# 团队中应用 Prettier 来统一代码风格
+团队开发过程中，每个人用的编辑器不统一，代码书写风格不统一，增加了他人维护和理解的难度。因此我们需要一个工具来做这件事。它不仅适合新项目，同样适用于现有的项目，一行命令就能处理所有文件，方便快捷。还可以结合编辑器，保存代码时自动格式化代码。它可以和 lint 工具形成互补的作用。
+
+## Prettier 是什么
+Prettier 是有独特见解的（opinionated）代码格式化工具，它支持各种前端编程语言。
+- JavaScript, 包含 [ES6+](https://github.com/tc39/proposals/blob/master/finished-proposals.md)
+- [JSX](https://facebook.github.io/jsx/)
+- [Flow](https://flow.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- CSS, [Less](http://lesscss.org/), and [SCSS](http://sass-lang.com/)
+- [JSON](http://json.org/)
+- [GraphQL](http://graphql.org/)
+- [Markdown](http://commonmark.org/), including [GFM](https://github.github.com/gfm/)
+
+它不仅仅是一个代码格式化工具，还可以定制任何你想要的代码风格。它会把你原先的个性化代码风格，转换成符合规范的代码风格，与他人保持一致。  
+它会根据不同情况输出新的代码：
+```js
+foo(arg1, arg2, arg3, arg4);
+```
+它正好一行，所以它将保持原样。但是，代码经过不断更新后，我们遇到了这种情况：
+```js
+foo(reallyLongArg(), omgSoManyParameters(), IShouldRefactorThis(), isThereSeriouslyAnotherOne());
+```
+突然间，觉得按照以前的格式变得难以阅读，因为这太长了。 Prettier 会为你做这些细致入微的工作：
+```js
+foo(
+  reallyLongArg(),
+  omgSoManyParameters(),
+  IShouldRefactorThis(),
+  isThereSeriouslyAnotherOne()
+);
+```
+Prettier 采用一致的代码风格（即不会影响AST的代码格式）跨越整个代码库，因为它通过解析原始代码风格并用自己的规则重新打印解析后的 AST，将最大行长考虑在内，并在必要时封装代码。
+
+## 为什么使用 Prettier
+### 组建并实施一套统一的代码风格指南
+通常来说，有一套共同的遵守的风格指南对于一个项目和团队来说很有价值，但是要达成一致是一个非常痛苦并收效甚微的过程。人们对编写代码的特定方式感到非常情绪化，没有人喜欢花时间去遵守一套规范来写代码。  
+那么为什么选择“ Prettier 的风格指南” 而不是其它的？因为 Prettier 是唯一一个完全自动化的“风格指南”。即使 Prettier 没有按照你喜欢的方式 100％ 编码所有代码，鉴于 Prettier 的独特优势，这是值得“牺牲”的。
+### 有助于新成员
+使用 Prettier 最大的受益的人是代码库的新成员。有人可能会认为它只适用于编程经验非常有限的人，但我们看到它加速了加入该公司的经验丰富的工程师的上手时间。因为他们之前可能使用了不同的编码风格，或者是来自不同的编程语言的开发者。
+
+## 如何应用 Prettier
+将 Prettier 应用到自己的项目中，全局安装并保存到 package.json 中，增加依赖关系便于其他人同步：
+```sh
+$ npm install --global prettier
+$ npm i -D prettier
+```
+## 使用说明
+通过 CLI 运行 Prettier：
+```sh
+# 设置各种选项 和 需要格式化的文件
+prettier [opts] [filename ...]
+```
+### 选项：
+* --write 改写文件，格式化结果体现在文件中
+* --print-width 最大行长 (默认 80)
+* --tab-width 一个 tab 的长度 （默认 2）
+* --use-tabs 是否使用 tab(制表符) （默认 false，不使用 tab 统一用空格）
+* --no-semi 在语句结尾处移除分号
+* --single-quote JS 代码使用单引号，jsx 属性保留双引号
+* --trailing-comma <none|es5|all> 添加尾随逗号，有3个选项 (默认 none 不添加)
+* --no-bracket-spacing 是否在对象大括号开头结尾增加空格
+* --jsx-bracket-same-line jsx的 `>` 是否放在最后，
+### 应用示例：
+```sh
+$ prettier --write --print-width 100 --tab-width 2 --no-semi '**/*.js' '**/*.jsx'
+```
+## 添加 prettier 徽章：
+在自己代码库中添加 `prettier` 徽章，代表遵循规范的象征，既然用了，就要留一个记号，可以告诉别人我使用了 prettier。别人进入你项目主页时就很清晰的知道你用了什么工具。  
+在自己的代码库 README.md 中增加如下代码：  
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+```md
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+```
 
 > 参考链接:
+- [prettier 官方网址](https://prettier.io/)
 - [prettier github地址](https://github.com/prettier/prettier)
-- [prettier 官方文档](https://prettier.io/docs/en/install.html)
 - [我为什么推荐Prettier来统一代码风格](https://kiwenlau.com/2017/10/23/format-code-use-Prettier/)
