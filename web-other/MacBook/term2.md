@@ -14,9 +14,15 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 － 隐藏Mac隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles -bool false
 
 ## 快捷键
+- cmd + T 打开新 tab 页
+- cmd + number 按位置切换 tab
+- cmd + ⬅️/➡️ 向左/向右切换 tab
 - cmd + enter 全屏开关
+- cmd + / 高亮鼠标位置
+- cmd + 文件/文件夹名  打开文件 或 在 Finder 中打开目录
 
 ## 常用命令行
+
 ```sh
 $ ls # 查看文件
 $ ls -l # 文件信息列表
@@ -51,3 +57,8 @@ $ curl http://www.baidu.com/xx
 2. create a profile : command -> /Applications/XX-Net-2.9.6/start.command
 3. add shortcut key;
 4. use shortcut key start command;
+
+
+## 参考链接：
+
+[http://wulfric.me/2015/08/iterm2/](http://wulfric.me/2015/08/iterm2/)
