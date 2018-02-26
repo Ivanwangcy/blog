@@ -89,14 +89,14 @@ prettier [opts] [filename ...]
 方便快捷，只需要一条命令即可处理所有文件：
 
 ```sh
-$ prettier --write --print-width 100 --tab-width 2 --no-semi '**/*.js' '**/*.jsx'
+$ prettier --write --print-width 100 --tab-width 4 --no-semi '**/*.js' '**/*.jsx'
 ```
 
 可以添加到 `package.json` 的 "scripts" 中，使用 npm run 执行：
 
 ```js
 "scripts": {
-  "prettier": "prettier --write --print-width 100 --tab-width 2 --no-semi '**/*.js'",
+  "prettier": "prettier --write --print-width 100 --tab-width 4 --no-semi '**/*.js'",
   ...
 }
 ```
@@ -111,7 +111,17 @@ $ npm run prettier
 
 ### Atom
 
-安装 `prettier-atom` 包
+安装 `prettier-atom` 包，使用快捷键 `Ctrl+Alt+F` 格式化当前文件。
+
+### Visual Studio Code
+
+安装 `prettier-vscode` 插件。
+
+### Webstorm
+
+如果是 2018.1 及以上版本，自带 Prettier 插件。  
+其它版本安装参考链接： [https://blog.jetbrains.com/webstorm/2016/08/using-external-tools/](https://blog.jetbrains.com/webstorm/2016/08/using-external-tools/)
+
 
 ## 添加 prettier 徽章：
 
