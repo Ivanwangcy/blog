@@ -95,6 +95,8 @@ var str =
   。。。。。
 ```
 
+更多输出效果可试一下这个 [`playground`](https://prettier.io/playground/)
+
 ## 如何应用 Prettier
 
 将 Prettier 应用到自己的项目中，全局安装并保存到 package.json 中，增加依赖关系便于其他人同步：
@@ -135,7 +137,7 @@ prettier [opts] [filename ...]
 $ prettier --write --print-width 100 --tab-width 4 --no-semi '**/*.js' '**/*.jsx'
 ```
 
-可以添加到 `package.json` 的 "scripts" 中，使用 npm run 执行：
+添加到 `package.json` 的 "scripts" 中，使用 npm run 执行：
 
 ```js
 "scripts": {
@@ -143,6 +145,21 @@ $ prettier --write --print-width 100 --tab-width 4 --no-semi '**/*.js' '**/*.jsx
   ...
 }
 ```
+
+增加配置文件便于维护 `.prettierrc`：
+```js
+{
+  "printWidth": 100,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "semi": true,
+  "bracketSpacing": true,
+  "jsxBracketSameLine": true,
+  "arrowParens": "avoid"
+}
+```
+
 
 其它团队成员使用时直接执行 prettier 命令
 
@@ -181,3 +198,4 @@ $ npm run prettier
 * [prettier 官方网址](https://prettier.io/)
 * [prettier github 地址](https://github.com/prettier/prettier)
 * [我为什么推荐 Prettier 来统一代码风格](https://kiwenlau.com/2017/10/23/format-code-use-Prettier/)
+* [Code Formatting en](https://survivejs.com/maintenance/code-quality/code-formatting/)
