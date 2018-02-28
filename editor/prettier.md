@@ -133,6 +133,7 @@ prettier [opts] [filename ...]
 有的情况下，某段代码不想被格式化，可以使用注释来加标识跳过。
 
 * js 代码忽略
+
 ```js
 // prettier-ignore
 matrix(
@@ -141,12 +142,15 @@ matrix(
   0, 0, 1
 )
 ```
-Jsx 代码忽略
+
+* Jsx 代码忽略
 ```jsx
 {/* prettier-ignore */}
-<span     ugly  format=''   />
+<span     ugly  format=''   ></span>
 ```
-css 代码忽略
+
+* css 代码忽略
+
 ```CSS
 /* prettier-ignore */
 .my    ugly rule
@@ -154,7 +158,9 @@ css 代码忽略
 
 }
 ```
-Markdown 代码忽略
+
+* Markdown 代码忽略
+
 ```md
 <!-- prettier-ignore -->
 Do   not    format   this
