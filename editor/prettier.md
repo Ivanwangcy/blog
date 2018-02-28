@@ -129,6 +129,37 @@ prettier [opts] [filename ...]
 * --require-pragma 是否只格式化 注释带有 `@prettier @format` 标记的文件
 * --insert-pragma 格式化文件后是否添加一个 `@format` 注释标记
 
+### 忽略部分代码
+有的情况下，某段代码不想被格式化，可以使用注释来加标识跳过。
+
+* js 代码忽略
+```js
+// prettier-ignore
+matrix(
+  1, 0, 0,
+  0, 1, 0,
+  0, 0, 1
+)
+```
+Jsx 代码忽略
+```jsx
+{/* prettier-ignore */}
+<span     ugly  format=''   />
+```
+css 代码忽略
+```CSS
+/* prettier-ignore */
+.my    ugly rule
+{
+
+}
+```
+Markdown 代码忽略
+```md
+<!-- prettier-ignore -->
+Do   not    format   this
+```
+
 ### 项目中应用实例：
 
 方便快捷，只需要一条命令即可处理所有文件：
