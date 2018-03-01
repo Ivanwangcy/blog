@@ -190,11 +190,15 @@ $ prettier --write --print-width 100 --tab-width 4 --no-semi '**/*.js' '**/*.jsx
   "singleQuote": true,
   "tabWidth": 2,
   "trailingComma": "es5",
-  "semi": true,
+  "semi": false,
   "bracketSpacing": true,
-  "jsxBracketSameLine": true,
+  "jsxBracketSameLine": false,
   "arrowParens": "avoid"
 }
+```
+命令行可以不用涉及配置信息：
+```js
+"prettier": "prettier --write '**/*.js"
 ```
 
 
