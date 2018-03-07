@@ -146,6 +146,6 @@ import Singleton from './Singleton' // import 后指向同一个实例
 
 console.log(Singleton.name) // 'newNames'
 
-// Error 不可用 创建新实例
+// Error 不能创建新实例 没有构造函数
 let newInstance = new Singleton()
 ```
