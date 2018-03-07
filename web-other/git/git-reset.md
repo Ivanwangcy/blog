@@ -1,4 +1,4 @@
-## 还原暂存区，撤销 add 操作 -- Undo add 
+## 还原暂存区，撤销 add 操作 -- Undo add
 ```sh
 $ git add . 添加暂存区
 $ git reset . 撤销上面操作
@@ -18,4 +18,19 @@ $ git push -f # 强制提交回滚操作
 
 # 其它回滚操作
 $ git revert
+```
+
+## 回滚commit
+
+```sh
+# 只Reset最后一次commit
+git reset --mixed HEAD^
+
+# Reset最后2次commit
+git reset --mixed HEAD~2
+
+# 依次类推，Reset最后N次commit
+git reset --mixed HEAD~N
+
+# 如果可以丢弃commit内容，可以直接使用 --hard 参数替换 --mixed
 ```
