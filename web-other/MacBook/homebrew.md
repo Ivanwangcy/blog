@@ -8,6 +8,8 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew --version  # 查看版本
 $ brew update # 更新 Homebrew 自身
 
+# 升级 ruby
+$ brew upgrade ruby
 ```
 
 ## 使用 homebrew 安装 `node`
@@ -17,6 +19,15 @@ $ brew install node
 ## 查找可安装的软件
 ```sh
 $ brew search --desc <keyword>
+```
+
+## tree 命令 输出目录结构
+```sh
+$ brew install tree
+
+# -d 只显示文件夹目录
+# 前 3 级目录
+$ tree -d -L 3
 ```
 
 ## 帮助文档
