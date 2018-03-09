@@ -91,6 +91,38 @@ module.exports = config;
 
 ### Plugins
 
+虽然 `loader` 用于转换某些类型的模块，但可以利用插件执行更广泛的任务。插件的范围从捆绑优化和缩小到定义类似环境的变量。[插件接口(plugin interface)](https://webpack.js.org/api/plugins/)非常强大，可以用来处理各种各样的任务。大部分插件都可以通过选项进行定制。为了使用插件，你需要 require() 它并将其添加到 `plugins` 数组中。由于您可以在配置中多次使用插件以实现不同目的，因此您需要通过使用 `new` 运算符调用它来创建它的实例。
+
+`webpack.config.js`
+```js
+const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
+const webpack = require('webpack'); //to access built-in plugins
+const path = require('path');
+
+const config = {
+  entry: './path/to/my/entry/file.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'my-first-webpack.bundle.js'
+  },
+  module: {
+    rules: [
+      { test: /\.txt$/, use: 'raw-loader' }
+    ]
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin(),
+    new HtmlWebpackPlugin({template: './src/index.html'})
+  ]
+};
+
+module.exports = config;
+```
+
+有很多webpack提供的插件。查看我们的[插件列表](https://webpack.js.org/plugins/)以获取更多信息。
+
+在webpack配置中使用插件很简单 - 但是，有很多值得进一步探索的用例。
+
 参考：
 [https://webpack.js.org](https://webpack.js.org)
 [webpack原理与实战](https://github.com/gwuhaolin/blog/issues/4)
