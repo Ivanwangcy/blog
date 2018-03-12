@@ -11,11 +11,11 @@ $ git push -u origin master  //推送至主分支
 ## Git 工程迁移
 ```bash
 $ git remote add-url origin https://xxxx.git # 增加资源库地址
-$ git remote set-url origin git://new.url.here # 关联资源库新地址
+$ git remote set-url origin git://new.url.here # 修改资源库地址，关联一个资源库新地址
 ```
 ## 查看远程仓库信息
 ```sh
-$ git remote -v 
+$ git remote -v
 $ git remote show origin
 ```
 ## 取回更新
