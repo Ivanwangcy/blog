@@ -38,3 +38,33 @@ while (true) {
 
 ## 回调
 在 JavaScript 语言中回调是最基础的异步模式。它的最大好处是给我们提供了一个 [`Callback Hell(回调地域)`](http://callbackhell.com/)，然后才有了 Promise 和 Async/Await。
+
+一般回调函数都是延迟执行，回调执行时机由第三方控制：
+```js
+// A
+ajax( "..", function(..){
+	// C
+} );
+// B
+```
+或者是自己控制，固定的写法：
+```js
+// A
+setTimeout( function(){
+	// C
+}, 1000 );
+// B
+```
+如果多层嵌套就容易造成混乱。为了避免这种混乱可以采用一种分离回调设计：
+```js
+function success(data) {
+	console.log( data );
+}
+
+function failure(err) {
+	console.error( err );
+}
+
+ajax( "http://some.url.1", success, failure );
+```
+ES6的 Promise 的 API 使用的就是这种分离回调设计。
