@@ -11,3 +11,5 @@
 - 运营商分析
 - 浏览器分析
 - JS 错误统计
+
+[pagespeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.baidu.com%2F)
