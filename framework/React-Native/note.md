@@ -30,15 +30,18 @@ React具有声明式、异步、响应式的特性：
 - ScrollView vs FlatList onScroll 滚动问题，FlatList 支持手势滑动，可以实时获取 e.nativeEvent.contentOffset.y 的位置， `FlatList` 继承自 `PureComponent` 性能更优越(它们都可以设置 scrollEventThrottle={1} 不会错过每一帧滚动条位置，但是有性能损耗，减少使用，scrollEventThrottle={16}是比较标准的值，可以保持 每秒 60帧的速率运行, `60fps` 刷新频率)
 - 无需分页加载，下拉刷新等功能，还是建议使用 `ScrollView` ，滚动动画可以使用，`Animated.ScrollView`
 - 如果想让组件高度自适应，达到最大高度时出现滚动条，类似于 css 的 (overflow: scroll, overflow-y: scroll)可以使用下面的布局方式：(内容高度不超过300 是实际高度，超过300部分隐藏，滚动显示)
-```jsx
+
+```html
 <View style={{maxHeight: 300}}>
   <ScrollView>
     {列表或者长内容}
   </ScrollView>
 </View>
 ```
+
 - 图文混排，块级元素，需要用View包裹在一起，使用 `alignSelf` 控制自身的布局方式。例如：
-```js
+
+```html
 // 这里的mergin 不起作用，可以使用 空格代替
 <Text>
 <View><Text>特殊文字（需要背景，边框，边距，圆角等）<Text></View>其它文字
@@ -47,10 +50,42 @@ React具有声明式、异步、响应式的特性：
 <View><Image>特殊文字（需要背景，边框，边距，圆角等）<Image></View>其它文字
 </Text>
 ```
+
 - Model 绝对定位组件是相对于父级定位的，如果想要达到fixed效果，要在根节点下使用绝对定位，或者使用MODEL 模式窗口组件。
 - Alert.alert 样式问题，待。。。。
 - ScrollView or FlatList 横向滚动时，需要明确指定高度，否则渲染时可能出现显示不全等样式问题
 - Image 平铺方式，作为背景图，拉伸撑满整个容器使用，拉伸至容器的宽高，图片会变形 resizeMode='stretch'，默认 cover 使图像保持宽高比，超出部分裁剪掉，contain 使图像保持宽高比，不会超出容器，图像都会包含在容器中，多余的空间补白，repeat 重复平铺
 
 - shoundupdate 合理使用减少渲染次数。froceupdate 强制更新组件
--
+- 键盘遮挡输入框的问题：根据键盘展开/收起事件，使用 merginBottom 将输入框位置顶起；
+
+```js
+componentWillUnmount() { // 离开时要记得 移除键盘事件监听
+  super.componentWillUnmount();
+  this.keyboardDidShowListener.remove();
+  this.keyboardDidHideListener.remove();
+}
+
+componentWillMount() {
+  this.keyboardDidShowListener = Keyboard.addListener(
+    'keyboardDidShow',
+    this._keyboardDidShow.bind(this) // 键盘弹起时处理
+  );
+  this.keyboardDidHideListener = Keyboard.addListener(
+    'keyboardDidHide',
+    this._keyboardDidHide.bind(this) // 键盘收起时处理
+  );
+}
+
+_keyboardDidShow(e) {
+  this.setState({
+    keyboardHeight: e.startCoordinates.height // 键盘实际的高度
+  });
+}
+
+_keyboardDidHide(e) {
+  this.setState({
+    keyboardHeight: 0
+  });
+}
+```
