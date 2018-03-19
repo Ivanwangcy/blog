@@ -69,4 +69,4 @@ ajax( "http://some.url.1", success, failure );
 ```
 ES6的 Promise 的 API 使用的就是这种分离回调设计。  
 
-NodeJS提供了另一种回调设计模式是“错误优先风格” —— node 的 `error first`。
+NodeJS提供了另一种回调设计模式是“错误优先风格” —— nodejs 的 `error-first callback style`。
