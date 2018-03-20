@@ -24,7 +24,7 @@
 
 ## code 命令
 ```sh
-$ alias code=\''/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code'\'
+$ alias -g code=\''/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code'\'
 
 # za @ zaMBP in ~code [16:54:32]
 $ code .
