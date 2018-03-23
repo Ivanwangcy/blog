@@ -38,7 +38,7 @@ React具有声明式、异步、响应式的特性：
   </ScrollView>
 </View>
 ```
-
+- ScrollView 隐藏滚动条样式，showsHorizontalScrollIndicator={false} 不显示横向滚动条，showsVerticalScrollIndicator={false} 垂直滚动条样式隐藏。
 - 图文混排，块级元素，需要用View包裹在一起，使用 `alignSelf` 控制自身的布局方式。例如：
 
 ```html
