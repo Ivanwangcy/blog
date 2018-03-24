@@ -1,1 +1,1 @@
-## Type Script 使用
+# Type Script 使用
