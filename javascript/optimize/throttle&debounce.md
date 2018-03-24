@@ -42,7 +42,7 @@ _.debounce(func, wait, options)
 
 ```
 
-创建一个防抖的函数，它会延迟执行 `func`，直到 `wait` 指定的时间（毫秒）后才调用 `func`。或者在浏览器的下一帧率被调用(不传的情况下使用 requestAnimationFrame)。或者是 wait 传 0 的情况，相对于，setTimeout(func, 0)，chorme 浏览器有 4ms延迟。debounce 函数还有 `cancel` 的功能，它可以取消 `func` 的延迟调用。可以使用 `flush` 方法立即调用`func`。提供一个 `options` 告诉debounce 是在等待时间前/后调用，默认是在等待时间后被调用。
+创建一个防抖的函数，它会延迟执行 `func`，直到 `wait` 指定的时间（毫秒）后才调用 `func`。或者在浏览器的下一帧率被调用(不传的情况下使用 requestAnimationFrame, 16ms 执行一次)。或者是 wait 传 0 的情况，相对于，setTimeout(func, 0)，chorme 浏览器有 4ms延迟。debounce 函数还有 `cancel` 的功能，它可以取消 `func` 的延迟调用。可以使用 `flush` 方法立即调用`func`。提供一个 `options` 告诉debounce 是在等待时间前/后调用，默认是在等待时间后被调用。
 
 debounce 函数的 3 个入参和 3 个辅助方法：
 
@@ -156,3 +156,5 @@ import throttle from 'lodash/throttle'
 import debounce from 'lodash/debounce'
 
 ```
+
+> 参考链接：[通过示例理解防抖和节流](https://css-tricks.com/debouncing-throttling-explained-examples/)
