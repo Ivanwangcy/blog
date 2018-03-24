@@ -12,7 +12,7 @@ debounce 确保在一定时间内，函数被触发多次后，只执行一次�
 当我们是触控板、鼠标滚轮、或者拖动滚动条等操作，可以轻松触发每秒 30 次事件。但是在智能手机上，每秒可触发上百次。
 使用 debounce 和不使用的对比图：
 
-![debounce](/Users/ivan/workspace/blog/images/debounce.webp)
+![debounce](/images/debounce.webp)
 
 ### lodash.debounce 函数说明
 
