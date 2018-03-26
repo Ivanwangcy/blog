@@ -8,17 +8,29 @@
   * 获取 canvas 元素；
   * 获取浏览器宽高；
   * 给 canvas 元素设置宽高；
+  * 当浏览器宽高发生变化时重新设置 canvas 宽高；
+* 如何利用 canvas 绘制图形
 
 ```html
 <canvas class="bubble"></canvas>
 ```
 
 ```js
-<!-- 获取 canvas 元素 -->
+//  获取 canvas 元素
 var canvas = document.querySelector('.bubble')
-<!-- 获取浏览器宽高； -->
-var width = window.innerWidth;
-var height = window.innerHeight;
+//  获取浏览器宽高
+var width,height;
+var setSize = function () {
+  width = window.innerWidth;
+  height = window.innerHeight;
+  canvas.width = width;
+  canvas.height = height;
+}
+setSize()
+window.onresize = setSize
 
 
+var context = canvas.getContext('2d')
 ```
+
+确保`1秒钟60帧`动画非常流畅。
