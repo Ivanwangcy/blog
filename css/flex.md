@@ -1,6 +1,7 @@
 # CSS3 伸缩盒
 
 ## 新旧伸缩盒兼容模式
+
 ```CSS
 .parent{
   display: -webkit-box;
@@ -11,8 +12,10 @@
   -webkit-box-flex: 1;
   flex: 1;
 }
-``` 
-###布局方式水平 居中
+```
+
+### 布局方式水平 居中
+
 ```CSS
  div {
 
@@ -23,7 +26,9 @@
    flex-direction: row;
  }
 ```
+
 ## 空间分配
+
 ```css
   div {
     /* 两端对齐排列，相同的间隙 */
@@ -36,8 +41,11 @@
     align-items: center;
   }
 ```
+
 ## 综合应用
+
 中间自适应，两端对齐，垂直居中
+
 ```CSS
 .box {
   /* 盒模型对象 */
