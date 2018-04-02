@@ -91,7 +91,10 @@ HTTPS:
     * indexedDB
     * Web SQL
 5. 合理缓存 CGI 数据 (local, ajax)
-6. 终极缓存策略 PWA，核心Service Worker；其它类似方案： 小程序（app内应用），快应用（中国手机厂商的应用）。PWA 是浏览器厂商的应用，更广泛一些，但是缺少原生 api 的支持，小程序和快应用使用原生渲染性能更好，都可以尝试一下。
+
+## 终极解决方案 PWA
+
+`PWA` （Progressive Web App）渐进式Web应用程序, 核心技术 Service Worker。其它类似方案： 小程序（app内应用），快应用（中国手机厂商的应用）。PWA 是浏览器厂商的应用，更广泛一些，但是缺少原生 api 的支持，小程序和快应用使用原生渲染性能更好，都可以尝试一下。
 
 **注：**
 `CGI` [通用网关接口](https://baike.baidu.com/item/CGI/607810);
