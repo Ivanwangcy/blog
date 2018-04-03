@@ -9,25 +9,40 @@ $ react-native-git-upgrade
 ```
 
 1. 安装 `react-native-git-upgrade` 模块
+
 ```sh
 # 全局安装
 $ npm install -g react-native-git-upgrade
 ```
+
 2. 进入项目目录执行更新命令
+
 ```sh
 $ react-native-git-upgrade
 ```
+
 ### 替代方案
+
 如果使用 `react-native-git-upgrade`, 自动升级不起作用，请手动升级
+
 1. 更新 react-native 依赖包 并保存
-```sh
-$ npm install --save react-native@X.Y # 指定的版本号
-# 更新 react
-$ npm install --save react@R
-```
+
+  ```sh
+  $ npm install --save react-native@X.Y # 指定的版本号
+  # 更新 react
+  $ npm install --save react@R
+  ```
+
 2. 升级项目模板
+
 ```sh
 $ react-native upgrade
+```
+
+### 启动端口号修改
+
+```sh
+npm start -- --port=8888
 ```
 
 ### 解决冲突

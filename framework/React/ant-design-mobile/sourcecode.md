@@ -1,5 +1,7 @@
-##  蚂蚁金服的移动端实现 [Ant Design](https://mobile.ant.design/)
+#  蚂蚁金服的移动端实现 [Ant Design](https://mobile.ant.design/)
+
 ## 源码分析
+
 ```sh
 # 下载源码
 $ git clone https://github.com/ant-design/ant-design-mobile.git
