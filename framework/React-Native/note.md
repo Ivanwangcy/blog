@@ -1,4 +1,4 @@
-## React Native 历史演进
+# React Native 历史演进
 
 React Native起源于2013年夏天的一次黑客马拉松项目。
 React，这个用于构建用户界面的JavaScript库，就是React Native的核心。
@@ -14,7 +14,7 @@ React具有声明式、异步、响应式的特性：
 
 原生代码与JavaScript代码通过桥接层进行交互，这是一个异步的批量串行处理过程。桥接层介于原生层和JavaScript代码之间，正如它的名称一样，它的作用很像桥（bridge）。
 
-## 开发日志：
+## iOS 开发日志：
 
 - style layout : react native 组件默认都是相对定位(relative)的，flex 布局。所以不需要写 display 和 posistion，因此需要使用 absolute (绝对定位)的时候，都是相对父组件的定位。
 - Dimensions 使用Dimensions.get('window') 获取 屏幕的尺寸 {width, height};
@@ -100,3 +100,19 @@ _keyboardDidHide(e) {
   });
 }
 ```
+
+## Android 端出现的问题
+
+- 安卓发现一个布局bug，和背景图片溢出的bug类似，当内容需要多行显示，加了maxHeight和overflow: 'hidden'安卓不起作用，内容超出了maxHeight，需要加上 backgroundColor: 'transparent'
+- 安卓下Picker问题：给Picker加一个唯一的key，每次setState()时都使用不一样的key，例如 key=_.uniqueId( )
+- 安卓兼容性处理： ios顶部的用于显示信号、时间、电池容量的部分，大约占位20px，RN IOS会将这一部分和页面内容重叠，所以一般会加20px的留白。RN ANDROID则将一部分隔离开了，因此device_styles.js中添加了一个值：nav_top_padding，如果需要留白，统一使用(device_styles.nav_top_padding||0)。  尤其是以下类型的页面需要用到：首页地址栏(假设以后UI需要针对这里做细节调整)、自定义导航的页面(例如门店、结算、收银台等)。
+
+- 模拟器上可能会出现背景图片最底部的一条线显示不全，真机上测试ok。目前仅测试了小米手机，具体出现这个问题时，不要在模拟器上纠结，看看真机，真机ok就ok。
+
+- 安卓上line-height处理错误。安卓上文本会显示在靠下方的位置。解决方法：如果是单行文本，尽量将行高和font-size设置为差距不大的值，例如font-sise是12px，实际期望的行高是44px，那么就将行高设置14或16，然后设置一个paddingTop。 如果是多行文本，可使用？？？？
+
+- 使用css sprites做背景图时，容器上加个background-color可以解决背景图片溢出的bug。 使用overflow:hidden无效
+
+- 当只给View设置部分border，例如只设置borderLeft、borderTop时，给这个View添加borderRadius会导致这个元素消失。 解决：common/device/styles.js中提供函数compatibleRemoveBorderRadius( )，这个函数判断了如果是安卓，borderRadius会设置为0
+
+- 溢出部分被隐藏的bug：使用绝对定位将元素定位到父元素之外，正常情况下，父元素不设置overflow:hidden的话，子元素应该可见，但安卓上不可见。 仅在以下情况满足时出现这个bug：父元素样式中包含：zIndex border background-color 或父元素属性上含onLayout [参考：](https://github.com/facebook/react-native/issues/12534)
