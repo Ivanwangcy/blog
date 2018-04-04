@@ -116,3 +116,5 @@ _keyboardDidHide(e) {
 - 当只给View设置部分border，例如只设置borderLeft、borderTop时，给这个View添加borderRadius会导致这个元素消失。 解决：common/device/styles.js中提供函数compatibleRemoveBorderRadius( )，这个函数判断了如果是安卓，borderRadius会设置为0
 
 - 溢出部分被隐藏的bug：使用绝对定位将元素定位到父元素之外，正常情况下，父元素不设置overflow:hidden的话，子元素应该可见，但安卓上不可见。 仅在以下情况满足时出现这个bug：父元素样式中包含：zIndex border background-color 或父元素属性上含onLayout [参考：](https://github.com/facebook/react-native/issues/12534)
+
+- Android FlatList 分页加载 onEndReachedThreshold 属性设置 0 时不会执行分页加载，推荐设置 {0.1}；
