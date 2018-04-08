@@ -90,7 +90,7 @@ componentWillMount() {
 
 _keyboardDidShow(e) {
   this.setState({
-    keyboardHeight: e.startCoordinates.height // 键盘实际的高度
+    keyboardHeight: e.startCoordinates.height // 键盘实际的高度， Android 不支持属性，可以写死
   });
 }
 
@@ -109,7 +109,7 @@ _keyboardDidHide(e) {
 
 - 模拟器上可能会出现背景图片最底部的一条线显示不全，真机上测试ok。目前仅测试了小米手机，具体出现这个问题时，不要在模拟器上纠结，看看真机，真机ok就ok。
 
-- 安卓上line-height处理错误。安卓上文本会显示在靠下方的位置。解决方法：如果是单行文本，尽量将行高和font-size设置为差距不大的值，例如font-sise是12px，实际期望的行高是44px，那么就将行高设置14或16，然后设置一个paddingTop。 如果是多行文本，可使用？？？？
+- 安卓上line-height处理错误。安卓上文本会显示在靠下方的位置。解决方法：如果是单行文本，尽量将行高和font-size设置为差距不大的值，例如font-sise是12px，实际期望的行高是44px，那么就将行高设置14或16，然后设置一个paddingTop。
 
 - 使用css sprites做背景图时，容器上加个background-color可以解决背景图片溢出的bug。 使用overflow:hidden无效
 
@@ -118,3 +118,6 @@ _keyboardDidHide(e) {
 - 溢出部分被隐藏的bug：使用绝对定位将元素定位到父元素之外，正常情况下，父元素不设置overflow:hidden的话，子元素应该可见，但安卓上不可见。 仅在以下情况满足时出现这个bug：父元素样式中包含：zIndex border background-color 或父元素属性上含onLayout [参考：](https://github.com/facebook/react-native/issues/12534)
 
 - Android FlatList 分页加载 onEndReachedThreshold 属性设置 0 时不会执行分页加载，推荐设置 {0.1}；
+
+- Android 不支持获取键盘高度，可以写一个固定的高度；
+- Android 不支持阴影效果，可以使用边框或者背景图代替；
