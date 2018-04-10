@@ -121,3 +121,19 @@ _keyboardDidHide(e) {
 
 - Android 不支持获取键盘高度，可以写一个固定的高度；
 - Android 不支持阴影效果，可以使用边框或者背景图代替；
+- Android Picker 中不能传 null 组件，例如 map 返回的组件列表某个条件创建组件，不满足就返回 null 在 Android 系统会报错，可以使用 forEach 遍历 再 push 到一个新数组；
+
+```js
+let pickerItem = selectedTimeList.map((item, index) => {
+      return item ? <Picker.Item /> : null // 如果返回 null 是不允许的
+      return !!item && <Picker.Item /> // 这样返回 undefined 也是不允许的
+    });
+
+    // 解决方案
+let arr = []
+selectedTimeList.forEach((item, index) => {
+      if(item) arr.push(<Picker.Item />)
+    });
+```
+
+- Android 小米手机，字体会被截断，一行显示多个文本标签，最后一个会变成省略号，需要给最后一个加上 flex, 控制其宽度；
