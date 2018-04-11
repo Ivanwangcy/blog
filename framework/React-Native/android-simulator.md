@@ -36,5 +36,7 @@ adb -d install path/to/your_app.apk
 adb reverse tcp:8081 tcp:8081
 ```
 
-[RunningOnDevice](https://developer.android.com/studio/build/building-cmdline.html#RunningOnDevice)
-[running-on-devlice-android](https://reactnative.cn/docs/0.50/running-on-device-android.html)
+>参考链接：
+
+- [RunningOnDevice](https://developer.android.com/studio/build/building-cmdline.html#RunningOnDevice)
+- [running-on-devlice-android](https://reactnative.cn/docs/0.50/running-on-device-android.html)
