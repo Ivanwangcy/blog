@@ -1,5 +1,7 @@
 # npm 命令
+
 ## npm 帮助
+
 ```sh
 $ npm help # 帮助  npm命令列表
 $ npm help <command> # 帮助  打开网页版帮助
@@ -9,13 +11,15 @@ $ npm <command> -h # 帮助 命令行学习工具
 # 各个命令的简单用法
 $ npm -l
 ```
+
 ## npm init 初始化
+
 ```bash
-
 $ npm init # 初始化package.json 根据提示回车即可
-
 ```
+
 ## NPM 常用命令：
+
 ```sh
 $ npm –v  查看npm版本；
 $ npm –l  查看各个命令的简单用法；
@@ -36,9 +40,10 @@ $ npm view webpack versions
 $ npm view «package-name» dist-tags
 $ npm view webpack dist-tags
 # { latest: '1.12.9', beta: '2.0.1-beta' }
-
 ```
+
 ## 安装与更新包,模块
+
 ```sh
 $ npm install jquery --save # 安装 jquery 并保存到 package.json npm install == npm i
 
@@ -60,11 +65,14 @@ $ npm ls # 列出当前安装的了所有包
 $ npm ls -gl  # 同上
 
 $ npm ls -g  # 列出全局安装的所有模块
-
 ```
+
 ## npm install 详解
-当你为你的模块安装一个依赖模块时，正常情况下你得先安装他们（在模块根目录下npm install module-name），然后连同版本号手动将他们添加到模块配置文件package.json中的依赖里（dependencies）。  
-* -save和save-dev可以省掉你手动修改package.json文件的步骤。
+
+当你为你的模块安装一个依赖模块时，正常情况下你得先安装他们（在模块根目录下 npm install module-name），然后连同版本号手动将他们添加到模块配置文件 package.json 中的依赖里（dependencies）。
+
+* -save 和 save-dev 可以省掉你手动修改 package.json 文件的步骤。
+
 ```bash
 $ npm install module-name --save # 自动把模块和版本号添加到dependencies部分
 $ npm install module-name --save-dev # 自动把模块和版本号添加到devdependencies部分
@@ -86,9 +94,13 @@ $ npm i -g webpack webpack-dev-server
 # 同样的前缀可以使用 大括号 简写 安装
 $ npm install --save-dev {babel,css,style,postcss,url,file}-loader # ==> babel-loader css-loader ...
 ```
-至于配置文件区分这俩部分，是用于区别开发依赖模块和产品依赖模块，devDepandencies主要是配置测试框架， 例如jshint、mocha。
+
+至于配置文件区分这俩部分，是用于区别开发依赖模块和产品依赖模块，devDepandencies 主要是配置测试框架， 例如 jshint、mocha。
+
 ## npm 安装 不同版本
-install命令总是安装模块的最新版本，如果要安装模块的特定版本，可以在模块名后面加上@和版本号。
+
+install 命令总是安装模块的最新版本，如果要安装模块的特定版本，可以在模块名后面加上@和版本号。
+
 ```sh
 $ npm install sax@latest
 $ npm install sax@0.1.1
@@ -104,13 +116,17 @@ $ npm install --save vue@next
 ```
 
 ## npm 自身升级
+
 ```sh
 $ npm --version # 查看NPM版本
 $ npm install -g npm@3.7.2 # 安装指定版本的 NPM
 $ npm install npm@latest -g # 更新到最新版本
 ```
+
 ## npm package.json 配置
+
 ### scripts 配置运行 命令
+
 ```javascript
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -118,14 +134,16 @@ $ npm install npm@latest -g # 更新到最新版本
     "deploy": "NODE_ENV=production webpack -p"
   }
 ```
+
 ## npm dedupe 去重, 重新计算依赖关系
+
 ```bash
 $ npm dedupe
 ```
 
 ## 执行配置的命令
-```bash
 
+```bash
 "scripts" : {"test" : "node testfile.js"}
 $ npm test # 执行测试命令
 
@@ -134,7 +152,9 @@ $ npm start # 启动一个项目
 $ npm run dev # 使用 npm run 执行自定义命令
 $ npm run deploy
 ```
+
 ## 其它命令
+
 ```sh
 $ npm shrinkwrap  # 锁定依赖版本
 $ npm outdated # 查看 package.json 中依赖的包结构
