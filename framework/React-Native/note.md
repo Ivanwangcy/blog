@@ -137,3 +137,5 @@ selectedTimeList.forEach((item, index) => {
 ```
 
 - Android 小米手机，字体会被截断，一行显示多个文本标签，最后一个会变成省略号，需要给最后一个加上 flex, 控制其宽度；
+
+- Modal 组件在 Android 环境 app 切后台时不消失，也关不掉的问题，需要使用 AppState 状态判断前后台切换处理。
