@@ -1,5 +1,7 @@
-## create-react-app
-使用 create-react-app 创建一个React项目
+# create-react-app
+
+使用 create-react-app 创建一个 React 项目
+
 ```sh
 $ npm i -g create-react-app
 $ create-react-app my-app
