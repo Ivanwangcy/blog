@@ -59,6 +59,30 @@ pageY(相对于窗口的水平坐标像素,包括任何滚动偏移量);
 
 ```js
 document.addEventListener('touchmove', this._preventDefalut, {passive: false})
+
+ var preventTouchmove = function (e) {
+    console.log($(e.target), $(e.target).closest('.ctrlSelectmenuWrapper'))
+    if (!($(e.target).hasClass('ctrlSelectmenuWrapper') || $(e.target).closest('.ctrlSelectmenuWrapper').length > 0)) {
+        console.log($(e.target), $(e.target).closest('.ctrlSelectmenuWrapper'))
+        e.preventDefault();
+    }
+}
+
+var supportsPassive = false;
+try {
+    var opts = Object.defineProperty({}, 'passive', {
+        get: function () {
+            supportsPassive = true;
+        }
+    });
+    window.addEventListener("testPassive", null, opts);
+    window.removeEventListener("testPassive", null, opts);
+} catch (e) { }
+
+window.addEventListener('touchmove', preventTouchmove, supportsPassive ? { passive: true } : false); 
+
+window.removeEventListener('touchmove', preventTouchmove, supportsPassive ? { passive: true } : false)
+
 ```
 
 console.log 出来的 moveLength 就是你要得到的距离。
@@ -84,3 +108,5 @@ $(window).scroll(
   }, 150)
 );
 ```
+
+
