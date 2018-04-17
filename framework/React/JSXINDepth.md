@@ -34,15 +34,19 @@ React.createElement(
 )
 ```
 
+如果你想测试一些特定的JSX如何转换成JavaScript，你可以尝试`[在线的 Babel 编译器](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)`。
+
 ## 指定 React 元素类型
 
 JSX标签的第一部分决定了 React 元素的类型。
 
-大写字母表示 JSX 标签引用了 React 组件。这些标签会被编译为对指定变量的直接引用，因此如果使用 JSX `<Foo />` 表达式，则 Foo 必须位于当前作用域内。
+大写字母表示 JSX 标签引用了 React 组件。这些标签会被编译为对指定变量的直接引用，因此如果使用 JSX `<Foo />` 表达式，则 `Foo` 必须位于当前作用域内。
 
 ### React 必须在当前文件范围内引用
 
-由于 JSX 编译是对 React.createElement 的调用，因此 React 库也必须始终位于 JSX 代码的范围内。
+由于 JSX 编译是对 `React.createElement` 的调用，因此 `React` 库也必须始终位于 JSX 代码的范围内。
+
+例如，即使 `React` 和 `CustomButton` 没有直接从 JavaScript 代码中引用，这个代码中的两个导入都是必需的：
 
 ```js
 import React from 'react'; // React 必须引入
@@ -53,3 +57,25 @@ function WarningButton() {
   return <CustomButton color="red" />;
 }
 ```
+
+如果您不使用 JavaScript bundler 程序并从 `<script>` 标记加载 React，则 `React` 已经在全局的范围内。
+
+## JSX 使用点符号
+
+你也可以在 JSX 中使用点符号来引用React组件。如果你有一个导出许多 React 组件的单个模块，这很方便。例如，如果 `MyComponents.DatePicker` 是一个组件，您可以直接从 JSX 使用它：
+
+```js
+import React from 'react';
+
+const MyComponents = {
+  DatePicker: function DatePicker(props) {
+    return <div>Imagine a {props.color} datepicker here.</div>;
+  }
+}
+
+function BlueDatePicker() {
+  return <MyComponents.DatePicker color="blue" />;
+}
+```
+
+## 用户自定义的组件必须使用大写

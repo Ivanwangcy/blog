@@ -130,16 +130,17 @@ _keyboardDidHide(e) {
 
 - Andorid Text 标签不会自动撑开容器，有时会上边缘显示不全，需要增加行高，行高比字体大 2 个像素比较适宜；
 
+- Andorid Text 如果带点击效果，要在外面加 View 扩大点击范围；
+
 - Andorid Text 标签Bug较多，提取了一些共性到 DJText 组件中，没有特殊需求 建议大家直接使用 DJText 标签。 DJText: 支持所有 Text 的属性和样式，用法完全相同，默认是单行文本(大部分都是单行显示得)，如果多行文本不限制行数增加属性 numberOfLines={0}；
 
 - Android TextInput 标签默认有下划线，文本不居中，提取了 DJTextInput 组件；
 
 - Android FlatList 分页加载 onEndReachedThreshold 属性设置 0 时不会执行分页加载，推荐设置 {0.1}；
 
-
 - Android 不支持获取键盘高度，可以写一个固定的高度；
 - Android 不支持阴影效果，可以使用边框或者背景图代替；
-- Android Picker 中不能传 null 组件，例如 map 返回的组件列表某个条件创建组件，不满足就返回 null 在 Android 系统会报错，可以使用 forEach 遍历 再 push 到一个新数组；
+-  Android 使用 map 返回的组件列表某个条件创建组件，不满足就返回 null 在 Android会有问题，可以使用 forEach 遍历 再 push 到一个新数组，例如：Picker 传 null 组件，系统会报错，示例代码如下：
 
 ```js
 let pickerItem = selectedTimeList.map((item, index) => {
