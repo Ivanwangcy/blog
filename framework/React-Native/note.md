@@ -117,6 +117,11 @@ _keyboardDidHide(e) {
 
 - 溢出部分被隐藏的bug：使用绝对定位将元素定位到父元素之外，正常情况下，父元素不设置overflow:hidden的话，子元素应该可见，但安卓上不可见。 仅在以下情况满足时出现这个bug：父元素样式中包含：zIndex border background-color 或父元素属性上含onLayout [参考：](https://github.com/facebook/react-native/issues/12534)
 
+
+
+
+- Android Text 文本被截断或者被省略的问题，font family 要用无衬线字体， 中文使用 Sans Serif，更合适：https://github.com/react-native-training/react-native-fonts;
+
 - Android FlatList 分页加载 onEndReachedThreshold 属性设置 0 时不会执行分页加载，推荐设置 {0.1}；
 
 - Android 不支持获取键盘高度，可以写一个固定的高度；
@@ -139,3 +144,5 @@ selectedTimeList.forEach((item, index) => {
 - Android 小米手机，字体会被截断，一行显示多个文本标签，最后一个会变成省略号，需要给最后一个加上 flex, 控制其宽度；
 
 - Modal 组件在 Android 环境 app 切后台时不消失，也关不掉的问题，需要使用 AppState 状态判断前后台切换处理。
+
+- 跳页面组件不能加样式，会卡死；
