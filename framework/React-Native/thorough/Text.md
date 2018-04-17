@@ -5,25 +5,46 @@ Text 组件是 React Native 最常用的组件之一。为了满足各种各样�
 ## Text 组件的基本用法
 
 自定义组件中使用 Text，必须导入
-Text 组件必须用容器组件包裹，例如：View, ImageBackground, Touchable* 都算容器组件。
+Text 组件必须用容器组件包裹，例如：View, ImageBackground, Touchable\* 都算容器组件。
 
 ```js
 import React from 'react';
 import { Text, View } from 'react-native';
 <!-- 常规文本 -->
 <View>
-<Text>文本内容</Text>
+  <Text>文本内容</Text>
 </View>
 
 <!-- 变量文本 -->
 <View>
-<Text>{text}</Text>
+  <Text>{text}</Text>
+</View>
+
+<!-- 变量文本组合 -->
+<View>
+  <Text>{`Text:${text}Text2:${text2}Text3:${text3}`}</Text>
+</View>
+
+<!-- 文本加空格（不能像html那样直接加空格） -->
+<View>
+  <Text>&nbsp;</Text> // 不会变成空格
+  <Text>  内 容  </Text> // space invalid
 </View>
 ```
 
 ## Text 组件的嵌套使用
 
 ## 图文混排，文字环绕
+
+图文混排的是比较常用的组合方式。
+
+注意：**Android 端有 Bug 不建议使用文本嵌套其它组件。**
+
+```js
+<Text>
+  文本<Image source={Icons.url} />
+</Text>
+```
 
 ## 文字特效
 

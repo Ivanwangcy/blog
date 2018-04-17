@@ -122,7 +122,20 @@ _keyboardDidHide(e) {
 
 - Android Text 文本被截断或者被省略的问题，font family 要用无衬线字体， 中文使用 Sans Serif，更合适：https://github.com/react-native-training/react-native-fonts;
 
+- Android 小米手机，字体会被截断，一行显示多个文本标签，最后一个会变成省略号，需要给最后一个加上 flex, 控制其宽度；
+
+- Android Text 标签不能嵌套其它类型的标签，例如 Image, View, Touchbale* 等；
+  - 嵌入 Image 在Android 系统是允许的只是在不同机型产生的效果不一样，Bug 较多无法兼顾。
+  - View, Touchbale* 属于容器类组件在Android 系统中会直接报错，需要判断平台再做相应处理，为 Android 降级，某些需求无法满足产品需要和产品测试确认问题；
+
+- Andorid Text 标签不会自动撑开容器，有时会上边缘显示不全，需要增加行高，行高比字体大 2 个像素比较适宜；
+
+- Andorid Text 标签Bug较多，提取了一些共性到 DJText 组件中，没有特殊需求 建议大家直接使用 DJText 标签。 DJText: 支持所有 Text 的属性和样式，用法完全相同，默认是单行文本(大部分都是单行显示得)，如果多行文本不限制行数增加属性 numberOfLines={0}；
+
+- Android TextInput 标签默认有下划线，文本不居中，提取了 DJTextInput 组件；
+
 - Android FlatList 分页加载 onEndReachedThreshold 属性设置 0 时不会执行分页加载，推荐设置 {0.1}；
+
 
 - Android 不支持获取键盘高度，可以写一个固定的高度；
 - Android 不支持阴影效果，可以使用边框或者背景图代替；
@@ -141,7 +154,6 @@ selectedTimeList.forEach((item, index) => {
     });
 ```
 
-- Android 小米手机，字体会被截断，一行显示多个文本标签，最后一个会变成省略号，需要给最后一个加上 flex, 控制其宽度；
 
 - Modal 组件在 Android 环境 app 切后台时不消失，也关不掉的问题，需要使用 AppState 状态判断前后台切换处理。
 
