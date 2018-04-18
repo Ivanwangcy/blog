@@ -44,12 +44,14 @@ Text 组件之间互相嵌套，子组件会继承父组件样式。子组件加
   {value3}
 </Text>
 
-
-<Text style={{fontSize: 14}}>
-  {value1}
-  {value2}
-</Text>
-  <Text style={{ color: "red", fontSize: 25 }}>{value3}</Text> // 子组件继承 fontSize 14
+// 水平排列文本
+<View style={{flexDirection: 'row'}}>
+  <Text style={{fontSize: 14}}>
+    {value1}
+    {value2}
+  </Text>
+  <Text style={{ color: "red", fontSize: 25, flex: 1 }}>{value3}</Text> // 子组件继承 fontSize 14
+</View>
 ```
 
 ## 图文混排，文字环绕
