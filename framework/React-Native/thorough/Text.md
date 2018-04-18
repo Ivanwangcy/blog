@@ -37,7 +37,19 @@ import { Text, View } from 'react-native';
 Text 组件之间互相嵌套，子组件会继承父组件样式。子组件加样式时 lineHeight 不要覆盖父组件的，否则在 Android 环境显示有问题。如果字体差异比较大，建议分开写（主要原因是 Android 问题较多）。分开写要注意给可变文本增加 flex 属性。
 
 ```js
+// 嵌套文本
+<Text style={{fontSize: 14}}>
+  {value1}
+  <Text style={{ color: "red" }}>{value2}</Text> // 子组件继承 fontSize 14
+  {value3}
+</Text>
 
+
+<Text style={{fontSize: 14}}>
+  {value1}
+  {value2}
+</Text>
+  <Text style={{ color: "red", fontSize: 25 }}>{value3}</Text> // 子组件继承 fontSize 14
 ```
 
 ## 图文混排，文字环绕
