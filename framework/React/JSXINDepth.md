@@ -100,3 +100,101 @@ function HelloWorld() {
   return <hello toWhat="World" />;
 }
 ```
+
+为了解决这个问题，我们将 `hello` 重命名为 `Hello` ，并在引用它时使用`<Hello />`：
+
+```js
+import React from 'react';
+
+// Correct! This is a component and should be capitalized:
+function Hello(props) {
+  // Correct! This use of <div> is legitimate because div is a valid HTML tag:
+  return <div>Hello {props.toWhat}</div>;
+}
+
+function HelloWorld() {
+  // Correct! React knows <Hello /> is a component because it's capitalized.
+  return <Hello toWhat="World" />;
+}
+```
+
+## 运行时选择类型
+
+您不能使用常规的表达式作为 React 元素类型。如果您确实想使用常规的表达式来指示元素的类型，请将其首先分配给大写变量。
+
+当你想渲染一个基于 props 的不同组件时，通常会出现这种情况：
+
+```js
+import React from 'react';
+import { PhotoStory, VideoStory } from './stories';
+
+const components = {
+  photo: PhotoStory,
+  video: VideoStory
+};
+
+function Story(props) {
+  // Wrong! JSX type can't be an expression.
+  return <components[props.storyType] story={props.story} />;
+}
+```
+
+为了解决这个问题，我们首先将类型赋值给一个大写的变量：
+
+```js
+import React from 'react';
+import { PhotoStory, VideoStory } from './stories';
+
+const components = {
+  photo: PhotoStory,
+  video: VideoStory
+};
+
+function Story(props) {
+  // Correct! JSX type can be a capitalized variable.
+  const SpecificStory = components[props.storyType];
+  return <SpecificStory story={props.story} />;
+}
+```
+
+## JSX 中的 Props
+
+有几种不同的方式可以在JSX中指定 props。
+
+### JavaScript 表达式作为 Props
+
+可以将任何 JavaScript 表达式作为 props 传递，方法是使用 `{}` 表示它。例如，在这个 JSX 中：
+
+```js
+<MyComponent foo={1 + 2 + 3 + 4} />
+```
+
+对于 `MyComponent` ，`props.foo` 的值将为`10`，因为表达式 `1 + 2 + 3 + 4` 会被计算。
+
+如果语句和 `for` 循环不是 JavaScript 中的表达式，那么它们不能直接在 JSX 中使用。相反，你可以把它们放在外围的代码中。例如：
+
+```js
+function NumberDescriber(props) {
+  let description;
+  if (props.number % 2 == 0) {
+    description = <strong>even</strong>;
+  } else {
+    description = <i>odd</i>;
+  }
+  return <div>{props.number} is an {description} number</div>;
+}
+```
+
+您可以在相应章节中了解有关 `[条件渲染](https://reactjs.org/docs/conditional-rendering.html)` 和 `[循环](https://reactjs.org/docs/lists-and-keys.html)` 的更多信息。
+
+### String 字面量
+
+你可以传递一个字符串作为 props。这两个JSX表达式是等价的：
+
+```js
+<MyComponent message="hello world" />
+
+<MyComponent message={'hello world'} />
+```
+
+当你传递一个字符串时，它的值是`HTML-unescaped`(转义的)。所以这两个JSX表达式是等价的：
