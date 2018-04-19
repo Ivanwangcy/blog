@@ -79,3 +79,24 @@ function BlueDatePicker() {
 ```
 
 ## 用户自定义的组件必须使用大写
+
+当元素类型以小写字母开头时，它指向一个内置组件，如`<div>`或`<span>`，并产生一个传递给 `React.createElement` 的字符串 `'div'` 或 `'span'`。以大写字母（如`<Foo />`）开头的类型编译为 `React.createElement(Foo)` 并对应于 JavaScript 文件中定义或导入的组件。
+
+我们建议用大写字母命名组件。如果您确实有一个以小写字母开头的组件，请在将它用于JSX之前将其分配给大写变量。
+
+例如，这段代码不会按预期运行：
+
+```js
+import React from 'react';
+
+// Wrong! This is a component and should have been capitalized:
+function hello(props) {
+  // Correct! This use of <div> is legitimate because div is a valid HTML tag:
+  return <div>Hello {props.toWhat}</div>;
+}
+
+function HelloWorld() {
+  // Wrong! React thinks <hello /> is an HTML tag because it's not capitalized:
+  return <hello toWhat="World" />;
+}
+```
