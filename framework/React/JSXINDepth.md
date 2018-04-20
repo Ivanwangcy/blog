@@ -338,4 +338,119 @@ render() {
 
 ### 作为 children 的 JavaScript 表达式
 
-您可以将任何JavaScript表达式作为子项传递，方法是将其封闭在{}中。例如，这些表达式是等价的：
+您可以将任何JavaScript表达式作为子项传递，方法是将其放置在 `{}` 中。例如，这些表达式是等价的：
+
+```js
+<MyComponent>foo</MyComponent>
+
+<MyComponent>{'foo'}</MyComponent>
+```
+
+这通常用于呈现任意长度的 JSX 表达式列表。例如，这呈现一个 HTML 列表：
+
+```js
+function Item(props) {
+  return <li>{props.message}</li>;
+}
+
+function TodoList() {
+  const todos = ['finish doc', 'submit pr', 'nag dan to review'];
+  return (
+    <ul>
+      {todos.map((message) => <Item key={message} message={message} />)}
+    </ul>
+  );
+}
+```
+JavaScript表达式可以与其他类型的 `children` 混合使用。这通常用于替代字符串模板：
+
+```js
+function Hello(props) {
+  return <div>Hello {props.addressee}!</div>;
+}
+```
+
+## 函数作为 Children
+
+通常，插入到 JSX 中的 JavaScript 表达式将评估为一个字符串，一个 React 元素或这些东西的列表。
+
+然而，`props.children` 的工作方式与任何其它 props 一样，它可以传递任何类型的数据，而不仅仅是 React 知道如何渲染的类型。
+
+例如，如果你有一个自定义组件，你可以让它作为 props.children 进行回调：
+
+```js
+// Calls the children callback numTimes to produce a repeated component
+function Repeat(props) {
+  let items = [];
+  for (let i = 0; i < props.numTimes; i++) {
+    items.push(props.children(i));
+  }
+  return <div>{items}</div>;
+}
+
+function ListOfTenThings() {
+  return (
+    <Repeat numTimes={10}>
+      {(index) => <div key={index}>This is item {index} in the list</div>}
+    </Repeat>
+  );
+}
+```
+
+传递给自定义组件的子项可以是任何东西，只要该组件将它们转换为 React 在呈现之前可以理解的内容即可。这种用法并不常见，但如果您想要扩展 JSX 的功能，它就可以工作。
+
+## Booleans, Null, and Undefined 将被忽略
+
+`false`, `null`, `undefined`, 和 `true` 是有效的 children。他们根本不被渲染，这些 JSX 表达式都将呈现相同的事物：
+
+```js
+<div />
+
+<div></div>
+
+<div>{false}</div>
+
+<div>{null}</div>
+
+<div>{undefined}</div>
+
+<div>{true}</div>
+```
+
+这有助于有条件地呈现 React 元素。如果 `showHeader` 为 `true` ，则此 JSX 仅呈现`<Header />`：
+
+```js
+<div>
+  {showHeader && <Header />}
+  <Content />
+</div>
+```
+
+有一个要注意的地方是，一些 `“falsy”` 的值。如数字 `‘0’`，仍然由 React 渲染。例如，这段代码不会像您所期望的那样工作，因为 `props.messages` 是一个空数组时将会输出`0`：
+
+```js
+ // 0
+<div>
+  {props.messages.length &&
+    <MessageList messages={props.messages} />
+  }
+</div>
+```
+
+为了解决这个问题，确保 `&&` 之前的表达式总是布尔值：
+
+```js
+<div>
+  {props.messages.length > 0 &&
+    <MessageList messages={props.messages} />
+  }
+</div>
+```
+
+相反，如果您希望输出中出现 `false，true，null` 或 `undefined` 等值，则必须先将其转换为字符串：
+
+```js
+<div>
+  My JavaScript variable is {String(myVariable)}.
+</div>
+```
