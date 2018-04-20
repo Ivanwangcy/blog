@@ -198,3 +198,38 @@ function NumberDescriber(props) {
 ```
 
 当你传递一个字符串时，它的值是`HTML-unescaped`(转义的)。所以这两个JSX表达式是等价的：
+
+```js
+<MyComponent message="&lt;3" />
+
+<MyComponent message={'<3'} />
+```
+
+这种行为通常不相关。这里只提到完整性。
+
+### Props 默认为 "true"
+
+如果您没有为 props 传递任何值，则默认为 `true` 。这两个JSX表达式是等价的：
+
+```js
+<MyTextBox autocomplete />
+
+<MyTextBox autocomplete={true} />
+```
+
+一般来说，我们不推荐使用ES6对象的简写 `{foo}`，因为它可能与`{foo：foo}`而不是`{foo：true}`混淆。上面那种方式就正好符合 HTML 标准。
+
+### 拓展属性
+
+如果你已经有 props 作为一个对象，并且你想用 JSX 传递它，你可以使用`...`作为“spread” 操作符来传递整个 props 对象。这两个组件是等价的：
+
+```js
+function App1() {
+  return <Greeting firstName="Ben" lastName="Hector" />;
+}
+
+function App2() {
+  const props = {firstName: 'Ben', lastName: 'Hector'};
+  return <Greeting {...props} />;
+}
+```
