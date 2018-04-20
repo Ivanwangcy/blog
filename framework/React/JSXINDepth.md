@@ -233,3 +233,109 @@ function App2() {
   return <Greeting {...props} />;
 }
 ```
+
+你也可以选择你的组件将使用的特定 props，同时使用拓展运算符传递所有其它 props。
+
+```js
+const Button = props => {
+  const { kind, ...other } = props;
+  const className = kind === "primary" ? "PrimaryButton" : "SecondaryButton";
+  return <button className={className} {...other} />;
+};
+
+const App = () => {
+  return (
+    <div>
+      <Button kind="primary" onClick={() => console.log("clicked!")}>
+        Hello World!
+      </Button>
+    </div>
+  );
+};
+```
+
+在上面的示例中， `kind` prop 安全地被使用，并且不会传递到DOM中的 `<button>` 元素。
+
+所有其他 props 都通过`...other`对象,使得这个组件非常灵活。你可以看到它传递了一个 `onClick` 和 `children` 属性。
+
+拓展属性可能很有用，但它们还可以轻松地将不必要的 porps 传递给不关心它们的组件或将无效的 HTML 属性传递给 DOM。我们建议谨慎使用这种语法。
+
+## JSX 中的 children
+
+在包含开始标记和结束标记的JSX表达式中，这些标记之间的内容作为特殊的 prop ： `props.children` 传递。有几种不同的方式来传递孩子：
+
+### 字符串文字
+
+您可以在开始标签和结束标签之间放置一个字符串，`props.children` 只是该字符串。这对于许多内置的HTML元素很有用。例如：
+
+```js
+<MyComponent>Hello world!</MyComponent>
+```
+
+这是有效的 JSX， `MyComponent` 中的 `props.children` 只是字符串 `“Hello world！”`。 HTML 是非转义的，所以你通常可以编写 JSX，就像你以这种方式编写HTML一样：
+
+```js
+<div>This is valid HTML &amp; JSX at the same time.</div>
+```
+
+JSX在行的开头和结尾删除空格，它也删除空行。
+与标签相邻的新行被删除;发生在字符串文字中间的新行会压缩为一个空格。所以这些都呈现相同的内容：
+
+```js
+<div>Hello World</div>
+
+<div>
+  Hello World
+</div>
+
+<div>
+  Hello
+  World
+</div>
+
+<div>
+
+  Hello World
+</div>
+```
+
+### JSX Children
+
+您可以提供更多的JSX元素作为孩子。这对于显示嵌套组件很有用：
+
+```js
+<MyContainer>
+  <MyFirstComponent />
+  <MySecondComponent />
+</MyContainer>
+```
+
+您可以将不同类型的子项混合在一起，以便您可以将字符串文字与JSX子项一起使用。这是JSX与HTML相似的另一种方式，因此这是有效的JSX和有效的HTML：
+
+```js
+<div>
+  Here is a list:
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+</div>
+```
+
+React组件也可以返回一组元素：
+
+```js
+render() {
+  // No need to wrap list items in an extra element!
+  return [
+    // Don't forget the keys :)
+    <li key="A">First item</li>,
+    <li key="B">Second item</li>,
+    <li key="C">Third item</li>,
+  ];
+}
+```
+
+### 作为 children 的 JavaScript 表达式
+
+您可以将任何JavaScript表达式作为子项传递，方法是将其封闭在{}中。例如，这些表达式是等价的：
