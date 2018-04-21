@@ -1,6 +1,6 @@
 # 深入理解 JSX
 
-基本上，JSX只是为 React.createElement（component，props，... children）函数提供语法糖。JSX代码：
+基本上，JSX只是为 `React.createElement(component，props，... children)` 函数提供语法糖。JSX代码：
 
 ```js
 <MyButton color="blue" shadowSize={2}>
@@ -447,7 +447,7 @@ function ListOfTenThings() {
 </div>
 ```
 
-相反，如果您希望输出中出现 `false，true，null` 或 `undefined` 等值，则必须先将其转换为字符串：
+相反，如果您希望输出中出现 `false`，`true` ，`null` 或 `undefined` 等值，则必须先将其转换为字符串：
 
 ```js
 <div>
