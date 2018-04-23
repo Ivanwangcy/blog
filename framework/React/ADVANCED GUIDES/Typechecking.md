@@ -110,3 +110,7 @@ MyComponent.propTypes = {
   })
 };
 ```
+
+### 只需要一个 Child
+
+通过 `PropTypes.element` ，您可以指定只有一个 child 可以作为 `children` 传递给一个组件。
