@@ -114,3 +114,48 @@ MyComponent.propTypes = {
 ### 只需要一个 Child
 
 通过 `PropTypes.element` ，您可以指定只有一个 child 可以作为 `children` 传递给一个组件。
+
+```js
+import PropTypes from 'prop-types';
+
+class MyComponent extends React.Component {
+  render() {
+    // This must be exactly one element or it will warn.
+    const children = this.props.children;
+    return (
+      <div>
+        {children}
+      </div>
+    );
+  }
+}
+
+MyComponent.propTypes = {
+  children: PropTypes.element.isRequired
+};
+```
+
+### 默认属性值
+
+可以通过分配特殊的 `defaultProps` 属性来定义 `prop` 的默认值：
+
+```js
+class Greeting extends React.Component {
+  render() {
+    return (
+      <h1>Hello, {this.props.name}</h1>
+    );
+  }
+}
+
+// Specifies the default values for props:
+Greeting.defaultProps = {
+  name: 'Stranger'
+};
+
+// Renders "Hello, Stranger":
+ReactDOM.render(
+  <Greeting />,
+  document.getElementById('example')
+);
+```
