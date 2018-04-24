@@ -1,25 +1,30 @@
-## iTerm2 拥有漂亮的命令行
+# iTerm2
+
+非常出色的终端工具，对于习惯于终端控制台的用户，`iTerm2` 应该不需要太多解释。iTerm2 的一些功能可以在你的工作中发挥重大作用。结合 oh-my-zsh 可以拥有非常漂亮的命令行。
+
 1. 安装 iTerm2 [http://iterm2.com/](http://iterm2.com/)
 2. 安装 oh-my-zsh [http://ohmyz.sh/](http://ohmyz.sh/)
 
 ```sh
+# 安装 oh-my-zsh
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 ## iTerm2+zsh 下 [git 操作别名](./oh-my-zsh.md)
 
-
 ## 显示和隐藏，Mac 隐藏文件
-－ 显示Mac隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles -bool true
-－ 隐藏Mac隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles -bool false
+
+－ 显示 Mac 隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles -bool true
+－ 隐藏 Mac 隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles -bool false
 
 ## 快捷键
-- cmd + T 打开新 tab 页
-- cmd + number 按位置切换 tab
-- cmd + ⬅️/➡️ 向左/向右切换 tab
-- cmd + enter 全屏开关
-- cmd + / 高亮鼠标位置
-- cmd + 文件/文件夹名  打开文件 或 在 Finder 中打开目录
+
+* cmd + T 打开新 tab 页
+* cmd + number 按位置切换 tab
+* cmd + ⬅️/➡️ 向左/向右切换 tab
+* cmd + enter 全屏开关
+* cmd + / 高亮鼠标位置
+* cmd + 文件/文件夹名 打开文件 或 在 Finder 中打开目录
 
 ## 常用命令行
 
@@ -50,14 +55,14 @@ $ echo "body{ border: 1px solid red;}" > src/app.css
 
 # 请求链接 查看链接返回结果
 $ curl http://www.baidu.com/xx
-
 ```
-## 添加profiles 启动 `XX－Net` 代理软件
-1. `cmd + O` 打开Profiles pane , click to Edit Profiles
-2. create a profile : command -> /Applications/XX-Net-2.9.6/start.command
-3. add shortcut key;
-4. use shortcut key start command;
 
+## 添加 profiles 启动 `XX－Net` 代理软件
+
+1.  `cmd + O` 打开 Profiles pane , click to Edit Profiles
+2.  create a profile : command -> /Applications/XX-Net-2.9.6/start.command
+3.  add shortcut key;
+4.  use shortcut key start command;
 
 ## 参考链接：
 
