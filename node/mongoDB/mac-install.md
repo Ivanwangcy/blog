@@ -63,7 +63,7 @@ sudo mkdir -p /data/db
 * 开启 MongoDB 服务器
 
 ```sh
-mongod
+sudo mongod
 ```
 
 * 确认 MongoDB 已经成功启动
@@ -79,4 +79,22 @@ mongod
 mongo --host 127.0.0.1:27017
 ```
 
-进入后可进行 CRUD 操作，使用 Ctrl + C 停止使用 MongoDB。
+进入后可使用命令行进行 CRUD 操作，使用 Ctrl + C 停止使用 MongoDB。
+
+## MongoDB 常用命令
+
+```sh
+# 显示正在使用的数据库
+db
+# db 操作应返回 test，这是默认数据库。要切换数据库，输入 use <db> 如下例所示：
+use <database>
+
+# 列出可用的数据库
+show dbs
+
+# 可以切换到不存在的数据库
+use myNewDatabase
+
+# 当你第一次在数据库中存储数据时，比如通过下面命令创建一个集合，MongoDB 会创建这个数据库
+db.myCollection.insertOne( { x: 1 } );
+```
