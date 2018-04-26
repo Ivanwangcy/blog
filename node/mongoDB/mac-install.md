@@ -21,5 +21,16 @@ tar -zxvf mongodb-osx-ssl-x86_64-3.6.4.tgz
 * 将提取的文件夹复制到目标目录(MongoDB将运行的位置)。
 
 ```sh
+# 进入 /usr/local 目录
+$ cd /usr/local
 
+# 创建 mongodb 目录
+mkdir -p mongodb
+
+# 复制解压后的文件到 mongodb 目录
+cp -R -n mongodb-osx-ssl-x86_64-3.6.4/ mongodb
+```
+
+安装完成后，我们把 MongoDB 的二进制命令文件目录（安装目录/bin）添加到 PATH 路径中：
+```sh
 ```
