@@ -4,7 +4,7 @@
 
 ## 安装 mongoose
 
-使用 npm 命令行安装 mongoose
+mongoose 是MongoDB 与 Node.js 的驱动库文件，下面使用 npm 命令行安装 mongoose：
 
 ```sh
 npm install mongoose
