@@ -88,8 +88,8 @@ state = {
 
 // Animate the movement
    Animated.timing(this.state.animatedValue, {
-     delay: 300,
-     duration: 500,
+     delay: 1000,
+     duration: 800,
      easing: Easing.linear,
      toValue: {
        x: newX,

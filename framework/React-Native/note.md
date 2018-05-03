@@ -159,3 +159,5 @@ selectedTimeList.forEach((item, index) => {
 - Modal 组件在 Android 环境 app 切后台时不消失，也关不掉的问题，需要使用 AppState 状态判断前后台切换处理。
 
 - 跳页面组件不能加样式，会卡死；
+
+- Modal 组件内部获取组件状态需要 使用 onLayout 监听是否处于显示状态，隐藏时改变状态是无效的。
