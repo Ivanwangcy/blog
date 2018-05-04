@@ -161,3 +161,5 @@ selectedTimeList.forEach((item, index) => {
 - 跳页面组件不能加样式，会卡死；
 
 - Modal 组件内部获取组件状态需要 使用 onLayout 监听是否处于显示状态，隐藏时改变状态是无效的。
+
+- FlatList 做列表元素定位功能很强大，可替代 ScrollView;
