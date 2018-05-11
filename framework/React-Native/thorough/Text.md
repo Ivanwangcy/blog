@@ -65,6 +65,7 @@ Text 组件之间互相嵌套，子组件会继承父组件样式。子组件加
   文本<Image source={Icons.url} />
 </Text>
 ```
+
 ## 文本交互
 
 Text 标签自带 onPress/onLongPress 事件监听。可以处理点击事件。
