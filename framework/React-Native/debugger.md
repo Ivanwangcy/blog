@@ -17,7 +17,7 @@
 - iOS `cmd + D` 唤起调试菜单，`cmd + R` 重新载入
 - Android `cmd + M` 唤起调试菜单，`R + R` 点击两次 `R`
 
-ios 如果快捷键不好用了:
+ios 如果快捷键不好用了: (需要勾选连接硬件键盘)
 > Troubleshooting
 > Cmd-R does not reload the simulator
 > Enable iOS simulator's "Connect hardware keyboard" from menu Hardware  Keyboard menu.
