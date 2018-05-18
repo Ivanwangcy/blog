@@ -90,7 +90,7 @@ componentWillMount() {
 
 _keyboardDidShow(e) {
   this.setState({
-    keyboardHeight: e.startCoordinates.height // 键盘实际的高度， Android 不支持属性，可以写死
+    keyboardHeight: e.startCoordinates ? e.startCoordinates.height : 216 // 键盘实际的高度， Android 不支持 startCoordinates 属性，可以写死
   });
 }
 
