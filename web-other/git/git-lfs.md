@@ -1,9 +1,10 @@
-## 使用 Git LFS 模式上传大文件
+# 使用 Git LFS 模式上传大文件
+
 * 安装步骤
-https://github.com/git-lfs/git-lfs/wiki/Installation
+  [https://github.com/git-lfs/git-lfs/wiki/Installation](https://github.com/git-lfs/git-lfs/wiki/Installation)
 
 * 使用教程
-https://github.com/git-lfs/git-lfs/wiki/Tutorial
+  [https://github.com/git-lfs/git-lfs/wiki/Tutorial](https://github.com/git-lfs/git-lfs/wiki/Tutorial)
 
 ```sh
 # 安装成功后 执行
