@@ -1,8 +1,9 @@
 # Arrow Funciotn => 箭头函数
+
 ```javascript
 var fn = () => {
   console.log("aaaa");
-}
+};
 
 // 返回对象简写
 var func = () => ({ a: 1, b: 2 });
