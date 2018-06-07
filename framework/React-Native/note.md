@@ -164,3 +164,11 @@ selectedTimeList.forEach((item, index) => {
 
 * 当 带有滚动条的组件 如：ScrollView，\*List，内部包含 TextInput 组件时需要使用：
   keyboardDismissMode，keyboardShouldPersistTaps 属性设置交互的方案；
+
+* UIManager.measure获取组件高度在android获取不到解决方法:
+
+```js
+UIManager.measure(findNodeHandle(this.refs.moreCoupon),(x,y,width,height,pageX,pageY)=>{})
+```
+
+该方法获取组件高度在android中不起作用，需要在this.refs.moreCoupon组件的View中加上removeClippedSubviews={false}或者style={{opacity: 1}}，不然获取不到x,y,width,height,pageX,pageY（参考京东到家门店主页搜索框右边领券按钮）
