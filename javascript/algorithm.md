@@ -100,7 +100,8 @@ var sum = function f(num) {
 console.log(sum(100));
 
 
-// 第三种 使用数组
+// 不使用递归
+// 第四种 使用数组
 var sum3 = function(num) {
   var arr = new Array(num + 1);
   return arr
@@ -112,6 +113,22 @@ var sum3 = function(num) {
 };
 
 console.log(sum3(3));
+
+// 使用 循环
+function sum4(num){
+  if(num === 0 || num === 1){
+    return num;
+  }else{
+    var curr = num;
+    var total = 0;
+    while(curr--) {
+      total += curr;
+    }
+    return total + num;
+  }
+}
+
+console.log(sum4(100));
 ```
 
 ## 数字加千分符(23123456.78 -> 23,123,456.78)
