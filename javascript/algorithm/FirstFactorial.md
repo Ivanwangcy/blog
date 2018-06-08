@@ -20,8 +20,15 @@ function FirstFactorial(num) {
 // keep this function call here
 FirstFactorial(10);
 
+```
 
-// 标准答案解决方案
+## 标准解决方案一
+
+In the code below, we create a new variable called factorial which we will use to store our temporary values as we loop. In our loop, we start at 1 and increment until we reach our variable num.
+
+在下面的代码中，我们创建了一个名为factorial的新变量，我们将循环使用它来存储临时值。在我们的循环中，我们从1开始，直到达到变量 num。
+
+```js
 function FirstFactorial(num) {
 
   var factorial = 1;
@@ -37,6 +44,41 @@ function FirstFactorial(num) {
   }
 
   return factorial;
+}
+
+FirstFactorial(4);
+```
+
+## 标准解决方案二
+
+It is also possible to create a recursive function to calculate the factorial. A recursive function calls itself some number of times until it reaches a condition that terminates the function calls. A factorial function can be represented by the following recursive terms:
+
+```js
+1! = 1
+2! = 1! * 2
+3! = 2! * 3
+4! = 3! * 4
+5! = 4! * 5
+...
+```
+
+We can see that each factorial relies on the previous factorial, and then it multiplies that number by the current number. We'll convert these recursive terms into the following function:
+
+```js
+function FirstFactorial(num) {
+
+  // our factorial function
+  function factorial(n) {
+
+    // terminate the recursion once we hit zero
+    if (n===0) { return 1; }
+
+    // otherwise keep calling the function recursively
+    else { return factorial(n-1) * n; }
+
+  }
+
+  return factorial(num);
 }
 
 FirstFactorial(4);
