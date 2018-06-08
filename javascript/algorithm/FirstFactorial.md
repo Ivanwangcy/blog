@@ -9,7 +9,7 @@ function FirstFactorial(num) {
 
   // code goes here  
   function factorial(num){
-      if (num === 0) return 1;
+      if (num === 0 || num === 1) return 1;
 
       return num * factorial(num - 1)
   }
@@ -23,16 +23,21 @@ FirstFactorial(10);
 
 // 标准答案解决方案
 function FirstFactorial(num) {
-  
-  if (num === 0 || num === 1) {
-    return 1;
+
+  var factorial = 1;
+
+  for (var i = 1; i <= num; i++) {  
+    // multiply each number between 1 and num  
+    // factorial = 1 * 1 = 1
+    // factorial = 1 * 2 = 2
+    // factorial = 2 * 3 = 6
+    // factorial = 6 * 4 = 24
+    // ...
+    factorial = factorial * i;
   }
-  else {
-    return num * FirstFactorial(num - 1);
-  }
+
+  return factorial;
 }
 
-// keep this function call here
-// to see how to enter arguments in JavaScript scroll down
-FirstFactorial(readline());
+FirstFactorial(4);
 ```
