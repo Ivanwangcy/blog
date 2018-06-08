@@ -19,7 +19,7 @@ LongestWord('this is some sort of sentence');
 // output: "sentence"
 
 
-// 参考：最优的解决方案
+// 参考：标准解决方案
 function LongestWord(sen) {
 
   // we use the regex match function which searches the string for the
