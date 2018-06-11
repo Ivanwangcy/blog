@@ -7,3 +7,4 @@
 ```js
 const EnhancedComponent = higherOrderComponent(WrappedComponent);
 ```
+## 属性劫持
