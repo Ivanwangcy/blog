@@ -53,6 +53,7 @@ Prettier 采用一致的代码风格（即不会影响 AST 的代码格式）跨
 使用 Prettier 最大的受益的人是代码库的新成员。有人可能会认为它只适用于编程经验非常有限的人，但我们看到它加速了加入该公司的经验丰富的工程师的上手时间。因为他们之前可能使用了不同的编码风格，或者是来自不同的编程语言的开发者。
 
 ### 一些亮点展示
+
 ```js
 // 源代码1
 var a={a:1,b:2}
@@ -130,6 +131,7 @@ prettier [opts] [filename ...]
 * --insert-pragma 格式化文件后是否添加一个 `@format` 注释标记
 
 ### 忽略部分代码
+
 有的情况下，某段代码不想被格式化，可以使用注释来加标识跳过。
 
 * js 代码忽略
@@ -144,6 +146,7 @@ matrix(
 ```
 
 * Jsx 代码忽略
+
 ```jsx
 {/* prettier-ignore */}
 <span     ugly  format=''   ></span>
@@ -171,7 +174,7 @@ Do   not    format   this
 方便快捷，只需要一条命令即可处理所有文件：
 
 ```sh
-$ prettier --write --print-width 100 --tab-width 4 --no-semi '**/*.js' '**/*.jsx'
+prettier --write --print-width 100 --tab-width 4 --no-semi '**/*.js' '**/*.jsx'
 ```
 
 添加到 `package.json` 的 "scripts" 中，使用 npm run 执行：
@@ -184,6 +187,7 @@ $ prettier --write --print-width 100 --tab-width 4 --no-semi '**/*.js' '**/*.jsx
 ```
 
 增加配置文件便于维护 `.prettierrc`：
+
 ```js
 {
   "printWidth": 100,
@@ -196,16 +200,17 @@ $ prettier --write --print-width 100 --tab-width 4 --no-semi '**/*.js' '**/*.jsx
   "arrowParens": "avoid"
 }
 ```
+
 命令行可以不用涉及配置信息：
+
 ```js
 "prettier": "prettier --write '**/*.js"
 ```
 
-
 其它团队成员使用时直接执行 prettier 命令
 
 ```sh
-$ npm run prettier
+npm run prettier
 ```
 
 ## 集成编辑器
@@ -240,3 +245,25 @@ $ npm run prettier
 * [prettier github 地址](https://github.com/prettier/prettier)
 * [我为什么推荐 Prettier 来统一代码风格](https://kiwenlau.com/2017/10/23/format-code-use-Prettier/)
 * [Code Formatting en](https://survivejs.com/maintenance/code-quality/code-formatting/)
+
+## 自动代码格式化
+当我们在git中进行提交时，要格式化我们的代码，我们需要安装以下依赖项：
+
+```sh
+npm install --save husky lint-staged prettier
+```
+
+* `husky` 可以很容易地使用 githooks ，就好像它们是 npm scripts;
+* `lint-staged` 允许我们在git中的staged文件上运行脚本。看到这篇关于`[lint-staged的博客文章](https://medium.com/@okonetchnikov/make-linting-great-again-f3890e1ad6b8)`，了解更多信息。
+* `prettier` 是我们将在提交之前运行的JavaScript格式化程序。
+
+```js
++ "lint-staged": {
++   "src/**/*.{js,jsx,json,css}": [
++     "prettier --single-quote --write",
++     "git add"
++   ]
++ },
+  "scripts": {
++   "precommit": "lint-staged",
+```
