@@ -12,3 +12,5 @@
 [!PerfUtil.png](/Users/ivan/workspace/blog/images/PerfUtil.png)
 
 ## JS 帧率（JavaScript线程）
+
+对于大多数React Native应用程序，你的业务逻辑将在 JavaScript 线程上运行。
