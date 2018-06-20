@@ -186,6 +186,12 @@ function operatorChar(num) {
   console.log(formatNum);
 }
 operatorChar("12345678.12333");
+
+// 方法3
+var test1 ='1234567890'
+var format =test1.replace(/\B(?=(\d{3})+(?!\d))/g,',')
+console.log(format)
+// 1,234,567,890
 ```
 
 ## 大数相加
