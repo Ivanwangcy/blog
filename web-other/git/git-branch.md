@@ -3,7 +3,7 @@
 ## 创建分支
 
 ```bash
-$ git branch testing 新建一个 testing 分支
+git branch testing 新建一个 testing 分支
 ```
 
 ## 查看分支
@@ -40,12 +40,12 @@ $ git branch -d testing // 删除分支 testing
 ## 其它 相关参考
 
 ```bash
-$ git rebase # 变基
-$ git merge # 合并
+git rebase # 变基
+git merge # 合并
 ```
 
 ## 提交分支
 
 ```bash
-$ git push origin gh-pages
+git push origin gh-pages
 ```
