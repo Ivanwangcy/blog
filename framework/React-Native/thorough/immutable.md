@@ -27,5 +27,14 @@ const map2 = map1.set('b', 50)
 map1.get('b') + " vs. " + map2.get('b') // 2 vs. 50
 ```
 
+## 最佳实践
+
+使用 `Immutable.fromJS` 而不是 `Immutable.Map` 或 `Immutable.List` 来创建对象，这样可以避免 Immutable 和原生对象间的混用。
+
+为了直接比较对象的值，immutable.js 提供了 `Immutable.is` 来做『值比较』，结果如下：
+
+```js
+Immutable.is(map1, map2);  // true
+```
 
 > [引致 Immutable 详解及 React 中实践](https://zhuanlan.zhihu.com/p/20295971)
