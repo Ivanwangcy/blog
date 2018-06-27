@@ -27,6 +27,25 @@
 
 ## 性能问题的常见原因
 
-在开发模式下运行（`dev = true`）
+### 在开发模式下运行（`dev = true`）
 
-在开发模式下运行时，JavaScript线程性能会受到很大影响。
+在开发模式下运行时，JavaScript线程性能会受到很大影响。这是不可避免的：在运行时需要做更多的工作来为您提供良好的警告和错误消息，例如验证propTypes和其他各种断言。始终确保在[发布版本](https://facebook.github.io/react-native/docs/running-on-device#building-your-app-for-production)中测试性能。
+
+### 使用 `console.log` 语句
+
+运行打包应用程序时，这些语句可能会在 JavaScript 线程中造成严重的性能瓶颈。这包括调试库（如`redux-logger`）的调用，因此请确保在捆绑之前将其删除。你也可以使用这个 [babel plugin](https://babeljs.io/docs/en/babel-plugin-transform-remove-console/)来删除所有的 `consolog.*` 调用。你需要先用 npm 安装它 (`npm i babel-plugin-transform-remove-console --save`)，然后再编辑项目目录下的 `.babelrc`文件，如下所示：
+
+```js
+{
+  "env": {
+    "production": {
+      "plugins": ["transform-remove-console"]
+    }
+  }
+}
+```
+
+这会自动删除项目（生产）版本中的所有 `console.*` 调用。
+
+### ListView 初始化渲染太慢以及列表过长时滚动性能太差
+
