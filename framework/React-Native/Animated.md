@@ -1,10 +1,8 @@
 ## Animated
 
-
 ## 绝对定位动画使用 `_animatedValue.getLayout()` 方法更简洁
 
 ```js
-
 _animatedValue.getLayout()
 <=>
 {
@@ -12,7 +10,9 @@ _animatedValue.getLayout()
     top: this._animatedValue.y
 }
 ```
+
 ## 位移使用 `_animatedValue.getTranslateTransform()` 更简洁
+
 ```js
 transform: _animatedValue.getTranslateTransform()
 <=>
@@ -27,8 +27,8 @@ transform: [
 ```
 
 ## 同时设置多个值 `_animatedValue.interpolate()`
-```js
 
+```js
 // 使用插值的方式 设置更多属性
 // 例：使用 interpolate 赋予其它值，达到同一个动画其它属性联动的效果
 style={{
@@ -41,7 +41,9 @@ style={{
   }],
 }}
 ```
+
 ### Animated.View + timing 简单示例
+
 ```js
 import React from 'react'
 import { Animated, Easing, StyleSheet, Text, View, } from 'react-native'
@@ -77,38 +79,38 @@ export default class FadeInView extends React.Component {
     )
   }
 }
-
 ```
+
 ## transform 动画
 
 ```js
 state = {
-  animatedValue: new Animated.ValueXY({x: 0, y: posTop})
-}
+  animatedValue: new Animated.ValueXY({ x: 0, y: posTop })
+};
 
 // Animate the movement
-   Animated.timing(this.state.animatedValue, {
-     delay: 1000,
-     duration: 800,
-     easing: Easing.linear,
-     toValue: {
-       x: newX,
-       y: newY,
-     }
-   }).start(({finished}) => {
-     // finished true/false 是否完成动画
-     // Animate again after current animation finished
-     // 动画完成之后的处理
-     this.animate();
-   });
+Animated.timing(this.state.animatedValue, {
+  delay: 1000,
+  duration: 800,
+  easing: Easing.linear,
+  toValue: {
+    x: newX,
+    y: newY
+  }
+}).start(({ finished }) => {
+  // finished true/false 是否完成动画
+  // Animate again after current animation finished
+  // 动画完成之后的处理
+  this.animate();
+});
 
 style: {
-  transform: animatedValue.getTranslateTransform()
+  transform: animatedValue.getTranslateTransform();
 }
-
 ```
 
 ## Easing 动画缓动效果
+
 默认 ease-in-out
-# 
+#
  #spring
