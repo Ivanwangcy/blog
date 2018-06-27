@@ -34,7 +34,8 @@ Merge made by the 'recursive' strategy.
 ## 删除分支
 
 ```bash
-$ git branch -d testing // 删除分支 testing
+# 删除分支 testing
+$ git branch -d testing
 ```
 
 ## 其它 相关参考

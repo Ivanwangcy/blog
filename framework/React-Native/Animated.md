@@ -1,4 +1,4 @@
-## Animated
+# Animated
 
 ## 绝对定位动画使用 `_animatedValue.getLayout()` 方法更简洁
 
@@ -112,5 +112,5 @@ style: {
 ## Easing 动画缓动效果
 
 默认 ease-in-out
-#
- #spring
+
+## spring

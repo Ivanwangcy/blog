@@ -103,6 +103,7 @@ var str =
 将 Prettier 应用到自己的项目中，全局安装并保存到 package.json 中，增加依赖关系便于其他人同步：
 
 ```sh
+## 安装方式
 $ npm install --global prettier
 $ npm i -D prettier
 ```
@@ -228,7 +229,6 @@ npm run prettier
 如果是 2018.1 及以上版本，自带 Prettier 插件。  
 其它版本安装参考链接： [https://blog.jetbrains.com/webstorm/2016/08/using-external-tools/](https://blog.jetbrains.com/webstorm/2016/08/using-external-tools/)
 
-
 ## 添加 prettier 徽章：
 
 在自己代码库中添加 `prettier` 徽章，代表遵循规范的象征，既然用了，就要留一个记号，可以告诉别人我使用了 prettier。别人进入你项目主页时就很清晰的知道你用了什么工具。  
@@ -247,6 +247,7 @@ npm run prettier
 * [Code Formatting en](https://survivejs.com/maintenance/code-quality/code-formatting/)
 
 ## 自动代码格式化
+
 当我们在git中进行提交时，要格式化我们的代码，我们需要安装以下依赖项：
 
 ```sh
