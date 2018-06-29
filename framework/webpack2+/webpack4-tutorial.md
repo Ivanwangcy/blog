@@ -15,3 +15,16 @@ webpack 4，有什么**更新**？大幅的`性能提升`，零配置和明智�
 
 ## 目录
 
+webpack 4 as a zero configuration module bundler
+webpack 4: getting started with zero conf
+webpack 4: production and development mode
+webpack 4: overriding the defaults entry/output
+webpack 4: transpiling Javascript ES6 with Babel
+webpack 4: setting up webpack 4 with React
+webpack 4: the HTML webpack plugin
+webpack 4: extracting CSS to a file
+webpack 4 : the webpack dev server
+webpack 4: resources
+
+>[Webpack 4 教程：从0配置到生产模式](https://www.valentinog.com/blog/webpack-tutorial/)
+>[【翻译】Webpack 4 教程：从0配置到生产模式](https://juejin.im/post/5af934806fb9a07ab458bced)
