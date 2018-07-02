@@ -214,4 +214,10 @@ Image 组件，高斯模糊效果使用 `blurRadius` 属性，如：
   );
 ```
 
-**React Native 0.46 版本以后可以直接使用 ImageBackground 组件。**
+提示：**React Native 0.46 版本以后可以直接使用 ImageBackground 组件。**
+
+## 图片资源管理
+
+图片资源到处引用会变得难以维护，我们可以把图片保存到独立的模块中，对外输出 JS 接口。
+
+>参考：[如何高效管理 React Native 项目中的图片资源](https://blog.csdn.net/Marno__/article/details/77624062)
