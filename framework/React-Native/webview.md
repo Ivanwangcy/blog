@@ -32,7 +32,7 @@ let code = `
 <WebView
   injectedJavaScript={code}
   source={{ uri: args }}
-  style={public_styles.container_exclude_title}
+  style={styles.webViewContainer}
   onMessage={this.onMessage}
   automaticallyAdjustContentInsets={false}
   messagingEnabled={true}
