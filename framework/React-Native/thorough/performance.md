@@ -59,4 +59,22 @@
 
 同样的，你可以实现shouldComponentUpdate函数来指明在什么样的确切条件下，你希望这个组件得到重绘。如果你编写的是纯粹的组件（返回值完全由props和state所决定），你可以利用PureComponent来为你做这个工作。再强调一次，不可变的数据结构在提速方面非常有用 —— 当你不得不对一个长列表对象做一个深度的比较，它会使重绘你的整个组件更加快速，而且代码量更少。
 
+### 使用动画改变图片的尺寸时，UI线程掉帧
+
+在iOS上，每次调整Image组件的宽度或者高度，都需要重新裁剪和缩放原始图片。这个操作开销会非常大，尤其是大的图片。比起直接修改尺寸，更好的方案是使用`transform: [{scale}]`的样式属性来改变尺寸。比如当你点击一个图片，要将它放大到全屏的时候，就可以使用这个属性。
+
+### Touchable系列组件不能很好的响应
+
+有些时候，如果我们有一项操作与点击事件所带来的透明度改变或者高亮效果发生在同一帧中，那么有可能在onPress函数结束之前我们都看不到这些效果。比如在onPress执行了一个setState的操作，这个操作需要大量计算工作并且导致了掉帧。对此的一个解决方案是将onPress处理函数中的操作封装到requestAnimationFrame中：
+
+```js
+handleOnPress() {
+  // 谨记在使用requestAnimationFrame、setTimeout以及setInterval时
+  // 要使用TimerMixin（其作用是在组件unmount时，清除所有定时器）
+  this.requestAnimationFrame(() => {
+    this.doExpensiveAction();
+  });
+}
+```
+
 ## Unbundling + inline requires (分拆与内联导入)
