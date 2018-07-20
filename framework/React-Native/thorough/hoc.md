@@ -32,5 +32,6 @@ export default function withTimer(WrappedComponent) {
   }
 }
 
+// 其它地方可以调用，相当于类工厂
 withTimer(WrappedComponent)
 ```
