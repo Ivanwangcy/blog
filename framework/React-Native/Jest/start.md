@@ -7,6 +7,16 @@ cd react-native
 npm test
 ```
 
+```js
+// package.json
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+```
+
 在Facebook，我们使用 Jest 来测试 React Native 应用程序。
 
 通过阅读以下系列，深入了解如何测试正在运行的 React Native 应用程序示例：
