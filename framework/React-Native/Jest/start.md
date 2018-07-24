@@ -23,3 +23,7 @@ npm test
 
 * 第1部分：Jest - 快照开始发挥作用，
 * 第2部分：Jest - Redux Snapshots用于您的Actions和Reducers。
+
+## Snapshot Test
+
+为组件创建一个快照测试，其中包含一些视图和文本组件以及一些样式：
