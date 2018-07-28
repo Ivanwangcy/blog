@@ -2,6 +2,8 @@
 
 高阶组件就是包裹了其他 React Component 的组件。作用是接收组件作为参数返回新的组件。
 
+## 属性劫持
+
 ```js
 // 定时器示例
 export default function withTimer(WrappedComponent) {
@@ -35,3 +37,5 @@ export default function withTimer(WrappedComponent) {
 // 其它地方可以调用，相当于类工厂
 withTimer(WrappedComponent)
 ```
+
+## 
