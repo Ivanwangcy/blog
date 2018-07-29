@@ -37,3 +37,24 @@ test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
 });
 ```
+
+将以下部分添加到package.json：
+
+```json
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+```
+
+最后，运行 `npm test`，Jest 将打印此消息：
+
+```sh
+PASS  ./sum.test.js
+✓ adds 1 + 2 to equal 3 (5ms)
+```
+
+你刚刚使用 Jest 成功编写了第一个测试！
+
+该测试使用expect和toBe来测试两个值完全相同。要了解Jest可以测试的其他内容，请参阅 `[Using Matchers](https://jestjs.io/docs/en/using-matchers)`。
