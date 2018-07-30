@@ -58,3 +58,6 @@ PASS  ./sum.test.js
 你刚刚使用 Jest 成功编写了第一个测试！
 
 该测试使用expect和toBe来测试两个值完全相同。要了解Jest可以测试的其他内容，请参阅 `[Using Matchers](https://jestjs.io/docs/en/using-matchers)`。
+
+
+[http://www.cnblogs.com/Wolfmanlq/p/8012847.html](http://www.cnblogs.com/Wolfmanlq/p/8012847.html)
