@@ -4,6 +4,8 @@
 
 ## 属性劫持
 
+高级组件可以拦截组件属性，进行扩展或者其它操作。
+
 ```js
 // 定时器示例
 export default function withTimer(WrappedComponent) {
