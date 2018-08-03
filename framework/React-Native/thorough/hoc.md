@@ -40,4 +40,36 @@ export default function withTimer(WrappedComponent) {
 withTimer(WrappedComponent)
 ```
 
-## 
+## 组件增强中间件
+
+```js
+import React, { Component } from 'react';
+import { AppState } from 'react-native';
+
+export default function withAppStateRefresh(WrappedComponent) {
+  return class extends Component {
+
+    static props
+
+    componentDidMount() {
+      AppState.addEventListener('change', this._handleAppStateChange);
+    }
+
+    _handleAppStateChange = nextAppState => {
+      let {refreshCurrentPage} = this.props;
+      if (!nextAppState.match(/inactive|background/) && refreshCurrentPage) {
+        // alert('刷新页面');
+        refreshCurrentPage();
+      }
+    }
+
+    componentWillUnmount = () => {
+      AppState.removeEventListener('change', this._handleAppStateChange);
+    };
+
+    render() {
+      return <WrappedComponent {...this.props} />;
+    }
+  };
+}
+```
