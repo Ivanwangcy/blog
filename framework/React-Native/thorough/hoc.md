@@ -49,7 +49,9 @@ import { AppState } from 'react-native';
 export default function withAppStateRefresh(WrappedComponent) {
   return class extends Component {
 
-    static props
+    static propTypes = {
+      refreshCurrentPage: PropTypes.func
+    }
 
     componentDidMount() {
       AppState.addEventListener('change', this._handleAppStateChange);
