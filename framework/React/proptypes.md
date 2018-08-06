@@ -1,4 +1,5 @@
-## React 的 PropTypes 用法
+# React 的 PropTypes 用法
+
 ```javascript
 propTypes: {
    // required
@@ -14,7 +15,9 @@ propTypes: {
    string: React.PropTypes.string // 字符串
  }
 ```
+
 ## React.PropTypes 的種類
+
 ```javascript
  React.PropTypes.array           // 陣列
 
@@ -60,7 +63,7 @@ customPropType: function(props, propName, componentName) {
     return new Error('Validation failed!');
   }
 }
-
 ```
-# 
+
+#
  #VIEWProptype
