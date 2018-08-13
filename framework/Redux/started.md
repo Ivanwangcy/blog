@@ -13,6 +13,7 @@ Rdux 中的 store, action, reducer：
 ## 安装
 
 ```sh
+# npm 安装
 $ npm i redux
 $ npm i react-redux
 ```
@@ -36,4 +37,7 @@ function counter(state = store.state.state, action) {
       return state;
   }
 }
+
+// 初始化 store
+const store = createStore(counter)
 ```
