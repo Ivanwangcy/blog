@@ -1,4 +1,5 @@
 # Module 模块模式 (模块化，动态加载。)
+
 优点:
 面向对象的开发方式, 采用封装的思想.
 支持私有数据和公有数据, 公有部分可以访问私有部分, 外部无法接触私有部分, 只能通过开放接口;
@@ -8,7 +9,6 @@
 无法为私有成员创建自动化单元测试;
 示例代码如下:
 https://github.com/Ivanwangcy/webTutorial/blob/master/design-pattern/module.js
-
 
 Revealing Module (揭示模块) 模式
 
@@ -21,7 +21,6 @@ Revealing Module 模式的产生是因为 Heilmann 很不满意这种状况:
 
 有关如何使用 Reveal Module 模式的示例如下所示:
 
-
 优点:
 该模式可以使脚本语法更加一致. 在模块代码底部, 它也会很容易指出哪些函数和变量可以被公开访问, 从而改善可读性.
 
@@ -30,4 +29,4 @@ Revealing Module 模式的产生是因为 Heilmann 很不满意这种状况:
 
 引用私有变量的公有对象成员也遵守无补丁规则.
 
-采用Reveal Module 模式创建的模块可能比哪些采用原始 Module 模式创建的模块更加脆弱, 所以使用时应该特别小心.
+采用 Reveal Module 模式创建的模块可能比哪些采用原始 Module 模式创建的模块更加脆弱, 所以使用时应该特别小心.
