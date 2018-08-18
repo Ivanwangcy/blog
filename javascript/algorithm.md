@@ -10,6 +10,8 @@ var idx = search(arr, 45)； // 执行后 idx 值等于 10
 
 ## 使用二分查找
 
+复杂度 <=O(n/2）
+
 ```javascript
 function search(arr, dst) {
   if (dst < arr[0] || dst > arr[arr.length - 1]) return -1;
