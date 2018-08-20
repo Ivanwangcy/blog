@@ -3,7 +3,7 @@
 ## 创建分支
 
 ```bash
-git branch testing 新建一个 testing 分支
+git branch testing # 新建一个 testing 分支
 ```
 
 ## 查看分支
