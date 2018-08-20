@@ -1,4 +1,4 @@
-## Math 数学函数
+# Math 数学函数
 
 ## Math.random()
 
