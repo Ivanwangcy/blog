@@ -51,7 +51,7 @@ let handleScroll = Animated.event(
     (this.state.fixedHeight ? 'f' : 'd')
   }
   legacyImplementation={false}
-  numColumns={1}
+  numColumns={1} // 横向排列数量，默认 1，必须高度相同设置2 时 每行显示两列元素
   onRefresh={this._onRefresh}
   onViewableItemsChanged={this._onViewableItemsChanged}
   ref={this._captureRef}
@@ -78,7 +78,5 @@ let handleScroll = Animated.event(
 ```
 
 ## NOTE 
-可以使用 scrollToIndex 跳到指定的元素索引位置，index 跳到的条目，viewPosition 控制当前条目显示在flatList 的位置，0.5 为flatList 中间，0 为首位，1 为末位，开发过程中有个bug：componentDidUpdate 内执行scrollToIndex 最后一个元素无法跳过去；
+可以使用 scrollToIndex 跳到指定的元素索引位置，index 跳到的条目，viewPosition 控制当前条目显示在flatList 的位置，0.5 为flatList 中间，0 为首位，1 为末位，开发过程中有个bug：componentDidUpdate 内执行scrollToIndex 最后一个元素无法跳过去，（临时解决方案，在最后面添加一个空元素占位）；
 
-  numColumns={1}的
-  numColumns={1}
