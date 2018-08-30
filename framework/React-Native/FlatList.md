@@ -76,3 +76,9 @@ let handleScroll = Animated.event(
   refreshing={false}
 />
 ```
+
+## NOTE 
+可以使用 scrollToIndex 跳到指定的元素索引位置，index 跳到的条目，viewPosition 控制当前条目显示在flatList 的位置，0.5 为flatList 中间，0 为首位，1 为末位，开发过程中有个bug：componentDidUpdate 内执行scrollToIndex 最后一个元素无法跳过去；
+
+  numColumns={1}的
+  numColumns={1}
