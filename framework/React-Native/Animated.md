@@ -109,6 +109,13 @@ style: {
 }
 ```
 
+## 创建一个非动画库的动画组件
+
+```js
+// 例如 没有 Animated.SectionList ，可以使用 createAnimatedComponent 封装成动画组件
+const AnimatedSectionList = Animated.createAnimatedComponent(SectionList);
+```
+
 ## Easing 动画缓动效果
 
 默认 ease-in-out
