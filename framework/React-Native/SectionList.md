@@ -17,3 +17,5 @@ try {
 ```
 
 ## getItemLayout()
+
+为了提高 SectionList 性能，需要设置 `getItemLayout`。
