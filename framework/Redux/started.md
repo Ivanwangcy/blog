@@ -41,3 +41,5 @@ function counter(state = store.state.state, action) {
 // 初始化 store
 const store = createStore(counter)
 ```
+
+## 前端为什么需要状态管理库
