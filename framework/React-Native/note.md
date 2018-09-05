@@ -172,3 +172,19 @@ UIManager.measure(findNodeHandle(this.refs.moreCoupon),(x,y,width,height,pageX,p
 ```
 
 该方法获取组件高度在android中不起作用，需要在this.refs.moreCoupon组件的View中加上removeClippedSubviews={false}或者style={{opacity: 1}}，不然获取不到x,y,width,height,pageX,pageY（参考京东到家门店主页搜索框右边领券按钮）
+
+## 2018 年9月开发问题记录
+
+1. SectionList包在ScrollView里面：（问题缺少真正嵌套数据才能发现）
+    如果给SectionList高度，那只能SectionList滑动，ScrollView时而能滑动，时而不能滑动。
+    如果SectionList滑动的时候把ScrollView的scrollEnabled设置成false，SectionList和ScrollView都不能
+    如果SectionList和ScrollView都设置成flex:1或者同一个高度，能解决货架层上推下拉问题，但是在android手机下SectionList不能检测到是否已经滑动底部(JDReact团队也提到过，事实确实这样)
+2. SectionList如果一次性数据下发太多，渲染会卡死
+3. Android 手势支持的不太好，导致上拉下拉出现一些问题；
+4. FlatList 使用 scrollToIndex 跳到最后一条数据时跳不过去，解决方法是在最后面添加一个空白元素占位；
+5. 一些文字类点击事件不敏感，需要增加高度和padding扩大点击范围；
+6. 图片和文字横向排列时要用 flex 控制垂直居中比较准确，不需要自己加样式调整位置（例如加padding,margin，绝对定位等）；
+7. 使用 ref 时一定要进行异常处理，否则会出现系统错误，造成卡死闪退等严重问题；
+8. 图片圆角处理有View包裹时都，图片需要加圆角属性安卓才能起作用
+9. UI 设计反复被修改（如果存在争议要留好证据）
+10. 横向纵向滚动条都隐藏掉，UI 会找 Bug; 属性设置为 false showsHorizontalScrollIndicator and showsVerticalScrollIndicator
