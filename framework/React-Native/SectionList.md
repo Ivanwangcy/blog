@@ -19,3 +19,7 @@ try {
 ## getItemLayout()
 
 为了提高 SectionList 性能，需要设置 `getItemLayout`。
+
+## 获取可视区域的组件
+
+使用这个方法可以监听可视区域的变化 `onViewableItemsChanged`，对此做出一些性能优化。
