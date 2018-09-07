@@ -2,7 +2,7 @@
 
 高阶组件就是包裹了其他 React Component 的组件。作用是接收组件作为参数返回新的组件。
 
-## 属性劫持
+## 属性代理
 
 高级组件可以拦截组件属性，进行扩展或者其它操作。
 
@@ -75,3 +75,5 @@ export default function withAppStateRefresh(WrappedComponent) {
   };
 }
 ```
+## 反向继承
+## 渲染劫持
