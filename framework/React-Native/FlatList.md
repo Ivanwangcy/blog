@@ -76,6 +76,45 @@ let handleScroll = Animated.event(
   refreshing={false}
 />
 ```
+```js
+
+  handleItemsInViewPort = ({ changed, viewableItems }) => {
+    let { setCurrentActivityIndex } = this.props.fullPromotion;
+
+    let changedItem = changed[0];
+    if(changedItem.isViewable) {
+      setCurrentActivityIndex(changedItem.index);
+    }
+    // viewableItems.forEach(item => {
+      // setCurrentActivityIndex(changed);
+    // });
+  };
+
+  handleItemsOutViewPort = ({ changed, viewableItems }) => {
+  }
+
+  getViewabilityConfigCallbackPairs = () => {
+
+    return [
+      {
+        viewabilityConfig: {
+          minimumViewTime: 500,
+          viewAreaCoveragePercentThreshold: inViewAreaCoverage
+        },
+        onViewableItemsChanged: this.handleItemsInViewPort
+      },
+      {
+        viewabilityConfig: {
+          minimumViewTime: 500,
+          // itemVisiblePercentThreshold: 100,
+          viewAreaCoveragePercentThreshold: outViewAreaCoverage
+        },
+        onViewableItemsChanged: this.handleItemsOutViewPort
+      }
+    ];
+  };
+
+```
 
 ## NOTE 
 
