@@ -76,6 +76,8 @@ let handleScroll = Animated.event(
   refreshing={false}
 />
 ```
+
+## 可视区域判断
 ```js
 
   handleItemsInViewPort = ({ changed, viewableItems }) => {
@@ -113,7 +115,7 @@ let handleScroll = Animated.event(
       }
     ];
   };
-
+// 不支持 scrollToIndex
 ```
 
 ## NOTE 
