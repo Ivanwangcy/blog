@@ -45,6 +45,9 @@
 - center: 居中不拉伸。
 
 ```js
+resizeMode="stretch" // 属性设置
+
+// 样式设置
 image {
   resizeMode:
   width:
