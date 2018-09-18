@@ -122,5 +122,7 @@ let handleScroll = Animated.event(
 
 * 可以使用 scrollToIndex 跳到指定的元素索引位置，index 跳到的条目，viewPosition 控制当前条目显示在flatList 的位置，0.5 为flatList 中间，0 为首位，1 为末位，开发过程中有个bug：componentDidUpdate 内执行scrollToIndex 最后一个元素无法跳过去，（临时解决方案，在最后面添加一个空元素占位）；
 
+* 触底判断，正常的分页加载可以使用 onEndReached 函数监听到底加载新数据，但是如果要是触底后执行其它操作这个函数就不够准确，可以使用 onContentSizeChange 获取滚动区域的高度或者宽度，再判断滚动条当前的位置是否到达或者超出滚动区域高度。
+
 ## 性能提升
 设置 `getItemLayout` 可以提升列表性能，可以指定渲染的列表项高度；
