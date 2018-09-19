@@ -13,10 +13,12 @@ var idx = search(arr, 45)； // 执行后 idx 值等于 10
 复杂度 <=O(n/2）
 
 ```javascript
+// 有序的数组，查找对应的值
 function search(arr, dst) {
+  // 如果小于首位/大于末位数，就直接返回 -1 无法匹配
   if (dst < arr[0] || dst > arr[arr.length - 1]) return -1;
-  var idx = -1,
-    left = 0,
+  var idx = -1, // 默认值为 -1 如果找不到
+    left = 0, 
     right = arr.length;
   while (left <= right) {
     var center = Math.floor((left + right) / 2);
