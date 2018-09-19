@@ -10,7 +10,7 @@ var idx = search(arr, 45)； // 执行后 idx 值等于 10
 
 ## 使用二分查找
 
-复杂度 <=O(n/2）
+复杂度 = O(logn)
 
 ```javascript
 function search(arr, dst) {
@@ -29,6 +29,28 @@ function search(arr, dst) {
   }
   return idx;
 }
+
+function search2(arr, dst) {
+  var index = -1;
+  var left = 0;
+  var right = arr.length - 1;
+
+  if (dst < arr[0] || dst > arr[right]) return index;
+
+  while (left <= right) {
+    var center = (left + right) >> 1;
+    console.log(arr[center] + ":" + center);
+    if (dst === arr[center]) {
+      index = center;
+      break;
+    }
+
+    dst < arr[center] ? (right = center - 1) : (left = center + 1);
+  }
+
+  return index;
+}
+
 var arr = [1, 2, 4, 6, 7, 9, 19, 20, 30, 40, 45, 47, 50, 55, 60, 70];
 var idx = search(arr, 100);
 ```
@@ -101,7 +123,6 @@ var sum = function f(num) {
 };
 console.log(sum(100));
 
-
 // 不使用递归
 // 第四种 使用数组
 var sum3 = function(num) {
@@ -117,13 +138,13 @@ var sum3 = function(num) {
 console.log(sum3(3));
 
 // 使用 循环
-function sum4(num){
-  if(num === 0 || num === 1){
+function sum4(num) {
+  if (num === 0 || num === 1) {
     return num;
-  }else{
+  } else {
     var curr = num;
     var total = 0;
-    while(curr--) {
+    while (curr--) {
       total += curr;
     }
     return total + num;
@@ -190,9 +211,9 @@ function operatorChar(num) {
 operatorChar("12345678.12333");
 
 // 方法3
-var test1 ='1234567890'
-var format =test1.replace(/\B(?=(\d{3})+(?!\d))/g,',')
-console.log(format)
+var test1 = "1234567890";
+var format = test1.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+console.log(format);
 // 1,234,567,890
 ```
 
