@@ -43,3 +43,5 @@ const store = createStore(counter)
 ```
 
 ## 前端为什么需要状态管理库
+
+## Redux 的状态注入方式
