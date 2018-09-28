@@ -45,3 +45,4 @@ const store = createStore(counter)
 ## 前端为什么需要状态管理库
 
 ## Redux 的状态注入方式
+全局注册所有状态，组件使用 connect 连接，映射特定的状态进行单独管理。 
