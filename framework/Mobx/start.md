@@ -3,10 +3,29 @@
 * 官方文档 [https://mobx.js.org/index.html](https://mobx.js.org/index.html)
 * 官方文档-中文版 [http://cn.mobx.js.org/](http://cn.mobx.js.org/)
 
+## 安装与使用
+安装: 
+
+```sh
+npm install mobx --save
+```
+
+React 绑定库:
+
+```sh
+npm install mobx-react --save 
+```
+使用：
+
+```sh
+import { action, observable, computed } from 'mobx';
+
+```
+
 Mobx 使用了装饰器模式，使代码看起来更加简洁。
 
 ```js
-import {inject, observable, computed} from 'mobx-react/native'
+import {action, observable, computed} from 'mobx'
 
 
 class Store {
