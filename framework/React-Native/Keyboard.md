@@ -9,3 +9,5 @@
 * [怎么解决RN TextInput 被键盘遮挡的问题](https://github.com/dwqs/blog/issues/39)
 
 * [如何让你的 React Native 应用在键盘弹出时优雅地响应](https://github.com/rccoder/blog/issues/25)
+
+## 离开页面关闭键盘
