@@ -18,9 +18,7 @@ var obj = {
 };
 
 var tracer = function (key, value){
-  console.log('Key: ', key);
-  console.log('Value: ', value);
-	if(!value) return;
+  if(!value) return;
   return value;
 };
 
