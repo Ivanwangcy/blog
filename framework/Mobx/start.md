@@ -1,5 +1,7 @@
 # Mobx 状态管理框架
 
+简单、可扩展的状态管理
+
 * 官方文档 [https://mobx.js.org/index.html](https://mobx.js.org/index.html)
 * 官方文档-中文版 [http://cn.mobx.js.org/](http://cn.mobx.js.org/)
 
