@@ -120,4 +120,6 @@ const AnimatedSectionList = Animated.createAnimatedComponent(SectionList);
 
 默认 ease-in-out
 
-## spring
+## spring 
+
+ 更加接近真实世界，模拟物理，体验更佳

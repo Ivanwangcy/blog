@@ -13,4 +13,11 @@ $(window).bind('touchmove',function(e){
 $('.address-pop-cont').bind('touchmove',function(e){
        e.stopPropagation(); //
   });
+  
+  // 最新版本 阻止事件
+  $(window).bind("touchmove",function(e){
+    if (typeof e.cancelable !== 'boolean' || e.cancelable) {
+          e.preventDefault();
+    }
+  });
 ```
