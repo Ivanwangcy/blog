@@ -77,3 +77,10 @@ export default function withAppStateRefresh(WrappedComponent) {
 ```
 ## 反向继承
 ## 渲染劫持
+
+## 应用场景
+
+* 通用状态；
+* 曝光埋点；
+* 实例定时器；
+* 。。。
