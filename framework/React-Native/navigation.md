@@ -28,3 +28,4 @@ const styles = StyleSheet.create({
   }
 })
 ```
+## 性能
