@@ -239,3 +239,15 @@ const styles = StyleSheet.create({
 })
 
 ```
+
+## 用法
+
+```js
+<Switch
+  width={36}
+  height={22}
+  value={this.state.value}
+  backgroundActive='#09bb07'
+  onSyncPress={(value) => this.onValueChange(value)}
+/>
+```
