@@ -126,3 +126,4 @@ let handleScroll = Animated.event(
 
 ## 性能提升
 设置 `getItemLayout` 可以提升列表性能，可以指定渲染的列表项高度；
+视窗大小属性设置
