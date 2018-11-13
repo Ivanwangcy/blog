@@ -29,9 +29,19 @@ function ListView() {
   return <div>列表</div>;
 }
 
+// 使用箭头函数更简洁
+export default (props) => {
+  return <div>无状态组件<div>
+}
+
+```
+
+## 纯组件
+
+```javascript
 import React, { PureComponent } from "react";
 
-// React 16 纯函数写法
+// React 16 纯组件用法
 class PureComponent extends PureComponent {
   render() {
     return (
