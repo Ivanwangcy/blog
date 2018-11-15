@@ -54,4 +54,4 @@ class PureComponent extends PureComponent {
 ```
 ## 高阶组件
 
-
+function
