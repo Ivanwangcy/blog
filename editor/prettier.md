@@ -268,3 +268,4 @@ npm install --save husky lint-staged prettier
   "scripts": {
 +   "precommit": "lint-staged",
 ```
+## ➒➍➌➏➐
