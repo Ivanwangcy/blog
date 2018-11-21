@@ -1,11 +1,13 @@
 # React 的 PropTypes 用法
 
 ```javascript
+import PropTypes from 'prop-types';
+
 propTypes: {
    // required
 
-   requiredFunc: React.PropTypes.func.isRequired,
-   requiredAny: React.PropTypes.any.isRequired,  // 任何类型
+   requiredFunc: PropTypes.func.isRequired, 函数类型，必传
+   requiredAny: PropTypes.any.isRequired,  // 任何类型
 
    // primitives, optional by default
 
@@ -66,6 +68,12 @@ customPropType: function(props, propName, componentName) {
 ```
 
 ## React Native ViewProptypes
+```js
 import PropTypes from 'prop-types';
+import { ViewPropTypes } from 'react-native';
 
-style: ViewPropTypes.style
+static propTypes = {
+    buttonType: PropTypes.oneOf(['bigger', 'middle', 'small']),
+    style: ViewPropTypes.style
+  };
+```
