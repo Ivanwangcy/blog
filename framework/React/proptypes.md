@@ -1,4 +1,5 @@
 # React 的 PropTypes 用法
+类型校验对于开发很有帮助的，对外提供接口，对内进行类型检测。
 
 ```javascript
 import PropTypes from 'prop-types';
