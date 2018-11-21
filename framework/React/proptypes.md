@@ -65,5 +65,7 @@ customPropType: function(props, propName, componentName) {
 }
 ```
 
-#
- #VIEWProptype
+## React Native ViewProptypes
+import PropTypes from 'prop-types';
+
+style: ViewPropTypes.style
