@@ -14,6 +14,8 @@ function hexToRGB(colorStr) {
 hexToRGB(color); => "rgb(71, 179, 79)"
 
 function rgbToHex(colorStr) {
+  let [r, g, b] = value.match(/\d+/g)
   
+  return `#${(r << 16 | g << 8 | b).toString(16)}`;
 }
 ```
