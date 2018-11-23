@@ -10,4 +10,10 @@ function hexToRGB(colorStr) {
   
   return `rgb(${color >> 16}, ${color >> 8 & 0x00ff}, ${color & 0x0000ff})`
 }
+
+hexToRGB(color); => "rgb(71, 179, 79)"
+
+function rgbToHex(colorStr) {
+  
+}
 ```
