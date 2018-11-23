@@ -11,11 +11,13 @@ function hexToRGB(colorStr) {
   return `rgb(${color >> 16}, ${color >> 8 & 0x00ff}, ${color & 0x0000ff})`
 }
 
-hexToRGB(color); => "rgb(71, 179, 79)"
+let rgb = hexToRGB(color); => "rgb(71, 179, 79)"
 
 function rgbToHex(colorStr) {
   let [r, g, b] = value.match(/\d+/g)
   
   return `#${(r << 16 | g << 8 | b).toString(16)}`;
 }
+
+let hex = rgbToHex(rgb)
 ```
