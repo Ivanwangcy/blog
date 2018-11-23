@@ -19,5 +19,5 @@ function rgbToHex(colorStr) {
   return `#${(r << 16 | g << 8 | b).toString(16)}`;
 }
 
-let hex = rgbToHex(rgb)
+let hex = rgbToHex(rgb); => "#47b34f"
 ```
