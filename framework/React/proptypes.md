@@ -16,6 +16,7 @@ propTypes: {
    func: React.PropTypes.func, // 函数
    number: React.PropTypes.number, // 数字
    string: React.PropTypes.string // 字符串
+   array: React.PropTypes.array // 数组
  }
 ```
 
