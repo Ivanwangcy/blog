@@ -21,3 +21,5 @@ function rgbToHex(colorStr) {
 
 let hex = rgbToHex(rgb); => "#47b34f"
 ```
+
+## 颜色加深/变浅
