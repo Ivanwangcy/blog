@@ -1,8 +1,9 @@
 # Timer 定时器
 
 ## 实现
-```js
-// Timer 高阶组件，相当于工厂类，给每个传入的组件都增加了 定时器 属性，卸载后自动清除
+
+利用高阶组件反向继承的特性，封装一个定时器组件，相当于工厂类，给每个传入的组件都增加了 定时器 属性，卸载后自动清除
+```js 
 const timer = WrappedComponent =>
   class extends WrappedComponent {
     setTimeout = (func, time) => {
