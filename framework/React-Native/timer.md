@@ -31,8 +31,6 @@ export default timer;
 
 ```js
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import timer from './timer';
 
 class App extends Component {
