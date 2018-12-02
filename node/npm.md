@@ -159,3 +159,5 @@ $ npm run deploy
 $ npm shrinkwrap  # 锁定依赖版本
 $ npm outdated # 查看 package.json 中依赖的包结构
 ```
+
+## 版本控制
