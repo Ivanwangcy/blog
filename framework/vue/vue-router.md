@@ -181,3 +181,6 @@ const Foo = resolve => {
 const Foo = resolve => require(['./Foo.vue'], resolve)
 ```
 ### 路由嵌套
+
+```js
+```
