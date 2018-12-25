@@ -18,3 +18,5 @@ import { ConnectedRouter } from 'react-router-redux';
 ## Switch
 
 ## Redirect
+
+## 路由传参数
