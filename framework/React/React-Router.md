@@ -20,3 +20,24 @@ import { ConnectedRouter } from 'react-router-redux';
 ## Redirect
 
 ## 路由传参数
+
+```js
+pushPath('/foo?a=b')
+// store:
+{ location: '/foo?a=b' }
+
+
+pushPath({ pathname: '/foo', query: { a: 'b' } })
+// store:
+{ location: { pathname: '/foo', query: { a: 'b' } } }
+
+
+history.push('/foo?a=b')
+// store:
+{ location: { pathname: '/foo', query: { a: 'b' } } }
+
+
+<Link to='/foo?a=b'>
+// store:
+{ location: { pathname: '/foo', query: { a: 'b' } } }
+```
