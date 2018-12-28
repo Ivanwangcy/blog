@@ -41,3 +41,4 @@ history.push('/foo?a=b')
 // store:
 { location: { pathname: '/foo', query: { a: 'b' } } }
 ```
+## connected-react-router
