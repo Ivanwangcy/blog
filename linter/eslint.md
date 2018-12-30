@@ -27,4 +27,11 @@ alert('foo'); // 不需要检测的代码
 
 /* eslint-enable */
 
+/* eslint-disable */
+    //  代码块儿
+/* eslint-enable */
+
+ // 不检查下一行代码
+
+ // eslint-disable-next-line
 ```
