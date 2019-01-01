@@ -42,3 +42,5 @@ history.push('/foo?a=b')
 { location: { pathname: '/foo', query: { a: 'b' } } }
 ```
 ## connected-react-router
+
+安装
