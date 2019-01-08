@@ -43,4 +43,5 @@ history.push('/foo?a=b')
 ```
 ## connected-react-router
 
-安装
+[connected-react-router](https://github.com/supasate/connected-react-router)
+
