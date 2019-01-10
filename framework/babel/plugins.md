@@ -2,6 +2,18 @@
 
 ### babel-plugin-transform-decorators-legacy ES6+ 的装饰器模式
 "plugins": ["transform-decorators-legacy"]
+
 babel 官网的 装饰器插件：plugin-proposal-decorators
+```js
+    "plugins": [
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      ["@babel/plugin-proposal-class-properties", { "loose" : true }]
+    ]
+```
 ### babel-plugin-transform-remove-console 自动移除 log 插件
 "plugins": ["transform-remove-console"]
