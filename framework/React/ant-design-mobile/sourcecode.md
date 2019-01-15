@@ -1,5 +1,7 @@
 #  蚂蚁金服的移动端实现 [Ant Design](https://mobile.ant.design/)
 
+一个基于 Preact / React / React Native 的 UI 组件库
+
 ## 源码分析
 
 ```sh
