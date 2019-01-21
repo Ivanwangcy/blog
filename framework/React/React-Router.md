@@ -2,7 +2,10 @@
 
 2018年 12月 13日截止，目前最新的React Router V4，与常规的静态路由存在很大差异。这样使路由更像是一个组件，使用更加灵活可以动态创建路由。
 
-## 基本用法
+## 基本用法和路由配置
+
+### HashRouter
+### BrowserRouter
 
 ## 子路由的嵌套
 
@@ -13,10 +16,7 @@
 ```js
 import { ConnectedRouter } from 'react-router-redux';
 
-## 路由配置
 
-HashRouter
-BreserHIS
 ```
 ## Switch
 
