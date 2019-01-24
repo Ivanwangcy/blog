@@ -64,3 +64,19 @@ Array.reduce((accumulator, nextValue) => {
 ## Array.sort() 排序
 ```js
 ```
+## Array.find()
+
+## Array.findIndex()
+
+## 创建连续的数组
+
+```js
+[...Array(1000)].map((v, k) => k + 1)
+// output: [ 1, 2, 3, 4, 5, 6, ..., 1000]
+
+Array(10).fill(5);
+// output [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+
+// 类似的字符串方法：
+'5'.repeat(10) // "5555555555"
+```
