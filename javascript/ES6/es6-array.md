@@ -62,11 +62,21 @@ Array.reduce((accumulator, nextValue) => {
 ```
 
 ## Array.sort() 排序
+
 ```js
 ```
 ## Array.find()
 
+```js
+```
 ## Array.findIndex()
+
+```js
+let findIndex = [0, '1', 1, 2,3,4].findIndex(value => {
+    console.log(value);
+   return value === 1; // 为 true 时立即返回，其余数据不再遍历
+});
+```
 
 ## 创建连续的数组
 
