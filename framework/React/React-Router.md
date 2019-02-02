@@ -48,3 +48,5 @@ history.push('/foo?a=b')
 
 [connected-react-router](https://github.com/supasate/connected-react-router)
 
+## 路由缓存
+
