@@ -57,3 +57,6 @@ class App extends Component {
 export default timer(App);
 
 ```
+
+注意：不要过多使用定时器，会占用更多的内存，导致手机发热，耗电快。
+
