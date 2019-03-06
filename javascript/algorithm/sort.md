@@ -10,9 +10,9 @@ const quickSort = () => {
 }
 
 const quick = (array, left, right) => {
-  let index;
-  if(array.length > 1){
-    index
+  let index; // 1
+  if(array.length > 1){ // 2
+    index // 3
   }
 }
 ```
