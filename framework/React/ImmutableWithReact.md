@@ -1,5 +1,7 @@
 # 在 React 中使用 ImmutableJS
 
+https://github.com/immutable-js/immutable-js 
+
 > 参考资料整理：
 
 - [Immutable as React state](https://github.com/facebook/immutable-js/wiki/Immutable-as-React-state)
