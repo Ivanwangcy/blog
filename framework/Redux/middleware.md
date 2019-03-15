@@ -1,4 +1,4 @@
-# Middleware
+# Redux middleware
 
 ## redux-thunk 异步中间件
 
