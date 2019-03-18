@@ -1,4 +1,4 @@
-# Animated
+# React Native Animated 动画用法
 
 ## 绝对定位动画使用 `_animatedValue.getLayout()` 方法更简洁
 
