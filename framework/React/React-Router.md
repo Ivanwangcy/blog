@@ -48,5 +48,6 @@ history.push('/foo?a=b')
 
 [connected-react-router](https://github.com/supasate/connected-react-router)
 
-## 路由缓存
+## 路由缓存 redux-persist
 
+[redux-persist](https://github.com/rt2zz/redux-persist)
