@@ -46,6 +46,8 @@ history.push('/foo?a=b')
 ```
 ## connected-react-router
 
+React Router v4 Redux 插件，官方建议使用它代替 react-router-redux
+
 [connected-react-router](https://github.com/supasate/connected-react-router)
 
 ## 路由缓存 redux-persist
