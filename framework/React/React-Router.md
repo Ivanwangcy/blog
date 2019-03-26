@@ -11,7 +11,7 @@
 
 ## 结合 Redux 
 
-使用 中间件 `react-router-redux`
+使用 中间件 `react-router-redux`，https://github.com/reactjs/react-router-redux
 
 ```js
 import { ConnectedRouter } from 'react-router-redux';
