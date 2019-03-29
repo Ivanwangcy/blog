@@ -15,3 +15,6 @@
 ```sh
 $ npm i -g create-react-native-web-app
 ```
+
+### Run create-react-native-web-app <project-directory>
+$ create-react-native-web-app myApp
