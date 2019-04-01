@@ -27,3 +27,7 @@ $ npm run web
 $ npm run ios
 $ npm run android
 ```
+
+## 参考：
+
+> [react-native-web 集成示例](https://github.com/haruelrovix/gitphone)
