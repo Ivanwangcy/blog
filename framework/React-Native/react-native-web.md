@@ -30,4 +30,5 @@ $ npm run android
 
 ## 参考：
 
-> [react-native-web 集成示例](https://github.com/haruelrovix/gitphone)
+> [react-native-web 集成示例](https://react-native-training.github.io/react-native-elements/blog/2018/12/13/react-native-web.html#implement-withheader)
+> [示例(源码)](https://github.com/haruelrovix/gitphone)
