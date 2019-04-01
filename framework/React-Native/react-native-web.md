@@ -10,11 +10,20 @@
 [create-react-native-web-app](https://github.com/orYoffe/create-react-native-web-app)
 
 
-### 安装 create-react-native-web-app
+### 使用现有的脚手架搭建项目
+
+安装 create-react-native-web-app
 
 ```sh
 $ npm i -g create-react-native-web-app
 ```
 
 ### Run create-react-native-web-app <project-directory>
+
+```sh
 $ create-react-native-web-app myApp
+$ npm install
+$ npm run web
+$ npm run ios
+$ npm run android
+```
