@@ -27,6 +27,9 @@ $ npm run web
 $ npm run ios
 $ npm run android
 ```
+### 安装路由
+
+react-router-native & react-router-dom
 
 ## 参考：
 
