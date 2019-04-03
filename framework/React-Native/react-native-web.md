@@ -10,7 +10,7 @@
 [create-react-native-web-app](https://github.com/orYoffe/create-react-native-web-app)
 
 
-### 使用现有的脚手架搭建项目
+## 使用现有的脚手架搭建项目
 
 安装 create-react-native-web-app
 
@@ -30,6 +30,20 @@ $ npm run android
 ### 安装路由
 
 react-router-native & react-router-dom
+
+## 集成到现有项目
+
+在 webpack 配置文件中增加 alias:
+
+```sh
+  resolve: {
+    ...other, // 其它配置项目
+    alias: {
+      // Support React Native Web
+      // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
+      'react-native': 'react-native-web',
+    },
+```
 
 ## 参考：
 
