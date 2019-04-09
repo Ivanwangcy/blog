@@ -12,6 +12,7 @@
 ### React Native 
 
 * [Animated 动画用法](/framework/React-Native/Animated.md)
+* [React Native 开发总结(2018)](/framework/React-Native/note.md)
 
 ### React Native Web
 
