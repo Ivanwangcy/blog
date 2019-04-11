@@ -46,9 +46,31 @@ history.push('/foo?a=b')
 ```
 ## connected-react-router
 
-React Router v4 Redux 插件，官方建议使用它代替 react-router-redux
+React Router v4 Redux 插件，官方建议使用它代替 react-router-redux [connected-react-router 仓库地址](https://github.com/supasate/connected-react-router)
 
-[connected-react-router](https://github.com/supasate/connected-react-router)
+## 用法：
+
+* 自定义 history 对象 
+```js
+import { createBrowserHistory,createHashHistory } from 'history';
+export const history = createBrowserHistory({
+  basename: '', // The base URL of the app (see below)
+  forceRefresh: false, // Set true to force full page refreshes
+  keyLength: 6, // The length of location.key
+  // A function to use to confirm navigation with the user (see below)
+  getUserConfirmation: (message, callback) => callback(window.confirm(message))
+});
+
+// or 
+export const history = createHashHistory({
+  basename: '', // The base URL of the app (see below)
+  hashType: 'noslash', // The hash type to use (see below)
+  // hashType: 'slash', // The hash type to use (see below)
+  // A function to use to confirm navigation with the user (see below)
+  getUserConfirmation: (message, callback) => callback(window.confirm(message))
+});
+
+```
 
 ## 路由缓存 redux-persist
 
