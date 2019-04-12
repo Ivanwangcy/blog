@@ -72,6 +72,6 @@ export const history = createHashHistory({
 
 ```
 
-## 路由缓存 redux-persist
+## 状态缓存 redux-persist 持久化数据
 
 [redux-persist](https://github.com/rt2zz/redux-persist)
