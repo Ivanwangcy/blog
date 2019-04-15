@@ -12,6 +12,10 @@
 - https://github.com/supasate/connected-react-router
 - https://github.com/CJY0208/react-router-cache-route
 
+参考文档：
+
+https://reacttraining.com/react-router/
+
 ### HashRouter
 ### BrowserRouter
 
