@@ -54,4 +54,28 @@ class PureComponent extends PureComponent {
 ```
 ## 高阶组件
 
-function
+```js
+const withTimer = WrappedComponent =>
+	class extends WrappedComponent {
+		setTimeout = (func, time) => {
+			this.timeout_id = setTimeout(func, time);
+		}
+
+		setInterval = (func, time) => {
+			this.interval_id = setInterval(func, time);
+		}
+
+		componentWillUnmount() {
+			super.componentWillUnmount();
+
+			clearInterval(this.interval_id);
+			clearTimeout(this.timeout_id);
+		}
+
+		render() {
+			return super.render();
+		}
+	};
+
+export default withTimer;
+```
