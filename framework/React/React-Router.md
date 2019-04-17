@@ -60,7 +60,7 @@ history.push('/foo?a=b')
 
 React Router v4 Redux 插件，官方建议使用它代替 react-router-redux [connected-react-router 仓库地址](https://github.com/supasate/connected-react-router)
 
-## 用法：
+## history 用法：
 
 * 自定义 history 对象，暴露 history api，可以从其它地方使用路由跳转方法。
 ```js
@@ -83,6 +83,8 @@ export const history = createHashHistory({
 });
 
 ```
+### 自定义confirm
+
 
 ## 状态缓存 redux-persist 持久化数据
 
