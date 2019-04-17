@@ -54,7 +54,7 @@ function search2(arr, dst) {
 }
 
 // 优化的简单写法
-var search3=(arr, item)=> {
+var binarySearch=(arr, item)=> {
 	var low = 0;
 	var high = arr.length - 1;
 	while(low <= high){
