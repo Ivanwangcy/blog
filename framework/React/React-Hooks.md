@@ -2,7 +2,7 @@
 
 16.8 正式版发布以后，增加了 Hook 功能，可以投入生产中了。 Hook 是 React 16.8 中的新增功能。它允许我们在不编写类的情况下使用 state 和其他 React 功能。（貌似可以替代高阶组件）
 
-## 用法
+## 开始使用
 
 ### useState 状态钩子
 ```js
@@ -20,6 +20,16 @@ function Example() {
       </button>
     </div>
   );
+}
+```
+ 声明多个状态钩子。
+```js
+function ExampleWithManyStates() {
+  // Declare multiple state variables!
+  const [age, setAge] = useState(42);
+  const [fruit, setFruit] = useState('banana');
+  const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
+  // ...
 }
 ```
 
