@@ -4,7 +4,7 @@
 
 ## 用法
 
-### useState
+### useState 状态钩子
 ```js
 import React, { useState } from 'react';
 
