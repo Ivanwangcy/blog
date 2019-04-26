@@ -33,7 +33,7 @@ function ExampleWithManyStates() {
 }
 ```
 
-### useEffect
+### useEffect 状态更新后钩子函数
 ```js
 import React, { useState, useEffect } from 'react';
 
