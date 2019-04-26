@@ -25,6 +25,7 @@ Merge made by the 'recursive' strategy.
 ## 删除分支
 ```bash
 $ git branch -d testing // 删除分支 testing
+$ git push origin :testing // 提交远程分支，同步删除
 ```
 ## 其它 相关参考
 ```bash
