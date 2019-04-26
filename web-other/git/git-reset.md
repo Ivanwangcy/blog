@@ -20,6 +20,23 @@ $ git push -f # 强制提交回滚操作
 $ git revert
 ```
 
+## 撤销一次合并 merge
+
+1. 查看merge 操作的上一个版本号
+2. git reset --hard 版本号 回滚到 merge 之前的状态
+
+* 示例
+
+误将dev合并到了master分支，现要回滚merge操作 
+⑴ 首先git reflog 
+ee0ee93 HEAD@{0}: merge dev: Merge made by the ‘recursive’ strategy. 
+7335548 HEAD@{1}: checkout: moving from dev to master 
+可以看到需要回滚到 7335548 这个提交记录上
+
+⑵ 执行git reset –hard 7335548 
+再次查看提交记录： 
+7335548 HEAD@{0}: reset: moving to 7335548 
+ee0ee93 HEAD@{1}: merge dev: Merge made by the ‘recursive’ strategy.
 ## 回滚commit
 
 ```sh
