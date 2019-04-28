@@ -23,3 +23,5 @@ const quick = (array, left, right) => {
 ### 主员的划分过程
 
 
+```js
+```
