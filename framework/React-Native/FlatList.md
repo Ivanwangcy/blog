@@ -133,6 +133,6 @@ let handleScroll = Animated.event(
 * 视窗大小属性设置
 * 使用占位图可以解决白色问题
 
-
+## FlatList 与 ScrollView 的选择
 
 
