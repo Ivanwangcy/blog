@@ -9,3 +9,15 @@ https://github.com/zeit/next.js
 ```js
 npm install --save next react react-dom
 ```
+
+修改 package.json
+
+```js
+{
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
+```
