@@ -21,3 +21,9 @@ npm install --save next react react-dom
   }
 }
 ```
+### 自定义配置文件
+
+```js
+// next.config.js
+
+```
