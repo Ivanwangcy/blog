@@ -43,3 +43,13 @@ $ tar -xvf node-v10.15.3-linux-x64.tar.xz
 ```sh
 $ mv node-v10.15.3-linux-x64 node
 ```
+
+配置 node 环境变量：
+
+```sh
+# node 命令
+$ ln -s /root/node/bin/node /usr/sbin/node
+
+# npm 命令
+$ ln -s /root/node/bin/npm /usr/sbin/npm
+```
