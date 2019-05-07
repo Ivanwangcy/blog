@@ -24,8 +24,22 @@ scp -P端口号 username@ip:路径 本地路径
 ```
 
 
-4、 linux 服务器上安装 node :
+## linux 服务器上安装 node :
+
+获取node 安装包
 
 ```sh
 $ wget https://npm.taobao.org/mirrors/node/v10.15.3/node-v10.15.3-linux-x64.tar.xz
+```
+
+解压缩node 安装包：
+
+```sh
+$ tar -xvf node-v10.15.3-linux-x64.tar.xz
+```
+
+更改node安装目录名称(文件夹名): mv + 刚才安装的node版本名称(去掉.tar.gz后缀) + 文件夹名称
+
+```sh
+$ mv node-v10.15.3-linux-x64 node
 ```
