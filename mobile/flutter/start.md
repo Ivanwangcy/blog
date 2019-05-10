@@ -4,3 +4,7 @@
 
 [官方文档](https://flutter.dev/docs)
 [macos 安装方法](https://flutter.dev/docs/get-started/install/macos)
+
+## 编辑器
+
+vscode 安装 Flutter 插件
