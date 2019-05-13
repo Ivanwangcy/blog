@@ -2,5 +2,5 @@
 
 ```sh
 git stash # 暂存当前修改
-git stash apply # 恢复暂存区
+git stash apply # 应用暂存区
 ```
