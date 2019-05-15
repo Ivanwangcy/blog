@@ -19,7 +19,7 @@
 
 ### React Native Web
 
-* [React Native Web 使用](/framework/React-Native/Animated.md)
+* [React Native Web 使用](/framework/React-Native/react-native-web.md)
 
 ## end
 [地址](https://ivanwangcy.github.io/blog/)
