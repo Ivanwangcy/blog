@@ -12,4 +12,4 @@ $ npm run build 压缩代码
 ```
 ## 自定义配置文件
 
-覆盖 create-react-app webpack 配置 不需要 eject 使用 `[react-app-rewired](https://github.com/timarney/react-app-rewired)`
+覆盖 create-react-app webpack 配置 不需要 eject 使用 [`react-app-rewired`](https://github.com/timarney/react-app-rewired)
