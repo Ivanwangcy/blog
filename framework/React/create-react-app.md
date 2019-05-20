@@ -10,3 +10,6 @@ $ cd my-app/
 $ npm start 启动本地服务器
 $ npm run build 压缩代码
 ```
+## 自定义配置文件
+
+react-app-rewired
