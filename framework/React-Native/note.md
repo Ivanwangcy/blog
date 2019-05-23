@@ -188,3 +188,6 @@ UIManager.measure(findNodeHandle(this.refs.moreCoupon),(x,y,width,height,pageX,p
 8. 图片圆角处理有View包裹时都，图片需要加圆角属性安卓才能起作用
 9. UI 设计反复被修改（如果存在争议要留好证据）
 10. 横向纵向滚动条都隐藏掉，UI 会找 Bug; 属性设置为 false showsHorizontalScrollIndicator and showsVerticalScrollIndicator
+11. 阻止手势事件：给组件增加属性 pointerEvents="none"
+12. 扩大Touchable组件的点击范围：增加属性 hitSlop={{top: 30, bottom: 30, left: 60, right: 60}}
+        
