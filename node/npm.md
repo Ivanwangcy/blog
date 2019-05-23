@@ -1,6 +1,10 @@
-# npm 命令
+# npm 介绍
 
-## npm 帮助
+npm 是 node 源码分发系统。
+
+## npm 应用
+
+### npm 帮助
 
 ```sh
 $ npm help # 帮助  npm命令列表
@@ -12,13 +16,13 @@ $ npm <command> -h # 帮助 命令行学习工具
 $ npm -l
 ```
 
-## npm init 初始化
+### npm init 初始化
 
 ```bash
 $ npm init # 初始化package.json 根据提示回车即可
 ```
 
-## NPM 常用命令：
+### NPM 常用命令：
 
 ```sh
 $ npm –v  查看npm版本；
@@ -42,7 +46,7 @@ $ npm view webpack dist-tags
 # { latest: '1.12.9', beta: '2.0.1-beta' }
 ```
 
-## 安装与更新包,模块
+### 安装与更新包,模块
 
 ```sh
 $ npm install jquery --save # 安装 jquery 并保存到 package.json npm install == npm i
@@ -67,7 +71,7 @@ $ npm ls -gl  # 同上
 $ npm ls -g  # 列出全局安装的所有模块
 ```
 
-## npm install 详解
+### npm install 详解
 
 当你为你的模块安装一个依赖模块时，正常情况下你得先安装他们（在模块根目录下 npm install module-name），然后连同版本号手动将他们添加到模块配置文件 package.json 中的依赖里（dependencies）。
 
@@ -97,7 +101,7 @@ $ npm install --save-dev {babel,css,style,postcss,url,file}-loader # ==> babel-l
 
 至于配置文件区分这俩部分，是用于区别开发依赖模块和产品依赖模块，devDepandencies 主要是配置测试框架， 例如 jshint、mocha。
 
-## npm 安装 不同版本
+### npm 安装 不同版本
 
 install 命令总是安装模块的最新版本，如果要安装模块的特定版本，可以在模块名后面加上@和版本号。
 
@@ -115,7 +119,7 @@ $ npm view vue dist-tags
 $ npm install --save vue@next
 ```
 
-## npm 自身升级
+### npm 自身升级
 
 ```sh
 $ npm --version # 查看NPM版本
@@ -123,9 +127,7 @@ $ npm install -g npm@3.7.2 # 安装指定版本的 NPM
 $ npm install npm@latest -g # 更新到最新版本
 ```
 
-## npm package.json 配置
-
-### scripts 配置运行 命令
+### npm package.json 配置 scripts 运行 命令
 
 ```javascript
 "scripts": {
@@ -135,13 +137,13 @@ $ npm install npm@latest -g # 更新到最新版本
   }
 ```
 
-## npm dedupe 去重, 重新计算依赖关系
+### npm dedupe 去重, 重新计算依赖关系
 
 ```bash
 $ npm dedupe
 ```
 
-## 执行配置的命令
+### 执行配置的命令
 
 ```bash
 "scripts" : {"test" : "node testfile.js"}
@@ -153,11 +155,11 @@ $ npm run dev # 使用 npm run 执行自定义命令
 $ npm run deploy
 ```
 
-## 其它命令
+### 其它命令
 
 ```sh
 $ npm shrinkwrap  # 锁定依赖版本
 $ npm outdated # 查看 package.json 中依赖的包结构
 ```
 
-## 版本控制
+### 版本控制
