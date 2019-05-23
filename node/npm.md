@@ -1,6 +1,6 @@
 # npm 介绍
 
-npm（最初是Node Package Manager的缩写）是JavaScript编程语言的包管理器。它是JavaScript运行时环境 Node.js 的默认包管理器。npm 是基于 node 的源码分发系统。
+npm（最初是Node Package Manager的缩写）是JavaScript编程语言的包管理器。它是JavaScript运行时环境 Node.js 的默认包管理器。npm 的本质是一个源码分发平台，可以在官网上面发布和下载包资源。
 
 ## npm 应用
 
