@@ -26,6 +26,7 @@
 ```js
 <ImageBackground
   source={require("./images.png")}
+  defaultSource={'默认图url'}
   style={{ width: 100, height: 100 }}
 />
 ```
@@ -58,6 +59,7 @@ image {
 
 ## NOTE 
 * 圆角的图片增加阴影，有问题，暂时解决是使用阴影切图处理，还没想到好办法。
+* 默认图只有 ios 支持， Android 不支持。
 
 
 
