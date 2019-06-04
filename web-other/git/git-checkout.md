@@ -1,5 +1,7 @@
-## git checkout
+# git checkout
+
 ## git discard change
+
 ```bash
 # 撤销 某个文件的修改
 $ git checkout  -- branches/webapp/v1.1/html/new/lib/common/utility.js
@@ -14,4 +16,10 @@ $ git checkout master -- file_name1 file_name2 file_name3 # ... 检出多个文�
 $ git checkout master -- dir_name # 检出一个路径下的所有文件
 $ git checkout -- hello.js # 撤销文件修改
 # 这条命令把hello.rb从HEAD中签出.
+```
+
+## 强制切分支
+
+```sh
+git checkout -b master
 ```
