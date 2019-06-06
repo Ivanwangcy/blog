@@ -24,16 +24,22 @@
 - `Ctrl + ↑/↓` 向上/下移动可视区域
 - `Ctrl + c / Esc` 进入 Vim 模式
 
+
 ### 行操作
 
 - `Alt + ↑/↓` 向上/下移动当前行
 - `Shift + Alt + ↑/↓` 向上/下复制当前行
 
-## 常用插件 :sync
+## 常用插件 
 
-## 常用插件 :prettier
+* :sync 同步代码编辑器配置。
 
-- ctrl + alt + B 格式化当前文件;
+* :prettier
+  - ctrl + alt + B 格式化当前文件;
+
+* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 可以查看每一行的最新代码提交人
+
+## 
 
 ## code 命令
 
