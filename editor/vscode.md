@@ -32,7 +32,7 @@
 
 ## 常用插件 
 
-* :sync 同步代码编辑器配置。
+* :sync 同步代码编辑器配置。备份上传到github账号
 
 * :prettier
   - ctrl + alt + B 格式化当前文件;
