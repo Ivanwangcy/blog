@@ -57,3 +57,8 @@ $ git lgone --stat --after=2015-11-19 --before=2015-11-20  # 从2015-11-19 到 2
 ```bash
 git log >> log.txt
 ```
+
+### 退出 log 记录
+
+进入 log 模式后，Ctrl + Z 退出
+
