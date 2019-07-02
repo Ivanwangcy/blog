@@ -66,6 +66,9 @@ $ curl http://www.baidu.com/xx
 3.  add shortcut key;
 4.  use shortcut key start command;
 
+## 其它
+
 ## 参考链接：
 
 [http://wulfric.me/2015/08/iterm2/](http://wulfric.me/2015/08/iterm2/)
+
