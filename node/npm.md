@@ -165,3 +165,9 @@ $ npm outdated # 查看 package.json 中依赖的包结构
 ```
 
 ### 版本控制
+
+## 搭建私有仓库
+
+* [verdaccio](https://github.com/verdaccio/verdaccio/)
+
+
