@@ -84,8 +84,29 @@ export const history = createHashHistory({
 
 ```
 ### 自定义confirm
-
-
+```js
+getUserConfirmation: (message, callback) => {
+        Alert({
+            title: '提示',
+            msg: message,
+            buttons: [
+                {
+                    text: '取消',
+                    callBack: () => {
+                      callback(false);
+                  }
+                },
+                {
+                    text: '确认',
+                    callBack: () => {
+                        callback(true);
+                    }
+                }
+            ]
+        });
+    }
+ ```
+ 
 ## 状态缓存 redux-persist 持久化数据
 
 [redux-persist](https://github.com/rt2zz/redux-persist)
