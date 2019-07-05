@@ -17,3 +17,26 @@ axios.interceptors.response.use(function (response) {
 })
 ```
 ## Post 请求 需要引用 qs.stringify()
+
+```js
+
+import qs from 'qs';
+
+         axios({
+                method: type || 'GET',
+                url: `${apiPath}?_jdrandom=` + new Date().getTime(),
+                params: type == 'POST' ? undefined : params,
+                data: qs.stringify(params),
+                timeout: params.timeout || 9999,
+                cancelToken: cancelTokenSource.token
+            })
+                .then(res => {
+                    key && state.setItem(key, res.resp);
+                    resolve(res || {});
+                })
+                .catch(error => {
+                    error = error || {};
+                    reject(error || {});
+                });
+
+```
