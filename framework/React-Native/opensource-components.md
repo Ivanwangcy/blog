@@ -6,6 +6,8 @@
 - [react-native-router-flux](https://github.com/aksonov/react-native-router-flux) 针对 `react-navigation` 的扩展
 - [react-native-linear-gradient](https://github.com/react-native-community/react-native-linear-gradient) 渐变组件
 * [react-native-switch-pro](https://github.com/poberwong/react-native-switch-pro) 开关组件
+* [react-native-swiper](https://github.com/leecade/react-native-swiper) 轮播图组件
+
 
 ## 开源组件库
 
