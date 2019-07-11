@@ -14,3 +14,12 @@
 * [https://github.com/ant-design/ant-design-mobile](https://github.com/ant-design/ant-design-mobile) 蚂蚁金服组件库
 * 
 * [https://github.com/jondot/awesome-react-native](https://github.com/jondot/awesome-react-native) Awesome React ative 合集
+
+
+## 发布一个组件
+
+
+```sh
+
+npm publish . --registry http://XX.xx.xx
+```
