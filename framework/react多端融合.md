@@ -2,6 +2,10 @@
 
 ## react native web
 
+可以使 RN 和 H5 实现一套代码。
+
+[相关脚手架](create-react-native-web-app)
+
 ## taro
 
 ## Alita
