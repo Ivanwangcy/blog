@@ -23,3 +23,7 @@
 
 npm publish . --registry http://XX.xx.xx
 ```
+
+## 脚手架
+
+https://github.com/orYoffe/create-react-native-web-app
