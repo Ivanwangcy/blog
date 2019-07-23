@@ -34,3 +34,5 @@ const anim = lottie.loadAnimation({
                 />
 ```
 
+## 参考教程
+https://imweb.io/topic/5b23a850d4c96b9b1b4c4efe
