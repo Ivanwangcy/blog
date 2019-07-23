@@ -27,6 +27,13 @@ const anim = lottie.loadAnimation({
             path: '/Lottie/res/WeAccept.json'// the path to the animation json 请求 json 服务器端地址，外部资源有跨域问题
         });
         
+        anim.addEventListener('complete', () => {
+            console.log('animation 动画播放完成');
+          });
+        anim.addEventListener('data_ready', () => {
+            console.log('animation 数据加载完成');
+          });
+        
         // 动画承载组件
         <div
                     style={{ width: '100%', height: '200px', backgroundColor: '#fff', position: 'relative' }}
