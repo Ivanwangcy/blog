@@ -8,6 +8,9 @@
 * [react-native-switch-pro](https://github.com/poberwong/react-native-switch-pro) 开关组件
 * [react-native-swiper](https://github.com/leecade/react-native-swiper) 轮播图组件
 
+## 原生扩展组件
+
+- [react-native-linear-gradient](https://github.com/react-native-community/react-native-linear-gradient) 线性渐变组件
 
 ## 开源组件库
 
