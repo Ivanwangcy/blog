@@ -1,3 +1,5 @@
+# React Native 开源组件
+
 ## 一些优秀的开源组件收藏
 - [react-native-root-siblings](https://github.com/Ivanwangcy/react-native-root-siblings) 应用程序同级别组件，全局组件
 - [react-native-root-toast](https://github.com/magicismight/react-native-root-toast) 全局 Toast 组件
@@ -11,6 +13,7 @@
 ## 原生扩展组件
 
 - [react-native-linear-gradient](https://github.com/react-native-community/react-native-linear-gradient) 线性渐变组件
+- [lottie-react-native](https://github.com/react-native-community/lottie-react-native) React Native 支持 Lottie 动画
 
 ## 开源组件库
 
