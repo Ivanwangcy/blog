@@ -3,11 +3,11 @@
 ## 创建头文件
 
 ```objective-c
-// CostomViewManager.h
+// CustomViewManager.h
 #import <React/RCTBridgeModule.h>
 #import <React/RCTViewManager.h>
 
-@interface CostomViewManager : RCTViewManager
+@interface CustomViewManager : RCTViewManager
 @end
 
 ```
@@ -16,11 +16,11 @@
 
 ```objective-c
 
-// CostomViewManager.m
-#import "CostomViewManager.h"
-@implementation CostomViewManager
+// CustomViewManager.m
+#import "CustomViewManager.h"
+@implementation CustomViewManager
 
- RCT_EXPORT_MODULE(CostomView)
+ RCT_EXPORT_MODULE(CustomView)
 
  - (UIView *)view
  {
@@ -36,4 +36,12 @@
 @end
 
 
+```
+
+## javascript 导入原生模块
+
+```js
+const CustomView = requireNativeComponent('CustomView', null);
+
+<CustomView />
 ```
