@@ -13,6 +13,8 @@ $ npm install -g nrm
 ## 用法
 
 ```sh
+$ nrm add mynpm http://npm.mynpm.com/
+
 $ nrm ls
 
 * npm -----  https://registry.npmjs.org/
@@ -20,8 +22,7 @@ $ nrm ls
   cnpm ----  http://r.cnpmjs.org/
   taobao --  https://registry.npm.taobao.org/
   nj ------  https://registry.nodejitsu.com/
-  skimdb -- https://skimdb.npmjs.com/registry
+  mynpm -- http://npm.mynpm.com/
   
-  
-$ nrm use taobao 
+$ nrm use mynpm 
 ```
