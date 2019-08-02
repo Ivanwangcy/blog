@@ -62,3 +62,10 @@ class MyComponent extends Component {
 ```js
 AppRegistry.registerComponent('ReactNativeApp', () => MyComponent)
 ```
+
+## 基于 TypeScript
+
+```js
+# https://github.com/react-native-community/react-native-template-typescript
+$ react-native init MyApp --template typescript
+```
