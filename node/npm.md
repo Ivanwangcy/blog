@@ -157,6 +157,19 @@ $ npm run dev # 使用 npm run 执行自定义命令
 $ npm run deploy
 ```
 
+## 发布包
+
+```sh
+$ npm publish . --registory http://xx.xx.com
+
+# 本地测试库
+
+$ npm link mypackage
+
+# 引用库项目
+$ npm link
+```
+
 ### 其它命令
 
 ```sh
