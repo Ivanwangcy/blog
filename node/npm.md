@@ -182,5 +182,10 @@ $ npm outdated # 查看 package.json 中依赖的包结构
 ## 搭建私有仓库
 
 * [verdaccio](https://github.com/verdaccio/verdaccio/)
+使用 pm2 管理服务器：
+   配置文件默认的路径是 ~/.config/verdaccio下的config.yaml
 
+    * 停止服务：pm2 stop verdaccio
+
+    * 开启服务：pm2 start verdaccio
 
