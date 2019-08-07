@@ -138,7 +138,7 @@ _keyboardDidHide(e) {
 - Android FlatList 分页加载 onEndReachedThreshold 属性设置 0 时不会执行分页加载，推荐设置 {0.1}；
 
 - Android 不支持获取键盘高度，可以写一个固定的高度；
-- Android 不支持阴影效果，可以使用边框或者背景图代替；
+- Android 不支持彩色的阴影效果，可以使用边框或者背景图代替，elevation 这个样式只是黑色的类似阴影效果；
 - Android 使用 map 返回的组件列表某个条件创建组件，不满足就返回 null 在 Android 会有问题，可以使用 forEach 遍历 再 push 到一个新数组，例如：Picker 传 null 组件，系统会报错，示例代码如下：
 
 ```js
