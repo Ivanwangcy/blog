@@ -39,14 +39,16 @@
 
 * [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 可以查看每一行的最新代码提交人
 
-## 
 
-## code 命令
+## 命令行启动
+
+> 提示：对于Mac用户，我们需要通过设置使您能够从终端内启动VS Code. 首选运行VS code并打开命令面板（ `⇧⌘P` ），然后输入 `shell command` 找到: `Install ‘code' command in PATH` 。
 
 ```sh
-$ alias -g code=\''/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code'\'
+# 进入项目目录
 
-# za @ zaMBP in ~code [16:54:32]
 $ code .
-zsh: exec format error: /Applications/Visual Studio Code.app/Contents/Resources/app/bin/code
 ```
+
+>> 参考：[Visual Studio Code入门(译)
+](https://www.jianshu.com/p/3dda4756eca5)
