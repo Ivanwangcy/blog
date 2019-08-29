@@ -126,7 +126,6 @@ BackToTop.defaultProps = {
             } else {
                 start = duration;
                 clearTimeout(timer);
-                window.addEventListener('scroll', this.touchMoveTab, false);
             }
             cb && top && cb(top);
         };
