@@ -110,3 +110,26 @@ BackToTop.defaultProps = {
 };
 
 ```
+## 缓动动画
+
+```js
+    animationSlide(timer, begin, end, cb) {
+        let start = 0; // 开始时间
+        const duration = 15; //持续时间
+        const change = (end ? end : 0) - begin; // 变化量
+        const run = () => {
+            timer && clearTimeout(timer);
+            if (start < duration) {
+                start++;
+                var top = Math.ceil(Tween_Linear(start, begin, change, duration));
+                timer = setTimeout(run, 15);
+            } else {
+                start = duration;
+                clearTimeout(timer);
+                window.addEventListener('scroll', this.touchMoveTab, false);
+            }
+            cb && top && cb(top);
+        };
+        run();
+    }
+```
