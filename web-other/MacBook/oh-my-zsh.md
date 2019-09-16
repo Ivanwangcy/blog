@@ -42,3 +42,5 @@ $ gco # 等于 git checkout
 $ glg # 等于 git log --stat --max-count = 10  Ctrl + Z 退出
 $ glog # 等于 git log --oneline --decorate --color --graph
 ```
+
+[iTerm 2 && Oh My Zsh【DIY教程——亲身体验过程】](https://www.jianshu.com/p/7de00c73a2bb)
