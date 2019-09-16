@@ -50,5 +50,21 @@
 $ code .
 ```
 
+## 去除装饰器警告
+
+在项目的根目录下创建一个tsconfig.json文件，并且里头的内容是：
+
+```json
+{
+  "compilerOptions": {
+      "experimentalDecorators": true,
+      "allowJs": true
+  }
+}
+
+```
+
+
 >> 参考：[Visual Studio Code入门(译)
 ](https://www.jianshu.com/p/3dda4756eca5)
+
