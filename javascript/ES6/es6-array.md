@@ -89,4 +89,12 @@ Array(10).fill(5);
 
 // 类似的字符串方法：
 '5'.repeat(10) // "5555555555"
+
+Array.apply(Array,Array(20)).map((v,k)=>k)
+
+''.repeat(20).split('').map((v,k)=>k)
+
+Array.from({length:20}).map((v,k)=>k)
+
+Object.keys([...Array(20)])//字符串
 ```
