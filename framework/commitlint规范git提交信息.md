@@ -3,7 +3,7 @@
 ## 安装commitlint
 
 ```js
-npm install --save-dev commitlint
+npm install --save-dev  @commitlint/cli
 ```
 
 ## 安装husky
