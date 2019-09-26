@@ -2,8 +2,10 @@
 
 ## 安装commitlint
 
+官方网址：https://github.com/conventional-changelog/commitlint
+
 ```js
-npm install --save-dev  @commitlint/cli
+npm install --save-dev @commitlint/{config-conventional,cli}
 ```
 
 ## 安装husky
