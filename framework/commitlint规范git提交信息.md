@@ -54,3 +54,12 @@ module.exports = {
 }
 
 ```
+
+## 提交示例
+
+```sh
+git commit -m "fix: xx bug"
+git commit -m "style: xx update"
+
+...
+```
