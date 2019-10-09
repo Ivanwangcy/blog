@@ -23,6 +23,7 @@
 * Proxy -> MacOS proxy/ Windows proxy 配置全局代理
 * 查看代理IP地址：Help -> Local IP Address
 * HTTPS 代理，安装证书 Help -> SSL Proxying，Mac 系统证书安装后需要授权信任证书；
+* HTTPS 请求失败需要 右键 开启 SSL 代理，enable ssl proxy；
 
 ## 快捷键
 - `Ctrl + Backspace` 清除所有 Session
