@@ -12,7 +12,10 @@
 
 ## 百度小程序
 
+* [百度智能小程序官网](https://smartprogram.baidu.com/developer/index.html)
+* [官方文档](https://smartprogram.baidu.com/docs/introduction/enter_application/)
+
 ## 转换工具
 
 * [Taro](https://github.com/NervJS/taro) 
-* [Taro-ui](https://github.com/NervJS/taro-ui)
+* [Taro-UI Taro组件库](https://github.com/NervJS/taro-ui)
