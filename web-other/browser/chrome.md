@@ -77,3 +77,12 @@ time方法表示计时开始，timeEnd方法表示计时结束。它们的参数
 2. Show layer border 显示页面层级边框；
 3. Show FPS meter 显示每秒帧数；
 4. Show scroling perf issues 显示滚动性能问题
+
+## 新版 google 安装插件的方法
+
+打开扩展程序，开启开发模式，将下载好的 crx 文件拖入，如果报错，将 crx 文件扩展名改成 zip 即可。
+
+
+## 常用的 google 插件
+
+* 谷歌访问助手 可以访问 google gmail 等 （强力推荐）
