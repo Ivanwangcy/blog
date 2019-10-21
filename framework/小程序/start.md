@@ -4,6 +4,7 @@
 
 * [微信小程序 - 微信公众平台- 腾讯](https://mp.weixin.qq.com/cgi-bin/wx)
 * [小程序API - 微信开放社区- 腾讯](https://developers.weixin.qq.com/miniprogram/dev/api/)
+* [小程序登录入口](https://mp.weixin.qq.com/)
 
 ## 支付宝小程序
 
