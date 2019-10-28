@@ -10,8 +10,16 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 
 
 ## 显示和隐藏，Mac 隐藏文件
-－ 显示Mac隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles -bool true
-－ 隐藏Mac隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles -bool false
+
+－ 显示Mac隐藏文件的命令：
+```sh
+defaults write com.apple.finder AppleShowAllFiles -bool true
+```
+－ 隐藏Mac隐藏文件的命令：
+
+```sh
+defaults write com.apple.finder AppleShowAllFiles -bool false
+```
 ## 常用命令行
 ```sh
 $ ls # 查看文件
