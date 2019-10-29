@@ -9,4 +9,64 @@
 npm i @typescript-eslint/parser typescript
 ```
 
-## 基本用法
+## 配置 lint
+
+.eslintrc
+
+```json
+
+{
+  "extends": ["taro"],
+  "rules": {
+    "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "jsx-quotes": ["error", "prefer-double"]
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "useJSXTextNode": true,
+    "project": "./tsconfig.json"
+  }
+}
+
+```
+tsconfig.json
+
+```sh
+{
+  "compilerOptions": {
+      "target": "es2017",
+      "module": "commonjs",
+      "removeComments": false,
+      "preserveConstEnums": true,
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "noImplicitAny": false,
+      "allowSyntheticDefaultImports": true,
+      "outDir": "lib",
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "strictNullChecks": true,
+      "sourceMap": true,
+      "baseUrl": ".",
+      "rootDir": ".",
+      "jsx": "preserve",
+      "jsxFactory": "Taro.createElement",
+      "allowJs": true,
+      "resolveJsonModule": true,
+      "typeRoots": [
+        "node_modules/@types"
+      ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "compileOnSave": false
+}
+
+
+```
