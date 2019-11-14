@@ -1,3 +1,11 @@
 # 微信小程序转 Taro
 
 参考文档：https://taro-docs.jd.com/taro/docs/taroize.html
+
+
+## 注意事项
+
+小程序代码不够规范会导致转换后无法运行
+
+* 相对路径需要加 './'，如果不加转换后就会在 node_modules 中找且找不到报错；
+* 
