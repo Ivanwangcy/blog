@@ -160,6 +160,8 @@ $ npm run deploy
 ## 发布包
 
 ```sh
+npm adduser --registry=http://myregistry.example.com --scope=@myco
+
 $ npm publish . --registory http://xx.xx.com
 
 # 本地测试库
@@ -189,3 +191,4 @@ $ npm outdated # 查看 package.json 中依赖的包结构
 
     * 开启服务：pm2 start verdaccio
 
+## 
