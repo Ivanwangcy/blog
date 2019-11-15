@@ -9,3 +9,15 @@
 
 * 相对路径需要加 './'，如果不加转换后就会在 node_modules 中找且找不到报错；
 * 小程序代码中重复导入一个文件1次以上，转换后会报错；
+* 如果是带表达式的事件监听需要手动修改函数，如下:（写原生小程序时避免这样写）
+```js
+
+// 原生写法
+catch:tap="{{flag ? 'handleTap' : ''}}"
+
+// Taro Convert 
+onTap={flag ? 'handleTap' : ''} 
+
+// to 手动修改后
+onTap={flag ? this.handleTap : ''}
+```
