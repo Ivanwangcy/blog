@@ -21,3 +21,7 @@ onTap={flag ? 'handleTap' : ''}
 // to 手动修改后
 onTap={flag ? this.handleTap : ''}
 ```
+
+## 单向数据流
+
+input 输入框校验问题
