@@ -25,3 +25,5 @@ onTap={flag ? this.handleTap : ''}
 ## 单向数据流
 
 input 输入框校验问题
+
+data 设置问题， setState
