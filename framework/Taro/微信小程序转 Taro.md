@@ -27,3 +27,5 @@ onTap={flag ? this.handleTap : ''}
 input 输入框校验问题
 
 data 设置问题， setState
+
+属性和方法命名不能一样
