@@ -4,6 +4,8 @@
 
 持续集成
 
+trivasCI, circle CI
+
 ## CD
 
 持续部署
