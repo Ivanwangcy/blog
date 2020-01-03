@@ -4,6 +4,8 @@
 
 ```bash
 $ git branch testing 新建一个 testing 分支
+
+$ git branch -b testing # 创建分支并切换到创建的分支
 ```
 
 ## 查看分支
