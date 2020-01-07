@@ -78,6 +78,7 @@ ls -al /etc>> aa.txt (将etc下面的列表信息追加到aa.txt文件信息后�
 如：cat /etc/profile (只是查看该文件里的内容)　　　　vi /etc/profile (查看、并且可以修改该文件里的内容)
 后续的博文会继续记录学习Linux系统的点点滴滴，将会补充更多的Linux常用命令。
 
+## find
 
 分类: Linux
 标签: linux, CentOS, OS X
