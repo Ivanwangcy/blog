@@ -16,6 +16,8 @@ let store = createStore(createReducer(), applyMiddleware(thunk));
 ```
 ### redux-persist
 
+https://github.com/rt2zz/redux-persist
+
 redux 持久化插件
 
 ### redux-saga
