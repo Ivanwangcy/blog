@@ -46,6 +46,9 @@ Merge made by the 'recursive' strategy.
 ```bash
 # 删除分支 testing
 $ git branch -d testing
+
+# 删除远程分支
+git push origin --delete dev20181018
 ```
 
 ## 其它 相关参考
