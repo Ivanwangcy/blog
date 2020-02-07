@@ -1,5 +1,7 @@
 # Type Script 使用
 
+[https://typescript.bootcss.com/](TypeScript 中文手册)
+
 ## 安装 TypeScript
 
 ```sh
@@ -15,3 +17,5 @@ function greeter(person: string) {
 ```
 
 ## type and interface
+
+
