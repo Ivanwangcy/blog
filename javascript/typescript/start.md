@@ -1,6 +1,6 @@
 # Type Script 使用
 
-[https://typescript.bootcss.com/](TypeScript 中文手册)
+[TypeScript 中文手册](https://typescript.bootcss.com/)
 
 ## 安装 TypeScript
 
