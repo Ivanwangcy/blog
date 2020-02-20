@@ -14,3 +14,5 @@
 
 
 [Node+GitLab实现小程序CI系统](https://www.cnblogs.com/Smiled/p/10681625.html)
+
+## 部署
