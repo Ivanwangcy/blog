@@ -41,7 +41,7 @@
 
 * [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 可以查看每一行的最新代码提交人
 
-* [Markdown Preview Mermaid Support]https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid 流程图预览插件
+* [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) 流程图预览插件
 
 
 ## 命令行启动
