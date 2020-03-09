@@ -6,6 +6,8 @@ taro convert
 
 ## 小程序多端适配
 
+:::demo
+
 ```js
 if(process.env.TARO_ENV === 'weapp'){
 
@@ -23,3 +25,4 @@ if(process.env.TARO_ENV === 'h5'){
 
 }
 ```
+:::
