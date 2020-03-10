@@ -4,6 +4,18 @@
 taro convert
 ```
 
+## 小程序多端适配文件
+
+文件示例：
+
+```js
+index.weapp.js
+index.swan.js
+index.jd.js
+index.tt.js
+index.h5.js
+```
+
 ## 小程序多端适配
 
 ```js
