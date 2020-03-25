@@ -43,4 +43,19 @@ $ glg # 等于 git log --stat --max-count = 10  Ctrl + Z 退出
 $ glog # 等于 git log --oneline --decorate --color --graph
 ```
 
+## 查询端口占用情况并杀掉进程
+
+```sh
+# 查询端口
+$ lsof -i:1099
+
+COMMAND   PID         USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+java    19493 wangchunyu40   26u  IPv6 0xecf06017998c199b      0t0  TCP *:rmiregistry (LISTEN)
+java    19493 wangchunyu40   84u  IPv6 0xecf06017a3df351b      0t0  TCP localhost:rmiregistry->localhost:52791 (ESTABLISHED)
+idea    85025 wangchunyu40   97u  IPv4 0xecf060179e4f80a3      0t0  TCP localhost:52791->localhost:rmiregistry (ESTABLISHED)
+
+# 杀死d端口对应进程
+$ kill 19493 
+```
+
 [iTerm 2 && Oh My Zsh【DIY教程——亲身体验过程】](https://www.jianshu.com/p/7de00c73a2bb)
