@@ -7,4 +7,4 @@ Taro IDE 是 移动端一站式研发平台 ，为你提供全新的可视化多
 
 
 
-http://taro-ide.jd.com/?ADTAG=o2lab.02.erp
+http://taro-ide.jd.com/?ADTAG=o2lab.02.erp *需要京东erp登录*
