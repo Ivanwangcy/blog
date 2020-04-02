@@ -50,6 +50,17 @@
 * info() 有 蓝色i图标 :information_source:；
 * warn() 有 黄色叹号图标 :heavy_exclamation_mark:；
 * error() 有 红色错误图标 :x:；
+
+自定义格式化输出，增加样式：
+```
+      console.log(
+        `%c vue-devtools %c Detected Vue v2.5.2 %c`,
+        'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+        'background:#41b883 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+        'background:transparent'
+      )
+```
+
 ### time()，timeEnd()
 这两个方法用于计时，可以算出一个操作所花费的准确时间。
 ```javascript
