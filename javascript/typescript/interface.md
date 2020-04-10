@@ -113,3 +113,6 @@ export interface AtInputProps {
 
 export default AtInput
 ```
+
+## type 类型定义
+
