@@ -7,6 +7,9 @@
   .title{
     color: red;
   }
+  &.checked {
+  
+  }
 }
 ```
 ## 混合
