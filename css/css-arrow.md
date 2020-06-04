@@ -25,19 +25,18 @@
 }
 ```
 ## 气泡框
-<<<<<<< HEAD
 
 ## 梯形
-```CSS
+
+```css
 .trapezoid {
   border-bottom: 100px solid red;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   height: 0;
   width: 100px;
-=======
-```css
-
+  }
+  
 /*箭头居中*/
 .container{
   border: 1px solid #e8e8e8;
