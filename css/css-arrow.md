@@ -59,6 +59,5 @@
 .container::before{
   left: -11px;
   border-right-color: #e8e8e8;
->>>>>>> ced11a76b866c46e3c3bce88612b356628180f75
 }
 ```
