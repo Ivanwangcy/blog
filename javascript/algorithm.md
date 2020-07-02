@@ -232,6 +232,15 @@ var test1 = "1234567890";
 var format = test1.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 console.log(format);
 // 1,234,567,890
+
+function toThousands(num) {
+    return (num || 0).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
+}
+
+toThousands(10000000000) // "10,000,000,000"
+
+// 方法 4
+(1000000).toLocaleString() // "1,000,000"
 ```
 
 ## 大数相加
