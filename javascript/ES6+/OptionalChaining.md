@@ -20,14 +20,16 @@ const firstName = message?.body?.user?.firstName ?? 'default';
 
 - 安装依赖：
 
+```js
 @babel/plugin-proposal-optional-chaining // 可选链
 @babel/plugin-proposal-nullish-coalescing-operator // 双问号
-
+```
 
 - 插件配置：
 
 然后在.babelrc或者babel.config.js中这加入2个插件(plugins属性放在JSON顶层)：
 
+```js
 
 {
  "plugins": [
@@ -35,3 +37,5 @@ const firstName = message?.body?.user?.firstName ?? 'default';
     "@babel/plugin-proposal-optional-chaining"
   ]
 }
+
+```
