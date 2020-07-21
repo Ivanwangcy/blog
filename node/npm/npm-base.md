@@ -191,4 +191,12 @@ $ npm outdated # 查看 package.json 中依赖的包结构
 
     * 开启服务：pm2 start verdaccio
 
-## 
+## npm 发布
+```sh
+$ jnpm adduser --registry=http://xxx.m.xx.com --scope=@xx
+
+
+# 添加其它发布者
+$ npm owner add <user> <package name> 
+
+```
