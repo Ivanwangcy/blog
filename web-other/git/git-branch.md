@@ -51,6 +51,15 @@ $ git branch -d testing
 git push origin --delete dev20181018
 ```
 
+## 直接删除远程分支
+
+```sh
+// 例如 删除远程分支名 branch
+$ git push origin :branch
+To git@github.com:xxx/xxx.git
+- [deleted] branch
+```
+
 ## 其它 相关参考
 
 ```bash
