@@ -2,23 +2,23 @@
 # React专题：react，redux以及react-redux常见一些面试题
 
 
-react.jsjavascript
-发布于 2018-11-26
 面试中问框架，经常会问到一些原理性的东西，明明一直在用，也知道怎么用，
 但面试时却答不上来，也是挺尴尬的，就干脆把react相关的问题查了下资料，再按自己的理解整理了下这些答案。
-react生命周期有哪些
-组件载入阶段：
+
+## react生命周期有哪些
+
+- 组件载入阶段：
 componentWillMount:组件即将被装载、渲染到页面上，只调用1次
 componentDidMount:组件真正在被装载之后，这里可以拿到真实DOM执行操作，只调用1次
 
-运行中状态：
+- 运行中状态：
 componentWillReceiveProps(nextProps):组件将要接收到新属性的时候调用，在这时setState不会触发额外的render,因为此时已经有一次来自父组件引发的render了。
 
 shouldComponentUpdate:组件接受到新属性或者新状态的时候（返回 false，接收数据后不更新，阻止 render ，后面的函数不会继续执行）
 componentWillUpdate:组件即将更新不能修改属性和状态
 componentDidUpdate:组件已经更新
 
-销毁阶段：
+- 销毁阶段：
 componentWillUnmount:组件即将销毁，这时候可以销毁绑定的事件监听或者定时器什么的。
 
 有些好像把render也算进生命周期了：
@@ -39,7 +39,8 @@ clipboard.png
 
 图片源自：react精髓之一---diff算法
 
-react虚拟DOM实现原理，以及为什么虚拟 dom 会提高性能
+## react虚拟DOM实现原理，以及为什么虚拟 dom 会提高性能
+
 实现原理：
 
 1. 用 js对象结构表示 DOM 树的结构；然后用这个树构建一个真正的 DOM 树，插到文档当中。
@@ -102,7 +103,8 @@ setState为什么是异步的
 
 另外：setstate在原生事件，setTimeout,setInterval,promise等异步操作中，state会同步更新。
 
-react的优势以及特点
+## react的优势以及特点
+
 优势：
 
 1. 实现对虚拟DOM的操作，使得它速度快，提高了Web性能。
@@ -146,7 +148,8 @@ react与vue的对比
 4. vue的css可以有组件的私有作用域，react则没有。
 5. react比vue好的另一点是，它是团队维护，而vue属于个人，一般来说，大型项目更倾向于react，小型则用vue，当然这也不是绝对。
 
-Redux的实现流程
+## Redux的实现流程
+
 用户页面行为触发一个Action，然后，Store 自动调用 Reducer，并且传入两个参数：当前 State 和收到的 Action。Reducer 会返回新的 State 。每当state更新之后，view会根据state触发重新渲染。
 
 react-redux的实现原理
@@ -188,7 +191,8 @@ redux-saga:
 （5） 异步操作的流程是可以控制的，可以随时取消相应的异步操作。
 缺点：学习成本高。
 
-比较redux和vuex的区别
+## 比较redux和vuex的区别
+
 原文链接不记得了（囧...)
 相同点：
 
@@ -244,7 +248,8 @@ react router3到4有什么改变
 注：url是浏览器的url的一部分，path是给router写的路径
 4.多了一个限制未登录的用户访问某些路由功能，可以在应用程序顶端中设置一个主入口，区别登录和未登录UI展示界面。
 
-对webpack的理解：
+## 对webpack的理解：
+
 参考链接：webpack配置整理
 概念： webpack是一个预编译模块方案，它会分析你的项目结构将其打包成适合浏览器加载的模块。
 打包原理：把所有依赖打包成一个bundle.js文件，通过代码分割成单元片段并按需加载。
@@ -272,7 +277,8 @@ react router3到4有什么改变
     "build_": "NODE_ENV=production webpack",
     "start_": "NODE_ENV=development webpack-dev-server"
 }
-react高阶组件
+## react高阶组件
+
 参考资料：浅谈React高阶组件
 通俗理解 React 高阶函数
 深入浅出React高阶组件
@@ -293,4 +299,5 @@ react高阶组件
     }
 
 直接引入：import withHeader from 'withHeader'
+
 高阶组件部分还有待补充。
