@@ -1,7 +1,8 @@
-#【深入vue】为什么Vue3.0不再使用defineProperty实现数据监听？（修订版）
+# 【深入vue】为什么Vue3.0不再使用defineProperty实现数据监听？（修订版）
 
 
-导 读
+## 导 读
+
 vue3.0中，响应式数据部分弃用了Object.defineProperty，使用Proxy来代替它。本文将主要通过以下方面来分析为什么vue选择弃用Object.defineProperty。
 
 1. Object.defineProperty真的无法监测数组下标的变化吗？
