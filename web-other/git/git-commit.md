@@ -51,6 +51,6 @@ $ git rebase --continue
 # 7 强制提交改动，push
 $ git push -f  # 推到远程(修改成功了)
 
-
-
 ```
+
+>> 参考： https://blog.csdn.net/it_zhang_PG/article/details/83183952
