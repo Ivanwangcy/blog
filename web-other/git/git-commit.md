@@ -53,4 +53,4 @@ $ git push -f  # 推到远程(修改成功了)
 
 ```
 
->> 参考： https://blog.csdn.net/it_zhang_PG/article/details/83183952
+>> 参考：[git修改commit以前某一次提交的内容：](https://blog.csdn.net/it_zhang_PG/article/details/83183952)
