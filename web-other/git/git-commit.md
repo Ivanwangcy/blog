@@ -25,3 +25,32 @@ git commit -m "summary" -m "description"
 git commit --amend
 git commit --amend -m "chore: 新的提交信息"
 ```
+
+## 修改历史提交信息
+
+```sh
+# 1.找到要修改SHA位置(git log) 要修改的提交记录，之前的 hash 值
+
+# 2 使用 rebase -i 修改提交记录
+$ git rebase -i  32e0a87f      # 指定的SHA位置
+
+# 3 进入编辑页面
+
+
+# 4.将pick修改为edit 并修改后面的内容并  :wq  保存退出
+
+# 5 追加改动到提交 
+
+$ git commit –amend -m "fix: 新内容"
+
+
+# 6 使用 --continue 继续 rebase 回到原来分支
+
+$ git rebase --continue
+
+# 7 强制提交改动，push
+$ git push -f  # 推到远程(修改成功了)
+
+
+
+```
