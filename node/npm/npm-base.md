@@ -193,10 +193,12 @@ $ npm outdated # 查看 package.json 中依赖的包结构
 
 ## npm 发布
 ```sh
-$ jnpm adduser --registry=http://xxx.m.xx.com --scope=@xx
+
+# 注册用户
+$ npm adduser --registry=http://xxx.m.xx.com --scope=@xx
 
 
-# 添加其它发布者
+# 添加其它发布者，具有发布权限
 $ npm owner add <user> <package name> 
 
 ```
