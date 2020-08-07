@@ -281,3 +281,23 @@ const add2 = (x, y) => {
   return remove_left_zero(output);
 };
 ```
+## 壹题 前端进阶
+
+### 第 2 题：['1', '2', '3'].map(parseInt) what & why ?
+
+```js
+['10','10','10','10','10'].map(parseInt);
+
+(5) [10, NaN, 2, 3, 4]
+parseInt(10, 0)
+10
+parseInt(10, 1)
+NaN
+parseInt(10, 2)
+2
+parseInt(10, 3)
+3
+parseInt(10, 4)
+4
+
+```
