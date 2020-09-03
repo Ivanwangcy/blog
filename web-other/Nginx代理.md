@@ -1,5 +1,15 @@
 # Nginx代理
 
+## 反向代理配置
+
+
+```sh
+     location ~/api/ {
+                proxy_pass http://xx.xxx.xx.com/;
+                proxy_redirect / /api/;
+        }
+```
+
 ## history 路由 nginx 配置
 
 当你在 post 路由下刷新页面时，nginx 会返回 404。这是什么原因呢？因为我们没有告诉nginx找不到某个文件时该怎么做。root 指定了 / 对应的单页静态资源目录，从而使url映射到dist目录下。
