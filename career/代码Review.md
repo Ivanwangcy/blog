@@ -6,6 +6,10 @@
 - Code Review 形式化，没有提升代码质量，减少 bug，反而降低开发效率
 - Code Review 确实产生了效果，但是因为流程太重，导致团队效率降低
 
+## Code Review 的时机
+
+## 利用代码静态扫描工具
+
 ## 代码review 的十条经验 转载
 
 代码审查（Code Review）是软件开发中常用的手段，和QA测试相比，它更容易发现和架构以及时序相关等较难发现的问题，还可以帮助团队成员提高编程技能，统一编程风格等。
@@ -174,3 +178,6 @@ Error handling是否都处理完毕(例如空指针检查、应该catch哪些异
 （7）review一旦结束，立刻和评审者确认需要修改的地方和约定再次review时间。（如果在计划上已经有了就不用了）
 
 （8）将以上所有的做法做成检查表，在review前和review后由SQA检查确认。
+
+
+[在实践中总结出的几条 CodeReview 实用经验](https://cloud.tencent.com/developer/article/1678706)
