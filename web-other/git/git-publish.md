@@ -2,4 +2,7 @@
 
 ```sh
 $ jnpm publish .
+
+jnpm adduser --registry=http://registry.x.xx.com --scope=@xx
+
 ```
