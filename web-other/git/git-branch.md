@@ -5,14 +5,20 @@
 ```bash
 git branch testing # 新建一个 testing 分支
 ```
+
+## 操作分支
+
 ```
 * 查看分支：git branch
 
 * 创建分支：git branch <name>
 
-* 切换分支：git checkout <name>
+# * 切换分支：
+$ git checkout <name>
 
-* 创建+切换分支：git checkout -b <name>
+# * 创建+切换分支：
+
+$ git checkout -b <name>
 
 ```
 

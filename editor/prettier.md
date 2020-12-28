@@ -224,6 +224,8 @@ npm run prettier
 
 安装 `prettier-vscode` 插件。
 
+:prettier 插件快捷键 ctrl + alt + B 格式化当前文件;
+
 ### Webstorm
 
 如果是 2018.1 及以上版本，自带 Prettier 插件。  
