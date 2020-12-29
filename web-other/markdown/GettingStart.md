@@ -4,7 +4,7 @@
 
 ## MarkDown 编辑器
 
-推荐使用 VSCode(是一款轻量级代码编辑器)。如果
+推荐使用 VSCode(是一款轻量级代码编辑器)。如果习惯使用 idea 快捷键，可以安装idea keymap 插件。
 
 ## nodeppt 写 ppt 文件
 
