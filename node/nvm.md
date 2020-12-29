@@ -5,5 +5,5 @@
 想要成功的安装 nvm，Mac 系统下必须要先安装 Xcode 软件。
 
 ```sh
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh|bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 ```
