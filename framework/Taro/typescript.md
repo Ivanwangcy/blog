@@ -1,4 +1,10 @@
-# 配置 TypeScript
+# TypeScript
+
+## TypeScript 简介
+
+随着前端技术的广泛应用，Javascript 项目的复杂度逐渐增加变得越来越不好维护，微软专门针对大型 Javascript 项目提出了 TypeScript语言，为了提供前端项目的可维护性和扩展性。TypeScript 是 JavaScript 的超集。任何合法的 JavaScript 它都支持。TypeScript 与生俱来的面向对象特性可以帮助我们更加优雅的写代码。
+
+## 配置 TypeScript
 
 [[翻译] TypeScript 和 JSX 搞基的事](https://github.com/techird/blog/issues/3)
 
