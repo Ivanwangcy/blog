@@ -2,12 +2,13 @@
 
 ## TypeScript 简介
 
-随着前端技术的广泛应用，Javascript 项目的复杂度逐渐增加变得越来越不好维护，微软专门针对大型 Javascript 项目提出了 TypeScript语言，为了提供前端项目的可维护性和扩展性。TypeScript 是 JavaScript 的超集。任何合法的 JavaScript 它都支持。TypeScript 与生俱来的面向对象特性可以帮助我们更加优雅的写代码。
+近几年基于 JavaScript 的前端应用呈指数级增长，随着前端技术的广泛应用，Javascript 项目的复杂度逐渐增加变得越来越不好维护，应对前端多变的特性缺乏良好的扩展性，微软专门针对大型 Javascript 项目提出了 TypeScript 语言，为了提供前端项目的可维护性和扩展性。
+
+TypeScript 是 JavaScript 的超集。任何合法的 JavaScript 它都支持。TypeScript 与生俱来的面向对象特性可以帮助我们更加优雅的写代码。
 
 ## 配置 TypeScript
 
 [[翻译] TypeScript 和 JSX 搞基的事](https://github.com/techird/blog/issues/3)
-
 
 ## 安装
 
@@ -20,25 +21,27 @@ npm i @typescript-eslint/parser typescript
 .eslintrc
 
 ```json
-
 {
-  "extends": ["taro"],
-  "rules": {
-    "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
-    "jsx-quotes": ["error", "prefer-double"]
-  },
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
+    "extends": ["taro"],
+    "rules": {
+        "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
+        "react/jsx-filename-extension": [
+            1,
+            { "extensions": [".js", ".jsx", ".tsx"] }
+        ],
+        "jsx-quotes": ["error", "prefer-double"]
     },
-    "useJSXTextNode": true,
-    "project": "./tsconfig.json"
-  }
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "useJSXTextNode": true,
+        "project": "./tsconfig.json"
+    }
 }
-
 ```
+
 tsconfig.json
 
 ```sh
