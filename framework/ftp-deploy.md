@@ -3,9 +3,11 @@
 ```sh
 npm install --save-dev ftp-deploy
 ```
-## Usage 
+
+## Usage
 
 创建一个 deploy.js 文件
+
 ```json
 "scripts": {
     "deploy": "node deploy"

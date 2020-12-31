@@ -1,4 +1,4 @@
-# 什么是 CI/CD? 
+# 什么是 CI/CD?
 
 ## CI
 
@@ -10,7 +10,4 @@ trivasCI, circle CI
 
 持续部署
 
-
-
-
-> 参考：https://cloud.tencent.com/developer/article/1415976
+> 参考：<https://cloud.tencent.com/developer/article/1415976>

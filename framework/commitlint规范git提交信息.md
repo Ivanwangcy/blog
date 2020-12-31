@@ -56,12 +56,15 @@ module.exports = {
 }
 
 ```
+
 ## Commit message格式
 
 ```sh
 type(scope?): subject  #scope is optional
 ```
+
 ### type
+
 用于说明 commit 的类别，只允许使用下面7个标识。
 
 * `feat`：新功能（feature）
