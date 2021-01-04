@@ -131,7 +131,6 @@ MarkDown 的工作流程很简单，只需挑一款好用的编辑器即可。�
 ### Typora
 
 是一款功能全面、简洁高效，而且又非常优雅的 MarkDown 编辑器。官网地址：<https://www.typora.io/>
-![Typora](../assets/Typora.jpeg)
 
 它的主要特性如下：
 
@@ -139,9 +138,11 @@ MarkDown 的工作流程很简单，只需挑一款好用的编辑器即可。�
 - 扩展语法：支持各种流程图、数学公式等
 - 快捷操作：几乎每个语法都支持快捷键操作
 - 界面漂亮：默认支持6种主题，还可以自定义；
-- 文件转换：可以转换多种格式：word，pdf，html等；
+- 文件转换：可以转换多种格式：word，pdf，html，epub等多种图书格式；
 - 跨平台支持：macOS，Windows，Linux系统；
 - 目前免费：非常好用的免费编辑器值得拥有；
+
+![Typora](../assets/Typora.jpeg)
 
 ### VS Code
 
