@@ -132,7 +132,7 @@ MarkDown 的工作流程很简单，只需挑一款好用的编辑器即可。�
 
 是一款功能全面、简洁高效，而且又非常优雅的 MarkDown 编辑器。官网地址：<https://www.typora.io/>
 
-它的主要特性如下：
+#### 它的主要特性如下
 
 - 实时预览：源码编辑和预览效果合二为一，实现了真正的所见即所得
 - 扩展语法：支持各种流程图、数学公式等
@@ -142,13 +142,20 @@ MarkDown 的工作流程很简单，只需挑一款好用的编辑器即可。�
 - 跨平台支持：macOS，Windows，Linux系统；
 - 目前免费：非常好用的免费编辑器值得拥有；
 
+> 下载安装地址：<https://typora.io/#download>
 
-> 下载安装地址：https://typora.io/#download
-
-界面概览：
+#### 界面预览
 
 ![Typora](../assets/Typora.jpeg)
 
+#### 安装 Pandoc
+
+Typora 的文件导入/导出功能是使用 Pandoc 把 MarkDown 文件转换成不同格式的文件，如果不安装 Pandoc ，默认只支持导出 HTML，PDF格式文件。
+
+安装 Pandoc 支持的导入/导出功能：
+
+- 导入文件格式：.docx,.latex,.tex,.ltx,.rst,.rest,.org,.wiki,.dokuwiki,.textile,.opml,epub等
+- 导出文件格式：HTML,PDF,Word,OpenOffice,RTF,ePub,PNG等
 
 ### VS Code
 
