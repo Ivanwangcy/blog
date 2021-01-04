@@ -142,7 +142,13 @@ MarkDown 的工作流程很简单，只需挑一款好用的编辑器即可。�
 - 跨平台支持：macOS，Windows，Linux系统；
 - 目前免费：非常好用的免费编辑器值得拥有；
 
+
+> 下载安装地址：https://typora.io/#download
+
+界面概览：
+
 ![Typora](../assets/Typora.jpeg)
+
 
 ### VS Code
 
@@ -151,3 +157,4 @@ MarkDown 的工作流程很简单，只需挑一款好用的编辑器即可。�
 > 不要努力成为一个成功的人，而要努力成为一个有价值的人。
 >
 > <p align="right">——阿尔伯特·爱因斯坦</p>
+
