@@ -9,3 +9,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 ```
 
 ## 常用命令
+
+```sh
+$nvm install --lts                   # Install the latest LTS version\
+
+# 使用指定版本
+$ nvm use 8.0
+```
