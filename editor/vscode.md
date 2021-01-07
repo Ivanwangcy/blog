@@ -4,7 +4,7 @@
 
 ## 插件
 
-- Atom Keymap 使用Atom 快捷键
+- Atom Keymap 使用 Atom 快捷键
 
 ## vscode 使用
 
@@ -24,29 +24,28 @@
 - `Ctrl + ↑/↓` 向上/下移动可视区域
 - `Ctrl + c / Esc` 进入 Vim 模式
 
-
 ### 行操作
 
 - `Alt + ↑/↓` 向上/下移动当前行
 - `Shift + Alt + ↑/↓` 向上/下复制当前行
 
-## 常用插件 
+## 常用插件  
 
-* Power Mode 打字特效
+- Power Mode 打字特效
 
-* :sync 同步代码编辑器配置。备份上传到github账号
+- :sync 同步代码编辑器配置。备份上传到 github 账号
 
-* :prettier
+- :prettier
+
   - ctrl + alt + B 格式化当前文件;
 
-* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 可以查看每一行的最新代码提交人
+- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 可以查看每一行的最新代码提交人
 
-* [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) 流程图预览插件
-
+- [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) 流程图预览插件
 
 ## 命令行启动
 
-> 提示：对于Mac用户，我们需要通过设置使您能够从终端内启动VS Code. 首选运行VS code并打开命令面板（ `⇧⌘P` ），然后输入 `shell command` 找到: `Install ‘code' command in PATH` 。
+> 提示：对于 Mac 用户，我们需要通过设置使您能够从终端内启动 VS Code. 首选运行 VS code 并打开命令面板（ `⇧⌘P` ），然后输入 `shell command` 找到: `Install ‘code' command in PATH` 。
 
 ```sh
 # 进入项目目录
@@ -56,19 +55,16 @@ $ code .
 
 ## 去除装饰器警告
 
-在项目的根目录下创建一个tsconfig.json文件，并且里头的内容是：
+在项目的根目录下创建一个 tsconfig.json 文件，并且里头的内容是：
 
 ```json
 {
-  "compilerOptions": {
-      "experimentalDecorators": true,
-      "allowJs": true
-  }
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "allowJs": true
+    }
 }
-
 ```
 
-
->> 参考：[Visual Studio Code入门(译)
-](https://www.jianshu.com/p/3dda4756eca5)
-
+> > 参考：[Visual Studio Code 入门(译)
+> > ](https://www.jianshu.com/p/3dda4756eca5)
