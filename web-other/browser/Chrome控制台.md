@@ -68,7 +68,7 @@ Chrome原生支持 类 jQuery 选择器。
 - 实际上 `$(selector)` 是对 原生 JavaScript 的 `document.querySelector()` 的封装
 - 实际上 `$$(selector)` 是对 原生 JavaScript 的 `document.querySelectorAll()` 的封装
 
-## 其它 API
+## Console 的其它 API
 
 console.table(), console.count(), console.info(), console.assert 等，各自有不同的效果，可以自行尝试。
 ![console-all](../../assets/console-all.png)
@@ -96,3 +96,30 @@ console.log支持的格式标志有:
 ```
 
 ![console-style](../../assets/console-style.jpg)
+
+## Chrome Lighthouse 功能
+
+![lighthouse](/assets/lighthouse.png)
+
+可能很多 Web 开发人员都没有听说过这个工具，而那些听说过的人，还没有尝试过，在这里给大家做一个简单的介绍：
+
+根据 Google Developers Docs 上的描述
+
+> Lighthouse 是一种开源的自动化工具，用于提高网页质量。你可以在任何网页上运行它。它能够针对性能、可访问性、渐进式 Web 应用等进行审核。
+> 使用者可以在 Chrome DevTools 中从命令行运行 Lighthouse，也可以作为 Node.js 模块运行。当使用者向 Lighthouse 提供了一个 URL 来进行审核时，它会针对该页面运行一系列审核，然后生成一个关于该页面执行情况的报告。这份报告可以作为如何改进页面的指标。每次审核都会产生一份参考文档，解释了这些审核为什么重要，以及如何解决等内容。
+
+它会审核 Web 应用的 URL 并根据 Web 标准和开发人员最佳实践生成一份报告，告诉使用者 Web 应用的糟糕程度。
+
+在这里可以找到这个功能：
+
+![lighthouse-menu](/assets/lighthouse-menu.jpg)
+
+以 baidu.com 为例，点击 Generate report 进行分析，审核报告如下：
+
+![lighthouse-baidu](/assets/lighthouse-baidu.jpg)
+
+当我们开始使用 Lighthouse 时，实际上学到了很多优化和性能标准。
+
+## 总结
+
+Chorme 控制台还有很多强大的功能帮助我们提高开发效率和网站的性能。相信每个使用者都能很快成为能够构建具有性能出色、可访问性和用户体验极致的 Web 应用专家。
