@@ -28,9 +28,13 @@
 ### Taro
 
 ## markdown 参考
+<<<<<<< HEAD
 
 [MarkDown 编辑阅读器](https://www.zybuluo.com/mdeditor?url=https%3A%2F%2Fwww.zybuluo.com%2Fstatic%2Feditor%2Fmd-help.markdown#12)
 
+=======
+[Cmd Markdown 简明语法手册](https://www.zybuluo.com/mdeditor?url=https%3A%2F%2Fwww.zybuluo.com%2Fstatic%2Feditor%2Fmd-help.markdown#12)
+>>>>>>> master
 ## end
 
 [地址](https://ivanwangcy.github.io/blog/)
