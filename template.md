@@ -8,6 +8,10 @@
 
 图标:ok:
 
+[emoji 图标 参考](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
+```md
+# 一级标题
+## 二级标题
 ### 三级标题
 
 #### 四级标题
@@ -15,7 +19,7 @@
 ##### 五级标题
 
 ###### 六级标题
-
+```
 使用两个空格一个回车来换行，或者使用&lt;br&gt;  
 普通文本  
 多行文本*倾斜* **加粗** ~~删除线~~ <u>Underlined Text</u>
@@ -101,9 +105,17 @@ $ npm install jquery --save # 安装jQuery
 ## 绘制流程图
 
 ### 序列表
+<<<<<<< HEAD
 
+=======
+```sequence
+    Alice->John: Hello John, how are you?
+    loop every minute
+        John-->Alice: Great!
+    end
+>>>>>>> master
 ```
-sequenceDiagram
+```sequenceDiagram
 Note left of 购物车: 购物车去结算进入商城结算
 购物车-->结算页: 商超结算
 Note right of 秒杀详情页: 立即下单进入秒杀结算
