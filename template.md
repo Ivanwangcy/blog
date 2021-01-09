@@ -36,7 +36,7 @@
 - listitem
   _ childitem
   _ childitem
-         -
+         - childitem
    - item
 
 <br>
