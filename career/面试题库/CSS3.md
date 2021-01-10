@@ -1,11 +1,12 @@
-前端面试之 CSS3 
+# 前端面试之 CSS3 
 阅读 7821
 收藏 326
 2017-07-07
 原文链接：hieeyh.github.io
 除了html5的新特性，CSS3的新特性也是面试中经常被问到的。
 
-选择器
+## 选择器
+
 CSS3中新添加了很多选择器，解决了很多之前需要用javascript才能解决的布局问题。
 
 element1~element2: 选择前面有element1元素的每个element2元素。
@@ -32,7 +33,8 @@ E::selection: 选择被用户选取的元素部分。
 Transition,Transform和Animation
 这三个特性是CSS3新增的和动画相关的特性。
 
-Transition
+## Transition
+
 Transition可以在当元素从一种样式变换为另一种样式时为元素添加效果，而不用使用Flash动画或JavaScript。
 Transition有如下属性：
 
@@ -85,17 +87,20 @@ Internet Explorer 9 支持替代的 -ms-transform 属性（仅适用于 2D 转�
 Safari 和 Chrome 支持替代的 -webkit-transform 属性（3D 和 2D 转换）。
 Opera 只支持 2D 转换。
 
-Animation
+## Animation
+
 Animation让CSS拥有了可以制作动画的功能。使用CSS3的Animation制作动画我们可以省去复杂的js代码。使用方法大概如下：
 
 1234567891011121314151617
 @-webkit-keyframes anim1 { 0% { opacity: 0; font-size: 12px; } 100% { opacity: 1; font-size: 24px; } } .anim1Div { -webkit-animation-name: anim1 ; -webkit-animation-duration: 1.5s; -webkit-animation-iteration-count: 4; -webkit-animation-direction: alternate; -webkit-animation-timing-function: ease-in-out; }
 具体用法可以参考教程：CSS3 Animation。
 
-边框
+## 边框
+
 CSS3新增了三个边框属性，分别是border-radius、box-shadow和border-image。border-radius可以创建圆角边框，box-shadow可以为元素添加阴影，border-image可以使用图片来绘制边框。IE9+支持border-radius和box-shadow属性。Firefox、Chrome以及Safari支持所有新的边框属性。
 
-背景
+## 背景
+
 CSS3新增了几个关于背景的属性，分别是background-clip、background-origin、background-size和background-break。
 
 background-clip
@@ -120,13 +125,16 @@ background-size: contain; 缩小图片以适合元素（维持像素长宽比）
 background-size: cover; 扩展元素以填补元素（维持像素长宽比）
 background-size: 100px 100px; 缩小图片至指定的大小
 background-size: 50% 100%; 缩小图片至指定的大小，百分比是相对包 含元素的尺寸
-background-break
+## background-break
+
 CSS3中，元素可以被分成几个独立的盒子（如使内联元素span跨越多行），background-break 属性用来控制背景怎样在这些不同的盒子中显示。
 
 background-break: continuous; 默认值。忽略盒之间的距离（也就是像元素没有分成多个盒子，依然是一个整体一样）
 background-break: bounding-box; 把盒之间的距离计算在内；
 background-break: each-box; 为每个盒子单独重绘背景。
-文字效果
+
+## 文字效果
+
 word-wrap
 CSS3中，word-wrap属性允许您允许文本强制文本进行换行，即这意味着会对单词进行拆分。所有主流浏览器都支持 word-wrap 属性。
 
@@ -146,7 +154,9 @@ CSS3里面开始支持对文字的更深层次的渲染，具体有三个属性�
 text-fill-color: 设置文字内部填充颜色
 text-stroke-color: 设置文字边界填充颜色
 text-stroke-width: 设置文字边界宽度
-渐变
+
+## 渐变
+
 CSS3新增了渐变效果，包括linear-gradient(线性渐变)和radial-gradient(径向渐变)。具体用法参考教程：CSS3 Gradient
 
 @font-face特性
@@ -155,7 +165,6 @@ CSS3新增了渐变效果，包括linear-gradient(线性渐变)和radial-gradien
 在新的@font-face规则中，必须首先定义字体的名称（比如myFont），然后指向该字体文件。
 如需为HTML元素使用字体，请通过font-family属性来引用字体的名称 (myFont)
 
-12345678
 @font-face { font-family: myFirstFont; src: url('Sansation_Light.ttf'), url('Sansation_Light.eot'); /* IE9+ */}div{ font-family:myFirstFont;}
 多列布局
 通过CSS3，能够创建多个列来对文本进行布局，IE10和Opera支持多列属性。Firefox 需要前缀-moz-，Chrome和Safari需要前缀-webkit-。主要有如下三个属性：
