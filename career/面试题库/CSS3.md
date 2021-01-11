@@ -186,13 +186,16 @@ CSS3中，新的用户界面特性包括重设元素尺寸、盒尺寸以及轮�
 
 resize 属性规定是否可由用户调整元素尺寸。如果希望此属性生效，需要设置元素的 overflow 属性，值可以是 auto、hidden 或 scroll。
 
-1234
+```css
 div{ resize:both; /* none|both|horizontal|vertical; */ overflow:auto;}
+```
+
 box-sizing
 box-sizing属性可设置的值有content-box、border-box和inherit。
 
 content-box: padding和border不被包含在定义的width和height之内。对象的实际宽度等于设置的width值和border、padding之和，即 (Element width = width + border + padding)，此属性表现为标准模式下的盒模型。
 border-box: padding和border被包含在定义的width和height之内。对象的实际宽度就等于设置的width值，即使定义有border和padding也不会改变对象的实际宽度，即 (Element width = width)，此属性表现为怪异模式下的盒模型。
+
 ## outline-offset
 
 outline-offset属性对轮廓进行偏移，并在超出边框边缘的位置绘制轮廓。
