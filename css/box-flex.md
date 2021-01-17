@@ -25,3 +25,9 @@
 ```
 
 ### display: flex; 新盒模型
+
+### 多行文本
+
+需要使用旧的盒模型
+
+display：webkit-box
