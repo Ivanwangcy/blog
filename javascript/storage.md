@@ -1,4 +1,11 @@
-# localStorage 和 sessionStorage 区别
+# web storage 存储方式
+
+
+## localStorage 和 sessionStorage 区别
+
+localStorage 本地存储
+
+sessionStorage 回话存储
 
 ## localStorage 和 sessionStorage 无痕模式处理
 
