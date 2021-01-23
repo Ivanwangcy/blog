@@ -1,6 +1,7 @@
 # Webpack 5
 
 Webpack5 正式发布以后，前端工程化会迈向一个新的阶段。但是大部分的工程脚手架还未升级到 Webpack5。
+
 ## Webpack 新特性
 
 - Federated Module
