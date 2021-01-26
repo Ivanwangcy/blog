@@ -1,5 +1,7 @@
 # TypeScript
 
+2020 年最红的技术是什么的话，我非常不客观地认为本届的奖杯毫无疑问地要颁发给 TypeScript，随着 TypeScript 新版本的更新，编写前端代码真是越来越对味。
+
 ## TypeScript 简介
 
 近几年基于 JavaScript 的前端应用呈指数级增长，随着前端技术的广泛应用，Javascript 项目的复杂度逐渐增加变得越来越不好维护，应对前端多变的特性缺乏良好的扩展性，微软专门针对大型 Javascript 项目提出了 TypeScript 语言，为了提供前端项目的可维护性和扩展性。
