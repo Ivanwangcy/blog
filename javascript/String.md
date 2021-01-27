@@ -16,7 +16,7 @@ for (let char of str) {
 function wordCount(str) {
     var len = 0;
     for (let char of str) {
-        if (char.charCodeAt() > 256) {
+        if (char.charCodeAt() > 127) {
             len += 2;
         } else {
             len++;
