@@ -1,6 +1,6 @@
 # TypeScript
 
-2020 年最红的技术是什么的话，我非常不客观地认为本届的奖杯毫无疑问地要颁发给 TypeScript，随着 TypeScript 新版本的更新，编写前端代码真是越来越对味。
+2020 年最红的技术是什么的话，毫无疑问地要属于 TypeScript，随着 TypeScript 新版本的更新，编写前端代码真是越来越对味。
 
 ## TypeScript 简介
 
