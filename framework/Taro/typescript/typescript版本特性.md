@@ -4,8 +4,12 @@
 
 ## V4
 
-### 编辑器对JSDoc @see标签的支持
+### 编辑器对 JSDoc @see 标签的支持
 
-基于TypeScript的JSDoc注释：<https://juejin.cn/post/6844903706006126599>
+基于 TypeScript 的 JSDoc 注释：<https://juejin.cn/post/6844903706006126599>
+
+### typescript 重构
+
+<https://code.visualstudio.com/Docs/languages/typescript#_refactoring>
 
 ## TypeScript 类型注释
