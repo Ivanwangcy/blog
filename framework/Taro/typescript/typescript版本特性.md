@@ -13,3 +13,7 @@
 <https://code.visualstudio.com/Docs/languages/typescript#_refactoring>
 
 ## TypeScript 类型注释
+
+## Redux 中使用 typescript
+
+<https://redux.js.org/recipes/usage-with-typescript>
