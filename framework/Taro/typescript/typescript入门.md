@@ -18,33 +18,11 @@ TypeScript 是 JavaScript 的超集，与现存的 JavaScript 代码有着非常
 npm i @typescript-eslint/parser typescript
 ```
 
-## 配置 lint
+## TypeScript 项目标准工程结构
 
-.eslintrc
+为了更好的应用 TypeScript，我们应该理解 TypeScript 项目组织中的各项功能。
 
-```json
-{
-    "extends": ["taro"],
-    "rules": {
-        "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
-        "react/jsx-filename-extension": [
-            1,
-            { "extensions": [".js", ".jsx", ".tsx"] }
-        ],
-        "jsx-quotes": ["error", "prefer-double"]
-    },
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "useJSXTextNode": true,
-        "project": "./tsconfig.json"
-    }
-}
-```
-
-tsconfig.json
+### TypeScipt 编译选项 tsconfig.json
 
 ```sh
 {
@@ -79,8 +57,34 @@ tsconfig.json
   "compileOnSave": false
 }
 
-
 ```
+
+### 配置 lint
+
+.eslintrc
+
+```json
+{
+    "extends": ["taro"],
+    "rules": {
+        "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
+        "react/jsx-filename-extension": [
+            1,
+            { "extensions": [".js", ".jsx", ".tsx"] }
+        ],
+        "jsx-quotes": ["error", "prefer-double"]
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "useJSXTextNode": true,
+        "project": "./tsconfig.json"
+    }
+}
+```
+
 
 ## value! 非空验证
 
