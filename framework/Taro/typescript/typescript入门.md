@@ -85,6 +85,9 @@ npm i @typescript-eslint/parser typescript
 }
 ```
 
+## 接口类型生成 TypeScript 插件 - Paste JSON as Code
+
+安装这个 VSCode 插件可以将接口返回的数据，自动转换成 类型定义接口文件
 
 ## value! 非空验证
 
