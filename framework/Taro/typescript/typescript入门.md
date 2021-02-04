@@ -89,6 +89,14 @@ npm i @typescript-eslint/parser typescript
 
 安装这个 VSCode 插件可以将接口返回的数据，自动转换成 类型定义接口文件。
 
+## 接口定义
+
+使用 `interface` 关键字定义一个接口
+
+## 命名空间与模块
+
+namespace
+
 ## value! 非空验证
 
 ## TypeScript 类型推导
