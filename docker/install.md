@@ -1,5 +1,7 @@
 # 安装 docker for mac
+
 ## up and running
+
 ```sh
 
 $ docker --version
@@ -19,8 +21,11 @@ $ docker ps
 # 查看正在运行的 所有 docker
 $ docker ps -a
 ```
+
 ## Build your own image
+
 ```sh
 $ docker run docker/whalesay cowsay boo-boo
 ```
+
 ###
