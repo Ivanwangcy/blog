@@ -100,3 +100,10 @@ namespace
 ## value! 非空验证
 
 ## TypeScript 类型推导
+
+## 贡献类型文件
+
+发布到 npm
+
+- 与你的npm包捆绑在一起
+- 发布到 npm 上的 @types organization
