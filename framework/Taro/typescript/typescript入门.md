@@ -113,3 +113,7 @@ namespace
 ## 使用装饰器进行 AOP
 
 在 TypeScript 中，装饰器是最好用的功能之一。它是一段代码在不改变类的内部实现的情况下，改变一个类的行为。通过装饰器可以避免继承带来的副作用，优于继承方式。
+
+使用装饰器需要设置 tsconfig 配置文件：
+
+"experimentalDecorators": true
