@@ -47,3 +47,10 @@ String.fromCharCode(num1) // 'a'
 let num2: number = 100;
 String.fromCharCode(num2) // 'd'
 ```
+
+## includes
+
+```js
+let str = 'abcd'
+str.includes('a)
+```
