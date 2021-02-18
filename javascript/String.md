@@ -52,5 +52,5 @@ String.fromCharCode(num2) // 'd'
 
 ```js
 let str = 'abcd'
-str.includes('a)
+str.includes('a')
 ```
