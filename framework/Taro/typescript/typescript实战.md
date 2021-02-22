@@ -1,5 +1,7 @@
 # Type Script 实战
 
+- 深入编译原理：如何把 TypeScript 编译为 JavaScript
+
 ## 装饰器
 
 使用装饰器可以是代码更清晰，封装复杂逻辑对外提供简单的接口。
