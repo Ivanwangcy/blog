@@ -4,14 +4,12 @@
 
 ## MarkDown 编辑器
 
-推荐使用 VSCode(是一款轻量级代码编辑器)。如果习惯使用 idea 快捷键，可以安装idea keymap 插件。
+推荐使用 VSCode(是一款轻量级代码编辑器)。如果习惯使用 idea 快捷键，可以安装 idea keymap 插件。
 
 ## nodeppt 写 ppt 文件
 
 使用 markdown 写 ppt。
 
-
 <https://github.com/ksky521/nodeppt>
-
 
 [nodePPT 网络幻灯片](https://www.oschina.net/p/nodeppt?hmsr=aladdin1e1)

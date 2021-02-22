@@ -116,4 +116,6 @@ namespace
 
 使用装饰器需要设置 tsconfig 配置文件：
 
+```json
 "experimentalDecorators": true
+```
