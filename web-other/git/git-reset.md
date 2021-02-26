@@ -1,6 +1,7 @@
-## 还原暂存区，撤销 add 操作 -- Undo add
+# 还原暂存区，撤销 add 操作 -- Undo add
 
 ```sh
+# 暂存操作
 $ git add . 添加暂存区
 $ git reset . 撤销上面操作
 ```
