@@ -36,4 +36,4 @@ $ git rebase --abort  # 完全取消这次变基, 终止后会回到rebase开始
 $ git rebase --skip  # 完全忽略该提交
 
 $ rm -fr "D:/workspace/blog/.git/rebase-apply" # 删除这次 变基 rebase
-```
+```$$
