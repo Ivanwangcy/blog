@@ -47,15 +47,20 @@ $ glog # 等于 git log --oneline --decorate --color --graph
 
 ```sh
 # 查询端口
-$ lsof -i:1099
+$ sudo lsof -i:1099
 
 COMMAND   PID         USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
-java    19493 wangchunyu40   26u  IPv6 0xecf06017998c199b      0t0  TCP *:rmiregistry (LISTEN)
-java    19493 wangchunyu40   84u  IPv6 0xecf06017a3df351b      0t0  TCP localhost:rmiregistry->localhost:52791 (ESTABLISHED)
-idea    85025 wangchunyu40   97u  IPv4 0xecf060179e4f80a3      0t0  TCP localhost:52791->localhost:rmiregistry (ESTABLISHED)
+java    19493 xxx   26u  IPv6 0xecf06017998c199b      0t0  TCP *:rmiregistry (LISTEN)
+java    19493 xxx   84u  IPv6 0xecf06017a3df351b      0t0  TCP localhost:rmiregistry->localhost:52791 (ESTABLISHED)
+idea    85025 xxx   97u  IPv4 0xecf060179e4f80a3      0t0  TCP localhost:52791->localhost:rmiregistry (ESTABLISHED)
 
-# 杀死d端口对应进程
-$ kill 19493 
+# 杀死d端口对应进程 杀进程
+$ sudo kill 19493 
 ```
+
+## 另一种方式
+
+- 打开启动台》其他》活动监视器
+- 活动监视器选中相应想停止的进程或者程序，点击左上角的×，就可以
 
 [iTerm 2 && Oh My Zsh【DIY教程——亲身体验过程】](https://www.jianshu.com/p/7de00c73a2bb)
