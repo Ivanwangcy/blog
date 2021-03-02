@@ -1,14 +1,16 @@
-# Vue3.0
+# Vue 3.0
 
 ## 前言
 
-    Vue3.0 正式版已经发布，与Vue2 相比，性能有较大的提升。 Vue3 通过标识缓存静态节点的方式大大提升了渲染速度，同时将reactive render ref 等方法分离成独立的工具库，使得这些API能够作为工具方法独立使用，为解决数据与业务逻辑的分离痛点，新增 Composition API setup。
+    Vue3.0 正式版已经发布，与 Vue2 相比，性能有较大的提升。 Vue3 通过标识缓存静态节点的方式大大提升了渲染速度，同时将reactive render ref 等方法分离成独立的工具库，使得这些API能够作为工具方法独立使用，为解决数据与业务逻辑的分离痛点，新增 Composition API setup。
 
     接下来将抽时间对 Vue3.0 源码进行简要的分析，希望这次能够比 2 更加有条理，更加完善
 
+参考：<https://v3.cn.vuejs.org/guide/migration/introduction.html#%E6%A6%82%E8%A7%88>
+
 ## reactive
 
-- 将引用类型的数据转换为 proxy 实例，实现数据的劫持，其中 Vue3 中可以劫持的引用类型包括以下几种类型，<font color="red">与 2 相比增加了 集合类型 的数据类型</font>
+-   将引用类型的数据转换为 proxy 实例，实现数据的劫持，其中 Vue3 中可以劫持的引用类型包括以下几种类型，<font color="red">与 2 相比增加了 集合类型 的数据类型</font>
 
 ```js
   const enum TargetType {
