@@ -1,4 +1,4 @@
-# TypeScipt 最佳实践
+# TypeScipt 项目实践
 
 ## 目录结构
 

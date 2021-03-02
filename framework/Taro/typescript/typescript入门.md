@@ -1,6 +1,6 @@
 # TypeScript
 
-2020 年最红的技术是什么的话，毫无疑问地要属于 TypeScript，随着 TypeScript 新版本的更新，编写前端代码真是越来越对味。
+2020 年最红的技术是什么的话，毫无疑问地要属于 TypeScript，随着 TypeScript 新版本的更新，编写前端代码真是越来越香。
 
 ## TypeScript 简介
 
@@ -119,3 +119,14 @@ namespace
 ```json
 "experimentalDecorators": true
 ```
+
+## TypeScript 编译原理
+
+TypeScript 编译器由几个关键部分组成：
+
+- Scanner 扫描器
+- Parser 解析器
+- Binder 绑定器
+- Checker 检查器
+- Emitter 发射器
+
