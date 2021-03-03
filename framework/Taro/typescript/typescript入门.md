@@ -113,6 +113,40 @@ export interface TopLevel {
 
 ![JsonToType](/assets/JsonToType.jpg)
 
+## 枚举的使用
+
+我们在使用枚举时候通常是这样：
+
+```ts
+enum StateEnum {
+  OPENED,
+  CLOSED
+}
+
+const  strategyState = StateEnum.OPENED
+```
+
+但是我们发现编译后代码量反而增加了
+
+```js
+var StateEnum;
+(function (StateEnum) {
+    StateEnum[StateEnum["OPENED"] = 0] = "OPENED";
+    StateEnum[StateEnum["CLOSED"] = 1] = "CLOSED";
+})(StateEnum || (StateEnum = {}));
+const strategyState = StateEnum.OPENED;
+```
+
+这样看起来并没有什么好处还不如直接写一个常量对象。例如这样：
+
+```js
+const StateEnum = {
+  OPENED: 0,
+  CLOSED: 1,
+}
+```
+
+
 ## 接口定义
 
 使用 `interface` 关键字定义一个接口
@@ -154,3 +188,6 @@ TypeScript 编译器由几个关键部分组成：
 - Checker 检查器
 - Emitter 发射器
 
+推荐的工具：
+
+[一个用于 TypeScript 和 JavaScript 的在线编辑器](https://www.typescriptlang.org/zh/play)，可以实时看到我们的 ts 代码编译结果。
