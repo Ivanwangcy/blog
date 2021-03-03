@@ -95,7 +95,7 @@ console.log支持的格式标志有:
   )
 ```
 
-![console-style](../../assets/console-style.jpg)
+![console-style](/assets/console-style.jpg)
 
 ## Chrome Lighthouse 功能
 
