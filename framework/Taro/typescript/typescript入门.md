@@ -137,7 +137,7 @@ var StateEnum;
 const strategyState = StateEnum.OPENED;
 ```
 
-这样看起来并没有什么好处还不如直接写一个常量对象。例如这样：
+这样视乎看起来并没有什么好处还不如直接写一个常量对象。例如这样：
 
 ```js
 const StateEnum = {
@@ -146,6 +146,24 @@ const StateEnum = {
 }
 ```
 
+这样又回到了传统的 javascript ，那么我们有什么更好的方法呢？TypeScript 也给我们带来了性能提升的一个小技巧是使用`常量枚举`：
+
+```js
+// 常量枚举
+const enum Tristate {
+  False,
+  True,
+  Unknown
+}
+
+const lie = Tristate.False;
+```
+
+ts 编译后的结果：
+
+```js
+const lie = 0 /* False */; // 只剩下这一句了
+```
 
 ## 接口定义
 
