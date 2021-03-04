@@ -1,4 +1,4 @@
-# TypeScript
+# TypeScript 实战
 
 2020 年最红的技术是什么的话，毫无疑问地要属于 TypeScript，随着 TypeScript 新版本的更新，编写前端代码真是越来越香。
 
@@ -23,6 +23,8 @@ npm i @typescript-eslint/parser typescript
 为了更好的应用 TypeScript，我们应该理解 TypeScript 项目组织中的各项功能。
 
 ### TypeScipt 编译选项 tsconfig.json
+
+选项解读，值得注意的地方
 
 ```sh
 {
