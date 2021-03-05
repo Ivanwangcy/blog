@@ -2,15 +2,18 @@
 
 2020 年最红的技术是什么的话，毫无疑问地要属于 TypeScript，随着 TypeScript 新版本的更新，编写前端代码真是越来越香。
 
+TypeScript 发展至今，已经成为很多大型项目的标配，其提供的静态类型系统，大大增强了代码的可读性和可维护性。
+
 ## TypeScript 简介
 
 近几年基于 JavaScript 的前端应用呈指数级增长，随着前端技术的广泛应用，Javascript 项目的复杂度逐渐增加变得越来越不好维护，应对前端多变的特性缺乏良好的扩展性，微软专门针对大型 Javascript 项目提出了 TypeScript 语言，为了提供前端项目的可维护性和扩展性。
 
 TypeScript 是 JavaScript 的超集，与现存的 JavaScript 代码有着非常高的兼容性。任何合法的 JavaScript 它都支持。TypeScript 与生俱来的面向对象特性可以帮助我们更加优雅的写代码。
 
-## 配置 TypeScript
+接下来介绍一下我们在项目开发过程中形成的一些积累分享给大家。
 
-[[翻译] TypeScript 和 JSX 搞基的事](https://github.com/techird/blog/issues/3)
+## TypeScript 的配置项
+
 
 ## 安装
 

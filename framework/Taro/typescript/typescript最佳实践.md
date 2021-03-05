@@ -1,5 +1,8 @@
 # TypeScipt 项目实践
 
+
+[[翻译] TypeScript 和 JSX 搞基的事](https://github.com/techird/blog/issues/3)
+
 ## 目录结构
 
 - 类型文件统一放入 types 目录进行管理；
