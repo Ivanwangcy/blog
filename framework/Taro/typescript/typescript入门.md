@@ -12,6 +12,12 @@ TypeScript 是 JavaScript 的超集，与现存的 JavaScript 代码有着非常
 
 接下来介绍一下我们在项目开发过程中形成的一些积累分享给大家。
 
+## TypeScript 类型系统
+
+我们首先了解一下基本类型，这些用法很简单只是把原来的变量声明后面加上 `: [对应的基本类型]` 即可。
+
+基本类型：在开发 ts 过程中，比较常用的数据有：string,number,boolean，数组是比较特殊的类型可以使用后缀 `[]`(例如：string[], number[], boolean[])，还可以使用泛型(`Array<string>`, `Array<number>`, `Array<boolean>`)
+
 ## TypeScript 的配置项
 
 
