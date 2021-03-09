@@ -159,9 +159,17 @@ Typora 的文件导入/导出功能是使用 Pandoc 把 MarkDown 文件转换成
 
 ### VS Code
 
-前端推荐使用 VS Code ，借助 VS Code (是一款轻量级代码编辑器) 自身的编辑功能和丰富的扩展插件，我们能够轻易打造一个功能强大而又极具个性的 MarkDown 编辑器。如果习惯使用 idea 快捷键，可以安装 IDEA Key Bindings for Visual Studio Code 插件。
+推荐使用 VS Code ，借助 VS Code (是一款轻量级代码编辑器) 自身的编辑功能和丰富的扩展插件，我们能够轻易打造一个功能强大而又极具个性的 MarkDown 编辑器。如果习惯使用 idea 快捷键，可以安装 IDEA Key Bindings for Visual Studio Code 插件。
 
+## 拓展知识
 
+使用 markdown 还可以做什么：
+
+使用 markdown 写 ppt。
+
+<https://github.com/ksky521/nodeppt>
+
+[nodePPT 网络幻灯片](https://www.oschina.net/p/nodeppt?hmsr=aladdin1e1)
 
 > **名言：**
 > 不要努力成为一个成功的人，而要努力成为一个有价值的人。
