@@ -167,11 +167,17 @@ Typora 的文件导入/导出功能是使用 Pandoc 把 MarkDown 文件转换成
 
 使用 markdown 还可以做什么：
 
-使用 markdown 写 ppt。
+### markdown 写 ppt
 
 <https://github.com/ksky521/nodeppt>
 
 [nodePPT 网络幻灯片](https://www.oschina.net/p/nodeppt?hmsr=aladdin1e1)
+
+### 记笔记
+
+
+### gitbook
+
 
 > **名言：**
 > 不要努力成为一个成功的人，而要努力成为一个有价值的人。
