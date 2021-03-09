@@ -124,3 +124,12 @@ time 方法表示计时开始，timeEnd 方法表示计时结束。它们的参�
 ## 常用的 google 插件
 
 -   谷歌访问助手 可以访问 google gmail 等 （强力推荐）
+
+
+## chrome Sources override 调试
+
+可以简单的将网页代码使用本地覆盖，打开 Overrides 菜单，新建一个文件夹。
+
+## 前端调试利器 Whistle
+
+Whistle -- 一个更高级的 Resource Override <https://zhuanlan.zhihu.com/p/47029559>
