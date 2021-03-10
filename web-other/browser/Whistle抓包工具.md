@@ -27,29 +27,29 @@ $ sudo npm install -g whistle
 w2 run
 ```
 
-![whistle-run](/assets/whistle-run.jpg)
+![whistle-run](../../assets/whistle-run.jpg)
 
 浏览器打开 8899 的端口URL即可进入 web 版配置页面。
 
 ### Web 浏览器代理配置
 
 使用 SwitchyOmega 插件配置代理：
-![whistle-proxy](/assets/whistle-proxy.jpg)
+![whistle-proxy](../../assets/whistle-proxy.jpg)
 
 再次访问配置页面，即可看到抓包数据：
-![whistle-record](/assets/whistle-record.jpg)
+![whistle-record](../../assets/whistle-record.jpg)
 
 ## 开启 HTTPS 抓包
 
-![whistle-https](/assets/whistle-https.jpg)
+![whistle-https](../../assets/whistle-https.jpg)
 
 点击图中二维码下载证书，双击安装：
 
-![whistle-ca](/assets/whistle-ca.jpg)
+![whistle-ca](../../assets/whistle-ca.jpg)
 
 ## 线上代码映射到本地
 
-![whistle-mapping](/assets/whistle-mapping.jpg)
+![whistle-mapping](../../assets/whistle-mapping.jpg)
 
 配置完映射的文件，Ctrl + S 保存，刷新一下目标网址即可成功映射。
 
@@ -65,6 +65,6 @@ Mac: System Preferences > Network > Advanced > Proxies > HTTP or HTTPS
 
 扫码安装 HTTPS 根证书：
 
-![whistle-mobile](/assets/whistle-mobile.jpeg)
+![whistle-mobile](../../assets/whistle-mobile.jpeg)
 
 看起来是不是很简单，用起来也很顺畅，非常好用无烦恼(传统的桌面应用 charles,fiddler 要配置很久,还总出问题)。
