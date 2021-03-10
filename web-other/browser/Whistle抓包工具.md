@@ -4,7 +4,7 @@
 
 随着公司软件版权的问题 Charles 抓包工具不能用了，那么有什么好的替代方案吗？那就是 Whistle。 Whistle 是一款『跨平台 web 调试代理工具』，可以用来查看和修改 HTTP、HTTPS、Websocket 的请求和响应等很多强大的功能。只需 node 环境，通过 npm 命令行安装和启动，操作起来简单，很容易上手。
 
-Whistle 完全开源，可以放心使用。
+Whistle 完全开源，可以放心使用。[GitHub 源码](https://github.com/avwo/whistle)
 
 ## 快速上手
 
@@ -67,4 +67,4 @@ Mac: System Preferences > Network > Advanced > Proxies > HTTP or HTTPS
 
 ![whistle-mobile](/assets/whistle-mobile.jpeg)
 
-看起来是不是很简单，用起来很顺畅，非常好用无烦恼(传统的桌面应用 charles,fiddler 要配置很久,还总出问题)。
+看起来是不是很简单，用起来也很顺畅，非常好用无烦恼(传统的桌面应用 charles,fiddler 要配置很久,还总出问题)。
