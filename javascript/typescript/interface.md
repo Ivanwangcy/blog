@@ -1,7 +1,7 @@
 # 接口定义
 
 
-示例：
+## 示例：
 
 ```ts
 declare type OmitInputProps = Omit<
