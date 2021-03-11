@@ -1,4 +1,4 @@
-# 更好用的前端调试工具 Whistle
+# 更好用的抓包工具 Whistle
 
 ## 前言
 
@@ -66,5 +66,47 @@ Mac: System Preferences > Network > Advanced > Proxies > HTTP or HTTPS
 扫码安装 HTTPS 根证书：
 
 ![whistle-mobile](../../assets/whistle-mobile.jpeg)
+
+## 高级用法 - 插件
+
+强大的插件体系：<https://github.com/whistle-plugins>
+
+### 用于 mock 数据的 whistle 插件
+
+whistle 自身的mock 功能比较简单，要想做一个 mock 系统就不太好维护了，更多的 mock 功能我们可以使用 whistle.vase 插件。
+
+whistle.vase 插件的安装：
+
+```sh
+$ npm install -g whistle.vase
+
+# Mac 系统
+$ sudo npm install -g whistle.vase
+```
+
+用法新建 mock 数据，操作界面如下：
+
+![vase-usage](../../assets/vase-usage.png)
+新建一个 test-script脚本：
+
+```sh
+Hello 官网
+```
+
+在whistle配置：
+
+```sh
+vase://test-script https//www.jd.com https://www.jdl.cn/
+```
+
+### 自动保存抓包数据的插件 whistle.autosave
+
+安装插件：
+
+```sh
+npm i -g whistle.autosave
+```
+
+![autosave](../../assets/autosave.jpg)
 
 看起来是不是很简单，用起来也很顺畅，非常好用无烦恼(传统的桌面应用 charles,fiddler 要配置很久,还总出问题)。
