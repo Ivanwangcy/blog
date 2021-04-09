@@ -97,6 +97,12 @@ console.log支持的格式标志有:
 
 ![console-style](/assets/console-style.jpg)
 
+## 快捷键
+
+Ctrl+Shift+P 打开命令面板，常用命令如下：
+
+- Capture full size screenshot：整个网页截屏；
+
 ## Chrome Lighthouse 功能
 
 ![lighthouse](/assets/lighthouse.png)
