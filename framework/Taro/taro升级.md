@@ -5,3 +5,29 @@
 ## Taro 3.0
 
 使用 React 语法开发。
+
+- 引入 React 库；
+
+```js
+import React, { Component } from 'react'
+import { View, Text } from '@tarojs/components'
+
+export default class Index extends Component {
+  state = {
+    msg: 'Hello World！'
+  }
+  componentWillUnmount () { }
+
+  componentDidShow () { }
+
+  componentDidHide () { }
+
+  render () {
+    return (
+      <View className='index'>
+        <Text>{this.state.msg}</Text>
+      </View>
+    )
+  }
+}
+```
