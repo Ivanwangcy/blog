@@ -31,3 +31,26 @@ export default class Index extends Component {
   }
 }
 ```
+
+## Vue/Vue3 支持
+
+```js
+<template>
+  <view class="index">
+    <text>{{msg}}</text>
+  </view>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      msg: 'Hello World！'
+    }
+  },
+  created () {},
+  onShow () {},
+  onHide () {}
+}
+</script>
+```
