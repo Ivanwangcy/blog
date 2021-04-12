@@ -60,3 +60,7 @@ export default {
 Taro 方案的初心就是为了打造一个多端开发的解决方案。
 
 目前 Taro 3 可以支持转换到 微信/京东/百度/支付宝/字节跳动/QQ 小程序 以及 H5 端。
+
+## Taro UI 组件库
+
+<https://taro-ui.jd.com/#/docs/introduction>
