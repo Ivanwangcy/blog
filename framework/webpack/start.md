@@ -102,9 +102,9 @@ $ webpack-dev-server --progress --colors # 运行服务器
 
 ## Webpack 模块打包原理
 
-### webpack 打包结果（bundle）
+webpack 打包结果（bundle）分析，包含以下几个部分：
 
 - 最外层的立即执行匿名函数：它用来包裹整个 bundle，并构成自身的作用域
 - `installedModules` 对象：模块第一次加载时执行
 - `__webpack_require__` 函数
-- 
+- modules 
