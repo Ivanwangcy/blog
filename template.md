@@ -105,17 +105,15 @@ $ npm install jquery --save # 安装jQuery
 ## 绘制流程图
 
 ### 序列表
-<<<<<<< HEAD
 
-=======
-```sequence
-    Alice->John: Hello John, how are you?
+```seq
+    Alice=>John: Hello John, how are you? 
     loop every minute
-        John-->Alice: Great!
-    end
->>>>>>> master
+        John=>Alice: Great!
+    e=>end
 ```
-```sequenceDiagram
+
+```seq
 Note left of 购物车: 购物车去结算进入商城结算
 购物车-->结算页: 商超结算
 Note right of 秒杀详情页: 立即下单进入秒杀结算
@@ -125,6 +123,7 @@ Note left of 单品详情页: 立即下单进入单品结算
 结算页->侧边栏: 查看商品详情
 结算页->侧边栏: 修改支付方式
 ```
+
 ## 流程图 mermaid
 
 ```mermaid
