@@ -41,6 +41,7 @@ var reg = /^[^\uD800-\uDBFF]+$/; // 过滤表情符号，表情符号是以 D800
  * @type {RegExp}
  * 😘😁😜😆😍 (这些特殊字符为表情符号)返回 false
  * 其它文字都返回 true
+ * 逆向判断，否则找不到特殊字符
  */
 var regEmoji = /^[^\uD800-\uDBFF]+$/; //
 ```
@@ -120,7 +121,7 @@ var reg = "^[A-Za-z\\d\\u4E00-\\u9FA5\\p{P}‘’“”\\s]+$"; \p{P}标点符�
 ## IP 地址 正则表达式
 
 > 关键字：IP 地址 正则表达式作者：txw1958
-> 出处：http://www.cnblogs.com/txw1958/archive/2011/10/13/ip_address_regular_expression.html
+> 出处：<http://www.cnblogs.com/txw1958/archive/2011/10/13/ip_address_regular_expression.html>
 
 IP 地址的长度为 32 位，分为 4 段，每段 8 位，用十进制数字表示，每段数字范围为 0~255，段与段之间用英文句点“.”隔开。例如：某台计算机 IP 地址为 10.11.44.100。
 
@@ -150,6 +151,7 @@ IP 地址的长度为 32 位，分为 4 段，每段 8 位，用十进制数字�
 
 我使用的正则表达式验证工具，The Regulator 下载地址：[regulator](http://sourceforge.net/projects/regulator/)
 ```
+
 ## 将'10000000000'形式的字符串，以每3位进行分隔展示'10,000,000,000',多种实现方式
 
 ```js
