@@ -2,12 +2,11 @@
 
 可以利用WebRTC(Chrome/Firefox):
 
-
 ```js
 //创建RTCPeerConnection接口
 let conn = new RTCPeerConnection({
-		iceServers: []
-	}) 
+	iceServers: []
+}) 
 let noop = function(){}
 conn.onicecandidate = function(ice){
 	if (ice.candidate){
