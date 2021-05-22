@@ -222,3 +222,7 @@ TypeScript 编译器由几个关键部分组成：
 推荐的工具：
 
 [一个用于 TypeScript 和 JavaScript 的在线编辑器](https://www.typescriptlang.org/zh/play)，可以实时看到我们的 ts 代码编译结果。
+
+定制一款在线 TS 类型生成。
+
+let a = 10 // to let a: number = 10
