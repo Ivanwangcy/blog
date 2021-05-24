@@ -3,8 +3,11 @@
 ## 创建分支
 
 ```bash
-<<<<<<< HEAD
 git branch testing # 新建一个 testing 分支
+
+$ git branch testing 新建一个 testing 分支
+
+$ git branch -b testing # 创建分支并切换到创建的分支
 ```
 
 ## 操作分支
@@ -23,13 +26,6 @@ $ git checkout -b <name>
 
 ```
 
-=======
-$ git branch testing 新建一个 testing 分支
-
-$ git branch -b testing # 创建分支并切换到创建的分支
-```
-
->>>>>>> master
 ## 查看分支
 
 ```bash
@@ -37,14 +33,10 @@ $ git branch
   iss53
 * master
   testing
-<<<<<<< HEAD
 ```
 
 注意看 master 分支前的`*`字符：它表示当前所在的分支。
-=======
-  ```
 注意看 master 分支前的` * `字符：它表示当前所在的分支。
->>>>>>> master
 
 ## 合并分支
 
@@ -63,7 +55,6 @@ Merge made by the 'recursive' strategy.
 ## 删除分支
 
 ```bash
-<<<<<<< HEAD
 # 删除分支 testing
 $ git branch -d testing
 
@@ -78,10 +69,9 @@ git push origin --delete dev20181018
 $ git push origin :branch
 To git@github.com:xxx/xxx.git
 - [deleted] branch
-=======
-$ git branch -d testing // 删除分支 testing
+
+$ git branch -D testing // 删除分支 testing
 $ git push origin :testing // 提交远程分支，同步删除
->>>>>>> master
 ```
 
 ## 其它 相关参考
