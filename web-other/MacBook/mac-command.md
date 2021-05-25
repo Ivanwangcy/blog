@@ -34,7 +34,21 @@
 - `command + shift + D` 复制当前行；
 - `command + ctrl + ⬆️／⬇️` 向上／向下移动当前行；
 
-#＃ 常用命令
+## 常用命令
 - `$ ifconfig` 查看 IP 地址
 - `$ pwd` 查看当前目录结构
 - `$ cat file` 查看文件内容
+
+## 杀进程
+
+```sh
+# 查找 PID
+sudo lsof -i :8899
+
+COMMAND     PID         USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+node      22353          xx   23u  IPv6 0xb4be0b796344aed5      0t0  TCP *:8899 (LISTEN)
+
+# 杀掉 进程 PID
+
+sudo kill -9 22353
+```
