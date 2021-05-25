@@ -84,6 +84,17 @@ $ ls -al /etc>> aa.txt # (将etc下面的列表信息追加到aa.txt文件信息
 标签: linux, CentOS, OS X
 
 ## Mac查看端口占用情况
+
 ```sh
+# 查找 3000 端口的进程
 $ lsof -i:3000
+
+# 根据端口号查找 PID
+$ sudo lsof -i :8899
+# 输出示例
+COMMAND     PID         USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+node      22353          xx   23u  IPv6 0xb4be0b796344aed5      0t0  TCP *:8899 (LISTEN)
+
+# 杀掉 进程 PID
+$ sudo kill -9 22353
 ```
