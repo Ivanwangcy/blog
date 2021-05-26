@@ -78,3 +78,32 @@ React.Component 代替 Taro.Component
 - [问题描述：const taro = Taro；执行taro.getNetworkType({})报错]
 
 Taro 版本统一，保持所有库都是一个版本；不一致时，删除所有包和 lock 文件，重新安装。
+
+## 分包优化
+
+修改 webpack 配置，利用 splitChunks 特性，将子包公共文件单独提取，避免主包过大；
+
+```js
+webpackChain (chain, webpack) {
+      chain.plugin('analyzer')
+        .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
+        const config = chain.optimization.get('splitChunks')
+        chain.optimization
+          .splitChunks({
+            ...config,
+            cacheGroups: {
+              ...config.cacheGroups,
+              subutils: {
+                name: 'packageB/sub-common',
+                minChunks: 2,
+                test: module => /[\\/]packageB[\\/]/.test(module.resource),
+                priority: 200
+              }
+            }
+          })
+    },
+    addChunkPages (pages) {
+      pages.set('packageB/sub1', ['packageB/sub-common'])
+      pages.set('packageB/sub2', ['packageB/sub-common'])
+    }
+```
