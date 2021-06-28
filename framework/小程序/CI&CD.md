@@ -17,3 +17,7 @@
 [Node+GitLab实现小程序CI系统](https://www.cnblogs.com/Smiled/p/10681625.html)
 
 ## 部署
+
+## 常用方法
+
+- 获取DOM的布局信息：[getBoundingClientRect](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/NodesRef.boundingClientRect.html)
