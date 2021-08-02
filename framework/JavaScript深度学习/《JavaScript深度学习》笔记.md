@@ -13,5 +13,13 @@ tensorflow.js
 
 机器学习
 
+## 深度学习与 JavaScript
+
+为何选用 TensorFlow.js
+
+- 支持训练和推断；
+- 支持 web 浏览器和 Node.js 两种环境。
+- 能够利用 GPU 加速
+
 ## 深入浅出 TensorFlow.js
 
