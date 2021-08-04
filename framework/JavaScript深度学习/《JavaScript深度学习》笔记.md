@@ -1,5 +1,7 @@
 # JavaScript 深度学习
 
+在智能化时代下，深度学习和人工智能将成为前端工程师的必备技能。
+
 tensorflow.js
 
 
@@ -27,3 +29,4 @@ tensorflow.js
 
 ## 深入浅出 TensorFlow.js
 
+> 参考示例：<https://www.imgcook.com/>
