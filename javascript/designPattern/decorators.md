@@ -22,3 +22,6 @@ var decorators = log(caculate);
 decorators(1000);
 decorators(10000);
 ```
+
+## TS 装饰器
+
