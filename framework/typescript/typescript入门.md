@@ -225,4 +225,6 @@ TypeScript 编译器由几个关键部分组成：
 
 ※ 定制一款在线 TS 类型生成。
 
+```js
 let a = 10 // to let a: number = 10
+```
