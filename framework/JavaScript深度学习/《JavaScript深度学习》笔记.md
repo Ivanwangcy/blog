@@ -25,7 +25,9 @@ tensorflow.js
 
 - 支持训练和推断；
 - 支持 web 浏览器和 Node.js 两种环境。
-- 能够利用 GPU 加速
+- 能够利用 GPU 加速(在web端使用 webGL ，node 端使用CUDA核函数)；
+- 支持用 JavaScript 定义神经网络模型架构；
+- 支持模型的序列号和反序列化；
 
 ## 深入浅出 TensorFlow.js
 
