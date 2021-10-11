@@ -41,7 +41,7 @@ $ git rebase -i  32e0a87f      # 指定的SHA位置
 
 # 5 追加改动到提交 
 
-$ git commit –amend -m "fix: 新内容"
+$ git commit –-amend -m "fix: 新内容"
 
 
 # 6 使用 --continue 继续 rebase 回到原来分支
