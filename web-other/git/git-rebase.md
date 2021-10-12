@@ -22,18 +22,45 @@ $ git rebase other  # 将 other 分支 变基到 master 主干分支中
 -   使用 git merge 操作分支，结果会产生一个新的"合并的提交"(merge commit);
 -   在 rebase 的过程中，也许会出现冲突(conflict). 在这种情况，Git 会停止 rebase 并会让你去解决 冲突；在解决完冲突后，用"git-add"命令去更新这些内容的索引(index), 然后，你无需执行 git-commit,只要执行:
 
-```bash
+```sh
 $ git rebase --continue # git add 后 继续 rebase
 ```
 
--   冲突标记<<<<<<< （7 个<）与=======之间的内容是当前分支或者我的修改，=======与>>>>>>>之间的内容是其它分支或别人的修改, 包裹合并过来的内容。
+- 冲突标记<<<<<<< （7 个<）与=======之间的内容是当前分支或者我的修改，=======与>>>>>>>之间的内容是其它分支或别人的修改, 包裹合并过来的内容。
 
 ## 在执行 `git rebase` 后解决合并冲突
 
-```bash
+```sh
 # rebase 变基
 $ git rebase --abort  # 完全取消这次变基, 终止后会回到rebase开始之前的状态
 $ git rebase --skip  # 完全忽略该提交
 
 $ rm -fr "D:/workspace/blog/.git/rebase-apply" # 删除这次 变基 rebase
 ```$$
+
+## 修改历史提交信息
+
+```sh
+# 1.找到要修改SHA位置(git log) 要修改的提交记录，之前的 hash 值
+
+# 2 使用 rebase -i 修改提交记录
+$ git rebase -i  32e0a87f      # 指定的SHA位置
+
+# 3 进入编辑页面
+
+
+# 4.将pick修改为edit 并修改后面的内容并  :wq  保存退出
+
+# 5 追加改动到提交 
+
+$ git commit –-amend -m "fix: 新内容"
+
+
+# 6 使用 --continue 继续 rebase 回到原来分支
+
+$ git rebase --continue
+
+# 7 强制提交改动，push
+$ git push -f  # 推到远程(修改成功了)
+
+```
