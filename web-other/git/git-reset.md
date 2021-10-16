@@ -45,6 +45,11 @@ ee0ee93 HEAD@{1}: merge dev: Merge made by the ‘recursive’ strategy.
 ## 回滚 commit
 
 ```sh
+# 只撤销最后一次 commit 提交，代码仍然保留
+git reset --soft HEAD^ 
+```
+
+```sh
 # 只Reset最后一次commit
 git reset --mixed HEAD^
 
