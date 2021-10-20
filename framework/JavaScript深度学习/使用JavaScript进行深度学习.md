@@ -10,7 +10,7 @@
 
  <https://www.tensorflow.org/js/?hl=zh_cn>
 
-## 为什么使用 Javascript 
+## 为什么使用 Javascript
 
 ## JavaScript 的优势
 
