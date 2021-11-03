@@ -9,7 +9,6 @@
 
 tensorflow.js
 
-
 ## 深度学习和JavaScript
 
 人工智能、机器学习、神经网络和深度学习
