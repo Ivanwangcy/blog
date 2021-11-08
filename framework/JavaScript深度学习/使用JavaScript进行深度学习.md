@@ -10,7 +10,13 @@
 
  <https://www.tensorflow.org/js/?hl=zh_cn>
 
+## 深度学习的介绍
+
+深度学习相关概念：人工智能、机器学习、深度学习之间的关系。
+
 ## 为什么使用 Javascript
+
+使用 JavaScript 的价值和潜力。
 
 ## JavaScript 的优势
 
