@@ -47,7 +47,7 @@ $ glog # 等于 git log --oneline --decorate --color --graph
 
 ```sh
 # 查询端口
-$ sudo lsof -i:1099
+$ sudo lsof -i :1099
 
 COMMAND   PID         USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 java    19493 xxx   26u  IPv6 0xecf06017998c199b      0t0  TCP *:rmiregistry (LISTEN)
