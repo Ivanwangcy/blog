@@ -11,9 +11,15 @@ rem 自适应处理
 ```
 
 ## Retina 视网膜屏（）高清
+
 2X Retina
 3X Retina
 
 ```css
 img-set()
 ```过渡 动画
+
+滤镜：
+
+/* 置灰 */
+filter: grayscale(100%);
