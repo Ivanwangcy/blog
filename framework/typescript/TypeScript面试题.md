@@ -514,3 +514,6 @@ let sum = (x: number, y: number): number => {
 console.log(sum(10, 20)); //returns 30
 在上面的示例中，？=>？是lambda运算符，（x + y）是函数的主体，（x：number，y：number）是内联参数。
 
+
+> [Top 50 TypeScript Interview Questions You Must Prepare in 2022
+](https://www.edureka.co/blog/interview-questions/typescript-interview-questions/) <https://www.edureka.co/blog/interview-questions/typescript-interview-questions/>
