@@ -24,4 +24,7 @@ const quick = (array, left, right) => {
 
 
 ```js
+
 ```
+
+### 
