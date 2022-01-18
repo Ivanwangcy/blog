@@ -131,3 +131,10 @@ $ git add .
 $ git commit -am 'git cache cleared'
 $ git push
 ```
+
+## 别名
+
+mac系统推荐 zsh
+```
+
+```
