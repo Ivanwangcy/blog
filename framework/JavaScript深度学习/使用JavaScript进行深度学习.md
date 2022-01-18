@@ -115,10 +115,20 @@ const trainData = {
   
 ```
 
-增加点状图表展示
+### 增加点状图表展示
+
+使用点状图表绘制数据，展示变化趋势。
+
+### 将数据转换成张量
+
+```js
+    trainXs = tf.tensor2d(trainData.sizeMB, [20, 1]);
+    trainYs = tf.tensor2d(trainData.timeSec, [20, 1]);
+    testXs = tf.tensor2d(testData.sizeMB, [20, 1]);
+    testYs = tf.tensor2d(testData.timeSec, [20, 1]);
+```
 
 具体代码示例：参考链接：<https://codepen.io/bileschi/pen/JaOOpO>
-
 
 ```js
 <!DOCTYPE html>
@@ -192,9 +202,4 @@ const trainData = {
 </html>
 ```
 
-### 将数据转换成张量
 
-```js
-
-    trainXs = tf.tensor2d(trainData.sizeMB, [20, 1]);
-```
