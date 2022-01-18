@@ -117,6 +117,9 @@ const trainData = {
 
 增加点状图表展示
 
+具体代码示例：参考链接：<https://codepen.io/bileschi/pen/JaOOpO>
+
+
 ```js
 <!DOCTYPE html>
 <html>
@@ -190,3 +193,8 @@ const trainData = {
 ```
 
 ### 将数据转换成张量
+
+```js
+
+    trainXs = tf.tensor2d(trainData.sizeMB, [20, 1]);
+```
