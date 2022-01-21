@@ -128,6 +128,13 @@ const trainData = {
     testYs = tf.tensor2d(testData.timeSec, [20, 1]);
 ```
 
+### 构建线性回归模型
+
+```js
+const model = tf.sequential();
+model.add(tf.layers.dense({inputShape: [1], units: 1}))
+```
+
 具体代码示例：参考链接：<https://codepen.io/bileschi/pen/JaOOpO>
 
 ```js
