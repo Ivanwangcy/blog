@@ -135,6 +135,8 @@ const model = tf.sequential();
 model.add(tf.layers.dense({inputShape: [1], units: 1}))
 ```
 
+神经网络的核心组成部分是层（layer），它是一个数据处理模块，可以看作张量之间的一个可调函数。
+
 ### 
 
 具体代码示例：参考链接：<https://codepen.io/bileschi/pen/JaOOpO>
