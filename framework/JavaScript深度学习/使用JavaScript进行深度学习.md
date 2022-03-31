@@ -200,6 +200,7 @@ model.add(tf.layers.dense({inputShape: [1], units: 1}))
     };
 
 
+    // 可以使用图表展示模型的训练结果
     Plotly.newPlot('dataSpace', [dataTraceTrain, dataTraceTest], {
       width: 700,
       title: 'File download duration',

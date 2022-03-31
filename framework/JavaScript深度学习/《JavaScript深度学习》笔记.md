@@ -32,7 +32,7 @@ tensorflow.js
 - 能够利用 GPU 加速(在web端使用 webGL ，node 端使用CUDA核函数)；
 - 支持用 JavaScript 定义神经网络模型架构；
 - 支持模型的序列号和反序列化；
-- 
+
 
 ## TF 相关概念
 

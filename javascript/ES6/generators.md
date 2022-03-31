@@ -21,7 +21,9 @@ var meow_iter = quips("Xingu");
 - 普通函数使用function声明，而生成器函数使用function*声明。  
 - 在生成器函数内部，有一种类似return的语法：关键字yield。二者的区别是，普通函数只可以return一次，而生成器函数可以yield多次（当然也可以只yield一次）。在生成器的执行过程中，遇到yield表达式立即暂停，后续可恢复执行状态。  
 这就是普通函数和生成器函数之间最大的区别，普通函数不能自暂停，生成器函数可以。  
+
 ## 当调用生成器发生了什么?
+
 ```javascript
 > quips("Ivan");
 quips {[[GeneratorStatus]]: "suspended", [[GeneratorReceiver]]: Window}
