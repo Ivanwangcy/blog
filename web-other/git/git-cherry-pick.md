@@ -14,5 +14,8 @@ $ git cherry-pick A^..B
 注意，不包含第一个commitid ， 即  git cherry-pick (commitid1..commitid100]
 
 ```sh
-git cherry-pick e3a3a034e
+# 一个提交
+$ git cherry-pick e3a3a034e
+# 多个提交
+$ git cherry-pick ba51861..023sb6f299849a1f
 ```
