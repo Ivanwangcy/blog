@@ -17,5 +17,8 @@ $ git cherry-pick A^..B
 # 一个提交
 $ git cherry-pick e3a3a034e
 # 多个提交
-$ git cherry-pick ba51861..023sb6f299849a1f
+$ git cherry-pick branchName ba51861..023sb6f299849a1f
+# 如果有冲突解决后
+$ git cherry-pick --continue
+
 ```
