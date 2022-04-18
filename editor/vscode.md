@@ -43,6 +43,8 @@
 
 - [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) 流程图预览插件
 
+- [Image Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview) 可以显示图片缩略图，和鼠标悬停效果
+
 ## 命令行启动
 
 > 提示：对于 Mac 用户，我们需要通过设置使您能够从终端内启动 VS Code. 首选运行 VS code 并打开命令面板（ `⇧⌘P` ），然后输入 `shell command` 找到: `Install ‘code' command in PATH` 。
