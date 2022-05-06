@@ -70,5 +70,5 @@ $ code .
 }
 ```
 
-> > 参考：[Visual Studio Code 入门(译)
-> > ](https://www.jianshu.com/p/3dda4756eca5)
+>> 参考：[Visual Studio Code 入门(译)
+>> ](https://www.jianshu.com/p/3dda4756eca5)
