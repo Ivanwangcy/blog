@@ -6,30 +6,7 @@
 
 - Atom Keymap 使用 Atom 快捷键
 
-## vscode 使用
-
-按住 Alt 键，点击变量可以跳转到声明的位置或引用的文件。与 Atom 的 hyperclick 一样。
-
-### 快捷键
-
-### 项目管理
-
-- `Ctrl + K Ctrl + O` 打开项目文件夹
-- `Ctrl + K F` 关闭当前项目
-- `Ctrl + Shift + P` 命令面板
-
-### 视图操作
-
-- `Ctrl + +/-` 放大或缩小视图
-- `Ctrl + ↑/↓` 向上/下移动可视区域
-- `Ctrl + c / Esc` 进入 Vim 模式
-
-### 行操作
-
-- `Alt + ↑/↓` 向上/下移动当前行
-- `Shift + Alt + ↑/↓` 向上/下复制当前行
-
-## 常用插件  
+### 常用插件  
 
 - Power Mode 打字特效
 
@@ -50,6 +27,29 @@
 ## 命令行启动
 
 > 提示：对于 Mac 用户，我们需要通过设置使您能够从终端内启动 VS Code. 首选运行 VS code 并打开命令面板（ `⇧⌘P` ），然后输入 `shell command` 找到: `Install ‘code' command in PATH` 。
+
+## vscode 使用
+
+按住 Alt 键，点击变量可以跳转到声明的位置或引用的文件。与 Atom 的 hyperclick 一样。
+
+## 快捷键
+
+### 项目管理
+
+- `Ctrl + K Ctrl + O` 打开项目文件夹
+- `Ctrl + K F` 关闭当前项目
+- `Ctrl + Shift + P` 命令面板
+
+### 视图操作
+
+- `Ctrl + +/-` 放大或缩小视图
+- `Ctrl + ↑/↓` 向上/下移动可视区域
+- `Ctrl + c / Esc` 进入 Vim 模式
+
+### 行操作
+
+- `Alt + ↑/↓` 向上/下移动当前行
+- `Shift + Alt + ↑/↓` 向上/下复制当前行
 
 ```sh
 # 进入项目目录
