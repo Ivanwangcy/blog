@@ -24,6 +24,7 @@ $ git remote set-url origin git://new.url.here # 修改资源库地址，关联�
 ## 查看远程仓库信息
 
 ```sh
+# 查看仓库信息
 $ git remote -v
 $ git remote show origin
 ```
@@ -39,3 +40,5 @@ git add  // 暂存
 git commit -am "注释" // 暂存加注释
 git commit -m "注释"
 ```
+
+## 
