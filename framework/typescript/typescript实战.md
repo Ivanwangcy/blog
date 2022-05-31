@@ -23,3 +23,5 @@ delete item.value
  delete (item as any).value
 
 ```
+
+## 配置信息
