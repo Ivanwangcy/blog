@@ -37,11 +37,11 @@ npm i @typescript-eslint/parser typescript
 
 选项解读，值得注意的地方
 
-```sh
+```json
 {
   "compilerOptions": {
-      "target": "es2017",
-      "module": "commonjs",
+      "target": "es2017", // 编译目标版本
+      "module": "commonjs", // 
       "removeComments": false,
       "preserveConstEnums": true,
       "moduleResolution": "node",
