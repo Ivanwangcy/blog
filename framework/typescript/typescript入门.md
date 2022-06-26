@@ -98,7 +98,9 @@ npm i @typescript-eslint/parser typescript
 }
 ```
 
-## 接口类型生成 TypeScript 插件 - Paste JSON as Code
+## 有用的工具
+
+接口类型生成 TypeScript 插件 - Paste JSON as Code
 
 安装这个 VSCode 插件可以将接口返回的数据，自动转换成 类型定义接口文件。
 
@@ -125,6 +127,10 @@ export interface TopLevel {
 打开 JSON 文件使用 命令 Open quicktype for JSON
 
 ![JsonToType](/assets/JsonToType.jpg)
+
+## any 类型
+
+声明一个变量为任意值之后，编译器无法帮助你进行类型检测和代码提示。
 
 ## 枚举的使用
 
