@@ -100,7 +100,7 @@ npm i @typescript-eslint/parser typescript
 
 ## 有用的工具
 
-接口类型生成 TypeScript 插件 - Paste JSON as Code
+### 接口类型生成 TypeScript 插件 - Paste JSON as Code
 
 安装这个 VSCode 插件可以将接口返回的数据，自动转换成 类型定义接口文件。
 
@@ -127,6 +127,32 @@ export interface TopLevel {
 打开 JSON 文件使用 命令 Open quicktype for JSON
 
 ![JsonToType](/assets/JsonToType.jpg)
+
+
+### 5.1 TypeScript 演练场
+
+TypeScript 开发团队提供了一款非常实用的在线代码编辑工具——TypeScript 演练场
+地址：https://www.typescriptlang.org/zh/play
+左侧编写 TS 代码，右侧自动生成编译后的代码；
+可以自主选择 TypeScript 编译版本；
+版本列表最后一项是一个特殊版本 “Nightly” 即 “每日构建版本”，想尝试最新功能可以试试；
+支持 TypeScript 大部分配置项和编译选项，可以模拟本地环境，查看代码片段的输出结果；
+### 5.2 JSDoc Generator 插件
+
+如果使用的是 vscode 编辑器直接搜索（ JSDoc Generator 插件）插件地址：https://marketplace.visualstudio.com/items?itemName=crystal-spider.jsdoc-generator 安装成功后，使用 Ctrl + Shift + P 打开命令面板，可以进行如下操作可以自动生成带有 TypeScript 声明类型的文档注释：
+选择 Generate JSDoc 为当前光标处代码生成文档注释；
+选择Generate JSDoc for the current file 为当前文件生成文档注释；
+### 5.3 代码格式化工具
+VSCode 仅提供了基本的格式化功能，如果需要定制更加详细的格式化规则可以安装专用的插件来实现。我们使用 Prettier 功能非常强大（推荐使用），它是目前最流行的格式化工具： https://prettier.io/，同时也提供了一个在线编辑器：https://prettier.io/playground/
+5.4 模块导入自动归类和排序
+在多人协作开发时代码越来越复杂，一个文件需要导入很多模块，每个人都会加加着加着就有点乱了，绝对路径的、相对路径的，自定义模块、公用模块顺序和类别都是混乱的，模块导入过多还会出现重复的。引入 TypeScript 之后检查更加严格，导入的不规范会有错误提示，如果只靠手动优化工作量大且容易出错。VSCode 编辑器提供了按字母顺序自动排序和归类导入语句的功能，直接按下快捷键“Shift + Alt + O”即可优化。也可以通过右键菜单“Source Action” 下的 “Organize Imports” 选项来进行优化导入语句。
+### 5.5 启用 CodeLens
+
+CodeLens 是一项特别好用的功能，它能够在代码的位置显示一些可操作项，例如：
+显示函数、类、方法和接口等被引用的次数以及被哪些代码引用；
+显示接口被实现的次数以及谁实现了该接口；
+VSCode 已经内置了 CodeLens 功能，只需要在设置面板开启，找到TypeScript 对应的 Code Lens 两个相关选项并勾选上：
+开启后的效果，出现引用次数，点击 references 位置可以查看哪里引用了：
 
 ## any 类型
 
