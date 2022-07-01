@@ -11,3 +11,5 @@ serverless 属于一种架构模式。 Serverless 可以大幅度缩减分布式
 ## 
 
 ##
+
+Serverless——前端的3.0时代：<https://zhuanlan.zhihu.com/p/84054729>
