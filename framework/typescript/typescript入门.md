@@ -63,6 +63,9 @@ npm i @typescript-eslint/parser typescript
         "node_modules/@types"
       ]
   },
+  "include": [
+    "src/**/*",
+  ],
   "exclude": [
     "node_modules",
     "dist"
