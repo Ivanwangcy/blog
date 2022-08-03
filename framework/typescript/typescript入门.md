@@ -75,6 +75,156 @@ npm i @typescript-eslint/parser typescript
 
 ```
 
+### 分离关注点
+
+数字数组处理：
+
+```JavaScript
+type TransformFunction = (value: number) => number
+
+function doNothing(value: number): number ( // doNothing() 只返回原数据，不进行任何处理
+  return value
+)
+
+function getNumbers(transform: TransformFunction = doNothing): number[] {
+    /** */
+}
+```
+对象数组处理：
+
+```JavaScript
+type PluckFunction = (widgets: Widget) => Widget[]
+
+function pluckAll(widgets:  Widget[]):  Widget[] ( // pluckAll() 只返回全部，不进行任何处理
+  return widgets
+)
+
+// 如果用户没有提供 pluck() 函数，则返回 pluckAll 作为实参的默认值
+function assembleWidgets(pluck: PluckFunction = pluckAll): AssembledWidget[] {
+    /** */
+}
+```
+
+泛型恒等函数：
+
+```JavaScript
+function identify<T>(value: T):  T ( // 有一个类型参数 T 的泛型恒等函数
+  return value
+)
+
+// 如果用户没有提供 pluck() 函数，则返回 pluckAll 作为实参的默认值
+function assembleWidgets(pluck: PluckFunction = identify): AssembledWidget[] {
+    /** */
+}
+```
+
+### 数值二叉树
+
+```javascript
+class NumberBinaryTreeNode {
+  value: number
+  left: NumberBinaryTreeNode | undefined
+  right: NumberBinaryTreeNode | undefined
+
+  constructor(value: number) {
+    this.value = value
+  }
+}
+
+// 泛型二叉树
+class BinaryTreeNode<T> {
+  value: T
+  left: BinaryTreeNode<T> | undefined
+  right: BinaryTreeNode<T> | undefined
+
+  constructor(value: T) {
+    this.value = value
+  }
+}
+```
+
+### 字符串链表
+
+```javascript
+class StringLinkedListNode {
+  value: string
+  next: StringLinkedListNode | undefined
+
+  constructor(value: string) {
+    this.value = value
+  }
+}
+
+// 泛型链表
+class LinkedListNode<T> {
+  value: T
+  next: LinkedListNode<T> | undefined
+
+  constructor(value: T) {
+    this.value = value
+  }
+}
+
+// 可以迭代的链表完整实现
+
+type IteratorResult<T> = {
+  done: boolean
+  value: T
+}
+
+interface Iterator<T> {
+  next(): IteratorResult<T>
+}
+
+class LinkedListIterator<T> implements Iterator<T> {
+  private head: LinkedListNode<T>
+  private current: LinkedListNode<T> | undefined
+
+  constructor(head: LinkedListNode<T>) {
+    this.head
+    this.current
+  }
+
+  next(): IteratorResult<T> {
+    if(!this.current) {
+      return { done: true, value: this.head.value }
+    }
+
+    const result: T: this.current.value
+    this.current = this.current.next
+    return { done: false, value: result }
+  }
+}
+
+interface IterableIterator<T> extends Iterator<T> {
+    [Symbol.iterator](): IterableIterator<T>;
+}
+// 生成器链表迭代器 
+function* linkedListIterator<T>(head: LinkedListNode): IterableIterator<T> {
+  let current: LinkedListNode<T> | undefined = head
+  while (current) {
+    yield current.value // 在遍历链表过程中，交出每个值
+    current = current.next
+  }
+}
+
+class LinkedListNode<T> implements Iterable<T> {
+  value: T
+  next: LinkedListNode<T> | undefined
+
+  constructor(value: T) {
+    this.value = value
+  }
+
+  // Symbol.iterator 是 TypeScript 特有语法，预示着当前对象可以使用 for ... of 遍历
+  [Symbol.iterator](): Iterator<T> { 
+    return linkedListIterator(this)
+  }
+}
+```
+
+
+
 ### 配置 lint
 
 .eslintrc
