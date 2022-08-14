@@ -223,7 +223,7 @@ class LinkedListNode<T> implements Iterable<T> {
 }
 ```
 
-## 
+## 高级特性
 
 
 ### 配置 lint
