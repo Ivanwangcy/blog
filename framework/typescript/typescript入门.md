@@ -226,6 +226,7 @@ class LinkedListNode<T> implements Iterable<T> {
 ## 高级特性
 
 ## 注释指令
+
 ### 配置 lint
 
 .eslintrc
