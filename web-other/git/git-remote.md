@@ -41,4 +41,8 @@ git commit -am "注释" // 暂存加注释
 git commit -m "注释"
 ```
 
-## 
+## 其它事项
+
+查看本地配置信息
+
+git config --local --list
