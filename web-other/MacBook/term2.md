@@ -1,3 +1,5 @@
+# term2
+
 ## 漂亮的命令行
 
 1. 安装term2 [http://iterm2.com/](http://iterm2.com/)
