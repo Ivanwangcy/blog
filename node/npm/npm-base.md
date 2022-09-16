@@ -202,3 +202,10 @@ $ npm adduser --registry=http://xxx.m.xx.com --scope=@xx
 $ npm owner add <user> <package name> 
 
 ```
+
+## npm 缓存
+
+```sh
+npm install --cache /tmp/empty-cache
+npm cache clean --force
+```

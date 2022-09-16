@@ -16,3 +16,29 @@ $nvm install --lts                   # Install the latest LTS version\
 # 使用指定版本
 $ nvm use 8.0
 ```
+
+## 使用 Homebrew 安装
+
+卸载 Node
+
+```sh
+brew uninstall --ignore-dependencies node 
+brew uninstall --force node
+```
+
+安装 nvm
+
+```sh
+brew update 
+brew install nvm 
+
+mkdir ~/.nvm
+vim ~/.zshrc 
+
+# add the below lines to .zshrc
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# 更新配置文件
+source ~/.zshrc
+```
