@@ -119,6 +119,8 @@ $ npm install --save vue@">=2.0.0-rc.1"
 $ npm view vue dist-tags
 # { latest: '1.0.27', csp: '1.0.27-csp', next: '2.0.0-rc.7' }
 $ npm install --save vue@next
+
+npm install --save vue@next --registry=https://registry.npm.taobao.org
 ```
 
 ### npm 自身升级
@@ -209,3 +211,4 @@ $ npm owner add <user> <package name>
 npm install --cache /tmp/empty-cache
 npm cache clean --force
 ```
+
