@@ -16,12 +16,15 @@ $ brew upgrade ruby
 ```sh
 $ brew install node
 ```
+
 ## 查找可安装的软件
+
 ```sh
 $ brew search --desc <keyword>
 ```
 
 ## tree 命令 输出目录结构
+
 ```sh
 $ brew install tree
 
@@ -31,6 +34,7 @@ $ tree -d -L 3
 ```
 
 ## 帮助文档
+
 ```sh
 $ brew help
 $ man brew
@@ -41,8 +45,12 @@ $ brew doctor # 修复
 
 卸载homebrew
 
-下载 <https://raw.githubusercontent.com/Homebrew/install/master/uninstall> 并保存为 uninstall.rb，再执行 ruby uninstall.rb
+下载 <https://raw.githubusercontent.com/Homebrew/install/master/uninstall> 并保存为 uninstall.rb，
+
+再执行 ruby uninstall.rb
+
 ```sh
+
 #!/usr/bin/ruby
 
 STDERR.print <<EOS
@@ -54,4 +62,3 @@ EOS
 
 Kernel.exec "/bin/bash", "-c", '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"' + ' uninstall ' +  ARGV.join(" ")
 ```
-
