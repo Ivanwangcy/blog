@@ -43,6 +43,9 @@ $ git commit --amend -m "Add an author/email comment" #  修改前一次提交
 # 克隆仓库
 $ git clone git:# github.com/schacon/grit.git        #  如果想要用其它名称, 在最后可以定义新建的目录名, 如下:
 $ git clone git:# github.com/schacon/grit.git mygrit
+
+# 只克隆部分近期的提交记录
+git clone --depth=1 https://git地址
 ```
 
 ### 保存密码
