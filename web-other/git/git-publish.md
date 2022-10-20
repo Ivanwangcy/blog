@@ -24,3 +24,5 @@ nrm add npm2 http://registry.xxxx.com
 nrm use npm2
 
 ```
+## npm info
+
