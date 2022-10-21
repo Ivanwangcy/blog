@@ -19,6 +19,8 @@ $nvm install --lts                   # Install the latest LTS version\
 $ nvm use 8.0
 ```
 
+
+
 ## 使用 Homebrew 安装
 
 卸载 Node
@@ -43,4 +45,8 @@ source $(brew --prefix nvm)/nvm.sh
 
 # 更新配置文件
 source ~/.zshrc
+
+# 查看可用 node 版本
+nvm ls
 ```
+
