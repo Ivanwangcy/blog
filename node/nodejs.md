@@ -1,12 +1,16 @@
 # NodeJS
+
  `REPL`模式（ Read-Evaluate-Print-Loop，输入 -求值 -输出 -循环）即交互式命令行解析器
 ## 安装包
+
 ```bash
 $ npm install -g ***
 $ npm install npm@latest -g  # NPM 更新到 最新版本
 $ node # 进入 repl 模式
 ```
+
 ## REPL 模式
+
 ```sh
 > .help # REPL 常用命令帮助
 
