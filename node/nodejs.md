@@ -20,9 +20,12 @@ $ node # 进入 repl 模式
 
 > .exit   # 退出
 ```
+
 退出的方式：**快捷键是ctrl+d, ctrl+c 按两次 或者输入.exit 退出**
 ## require 函数使用
+
 ## 创建服务器
+
 ```javascript
 
 var http = require("http");
