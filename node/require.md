@@ -5,6 +5,7 @@
 相对路径之当前目录：./xxx/xxx.js 或 ./xxx/xxx。
 相对路径之上级目录：../xxx/xxx.js 或 ../xxx/xxx。
 绝对路径：F:/xxx/xxx.js 或 /xxx/xxx.js 或 /xxx/xxx。
+
 ## require函数语法
 
 ## require(路径.扩展名)：
