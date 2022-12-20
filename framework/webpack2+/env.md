@@ -1,3 +1,5 @@
+# env
+
 ## Webpack Environment Variables
 
 ```js
@@ -10,4 +12,4 @@ TARGET === 'dev' // true
 TARGET === 'build' // true
 ```
 
->参考：[Discovering the NPM Lifecycle Event](https://medium.com/@brianhan/use-this-npm-variable-as-a-flag-for-your-build-scripts-31069f5e2e57)
+> 参考：[Discovering the NPM Lifecycle Event](https://medium.com/@brianhan/use-this-npm-variable-as-a-flag-for-your-build-scripts-31069f5e2e57)
