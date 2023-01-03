@@ -21,5 +21,12 @@ img-set()
 
 滤镜：
 
+```css
+
 /* 置灰 */
 filter: grayscale(100%);
+```
+
+## backdrop-filter 与 filter 对比
+
+<https://juejin.cn/post/6979391400844460068>
