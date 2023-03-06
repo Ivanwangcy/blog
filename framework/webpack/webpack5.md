@@ -265,9 +265,6 @@ key为暴露的组件名称，但是要写成路径，这个路径是代表当�
 exposes: { // 被远程引用时可暴露的资源路径及其别名
     "./NewsList": "./src/NewsList", // 这里的key虽然说是暴露的组件，但是key还是要写成路径的形式。这个路径的意思是代表当前remote容器根路径下的NewsList（相对于remote容器根路径）
 },
-1
-2
-3
 代码：
 
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
