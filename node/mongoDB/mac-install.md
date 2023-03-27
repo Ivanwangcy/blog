@@ -98,3 +98,8 @@ use myNewDatabase
 # 当你第一次在数据库中存储数据时，比如通过下面命令创建一个集合，MongoDB 会创建这个数据库
 db.myCollection.insertOne( { x: 1 } );
 ```
+
+## npm install fails on node-gyp rebuild with "gyp: No Xcode or CLT version detected!" 
+
+In most cases this is as easy as running `xcode-select --install` on your mac.
+
