@@ -58,6 +58,8 @@ TensorFlow.js 是一个全面、灵活且强大的Javascript 开源深度学习�
 
 ### 示例1：使用TensorFlow.js预测细下载任务所需时间
 
+Deep Learning with TFJS Ch 2: <https://codepen.io/collection/Djmyzo>
+
 机器学习的整体流程：
 
 获取训练集 -> 将数据转换成张量 -> 创建模型 -> 使用模型拟合数据 -> 针对新数据应用模型
@@ -143,7 +145,7 @@ model.add(tf.layers.dense({inputShape: [1], units: 1}))
 
 具体代码示例：参考链接：<https://codepen.io/bileschi/pen/JaOOpO>
 
-```js
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -159,13 +161,14 @@ model.add(tf.layers.dense({inputShape: [1], units: 1}))
 
 
   <script>
-    const trainData = {
+    // 文件大小 与 下载文件所需时间 一一对应
+    const trainData = { // 训练集
       sizeMB:  [0.080, 9.000, 0.001, 0.100, 8.000, 5.000, 0.100, 6.000, 0.050, 0.500,
-                0.002, 2.000, 0.005, 10.00, 0.010, 7.000, 6.000, 5.000, 1.000, 1.000],
+                0.002, 2.000, 0.005, 10.00, 0.010, 7.000, 6.000, 5.000, 1.000, 1.000], // 文件大小
       timeSec: [0.135, 0.739, 0.067, 0.126, 0.646, 0.435, 0.069, 0.497, 0.068, 0.116,
-                0.070, 0.289, 0.076, 0.744, 0.083, 0.560, 0.480, 0.399, 0.153, 0.149]
+                0.070, 0.289, 0.076, 0.744, 0.083, 0.560, 0.480, 0.399, 0.153, 0.149] // 下载文件所需时间
     };
-    const testData = {
+    const testData = { // 测试集
       sizeMB:  [5.000, 0.200, 0.001, 9.000, 0.002, 0.020, 0.008, 4.000, 0.001, 1.000,
                 0.005, 0.080, 0.800, 0.200, 0.050, 7.000, 0.005, 0.002, 8.000, 0.008],
       timeSec: [0.425, 0.098, 0.052, 0.686, 0.066, 0.078, 0.070, 0.375, 0.058, 0.136,
@@ -173,12 +176,27 @@ model.add(tf.layers.dense({inputShape: [1], units: 1}))
     };
     console.log(testData.timeSec);
     console.log(testData.sizeMB);
-      
-    trainXs = tf.tensor2d(trainData.sizeMB, [20, 1]);
-    trainYs = tf.tensor2d(trainData.timeSec, [20, 1]);
-    testXs = tf.tensor2d(testData.sizeMB, [20, 1]);
-    testYs = tf.tensor2d(testData.timeSec, [20, 1]);
 
+      
+    // trainXs = tf.tensor2d(trainData.sizeMB, [20, 1]);
+    // trainYs = tf.tensor2d(trainData.timeSec, [20, 1]);
+    // testXs = tf.tensor2d(testData.sizeMB, [20, 1]);
+    // testYs = tf.tensor2d(testData.timeSec, [20, 1]);
+
+    const trainTensors = {
+      sizeMB: tf.tensor2d(trainData.sizeMB, [20, 1]), // 张量的‘形状’，20个样本，每个样本都是一个数字
+      timeSec: tf.tensor2d(trainData.timeSec, [20, 1]), 
+    }
+
+    const testTensors = {
+      sizeMB: tf.tensor2d(testData.sizeMB, [20, 1]), // 张量的‘形状’，20个样本，每个样本都是一个数字
+      timeSec: tf.tensor2d(testData.timeSec, [20, 1]), 
+    }
+
+    // 构建线性回归模型  
+    const model = tf.sequential()
+    model.add(tf.layers.dense({ inputShape: [1], units: 1}))
+  
     ////
     // Data Markers
     ////
