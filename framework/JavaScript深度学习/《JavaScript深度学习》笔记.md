@@ -48,10 +48,14 @@ tensorflow.js
 
 ## 用 Node.js 进行深度学习 -- tfjs-node
 
+tfjs-node 中模型的训练速度和 Python 中的 Keras 的运行速度是相当的。
+
 在训练机器学习模型时，为什么不选用更为成熟的Python环境而是选用Node.js呢？主要有两个原因：
 
 1. Node.js 的性能更好；
 2. Node.js 和现有的技术栈与开发者技能更匹配；
+
+首先，就性能而言，目前行业顶尖的 JavaScript 解释器（如：nodejs 使用的 V8 引擎），能够利用即时编译技术达到超过 Python 的性能。
 
 ## 深入浅出 TensorFlow.js
 
