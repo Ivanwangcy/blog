@@ -9,3 +9,8 @@
 <https://zhuanlan.zhihu.com/p/615818924>
 
 ## 插件
+
+## 快捷键
+
+- cmd + p 查找/打开文件
+
