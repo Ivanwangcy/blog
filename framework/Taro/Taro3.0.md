@@ -14,3 +14,9 @@
   - 问题跟进：
   - <https://github.com/NervJS/taro/issues/5645>
 - Taro 
+
+
+## 常见问题
+
+- Taro 3.6.2 初始化项目后跑不起来：
+https://github.com/NervJS/taro/issues/13544
