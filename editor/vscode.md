@@ -22,6 +22,8 @@
 
 - [Image Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview) 可以显示图片缩略图，和鼠标悬停效果
 
+- [Mintlify Doc Writer](https://marketplace.visualstudio.com/items?itemName=mintlify.document) 自动生成各种语言的注释 generate documentation
+
 - [CodeMetrics](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-codemetrics) 代码复杂度分析
 
 ## 命令行启动
