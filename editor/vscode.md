@@ -10,7 +10,7 @@
 
 - Power Mode 打字特效
 
-- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 同步代码编辑器配置。备份上传到 github 账号
+- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 同步代码编辑器配置。备份上传到 github 账号（已废弃）
 
 - :prettier
 
