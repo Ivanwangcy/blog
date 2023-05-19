@@ -27,6 +27,7 @@ git --version  // 查看git版本
 ## bash 常用命令
 
 ### 查看当前目录
+
 ```bash
 $ pwd # 显示/d/workspace/blog, 其中/d/相当于D:\，
 ```
