@@ -11,6 +11,7 @@ $ pwd    # 显示用户当前在哪个路径下的命令 (这个命令用的特�
 ```
 
 ## 接着是创建用户、删除用户的用户管理命令：
+
 ```bash
 $ useradd 用户名  #【添加一个用户】 如：useradd xiaoluo
 $ passwd 用户名   # 【给指定的用户名修改密码】 如：passwd xiaoluo
