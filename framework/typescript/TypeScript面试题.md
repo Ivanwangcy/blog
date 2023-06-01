@@ -63,6 +63,7 @@ TypeScript快速，简单，易学并且可以在任何浏览器或JavaScript引
 它包含来自ES6和ES7的功能，这些功能可以在ES5级JavaScript引擎（如Node.js）中运行。
 
 06. 使用TypeScript有哪些缺点？
+
 TypeScript具有以下缺点：
 
 TypeScript需要很长时间来编译代码。
@@ -77,7 +78,7 @@ TypeScript需要很长时间来编译代码。
 
 类型定义文件的质量是一个问题。
 
-07. TypeScript的组成部分是什么？
+1.  TypeScript的组成部分是什么？
 TypeScript中有三种不同类型的组件，包括：
 
 语言，它由语法，关键字和类型注释组成。
