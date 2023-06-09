@@ -1,9 +1,13 @@
 # React 组件热更新
+
 安装（已经安装了 webpack, React, (hjs-webpack) 的前提）
+
 ```sh
 $ npm i -D babel-preset-react-hmre
 ```
+
 配置 `.babelrc` 文件如下
+
 ```javascript
 {
   "presets": ["es2015", "stage-0", "react"],

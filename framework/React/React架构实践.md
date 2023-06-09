@@ -9,6 +9,6 @@
 - 服务端渲染增加了流式传输的特性，它为整个过程带来了更多的并行性。
 
 
-- React 服务器（RSC）
+- RSC（React Server Components）React 服务器（RSC）
 
 <https://juejin.cn/post/7237680668951642169>
