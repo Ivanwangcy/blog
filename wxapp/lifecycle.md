@@ -1,6 +1,7 @@
-## 微信小程序生命周期方法
+# 微信小程序生命周期方法
 
 ## 注册程序
+
 ```js
 App({
   onLaunch: function() {
@@ -18,7 +19,9 @@ App({
   globalData: 'I am global data'
 })
 ```
+
 ## 注册页面
+
 ```js
 //index.js
 Page({
