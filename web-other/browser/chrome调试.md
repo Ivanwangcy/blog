@@ -18,8 +18,8 @@
 -   Profiles：查看网页的性能情况，比如 CPU 和内存消耗。
 -   Audits：提供网页优化的建议。
 -   Console：用来运行 JavaScript 命令。
--   Emulation：模拟器选项卡，配置移动设备的各种选项；
--   Rendering：页面渲染
+- Emulation：模拟器选项卡，配置移动设备的各种选项；
+- Rendering：页面渲染
 
 ## 切换审查模式 Inspect
 
