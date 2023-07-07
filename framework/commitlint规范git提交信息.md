@@ -1,6 +1,6 @@
-# 用commitlint规范团队的git提交信息
+# 使用 commitlint 规范团队的git提交信息
 
-## 安装commitlint
+## 安装 commitlint
 
 官方网址：https://github.com/conventional-changelog/commitlint
 
@@ -92,7 +92,5 @@ git commit -m "style: xx update"
 git commit -m "chore: run tests on travis ci"
 git commit -m "fix(server): send cors headers"
 git commit -m "feat(blog): add comment section"
-
-...
 
 ```

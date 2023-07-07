@@ -29,7 +29,7 @@ w2 run
 
 ![whistle-run](../../assets/whistle-run.jpg)
 
-浏览器打开 8899 的端口URL即可进入 web 版配置页面。
+浏览器打开 8899 的端口URL即可进入 web 版配置页面。
 
 ### Web 浏览器代理配置
 
@@ -109,4 +109,4 @@ npm i -g whistle.autosave
 
 ![autosave](../../assets/autosave.jpg)
 
-看起来是不是很简单，用起来也很顺畅，非常好用无烦恼(传统的桌面应用 charles,fiddler 要配置很久,还总出问题)。
+Whistle 功能非常强大不断更新中，而且开源免费，用起来很方便。
