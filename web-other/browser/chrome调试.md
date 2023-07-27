@@ -71,7 +71,7 @@
 
 自定义格式化输出，增加样式：
 
-```
+```js
       console.log(
         `%c vue-devtools %c Detected Vue v2.5.21 %c`,
         'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
