@@ -1,7 +1,10 @@
 # Node 环境变量配置
+
 ## windows
 
+
 ## MacBook OS X and Linux
+
 1. 创建一个全局包的目录
 ```sh
 $ mkdir "${HOME}/.npm-packages"
