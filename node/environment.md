@@ -6,10 +6,14 @@
 ## MacBook OS X and Linux
 
 1. 创建一个全局包的目录
+
 ```sh
 $ mkdir "${HOME}/.npm-packages"
+
 ```
-2. 指定`npm`安装全局包的存储位置。
+
+1. 指定`npm`安装全局包的存储位置。
+
 ```sh
 # 创建／编辑 .npmrc 文件
 $ vim ~/.npmrc
