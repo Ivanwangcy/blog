@@ -4,19 +4,20 @@
 1、 ssh登录服务器
 ssh -p端口号 username@服务器ip
 
-
 ```sh
 # 端口号可以省略
 $ ssh root@192.168.xx.xx
 ```
 
 2、上传文件至服务器
+
 ```sh
 # scp -P端口号 本地文件路径 username@服务器ip:目的路径
 # 端口号可以省略
 $ scp ~/node-v10.15.3-linux-x64.tar.xz root@192.168.200.240:~/
 
 ```
+
 3、从服务器下载文件到本地
 
 ```sh
