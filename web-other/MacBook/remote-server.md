@@ -24,7 +24,6 @@ $ scp ~/node-v10.15.3-linux-x64.tar.xz root@192.168.200.240:~/
 scp -P端口号 username@ip:路径 本地路径
 ```
 
-
 ## linux 服务器上安装 node :
 
 获取node 安装包
