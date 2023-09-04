@@ -72,5 +72,11 @@ $ code .
 }
 ```
 
+京东内部的 AI 代码提示插件:
+
+- jdt-AICode
+- Hibox
+- JoyCoder
+
 >> 参考：[Visual Studio Code 入门(译)
 >> ](https://www.jianshu.com/p/3dda4756eca5)
