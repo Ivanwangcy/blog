@@ -74,7 +74,7 @@ $ code .
 
 京东内部的 AI 代码提示插件:
 
-- jdt-AICode
+- jdt-AICode https://marketplace.visualstudio.com/items?itemName=comJdAICode.vscode-aicode
 - Hibox
 - JoyCoder
 
