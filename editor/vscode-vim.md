@@ -1,4 +1,4 @@
-## VSCode vim 模式
+# VSCode vim 模式
 
 ### 快捷键操作
 
