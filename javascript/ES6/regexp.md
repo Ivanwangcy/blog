@@ -1,4 +1,5 @@
 # RegExp 正则的扩展
+
 ## 正则表达式的构造函数
 
 可以传递两个参数
@@ -8,7 +9,7 @@ var regexp = new RegExp('xxx', 'i');
 var regexp = new RegExp(/abc/, 'i');
 ```
 
-# 过滤表情符号, 表情符号都是UTF-16中的4字节符号 例如:  `𠮷` 
+## 过滤表情符号, 表情符号都是UTF-16中的4字节符号 例如:  `𠮷` 
 
 ```javascript
 
