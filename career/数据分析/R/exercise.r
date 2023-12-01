@@ -1,3 +1,7 @@
+library(showtext)
 f= c(10,19,46,18,3)
+font_files()
+showtext_auto(enable = TRUE)
+# font_add('Songti')
+# quartz(family = 'ArialUnicodeMS')
 barplot(f, col=2:6, names.arg = c("高中", "专科", "本科", "硕士研究生", "博士研究生"))
-
