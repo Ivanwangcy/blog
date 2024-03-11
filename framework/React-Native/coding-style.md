@@ -237,23 +237,22 @@
 
 * 原则上按如下顺序排列 React 组件的各个方法（生命周期）：
 
-1.  constructor
-1.  静态方法（static methods)
-1.  getChildContext
-1.  componentWillMount
-1.  componentDidMount
-1.  componentWillReceiveProps
-1.  shouldComponentUpdate
-1.  componentWillUpdate
-1.  componentDidUpdate
-1.  componentWillUnmount
-1.  点击处理或事件处理函数，比如 onClickSubmit()、onChangeDescription()
-1.  用在 render 中的 getter 方法，比如 getSelectReason()、getFooterContent()
-1.  可选的 render 方法，比如 renderNavigation()、renderProfilePicture()
-1.  render
+1. constructor
+1. 静态方法（static methods)
+1. getChildContext
+1. componentWillMount
+1. componentDidMount
+1. componentWillReceiveProps
+1. shouldComponentUpdate
+1. componentWillUpdate
+1. componentDidUpdate
+1. componentWillUnmount
+1. 点击处理或事件处理函数，比如 onClickSubmit()、onChangeDescription()
+1. 用在 render 中的 getter 方法，比如 getSelectReason()、getFooterContent()
+1. 可选的 render 方法，比如 renderNavigation()、renderProfilePicture()
+1. render
 
 * 按如下方式定义 propTypes, defaultProps, contextTypes 等
-
 
 ```javascript
 import React, { Component } from 'react';
@@ -288,7 +287,6 @@ export default Link;
 ```
 
 * 样式始终放在文件末尾：
-
 
 ```js
 const styles = StyleSheet.create({
