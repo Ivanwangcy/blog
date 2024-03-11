@@ -275,10 +275,11 @@ class Link extends Component {
   }
 
   render() {
+    const { url, id, text } = this.props
     return (
-      <a href={this.props.url} data-id={this.props.id}>
-        {this.props.text}
-      </a>
+      <View href={url} data-id={id}>
+        {text}
+      </View>
     );
   }
 }
