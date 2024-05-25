@@ -88,7 +88,7 @@ $ ls -al /etc>> aa.txt # (将etc下面的列表信息追加到aa.txt文件信息
 
 ```sh
 # 查找 3000 端口的进程
-$ lsof -i:3000
+$ lsof -i :3000
 
 # 根据端口号查找 PID
 $ sudo lsof -i :8899

@@ -549,7 +549,7 @@ body {
 
 ```css
 body {
-    background: url(//baidu.com/img/bg.png) no-repeat 0 0;
+    background: url(/img/bg.png) no-repeat 0 0;
 }
 ```
 
