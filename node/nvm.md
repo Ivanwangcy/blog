@@ -48,5 +48,9 @@ source ~/.zshrc
 
 # 查看可用 node 版本
 nvm ls
-```
 
+
+# 设置系统默认版本
+nvm alias default 13.10.1
+
+```
