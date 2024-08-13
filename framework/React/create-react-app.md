@@ -17,3 +17,13 @@ $ npm run build 压缩代码
 ## react-app-rewired
 
 https://github.com/timarney/react-app-rewired
+
+
+## 配置 HOST
+
+```sh
+ HOST=example.com
+# 如果有代理需要配置如下内容
+DANGEROUSLY_DISABLE_HOST_CHECK=true
+```
+
