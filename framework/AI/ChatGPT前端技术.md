@@ -5,3 +5,5 @@
 <https://developer.aliyun.com/article/1225009>
 
 小程序实现 ChatGPT 聊天打字兼自动滚动效果<https://juejin.cn/post/7246193675209293882>
+
+https://juejin.cn/post/7236163089091051576
